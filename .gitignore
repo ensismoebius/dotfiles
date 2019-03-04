@@ -4,4 +4,7 @@ dconf
 chromium
 calibre
 autostart
+enchant
+nautilus
+pulse
 *.swp
