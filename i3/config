@@ -1,0 +1,232 @@
+#######################
+#      Variables      #
+#######################
+
+# the arrows is not convenient
+set $up l
+set $down k
+set $left j
+set $right semicolon
+
+# The mod key as the Super key
+set $Mod Mod4
+
+#######################
+#       keyboard      #
+#######################
+
+# Ensures the right keyboard layout
+exec setxkbmap -layout br -model abnt2 -variant abnt2
+# exec setxkbmap -layout en -model abnt -variant abnt
+
+#######################
+# Windows decorations #
+#######################
+
+# Hides the windows title bar but show the edges 
+# to help out indentify who is selected
+for_window [class="^.*"] border pixel 3
+hide_edge_borders none
+
+#######################
+#    System font      #
+#######################
+
+# This font is widely installed, provides lots of unicode glyphs, right-to-left
+# text rendering and scalability on retina/hidpi displays (thanks to pango).
+font pango:DejaVu Sans Mono 11
+
+#######################
+# keyboard shortcuts  #
+#######################
+
+# use Mouse+Mod1 to drag floating windows to their wanted position
+floating_modifier $Mod
+
+### Programs shortcuts ###
+
+# terminal
+bindsym $Mod+Return exec gnome-terminal
+
+# browser
+bindsym $Mod+Shift+b exec firefox
+
+# file manager
+bindsym $Mod+Shift+f exec nautilus
+
+# restart i3
+bindsym $Mod+Shift+r restart
+
+# lock i3
+bindsym $Mod+Shift+x exec i3lock 
+
+# dmenu (user applications are priority)
+bindsym $Mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $Mod+Shift+d exec dmenu_run
+
+### Xorg shotcuts ###
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
+# Touchpad controls
+bindsym XF86TouchpadToggle exec ~/.config/i3/toggletouchpad.sh # toggle touchpad
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+
+
+
+
+# kill focused window
+bindsym $Mod+q kill
+
+ # change focus
+bindsym $Mod+$left focus left
+bindsym $Mod+$down focus down
+bindsym $Mod+$up focus up
+bindsym $Mod+$right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $Mod+Left focus left
+bindsym $Mod+Down focus down
+bindsym $Mod+Up focus up
+bindsym $Mod+Right focus right
+
+# move focused window
+bindsym $Mod+Shift+$left move left
+bindsym $Mod+Shift+$down move down
+bindsym $Mod+Shift+$up move up
+bindsym $Mod+Shift+$right move right
+
+# alternatively, you can use the cursor keys:
+bindsym $Mod+Shift+Left move left
+bindsym $Mod+Shift+Down move down
+bindsym $Mod+Shift+Up move up
+bindsym $Mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $Mod+h split h
+
+# split in vertical orientation
+bindsym $Mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $Mod+f fullscreen toggle
+
+# change container layout (stacked, toggle, tabbed split)
+bindsym $Mod+s layout stacking
+bindsym $Mod+w layout tabbed
+bindsym $Mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $Mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $Mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $Mod+a focus parent
+
+# focus the child container
+#bindsym $Mod+d focus child
+
+# move the currently focused window to the scratchpad
+bindsym $Mod+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $Mod+minus scratchpad show
+
+# switch to workspace
+bindsym $Mod+1 workspace 1
+bindsym $Mod+2 workspace 2
+bindsym $Mod+3 workspace 3
+bindsym $Mod+4 workspace 4
+bindsym $Mod+5 workspace 5
+bindsym $Mod+6 workspace 6
+bindsym $Mod+7 workspace 7
+bindsym $Mod+8 workspace 8
+bindsym $Mod+9 workspace 9
+bindsym $Mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $Mod+Shift+1 move container to workspace 1
+bindsym $Mod+Shift+2 move container to workspace 2
+bindsym $Mod+Shift+3 move container to workspace 3
+bindsym $Mod+Shift+4 move container to workspace 4
+bindsym $Mod+Shift+5 move container to workspace 5
+bindsym $Mod+Shift+6 move container to workspace 6
+bindsym $Mod+Shift+7 move container to workspace 7
+bindsym $Mod+Shift+8 move container to workspace 8
+bindsym $Mod+Shift+9 move container to workspace 9
+bindsym $Mod+Shift+0 move container to workspace 10
+
+# reload the configuration file
+bindsym $Mod+Shift+c reload
+
+# exit i3 (logs you out of your X session)
+bindsym $Mod+Shift+e exec "i3-nagbar -t warning -m 'Quer sair dessa desgraça?n' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym $left       resize shrink width 10 px or 10 ppt
+        bindsym $down       resize grow height 10 px or 10 ppt
+        bindsym $up         resize shrink height 10 px or 10 ppt
+        bindsym $right      resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left        resize shrink width 10 px or 10 ppt
+        bindsym Down        resize grow height 10 px or 10 ppt
+        bindsym Up          resize shrink height 10 px or 10 ppt
+        bindsym Right       resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $Mod+r mode "resize"
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+		position top
+        status_command i3status
+}
+
+##############################
+#  Auto start applications   #
+##############################
+
+### Utilities ###
+
+# redshift
+exec redshift-gtk
+
+### Bells and whistles ###
+
+# compositor
+exec comptom
+
+# wallpaper
+exec_always feh --bg-scale ~/.wallpaper
+
+
+
