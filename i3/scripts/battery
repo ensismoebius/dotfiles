@@ -1,0 +1,5 @@
+#!/bin/bash
+batfull=$(cat /sys/class/power_supply/BAT1/charge_full)
+batnow=$(cat /sys/class/power_supply/BAT1/charge_now)
+batperc=$(echo "scale=2;$batnow/$batfull" | bc)
+echo $(echo $batperc*100 | bc )%

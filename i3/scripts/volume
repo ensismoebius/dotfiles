@@ -1,0 +1,11 @@
+#!/bin/bash
+
+baseVolume=$(pactl list sinks | grep Volume | grep base | cut -d':' -f2 | cut -d'/' -f1)
+lefvol=$(pactl list sinks | grep Volume | head -n 1 | cut -d':' -f 3 | cut -d' ' -f 2)
+rigvol=$(pactl list sinks | grep Volume | head -n 1 | cut -d':' -f 4 | cut -d' ' -f 2)
+
+lefperc=$(echo "scale=2; $lefvol / $baseVolume" | bc)
+rigperc=$(echo "scale=2; $rigvol / $baseVolume" | bc)
+
+echo $lefperc/$rigperc 
+
