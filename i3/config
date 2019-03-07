@@ -8,6 +8,9 @@ set $down k
 set $left j
 set $right semicolon
 
+# Default terminal
+set $term gnome-terminal
+
 # The mod key as the Super key
 set $Mod Mod4
 
@@ -25,8 +28,7 @@ set $workspace8 8: Uga
 #       keyboard      #
 #######################
 
-# Ensures the right keyboard layout
-#exec setxkbmap -layout br -model abnt2 -variant abnt2
+# Default keyboard layout (press $Mod+Space for more options)
 exec setxkbmap -model pc104 -layout us_intl
 
 #######################
@@ -46,27 +48,58 @@ hide_edge_borders none
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font xft:Droid Sans Mono, FontAwesome 11
 
-#######################
-#    Launch mode   #
-#######################
+##########################
+# i3 Modes and shortcuts #
+##########################
 
-# Press $mod+o to enter in the "launch mode"
+# Press $Mod+o to enter in the "launch mode"
 # Press esc or return to go back to default mode
-set $mode_launcher [C]-IDE, [B]rowser, [F]ile Manager
-bindsym $mod+o mode "$mode_launcher"
+set $mode_launcher [C]-IDE, [B]rowser, [F]ile Manager, [R]anger
+bindsym $Mod+o mode "$mode_launcher"
 
 mode "$mode_launcher" {
     bindsym c exec /opt/eclipse_c/eclipse; mode "default"
     bindsym f exec nautilus; mode "default"
     bindsym b exec firefox; mode "default"
+    bindsym r exec $term -- ranger; mode "default"
 
     bindsym Escape mode "default"
     bindsym Return mode "default"
 }
 
+# Press $Mod+r to enter in the "resize mode" 
+# Press esc or return to go back to default mode
+set $mode_resize Resize your frame
+bindsym $Mod+r mode "$mode_resize"
+mode "$mode_resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym $left       resize shrink width 10 px or 10 ppt
+        bindsym $down       resize grow height 10 px or 10 ppt
+        bindsym $up         resize shrink height 10 px or 10 ppt
+        bindsym $right      resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left        resize shrink width 10 px or 10 ppt
+        bindsym Down        resize grow height 10 px or 10 ppt
+        bindsym Up          resize shrink height 10 px or 10 ppt
+        bindsym Right       resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
 #######################
 # keyboard shortcuts  #
 #######################
+
+# notifies the i3blocks of the Caps Lock key
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+10 i3blocks
 
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier $Mod
@@ -74,7 +107,7 @@ floating_modifier $Mod
 ### Programs shortcuts ###
 
 # terminal
-bindsym $Mod+Return exec gnome-terminal
+bindsym $Mod+Return exec $term
 
 # restart i3
 bindsym $Mod+Shift+r restart
@@ -150,21 +183,17 @@ bindsym $Mod+e layout toggle split
 # toggle tiling / floating
 bindsym $Mod+Shift+space floating toggle
 
-# change focus between tiling / floating windows
+# Show keyboard layout options
 bindsym $Mod+space exec ~/.config/i3/scripts/doKeyboardThings
 
 # focus the parent container
 bindsym $Mod+a focus parent
 
-# focus the child container
-#bindsym $Mod+d focus child
+# reload the configuration file
+bindsym $Mod+Shift+c reload
 
-# move the currently focused window to the scratchpad
-bindsym $Mod+Shift+minus move scratchpad
-
-# Show the next scratchpad window or hide the focused scratchpad window.
-# If there are multiple scratchpad windows, this command cycles through them.
-bindsym $Mod+minus scratchpad show
+# Show system exit options
+bindsym $Mod+Shift+e exec ~/.config/i3/scripts/doPowerThings 
 
 #######################
 #     Workspaces      #
@@ -198,42 +227,7 @@ assign [class="Gnome-terminal"] $workspace1
 assign [class="Firefox"] $workspace2
 assign [class="Eclipse"] $workspace3
 assign [class="Java"] $workspace3
-
-#######################
-#    i3 commands      #
-#######################
-
-# reload the configuration file
-bindsym $Mod+Shift+c reload
-
-# exit i3 (logs you out of your X session)
-bindsym $Mod+Shift+e exec ~/.config/i3/scripts/doPowerThings 
-
-# resize window (you can also use the mouse for that)
-mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym $left       resize shrink width 10 px or 10 ppt
-        bindsym $down       resize grow height 10 px or 10 ppt
-        bindsym $up         resize shrink height 10 px or 10 ppt
-        bindsym $right      resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-        bindsym Left        resize shrink width 10 px or 10 ppt
-        bindsym Down        resize grow height 10 px or 10 ppt
-        bindsym Up          resize shrink height 10 px or 10 ppt
-        bindsym Right       resize grow width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-
-bindsym $Mod+r mode "resize"
+assign [class="Atom"] $workspace3
 
 #######################
 #       i3 bars       #
