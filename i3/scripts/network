@@ -3,4 +3,3 @@ activeNetwork=$(nmcli -t -f ssid device wifi | cut -d' ' -f1 | head -n 1)
 data=$(nmcli connection show $activeNetwork | grep IP4.ADDRESS) 
 ip=$(echo $data | cut -d' ' -f2)
 echo $activeNetwork - $ip
-

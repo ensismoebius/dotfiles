@@ -1,0 +1,3 @@
+[Added Associations]
+video/mp4=mpv.desktop;
+image/jpeg=shotwell-viewer.desktop;feh.desktop;
