@@ -12,6 +12,12 @@ smplayer
 qBittorrent
 plank
 ranger/history
+QtProject.conf
+google-chrome
+pavucontrol.ini
+texstudio
+vlc
+menus
 *.swp
 *.swo
 *.save

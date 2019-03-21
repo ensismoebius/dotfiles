@@ -23,7 +23,7 @@ case $option in
 		done
 		
 		# Starts receiving files
-		sudo -A obexpushd -B -o /tmp
+		sudo -A obexpushd -B -o /tmp 
 		;;
 	"Stop all")
 		# Kill all daemons
