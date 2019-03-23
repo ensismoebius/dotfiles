@@ -1,5 +1,13 @@
 #!/bin/bash
-activeNetwork=$(nmcli -t -f ssid device wifi | cut -d' ' -f1 | head -n 1)
-data=$(nmcli connection show $activeNetwork | grep IP4.ADDRESS) 
-ip=$(echo $data | cut -d' ' -f2)
-echo $activeNetwork - $ip
+ip=$(ip address show wlp2s0 | grep inet | grep wlp2s0 | awk '{ print $2 }')
+activeNetwork=$(iwconfig wlp2s0 | grep ESSID | sed 's/.*ESSID://' | sed 's/"//g')
+if [ "$ip" == "" ]
+then
+	echo  No wifi
+	echo
+	echo "#ff0000"
+else
+	echo  $activeNetwork - $ip
+	echo
+	echo "#00ff00"
+fi
