@@ -10,7 +10,7 @@ rigperc=$(echo "scale=2; $rigvol / $baseVolume" | bc)
 
 if [ "$mute" == "sim" ] || [ "$mute" == "yes" ]
 then
-	echo  Mute
+	echo  Mute\($lefperc/$rigperc\)
 	echo
 	echo "#000000"
 else

@@ -20,7 +20,7 @@ set $workspace2 <span foreground="#ff0055">2:  Browsing</span>
 set $workspace3 <span foreground="#0055ff">3:  Development</span>
 set $workspace4 4: Aga
 set $workspace5 5: Ega
-set $workspace6 6: Iga
+set $workspace6 6: Chat
 set $workspace7 7: Oga
 set $workspace8 8: Uga
 
@@ -117,8 +117,8 @@ bindsym $Mod+Shift+r restart
 bindsym $Mod+Shift+x exec i3lock -i ~/.lock.png -t -c 335533 -f
 
 # dmenu (userr applications are NOT priority)
-bindsym $Mod+Shift+d exec --no-startup-id i3-dmenu-desktop
-bindsym $Mod+d exec dmenu_run
+bindsym $Mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $Mod+Shift+d exec dmenu_run
 
 ### Xorg shotcuts ###
 
@@ -231,6 +231,7 @@ bindsym $Mod+Shift+8 move container to workspace $workspace8
 
 # Programs default workspaces
 # assign [class="Gnome-terminal"] $workspace1
+assign [class="zoom"] $workspace6
 assign [class="Firefox"] $workspace2
 #assign [class="Eclipse"] $workspace3
 #assign [class="Java"] $workspace3
