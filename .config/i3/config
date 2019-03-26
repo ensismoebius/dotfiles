@@ -9,7 +9,7 @@ set $left j
 set $right semicolon
 
 # Default terminal
-set $term gnome-terminal
+set $term urxvt
 
 # The mod key as the Super key
 set $Mod Mod4
@@ -61,8 +61,8 @@ mode "$mode_launcher" {
     bindsym c exec /opt/eclipse_c/eclipse; mode "default"
     bindsym f exec nautilus; mode "default"
     bindsym b exec firefox; mode "default"
-    bindsym r exec $term -- ranger; mode "default"
-    bindsym w exec $term -- nmtui; mode "default"
+    bindsym r exec $term -e ranger; mode "default"
+    bindsym w exec $term -e nmtui; mode "default"
 
     bindsym Escape mode "default"
     bindsym Return mode "default"

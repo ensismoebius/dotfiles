@@ -1,6 +1,6 @@
 tilda_config_version="1.4.1"
 # command=""
-font="FreeMono 12"
+font="FreeMono 13"
 key="F12"
 addtab_key="<Shift><Control>t"
 fullscreen_key="F11"
@@ -52,7 +52,7 @@ slide_sleep_usec=20000
 animation_orientation=0
 timer_resolution=200
 auto_hide_time=20000
-on_last_terminal_exit=0
+on_last_terminal_exit=1
 prompt_on_exit=false
 palette_scheme=0
 non_focus_pull_up_behaviour=0
