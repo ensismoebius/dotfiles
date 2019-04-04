@@ -62,14 +62,13 @@ font xft:Droid Sans Mono, FontAwesome 11
 
 # Press $Mod+o to enter in the "launch mode"
 # Press esc or return to go back to default mode
-set $mode_launcher [C]-IDE, [B]rowser, [F]ile Manager, [R]anger, [W]ifi
+set $mode_launcher [c]-IDE, [b]rowser, [f]ile Manager, [w]ifi
 bindsym $Mod+o mode "$mode_launcher"
 
 mode "$mode_launcher" {
     bindsym c exec /opt/eclipse_c/eclipse; mode "default"
-    bindsym f exec nautilus; mode "default"
     bindsym b exec firefox; mode "default"
-    bindsym r exec $term -e ranger; mode "default"
+    bindsym f exec $term -e ranger; mode "default"
     bindsym w exec $term -e nmtui; mode "default"
 
     bindsym Escape mode "default"
