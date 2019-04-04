@@ -1,0 +1,5 @@
+# Este é o ficheiro de configuração do Git do utilizador.
+[user]
+# Adapte e retire os comentários das seguintes linhas:
+name = Andre Furlan
+email = ensismoebius@gmail.com
