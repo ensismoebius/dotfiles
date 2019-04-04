@@ -98,3 +98,7 @@ Música/
 .config/equalx/
 .equalx/
 .config/gtk-3.0/bookmarks
+.config/git-cola/
+.config/htop/
+.macromedia/
+.webclipse/

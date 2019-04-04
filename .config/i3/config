@@ -15,7 +15,7 @@ set $term urxvt
 set $Mod Mod4
 
 # Workspaces names
-set $workspace1 <span foreground="#ffff00">1:  Terminals</span>
+set $workspace1 <span foreground="#ffff00">1:  General</span>
 set $workspace2 <span foreground="#ff0055">2:  Browsing</span>
 set $workspace3 <span foreground="#0055ff">3:  Development</span>
 set $workspace4 4: Aga
@@ -39,6 +39,14 @@ exec setxkbmap -model pc104 -layout us_intl
 # to help out indentify who is selected
 for_window [class="^.*"] border pixel 3
 hide_edge_borders none
+
+# Move the dropdow window to scratchpad (aka hides)
+# this is an substitution for tilda or guake 
+for_window [instance="dropdown"] floating enable
+for_window [instance="dropdown"] resize set 1366 350
+for_window [instance="dropdown"] move scratchpad
+for_window [instance="dropdown"] border pixel 5
+for_window [instance="dropdown"] floating enable
 
 #######################
 #    System font      #
@@ -202,6 +210,9 @@ bindsym $Mod+Shift+b exec ~/.config/i3/scripts/doBluetoothThings
 # Change wallpaper
 bindsym $Mod+Shift+w exec ~/.config/i3/scripts/changeWallpaper 
 
+# Show dropdown terminal
+bindsym F9 [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center; 
+
 #######################
 #     Workspaces      #
 #######################
@@ -230,12 +241,8 @@ bindsym $Mod+Shift+7 move container to workspace $workspace7
 bindsym $Mod+Shift+8 move container to workspace $workspace8
 
 # Programs default workspaces
-# assign [class="Gnome-terminal"] $workspace1
 assign [class="zoom"] $workspace6
 assign [class="Firefox"] $workspace2
-#assign [class="Eclipse"] $workspace3
-#assign [class="Java"] $workspace3
-#assign [class="Atom"] $workspace3
 
 #######################
 #       i3 bars       #
@@ -276,13 +283,15 @@ bar {
 ### Utilities ###
 
 # redshift
-exec redshift-gtk
+exec redshift
 
 # nodm is active so we must ask for some password
+exec convert -resize 1366x768 -blur 10x9 ~/.wallpaper ~/.lock.png
 exec i3lock -i ~/.lock.png -c 335533 -f 
 
 # Floating terminal
-exec tilda -h
+# exec tilda -h
+exec --no-startup-id $term -name dropdown 
 
 ### Bells and whistles ###
 
