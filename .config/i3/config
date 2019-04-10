@@ -11,6 +11,9 @@ set $right semicolon
 # Default terminal
 set $term urxvt
 
+# Default dile manager
+set $fm ranger
+
 # The mod key as the Super key
 set $Mod Mod4
 
@@ -62,14 +65,15 @@ font xft:Droid Sans Mono, FontAwesome 11
 
 # Press $Mod+o to enter in the "launch mode"
 # Press esc or return to go back to default mode
-set $mode_launcher [c]-IDE, [b]rowser, [f]ile Manager, [w]ifi
+set $mode_launcher [c]-IDE, [b]rowser, [f]ile Manager, [w]ifi, [m]ount media
 bindsym $Mod+o mode "$mode_launcher"
 
 mode "$mode_launcher" {
     bindsym c exec /opt/eclipse_c/eclipse; mode "default"
     bindsym b exec firefox; mode "default"
-    bindsym f exec $term -e ranger; mode "default"
+    bindsym f exec $term -e $fm; mode "default"
     bindsym w exec $term -e nmtui; mode "default"
+    bindsym m exec --no-startup-id udiskie -ans -f ~/.config/i3/scripts/openNewRangerWindow; mode "default"
 
     bindsym Escape mode "default"
     bindsym Return mode "default"
