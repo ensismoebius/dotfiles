@@ -106,3 +106,7 @@ Música/
 Vídeos/
 Curso de Digitação/
 .task/
+.newsboat/cache.db
+.surf/
+patches/
+sourceCode/
