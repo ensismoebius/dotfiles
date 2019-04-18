@@ -73,17 +73,8 @@ zoomus.conf
 .zoom/
 .zsnes/
 .wallpaper
-Biblioteca\ do\ calibre/
-Desktop/
-Documentos/
-Downloads/
-Etec/
-Imagens/
-Livros/
-Manuais/
 ProgramasRFB/
 Steam/
-codigosFonteHistoricos/
 jogos/
 mestrado/
 robocode/
@@ -92,8 +83,6 @@ teste.sh
 vms/
 wiki/
 workspaces/
-Música/
-Área\ de\ Trabalho/
 .config/ranger/history
 .config/equalx/
 .equalx/
@@ -103,10 +92,20 @@ Música/
 .macromedia/
 .webclipse/
 .receitanet/
-Vídeos/
-Curso de Digitação/
 .task/
 .newsboat/cache.db
 .surf/
 patches/
 sourceCode/
+.swn
+cursoDeDigitacao/
+documentos/
+downloads/
+etec/
+imagens/
+livros/
+manuais/
+musica/
+videos
+bibliotecaDoCalibre/
+codigosFonteHistoricos/

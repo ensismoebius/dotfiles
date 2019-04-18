@@ -302,7 +302,7 @@ exec --no-startup-id $term -name dropdown
 ### Bells and whistles ###
 
 # compositor
-exec compton
+# exec compton
 
 # wallpaper
 exec feh --bg-scale ~/.wallpaper
