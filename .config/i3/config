@@ -40,7 +40,7 @@ exec setxkbmap -model pc104 -layout us_intl
 
 # Hides the windows title bar but show the edges 
 # to help out indentify who is selected
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 1
 hide_edge_borders none
 
 # Move the dropdow window to scratchpad (aka hides)
@@ -254,17 +254,19 @@ assign [class="Firefox"] $workspace2
 #       i3 bars       #
 #######################
 
-set $bg-color 	         #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #00ff00
-set $inactive-text-color #676E7D
-set $urgent-bg-color     #000000
+set $indicator-color		#ff0000
+set $bg-color		 	#2f343f
+set $active-bg-color		#00ff00
+set $inactive-bg-color	 	#2f343f
+set $text-color			#00ff00
+set $inactive-text-color	#676E7D
+set $urgent-bg-color		#000000
 
-# window colors         border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #00ff00
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+# window colors		border			background		text                 indicator
+client.focused		$bg-color		$active-bg-color	$text-color          $indicator-color 
+client.unfocused	$inactive-bg-color	$inactive-bg-color	$inactive-text-color $indicator-color 
+client.focused_inactive	$inactive-bg-color	$inactive-bg-color	$inactive-text-color $indicator-color 
+client.urgent		$urgent-bg-color	$urgent-bg-color	$text-color          $indicator-color 
 
 # bar
 bar {
@@ -275,10 +277,10 @@ bar {
 	colors {
 		background $bg-color
 	    	separator #555555
-		#                  border             background         text
-		focused_workspace  $bg-color          $bg-color          $text-color
-		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+		#			border			background		text
+		focused_workspace	$bg-color		$bg-color		$text-color
+		inactive_workspace	$inactive-bg-color	$inactive-bg-color	$inactive-text-color
+		urgent_workspace	$urgent-bg-color	$urgent-bg-color	$text-color
 	}
 }
 
