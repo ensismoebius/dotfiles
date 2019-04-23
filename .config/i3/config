@@ -221,7 +221,7 @@ bindsym F9 [instance="dropdown"] scratchpad show; [instance="dropdown"] move pos
 #######################
 
 # Don’t need to remember where you came from now, press $mod+<number> again to switch back to original workspace
-workspace_auto_back_and_forth yes
+workspace_auto_back_and_forth no
 
 # Goto to next workspace
 bindsym $Mod+Tab workspace next
@@ -257,16 +257,17 @@ assign [class="Firefox"] $workspace2
 set $indicator-color		#ff0000
 set $bg-color		 	#2f343f
 set $active-bg-color		#00ff00
+set $active-text-color		#000000
 set $inactive-bg-color	 	#2f343f
 set $text-color			#00ff00
 set $inactive-text-color	#676E7D
 set $urgent-bg-color		#000000
 
-# window colors		border			background		text                 indicator
-client.focused		$bg-color		$active-bg-color	$text-color          $indicator-color 
-client.unfocused	$inactive-bg-color	$inactive-bg-color	$inactive-text-color $indicator-color 
-client.focused_inactive	$inactive-bg-color	$inactive-bg-color	$inactive-text-color $indicator-color 
-client.urgent		$urgent-bg-color	$urgent-bg-color	$text-color          $indicator-color 
+# window colors		border			background		text			indicator
+client.focused		$bg-color		$active-bg-color	$active-text-color	$indicator-color 
+client.unfocused	$inactive-bg-color	$inactive-bg-color	$inactive-text-color	$indicator-color 
+client.focused_inactive	$inactive-bg-color	$inactive-bg-color	$inactive-text-color	$indicator-color 
+client.urgent		$urgent-bg-color	$urgent-bg-color	$text-color		$indicator-color 
 
 # bar
 bar {

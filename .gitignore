@@ -109,3 +109,9 @@ musica/
 videos
 bibliotecaDoCalibre/
 codigosFonteHistoricos/
+.gnupg/
+.gnuplot_history
+.lock_old.png
+.p2/
+Downloads/
+octave-workspace
