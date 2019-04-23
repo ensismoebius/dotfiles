@@ -1,4 +1,4 @@
-#Tue Apr 23 17:02:58 BRT 2019
+#Tue Apr 23 20:16:23 BRT 2019
 \!/=
 /configuration/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
 /configuration/org.eclipse.epp.mpc.ui/showOpenFavoritesNotification=false
@@ -212,7 +212,7 @@
 /instance/org.eclipse.cdt.ui/semanticHighlighting.function.color=255,255,0
 /instance/org.eclipse.cdt.ui/semanticHighlighting.function.enabled=true
 /instance/org.eclipse.cdt.ui/semanticHighlighting.functionDeclaration.color=255,255,0
-/instance/org.eclipse.cdt.ui/semanticHighlighting.globalVariable.color=204,0,0
+/instance/org.eclipse.cdt.ui/semanticHighlighting.globalVariable.color=206,92,0
 /instance/org.eclipse.cdt.ui/semanticHighlighting.globalVariable.enabled=true
 /instance/org.eclipse.cdt.ui/semanticHighlighting.label.bold=true
 /instance/org.eclipse.cdt.ui/semanticHighlighting.label.color=42,0,255
@@ -222,9 +222,9 @@
 /instance/org.eclipse.cdt.ui/semanticHighlighting.localVariableDeclaration.color=42,0,255
 /instance/org.eclipse.cdt.ui/semanticHighlighting.localVariableDeclaration.enabled=true
 /instance/org.eclipse.cdt.ui/semanticHighlighting.macroDefinition.bold=true
-/instance/org.eclipse.cdt.ui/semanticHighlighting.macroDefinition.color=164,0,0
+/instance/org.eclipse.cdt.ui/semanticHighlighting.macroDefinition.color=16,92,4
 /instance/org.eclipse.cdt.ui/semanticHighlighting.macroDefinition.enabled=true
-/instance/org.eclipse.cdt.ui/semanticHighlighting.macroSubstitution.color=164,0,0
+/instance/org.eclipse.cdt.ui/semanticHighlighting.macroSubstitution.color=16,92,4
 /instance/org.eclipse.cdt.ui/semanticHighlighting.macroSubstitution.enabled=true
 /instance/org.eclipse.cdt.ui/semanticHighlighting.method.bold=true
 /instance/org.eclipse.cdt.ui/semanticHighlighting.method.color=255,255,0
@@ -252,9 +252,11 @@
 /instance/org.eclipse.debug.core//org.eclipse.debug.core.PREFERRED_DELEGATES/org.eclipse.cdt.launch.postmortemLaunchType=org.eclipse.cdt.dsf.gdb.launch.coreCLaunch,debug,;
 /instance/org.eclipse.debug.core/prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions/>\n
 /instance/org.eclipse.debug.ui/org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<launchPerspectives/>\n
+/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.save_dirty_editors_before_launch=always
 /instance/org.eclipse.debug.ui/org.eclipse.debug.ui.switch_perspective_on_suspend=never
+/instance/org.eclipse.debug.ui/pref_state_memento.org.eclipse.debug.ui.DebugVieworg.eclipse.debug.ui.DebugView=<?xml version\="1.0" encoding\="UTF-8"?>\n<DebugViewMemento org.eclipse.debug.ui.BREADCRUMB_DROPDOWN_AUTO_EXPAND\="false"/>
 /instance/org.eclipse.debug.ui/pref_state_memento.org.eclipse.debug.ui.ExpressionView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684">\n<PRESENTATION_CONTEXT_PROPERTIES IMemento.internal.id\="org.eclipse.debug.ui.ExpressionView">\n<BOOLEAN BOOLEAN\="true" IMemento.internal.id\="PRESENTATION_SHOW_LOGICAL_STRUCTURES"/>\n</PRESENTATION_CONTEXT_PROPERTIES>\n</VariablesViewMemento>
-/instance/org.eclipse.debug.ui/pref_state_memento.org.eclipse.debug.ui.VariableView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684">\n<PRESENTATION_CONTEXT_PROPERTIES IMemento.internal.id\="org.eclipse.debug.ui.VariableView">\n<BOOLEAN BOOLEAN\="true" IMemento.internal.id\="PRESENTATION_SHOW_LOGICAL_STRUCTURES"/>\n</PRESENTATION_CONTEXT_PROPERTIES>\n</VariablesViewMemento>
+/instance/org.eclipse.debug.ui/pref_state_memento.org.eclipse.debug.ui.VariableView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684">\n<PRESENTATION_CONTEXT_PROPERTIES IMemento.internal.id\="org.eclipse.debug.ui.VariableView">\n<INTEGER IMemento.internal.id\="initialChildCountLimitForCollections" INTEGER\="100"/>\n<BOOLEAN BOOLEAN\="true" IMemento.internal.id\="PRESENTATION_SHOW_LOGICAL_STRUCTURES"/>\n</PRESENTATION_CONTEXT_PROPERTIES>\n</VariablesViewMemento>
 /instance/org.eclipse.debug.ui/preferredDetailPanes=NumberFormatPane\:NumberFormatPane|DefaultDetailPane\:DefaultDetailPane|
 /instance/org.eclipse.debug.ui/preferredTargets=org.eclipse.cdt.debug.ui.toggleCBreakpointTarget,org.eclipse.cdt.debug.ui.toggleCDynamicPrintfTarget\:org.eclipse.cdt.debug.ui.toggleCBreakpointTarget|
 /instance/org.eclipse.e4.ui.css.swt.theme/themeid=org.eclipse.e4.ui.css.theme.e4_dark10.14_macosx
@@ -266,8 +268,9 @@
 /instance/org.eclipse.launchbar.core/LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 /instance/org.eclipse.launchbar.core/LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 /instance/org.eclipse.launchbar.core/LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
-/instance/org.eclipse.launchbar.core/configDescList=org.eclipse.launchbar.core.descriptorType.default\:CIN2019
-/instance/org.eclipse.launchbar.core/org.eclipse.launchbar.core.descriptorType.default\:CIN2019/activeLaunchMode=debug
+/instance/org.eclipse.launchbar.core/configDescList=org.eclipse.launchbar.core.descriptorType.default\:CIN2019 (1),org.eclipse.launchbar.core.descriptorType.default\:CIN2019
+/instance/org.eclipse.launchbar.core/org.eclipse.launchbar.core.descriptorType.default\:CIN2019\ (1)/activeLaunchMode=linuxtools
+/instance/org.eclipse.launchbar.core/org.eclipse.launchbar.core.descriptorType.default\:CIN2019/activeLaunchMode=run
 /instance/org.eclipse.launchbar.core/org.eclipse.launchbar.core.descriptorType.default\:CIN2019/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 /instance/org.eclipse.mylyn.context.core/mylyn.attention.migrated=true
 /instance/org.eclipse.mylyn.monitor.ui/org.eclipse.mylyn.monitor.activity.tracking.enabled.checked=true
@@ -306,6 +309,7 @@
 /instance/org.eclipse.ui.workbench/ColorsAndFontsPreferencePage.selectedElement=Corg.eclipse.ui.workbench.ACTIVE_TAB_INNER_KEYLINE_COLOR
 /instance/org.eclipse.ui.workbench/ENABLED_DECORATORS=org.eclipse.ui.LinkedResourceDecorator\:true,org.eclipse.ui.SymlinkDecorator\:true,org.eclipse.ui.VirtualResourceDecorator\:true,org.eclipse.ui.ContentTypeDecorator\:true,org.eclipse.ui.ResourceFilterDecorator\:false,org.eclipse.cdt.ui.indexedFiles\:false,org.eclipse.cdt.managedbuilder.ui.excludedFile\:true,org.eclipse.cdt.managedbuilder.ui.includeFolder\:true,org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator\:true,org.eclipse.debug.ui.prototype.decorator\:true,org.eclipse.linuxtools.tmf.ui.trace_folder.decorator\:true,org.eclipse.linuxtools.tmf.ui.experiment_folder.decorator\:true,org.eclipse.linuxtools.tmf.ui.linked_trace.decorator\:true,
 /instance/org.eclipse.ui.workbench/PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.epp.mpc.ui;org.eclipse.mylyn.tasks.ui;org.eclipse.mylyn.team.ui;org.eclipse.oomph.ui;org.eclipse.ui.monitoring;
+/instance/org.eclipse.ui.workbench/UIActivities.org.eclipse.cdt.debug.cdigdbActivity=true
 /instance/org.eclipse.ui.workbench/UIActivities.org.eclipse.cdt.debug.dsfgdbActivity=true
 /instance/org.eclipse.ui.workbench/org.eclipse.cdt.debug.ui.ModulesDetailPaneFont=1|Monospace|14.0|0|GTK|1|;
 /instance/org.eclipse.ui.workbench/org.eclipse.cdt.internal.ui.compare.AsmMergeViewer=1|Monospace|14.0|0|GTK|1|;
