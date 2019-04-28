@@ -303,7 +303,7 @@ exec i3lock -i ~/.lock.png -c 335533 -f
 exec --no-startup-id $term -name dropdown 
 
 # Hides the mouse after 1 sec
-unclutter -idle 1 -root
+exec unclutter -idle 1 -root
 
 ### Bells and whistles ###
 

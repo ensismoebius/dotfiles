@@ -1,6 +1,6 @@
 #!/bin/bash
 state=$(acpi -b | egrep -E '(Charging|Discharging|Full)' -o)
-stateMessage=$(acpi -b | grep -E -o '[0-9]*%, [0-9][0-9]:[0-9][0-9]' | sed 's/, /->/')
+stateMessage=$(acpi -b | grep -E -o '[0-9]*, [0-9][0-9]:[0-9][0-9]' | sed 's/, /->/')
 
 if [ "$state" == "Full" ]
 then
@@ -20,7 +20,7 @@ fi
 
 if [ "$state" == "Discharging" ]
 then
-	echo  $stateMessage
+	echo  $stateMessage%
 	echo 
 	echo "#ff0000"
 fi
