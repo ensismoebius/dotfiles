@@ -1,4 +1,4 @@
-#Sun Apr 28 01:18:25 BRT 2019
+#Sun Apr 28 20:07:01 BRT 2019
 \!/=
 /configuration/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
 /configuration/org.eclipse.epp.mpc.ui/showOpenFavoritesNotification=false
@@ -11,6 +11,7 @@
 /instance/net.sourceforge.vrapper.eclipse/vrapperEnabled=true
 /instance/org.eclipse.cdt.core.prj-DSPFeature/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core/doctool/workspace.default=org.eclipse.cdt.ui.doxygen
+/instance/org.eclipse.cdt.core/macros/workspace=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<macros/>\n
 /instance/org.eclipse.cdt.core/org.eclipse.cdt.core.formatter.alignment_for_arguments_in_method_invocation=16
 /instance/org.eclipse.cdt.core/org.eclipse.cdt.core.formatter.alignment_for_assignment=16
 /instance/org.eclipse.cdt.core/org.eclipse.cdt.core.formatter.alignment_for_base_clause_in_type_declaration=80
@@ -183,6 +184,8 @@
 /instance/org.eclipse.cdt.managedbuilder.core/properties/DSPFeature.cdt.managedbuild.target.gnu.exe.2128942508/cdt.managedbuild.config.gnu.exe.debug.1450107042=cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1237642738\=rebuildState\\\=false\\n\ncdt.managedbuild.config.gnu.exe.debug.1450107042\=rcState\\\=0\\nrebuildState\\\=false\\n\ncdt.managedbuild.tool.gnu.assembler.exe.debug.1015214087\=rebuildState\\\=false\\n\ncdt.managedbuild.tool.gnu.c.linker.exe.debug.63937627\=rebuildState\\\=false\\n\ncdt.managedbuild.toolchain.gnu.exe.debug.666289691\=rebuildState\\\=false\\n\ncdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1752408979\=rebuildState\\\=false\\n\ncdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1530666216\=rebuildState\\\=false\\n\ncdt.managedbuild.tool.gnu.archiver.base.1070469010\=rebuildState\\\=false\\n\n
 /instance/org.eclipse.cdt.managedbuilder.core/properties/DSPFeature.cdt.managedbuild.target.gnu.exe.2128942508/cdt.managedbuild.config.gnu.exe.release.1159392561=cdt.managedbuild.toolchain.gnu.exe.release.1664323260\=rebuildState\\\=true\\n\ncdt.managedbuild.tool.gnu.cpp.linker.exe.release.2134113699\=rebuildState\\\=true\\n\ncdt.managedbuild.tool.gnu.assembler.exe.release.20265143\=rebuildState\\\=true\\n\ncdt.managedbuild.tool.gnu.c.linker.exe.release.2059366351\=rebuildState\\\=true\\n\ncdt.managedbuild.tool.gnu.archiver.base.704677713\=rebuildState\\\=true\\n\ncdt.managedbuild.tool.gnu.c.compiler.exe.release.504433100\=rebuildState\\\=true\\n\ncdt.managedbuild.tool.gnu.cpp.compiler.exe.release.2002386357\=rebuildState\\\=true\\n\n
 /instance/org.eclipse.cdt.managedbuilder.core/properties/mestrado.cdt.managedbuild.target.gnu.exe.1250475913/cdt.managedbuild.config.gnu.exe.debug.2134377348=cdt.managedbuild.tool.gnu.c.linker.exe.debug.1261129630\=rebuildState\\\=false\\n\ncdt.managedbuild.toolchain.gnu.exe.debug.1540110477\=rebuildState\\\=false\\n\ncdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1856584223\=rebuildState\\\=false\\n\ncdt.managedbuild.tool.gnu.assembler.exe.debug.1241705068\=rebuildState\\\=false\\n\ncdt.managedbuild.tool.gnu.c.compiler.exe.debug.141313143\=rebuildState\\\=false\\n\ncdt.managedbuild.tool.gnu.cpp.linker.exe.debug.157627384\=rebuildState\\\=false\\n\ncdt.managedbuild.config.gnu.exe.debug.2134377348\=rcState\\\=0\\nrebuildState\\\=false\\n\ncdt.managedbuild.tool.gnu.archiver.base.919639461\=rebuildState\\\=false\\n\n
+/instance/org.eclipse.cdt.ui.prj-DSPFeature/buildConsole/keepLog=true
+/instance/org.eclipse.cdt.ui.prj-DSPFeature/buildConsole/logLocation=/home/ensis/workspaces/c-workspace/.metadata/.plugins/org.eclipse.cdt.ui/DSPFeature.build.log
 /instance/org.eclipse.cdt.ui/c_braces=238,238,236
 /instance/org.eclipse.cdt.ui/c_default=255,255,255
 /instance/org.eclipse.cdt.ui/c_keyword=255,255,0
@@ -264,8 +267,8 @@
 /instance/org.eclipse.debug.ui/org.eclipse.debug.ui.save_dirty_editors_before_launch=always
 /instance/org.eclipse.debug.ui/org.eclipse.debug.ui.switch_perspective_on_suspend=never
 /instance/org.eclipse.debug.ui/pref_state_memento.org.eclipse.debug.ui.DebugVieworg.eclipse.debug.ui.DebugView=<?xml version\="1.0" encoding\="UTF-8"?>\n<DebugViewMemento org.eclipse.debug.ui.BREADCRUMB_DROPDOWN_AUTO_EXPAND\="false"/>
-/instance/org.eclipse.debug.ui/pref_state_memento.org.eclipse.debug.ui.ExpressionView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684">\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.cdt.dsf.ui.COLUMN_ID__TYPE" SIZE\="174"/>\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.cdt.dsf.ui.COLUMN_ID__VALUE" SIZE\="238"/>\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.debug.ui.VARIALBE_COLUMN_PRESENTATION.COL_VAR_VALUE" SIZE\="412"/>\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.debug.ui.VARIALBE_COLUMN_PRESENTATION.COL_VAR_NAME" SIZE\="174"/>\n<PRESENTATION_CONTEXT_PROPERTIES IMemento.internal.id\="org.eclipse.debug.ui.ExpressionView">\n<INTEGER IMemento.internal.id\="initialChildCountLimitForCollections" INTEGER\="100"/>\n<PERSISTABLE IMemento.internal.id\="org.eclipse.cdt.dsf.ui.elementFormatPersistable" PERSISTABLE\="org.eclipse.cdt.dsf.ui.simpleMapPersistableFactory">\n<type>java.lang.String</type>\n</PERSISTABLE>\n<BOOLEAN BOOLEAN\="true" IMemento.internal.id\="PRESENTATION_SHOW_LOGICAL_STRUCTURES"/>\n</PRESENTATION_CONTEXT_PROPERTIES>\n</VariablesViewMemento>
-/instance/org.eclipse.debug.ui/pref_state_memento.org.eclipse.debug.ui.VariableView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684">\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.cdt.dsf.ui.COLUMN_ID__NAME" SIZE\="169"/>\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.cdt.dsf.ui.COLUMN_ID__TYPE" SIZE\="100"/>\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.cdt.dsf.ui.COLUMN_ID__VALUE" SIZE\="725"/>\n<COLUMN_ORDER COLUMN0\="0" COLUMN1\="2" COLUMN2\="1" IMemento.internal.id\="org.eclipse.cdt.dsf.ui.VARIABLES_COLUMN_PRESENTATION_ID" SIZE\="3"/>\n<PRESENTATION_CONTEXT_PROPERTIES IMemento.internal.id\="org.eclipse.debug.ui.VariableView">\n<INTEGER IMemento.internal.id\="initialChildCountLimitForCollections" INTEGER\="100"/>\n<PERSISTABLE IMemento.internal.id\="org.eclipse.cdt.dsf.ui.elementFormatPersistable" PERSISTABLE\="org.eclipse.cdt.dsf.ui.simpleMapPersistableFactory">\n<type>java.lang.String</type>\n</PERSISTABLE>\n<BOOLEAN BOOLEAN\="true" IMemento.internal.id\="PRESENTATION_SHOW_LOGICAL_STRUCTURES"/>\n</PRESENTATION_CONTEXT_PROPERTIES>\n</VariablesViewMemento>
+/instance/org.eclipse.debug.ui/pref_state_memento.org.eclipse.debug.ui.ExpressionView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684">\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.cdt.dsf.ui.COLUMN_ID__TYPE" SIZE\="174"/>\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.cdt.dsf.ui.COLUMN_ID__VALUE" SIZE\="238"/>\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.debug.ui.VARIALBE_COLUMN_PRESENTATION.COL_VAR_VALUE" SIZE\="412"/>\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.debug.ui.VARIALBE_COLUMN_PRESENTATION.COL_VAR_NAME" SIZE\="174"/>\n<PRESENTATION_CONTEXT_PROPERTIES IMemento.internal.id\="org.eclipse.debug.ui.ExpressionView">\n<INTEGER IMemento.internal.id\="initialChildCountLimitForCollections" INTEGER\="100"/>\n<BOOLEAN BOOLEAN\="true" IMemento.internal.id\="PRESENTATION_SHOW_LOGICAL_STRUCTURES"/>\n</PRESENTATION_CONTEXT_PROPERTIES>\n</VariablesViewMemento>
+/instance/org.eclipse.debug.ui/pref_state_memento.org.eclipse.debug.ui.VariableView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684">\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.cdt.dsf.ui.COLUMN_ID__NAME" SIZE\="169"/>\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.cdt.dsf.ui.COLUMN_ID__TYPE" SIZE\="100"/>\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.cdt.dsf.ui.COLUMN_ID__VALUE" SIZE\="725"/>\n<COLUMN_ORDER COLUMN0\="0" COLUMN1\="2" COLUMN2\="1" IMemento.internal.id\="org.eclipse.cdt.dsf.ui.VARIABLES_COLUMN_PRESENTATION_ID" SIZE\="3"/>\n<PRESENTATION_CONTEXT_PROPERTIES IMemento.internal.id\="org.eclipse.debug.ui.VariableView">\n<INTEGER IMemento.internal.id\="initialChildCountLimitForCollections" INTEGER\="100"/>\n<BOOLEAN BOOLEAN\="true" IMemento.internal.id\="PRESENTATION_SHOW_LOGICAL_STRUCTURES"/>\n</PRESENTATION_CONTEXT_PROPERTIES>\n</VariablesViewMemento>
 /instance/org.eclipse.debug.ui/preferredDetailPanes=NumberFormatPane\:NumberFormatPane|DefaultDetailPane\:DefaultDetailPane|
 /instance/org.eclipse.debug.ui/preferredTargets=org.eclipse.cdt.debug.ui.toggleCBreakpointTarget,org.eclipse.cdt.debug.ui.toggleCDynamicPrintfTarget\:org.eclipse.cdt.debug.ui.toggleCBreakpointTarget|
 /instance/org.eclipse.e4.ui.css.swt.theme/themeid=org.eclipse.e4.ui.css.theme.e4_dark10.14_macosx
@@ -332,6 +335,7 @@
 /instance/org.eclipse.ui.editors/currentLineColor=46,52,54
 /instance/org.eclipse.ui.editors/hoverReplaceMode=1
 /instance/org.eclipse.ui.editors/lineNumberColor=136,138,133
+/instance/org.eclipse.ui.editors/lineNumberRuler=true
 /instance/org.eclipse.ui.editors/org.eclipse.cdt.ui.isOccurrenceGoToNextNavigationTarget=true
 /instance/org.eclipse.ui.editors/org.eclipse.cdt.ui.occurrenceIndicationColor=92,53,102
 /instance/org.eclipse.ui.editors/org.eclipse.cdt.ui.overrideIndicatorColor=52,101,164
@@ -341,40 +345,61 @@
 /instance/org.eclipse.ui.ide/EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
 /instance/org.eclipse.ui.ide/PROBLEMS_FILTERS_MIGRATE=true
 /instance/org.eclipse.ui.ide/SYSTEM_EXPLORER=ranger ${selected_resource_uri}
-/instance/org.eclipse.ui.ide/platformState=1556043750398
+/instance/org.eclipse.ui.ide/platformState=1556043750503
 /instance/org.eclipse.ui.ide/quickStart=false
-/instance/org.eclipse.ui.ide/tipsAndTricks=true
+/instance/org.eclipse.ui.ide/tipsAndTricks=false
 /instance/org.eclipse.ui.monitoring/noninteresting_thread_filter=java.*,org.eclipse.core.internal.jobs.Worker.run,org.eclipse.core.internal.jobs.WorkerPool.sleep,org.eclipse.core.internal.jobs.WorkerPool.startJob,org.eclipse.equinox.internal.util.impl.tpt.threadpool.Executor.run,org.eclipse.equinox.internal.util.impl.tpt.timer.TimerImpl.run,org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent,org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run,sun.*
 /instance/org.eclipse.ui.workbench//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
 /instance/org.eclipse.ui.workbench/ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.presentation.default
 /instance/org.eclipse.ui.workbench/ColorsAndFontsPreferencePage.selectedElement=Corg.eclipse.ui.workbench.ACTIVE_TAB_INNER_KEYLINE_COLOR
 /instance/org.eclipse.ui.workbench/ENABLED_DECORATORS=org.eclipse.ui.LinkedResourceDecorator\:true,org.eclipse.ui.SymlinkDecorator\:true,org.eclipse.ui.VirtualResourceDecorator\:true,org.eclipse.ui.ContentTypeDecorator\:true,org.eclipse.ui.ResourceFilterDecorator\:false,org.eclipse.cdt.ui.indexedFiles\:false,org.eclipse.cdt.managedbuilder.ui.excludedFile\:true,org.eclipse.cdt.managedbuilder.ui.includeFolder\:true,org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator\:true,org.eclipse.debug.ui.prototype.decorator\:true,org.eclipse.linuxtools.tmf.ui.trace_folder.decorator\:true,org.eclipse.linuxtools.tmf.ui.experiment_folder.decorator\:true,org.eclipse.linuxtools.tmf.ui.linked_trace.decorator\:true,
-/instance/org.eclipse.ui.workbench/PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.epp.mpc.ui;org.eclipse.mylyn.tasks.ui;org.eclipse.mylyn.team.ui;org.eclipse.oomph.ui;org.eclipse.ui.monitoring;
+/instance/org.eclipse.ui.workbench/PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.cdt.codan.ui.cxx;org.eclipse.equinox.p2.ui.sdk.scheduler;org.eclipse.oomph.ui;org.eclipse.ui.monitoring;org.eclipse.epp.mpc.ui;org.eclipse.egit.ui;
 /instance/org.eclipse.ui.workbench/UIActivities.org.eclipse.cdt.debug.cdigdbActivity=true
 /instance/org.eclipse.ui.workbench/UIActivities.org.eclipse.cdt.debug.dsfgdbActivity=true
 /instance/org.eclipse.ui.workbench/org.eclipse.cdt.debug.ui.ModulesDetailPaneFont=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.cdt.internal.ui.compare.AsmMergeViewer=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.cdt.internal.ui.compare.CMergeViewer=1|Monospace|12.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.cdt.internal.ui.compare.AsmMergeViewer=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.cdt.internal.ui.compare.CMergeViewer=1|Monospace|16.0|0|GTK|1|;
 /instance/org.eclipse.ui.workbench/org.eclipse.cdt.make.internal.ui.compare.MakefileMergeViewer=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.cdt.ui.buildconsole.ConsoleFont=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.cdt.ui.editors.textfont=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.compare.contentmergeviewer.TextMergeViewer=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.debug.ui.DetailPaneFont=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.debug.ui.MemoryViewTableFont=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.debug.ui.consoleFont=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.CommitMessageEditorFont=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.CommitMessageFont=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.DiffHeadlineFont=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.jdt.internal.ui.compare.JavaMergeViewer=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.jdt.internal.ui.compare.PropertiesFileMergeViewer=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.jdt.ui.PropertiesFileEditor.textfont=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.jdt.ui.editors.textfont=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.jface.textfont=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.tracecompass.tmf.ui.font.eventraw=1|Monospace|12.0|0|GTK|1|;
-/instance/org.eclipse.ui.workbench/org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\n<org.eclipse.ui.commands/>
-/instance/org.eclipse.ui.workbench/org.eclipse.wst.sse.ui.textfont=1|Monospace|12.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.cdt.ui.buildconsole.ConsoleFont=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.cdt.ui.editors.textfont=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.compare.contentmergeviewer.TextMergeViewer=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.debug.ui.DetailPaneFont=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.debug.ui.MemoryViewTableFont=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.debug.ui.consoleFont=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.CommitMessageEditorFont=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.CommitMessageFont=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.DiffHeadlineFont=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.jdt.internal.ui.compare.JavaMergeViewer=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.jdt.internal.ui.compare.PropertiesFileMergeViewer=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.jdt.ui.PropertiesFileEditor.textfont=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.jdt.ui.editors.textfont=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.jface.textfont=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.tracecompass.tmf.ui.font.eventraw=1|Monospace|16.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\n<org.eclipse.ui.commands>\n<activeKeyConfiguration keyConfigurationId\="kg.totality.core.insert_mode"/>\n<keyBinding commandId\="org.eclipse.ui.views.showView" contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="kg.totality.core.insert_mode" keySequence\="CTRL+SHIFT+\\">\n<parameter id\="org.eclipse.ui.views.showView.viewId" value\="org.eclipse.ui.navigator.ProjectExplorer"/>\n</keyBinding>\n<keyBinding commandId\="org.eclipse.ui.window.activateEditor" contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="kg.totality.core.insert_mode" keySequence\="CTRL+\\"/>\n<keyBinding contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="F12"/>\n</org.eclipse.ui.commands>
+/instance/org.eclipse.ui.workbench/org.eclipse.wst.sse.ui.textfont=1|Monospace|16.0|0|GTK|1|;
 /instance/org.eclipse.ui.workbench/terminal.views.view.font.definition=1|Monospace|12.0|0|GTK|1|;
+/instance/org.eclipse.ui/KEY_CONFIGURATION_ID=kg.totality.core.insert_mode
 /instance/org.eclipse.ui/showIntro=false
+/instance/org.eclipse.wst.sse.ui/useAnnotationsPrefPage=true
+/instance/org.eclipse.wst.sse.ui/useQuickDiffPrefPage=true
+/instance/org.eclipse.wst.xml.core/attributeHasNoValue=2
+/instance/org.eclipse.wst.xml.core/endTagWithAttributes=2
+/instance/org.eclipse.wst.xml.core/honourAllSchemaLocations=false
+/instance/org.eclipse.wst.xml.core/indicateNoGrammar=1
+/instance/org.eclipse.wst.xml.core/indicateReferencedFileContainsErrors=2
+/instance/org.eclipse.wst.xml.core/indiciateNoDocumentElement=-1
+/instance/org.eclipse.wst.xml.core/markupValidation=false
+/instance/org.eclipse.wst.xml.core/missingClosingBracket=2
+/instance/org.eclipse.wst.xml.core/missingClosingQuote=2
+/instance/org.eclipse.wst.xml.core/missingEndTag=2
+/instance/org.eclipse.wst.xml.core/missingQuotes=2
+/instance/org.eclipse.wst.xml.core/missingStartTag=2
+/instance/org.eclipse.wst.xml.core/missingTagName=2
+/instance/org.eclipse.wst.xml.core/namespaceInPITarget=2
+/instance/org.eclipse.wst.xml.core/resolveExternalEntities=false
+/instance/org.eclipse.wst.xml.core/whitespaceAtStart=2
+/instance/org.eclipse.wst.xml.core/whitespaceBeforeTagName=2
+/instance/org.eclipse.wst.xml.core/xinclude=false
 /instance/pm.eclipse.editbox/enabled=true
 /instance/pm.eclipse.editbox/pm.eclipse.editbox.provider.c++_Default=\#COMMENT\n\#Tue Apr 23 15\:46\:14 BRT 2019\nHighlightOne\=true\nFillGradient\=false\nFillSelected\=true\nRoundBox\=false\nBorderColorType\=0\nName\=Default\nExpandBox\=true\nBorderDrawLine\=false\nFillOnMove\=true\nAlpha\=0\nHighlightWidth\=1\nBorderWidth\=1\nHighlightColor\=000000\nBorderColor\=00bbbb\nFillKeyModifier\=Alt\nHighlightColorType\=0\nFillGradientColor\=null\nBuilder\=Text\nHighlightDrawLine\=false\nFillSelectedColor\=ffffc4\nBorderLineStyle\=0\nColors\=null-d0dd9b-cdd8b9-e9f58b\nHighlightLineStyle\=0\nNoBackground\=true\nCirculateLevelColors\=true\n
 /instance/pm.eclipse.editbox/pm.eclipse.editbox.provider.c++_RainbowDrops=\#COMMENT\n\#Tue Apr 23 15\:44\:52 BRT 2019\nHighlightOne\=true\nFillGradient\=false\nFillSelected\=true\nRoundBox\=true\nBorderColorType\=0\nName\=RainbowDrops\nExpandBox\=true\nBorderDrawLine\=false\nFillOnMove\=false\nAlpha\=0\nHighlightWidth\=1\nBorderWidth\=1\nHighlightColor\=00ff00\nBorderColor\=00bbbb\nFillKeyModifier\=Alt\nHighlightColorType\=0\nFillGradientColor\=null\nBuilder\=Java\nHighlightDrawLine\=false\nFillSelectedColor\=202020\nBorderLineStyle\=0\nColors\=202020-null\nHighlightLineStyle\=0\nNoBackground\=true\nCirculateLevelColors\=true\n
@@ -426,10 +451,7 @@
 /instance/pm.eclipse.editbox/pm.eclipse.editbox.provider.xml_enabled=false
 /instance/pm.eclipse.editbox/pm.eclipse.editbox.provider.xml_fileNames=*.xml,*.launch,*.project,*.classpath
 @net.certiv.fluentmark=1.2.0.20180807-2118
-@net.sourceforge.vrapper.eclipse=0.74.0
 @org.eclipse.cdt.core=6.7.0.201903092251
-@org.eclipse.cdt.debug.core=8.3.100.201812222020
-@org.eclipse.cdt.dsf.ui=2.5.1.201811241055
 @org.eclipse.cdt.managedbuilder.core=8.6.100.201902260904
 @org.eclipse.cdt.ui=6.4.100.201903040135
 @org.eclipse.core.net=1.3.400.v20181030-1645
@@ -443,13 +465,13 @@
 @org.eclipse.epp.mpc.ui=1.7.6.v20190416-1746
 @org.eclipse.jdt.ui=3.17.0.v20190304-0658
 @org.eclipse.jsch.core=1.3.400.v20190214-2156
-@org.eclipse.launchbar.core=2.2.3.201902041137
 @org.eclipse.search=3.11.500.v20190218-2126
 @org.eclipse.tracecompass.tmf.analysis.xml.core=3.2.1.201903131323
 @org.eclipse.ui=3.112.0.v20190205-1313
 @org.eclipse.ui.browser=3.6.300.v20180828-0837
 @org.eclipse.ui.editors=3.11.400.v20190218-1547
 @org.eclipse.ui.ide=3.15.0.v20190301-1127
-@org.eclipse.ui.monitoring=1.1.300.v20180828-1350
 @org.eclipse.ui.workbench=3.113.0.v20190219-1432
+@org.eclipse.wst.sse.ui=1.5.100.v201903050402
+@org.eclipse.wst.xml.core=1.2.200.v201901071922
 file_export_version=3.0
