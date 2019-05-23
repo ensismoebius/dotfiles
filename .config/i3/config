@@ -224,7 +224,8 @@ bindsym F9 [instance="dropdown"] scratchpad show; [instance="dropdown"] move pos
 workspace_auto_back_and_forth no
 
 # Goto to next workspace
-bindsym $Mod+Tab workspace next
+# bindsym $Mod+Tab workspace next
+bindsym $Mod+Tab workspace back_and_forth
 
 # switch to workspace
 bindsym $Mod+1 workspace $workspace1

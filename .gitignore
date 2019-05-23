@@ -117,3 +117,11 @@ Downloads/
 octave-workspace
 .swm
 .swl
+.debug/
+.gradle/
+.swf
+.swg
+.swh
+.swi
+.swj
+.swk
