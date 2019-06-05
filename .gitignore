@@ -125,3 +125,7 @@ octave-workspace
 .swi
 .swj
 .swk
+.swe
+Desktop/
+vbox/
+.config/VirtualBox/

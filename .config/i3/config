@@ -18,14 +18,14 @@ set $fm ranger
 set $Mod Mod4
 
 # Workspaces names
-set $workspace1 <span foreground="#ffff00">1:  General</span>
-set $workspace2 <span foreground="#ff0055">2:  Browsing</span>
-set $workspace3 <span foreground="#0055ff">3:  Development</span>
-set $workspace4 4: Aga
-set $workspace5 5: Ega
-set $workspace6 6: Chat
-set $workspace7 7: Oga
-set $workspace8 8: Uga
+set $workspace1 <span foreground="#ffff00">1</span>
+set $workspace2 <span foreground="#ff0055">2</span>
+set $workspace3 <span foreground="#0055ff">3</span>
+set $workspace4 4
+set $workspace5 5
+set $workspace6 6
+set $workspace7 7
+set $workspace8 8
 
 #######################
 #       keyboard      #
