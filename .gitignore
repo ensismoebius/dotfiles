@@ -129,3 +129,5 @@ octave-workspace
 Desktop/
 vbox/
 .config/VirtualBox/
+.gnome2/
+.swd
