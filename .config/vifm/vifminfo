@@ -1,0 +1,140 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/ensis/
+	..
+1564172330
+'b
+	/home/ensis/bin/
+	..
+1564172330
+'h
+	/home/ensis/
+	..
+1564172330
+'z
+	/home/ensis/.config/vifm
+	..
+1564172330
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/ensis
+	cursoDeDigitacao
+6
+d/home
+	ensis
+1
+d/
+	home
+5
+d/home
+	ensis
+1
+d/home/ensis
+	cursoDeDigitacao
+6
+d/home/ensis/cursoDeDigitacao
+	..
+0
+d/home/ensis
+	cursoDeDigitacao
+6
+d/home/ensis/cursoDeDigitacao
+	..
+0
+d/home/ensis
+	cursoDeDigitacao
+6
+d/home/ensis/cursoDeDigitacao
+	..
+0
+d/home/ensis
+	cursoDeDigitacao
+6
+d/home/ensis/cursoDeDigitacao
+	..
+0
+d/home/ensis
+	Desktop
+1
+d/home/ensis/Desktop
+	..
+0
+d/home/ensis
+	Desktop
+1
+d/home/ensis/Desktop
+	..
+0
+d/home/ensis
+	workspaces
+24
+d/home/ensis/workspaces
+	c-workspace
+4
+d/home/ensis/workspaces/c-workspace
+	..
+0
+d/home/ensis/workspaces
+	c-workspace
+4
+d/home/ensis
+	imagens
+11
+d/home/ensis/imagens
+	teste.jpg
+10
+d/tmp/mozilla_ensis0
+	..
+0
+d/tmp
+	..
+0
+d/
+	0
+22
+d
+
+# Right window history (oldest to newest):
+D/home/ensis
+	..
+0
+D
+
+# Command line history (oldest to newest):
+:q
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0
