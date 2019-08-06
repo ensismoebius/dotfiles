@@ -131,3 +131,36 @@ vbox/
 .config/VirtualBox/
 .gnome2/
 .swd
+*.log
+Arduino/
+Biblioteca do calibre/
+Documentos/
+Etec/
+Imagens/
+Livros/
+Manuais/
+Modelos/
+Programas/
+Recibos/
+VirtualBox VMs/
+Wiki/
+android-sdks/
+android-workspace/
+c#-workspace/
+composer.json
+eclipse-workspace/
+fritzing-parts/
+installSyncthing.sh
+organizar/
+pikLab/
+pulsar-workspace/
+react-workpace/
+snap/
+squeak
+squirrel-sql-3.8.1/
+steam.sh
+telefones/
+workspace-android/
+workspace-jee/
+workspace/
+
