@@ -297,7 +297,7 @@ bar {
 exec redshift
 
 # nodm is active so we must ask for some password
-exec convert -resize 1440x990 -blur 10x9 ~/.wallpaper ~/.lock.png
+exec convert -resize 1440x1024 -blur 10x9 ~/.wallpaper ~/.lock.png
 exec i3lock -i ~/.lock.png -c 335533 -f 
 
 # Floating terminal
