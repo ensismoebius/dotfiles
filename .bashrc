@@ -116,3 +116,19 @@ if ! shopt -oq posix; then
   fi
 fi
 shopt -s autocd
+
+#Screen resolution
+xrandr --newmode "1400x1024_60.00" 118.75 1400 1488 1632 1864 1024 1027 1037 1063 -hsync +vsync
+xrandr --newmode "1280x1024_60.00"  109.00  1280 1368 1496 1712  1024 1027 1034 1063 -hsync +vsync
+xrandr --newmode "1400x1050_60.00"  121.75  1400 1488 1632 1864  1050 1053 1057 1089 -hsync +vsync
+xrandr --newmode "1600x1200_60.00"  161.00  1600 1712 1880 2160  1200 1203 1207 1245 -hsync +vsync
+xrandr --newmode "1440x900_60.00"  106.50  1440 1528 1672 1904  900 903 909 934 -hsync +vsync
+
+xrandr --addmode VGA-0 "1400x1024_60.00"
+xrandr --addmode VGA-0 "1280x1024_60.00"
+xrandr --addmode VGA-0 "1400x1050_60.00"
+xrandr --addmode VGA-0 "1600x1200_60.00"
+xrandr --addmode VGA-0 "1440x900_60.00"
+
+xrandr --output VGA-0 --mode "1440x900_60.00"
+

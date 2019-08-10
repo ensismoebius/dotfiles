@@ -297,20 +297,19 @@ bar {
 exec redshift
 
 # nodm is active so we must ask for some password
-exec convert -resize 1366x768 -blur 10x9 ~/.wallpaper ~/.lock.png
+exec convert -resize 1440x990 -blur 10x9 ~/.wallpaper ~/.lock.png
 exec i3lock -i ~/.lock.png -c 335533 -f 
 
 # Floating terminal
-# exec tilda -h
 exec --no-startup-id $term -name dropdown 
 
-# Hides the mouse after 1 sec
-exec unclutter -idle 1 -root
+# Hides the mouse after 3 secs
+exec unclutter -idle 3 -root
 
 ### Bells and whistles ###
 
 # compositor
-# exec compton
+exec compton
 
 # wallpaper
-exec feh --bg-scale ~/.wallpaper
+exec feh -g 1440x990 --bg-fill ~/.wallpaper
