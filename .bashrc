@@ -131,4 +131,3 @@ xrandr --addmode VGA-0 "1600x1200_60.00"
 xrandr --addmode VGA-0 "1440x900_60.00"
 
 xrandr --output VGA-0 --mode "1440x900_60.00"
-
