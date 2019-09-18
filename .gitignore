@@ -166,3 +166,9 @@ workspace/
 .fehbg
 .config/kcachegrindrc
 .jacamo/
+.config/glade.conf
+.config/kritadisplayrc
+.config/kritarc
+.config/skypeforlinux/
+.ipython/
+.jupyter/
