@@ -163,4 +163,10 @@ telefones/
 workspace-android/
 workspace-jee/
 workspace/
-
+.config/skypeforlinux/
+.config/spyder/
+.ipython/
+.jacamo/
+.jupyter/
+.oracle_jre_usage/
+.python_history
