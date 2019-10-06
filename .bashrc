@@ -135,4 +135,3 @@ xrandr --output VGA-0 --mode "1440x900_60.00"
 export PATH=~/.local/bin:$PATH
 export PATH=/opt/apache-jena-3.13.0/bin:$PATH
 export PATH=/opt/apache-jena-fuseki-3.13.0:$PATH
-
