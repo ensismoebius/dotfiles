@@ -65,13 +65,14 @@ font xft:Droid Sans Mono, FontAwesome 11
 
 # Press $Mod+o to enter in the "launch mode"
 # Press esc or return to go back to default mode
-set $mode_launcher [c]-IDE, [b]rowser, [f]ile Manager, [w]ifi, [t]exstudio, [m]ount media
+set $mode_launcher [c]-IDE, [b]rowser, [f]ile Manager, [w]ifi, [t]exstudio, [e]quation editor, [m]ount media
 bindsym $Mod+o mode "$mode_launcher"
 
 mode "$mode_launcher" {
     bindsym c exec /opt/eclipse_c/eclipse; mode "default"
     bindsym b exec firefox; mode "default"
     bindsym t exec texstudio; mode "default"
+    bindsym e exec equalx; mode "default"
     bindsym f exec $term -e $fm; mode "default"
     bindsym w exec $term -e nmtui; mode "default"
     bindsym m exec --no-startup-id udiskie -ans -f ~/.config/i3/scripts/openNewRangerWindow; mode "default"
@@ -297,20 +298,19 @@ bar {
 exec redshift
 
 # nodm is active so we must ask for some password
-exec convert -resize 1366x768 -blur 10x9 ~/.wallpaper ~/.lock.png
+exec convert -resize 1440x1024 -blur 10x9 ~/.wallpaper ~/.lock.png
 exec i3lock -i ~/.lock.png -c 335533 -f 
 
 # Floating terminal
-# exec tilda -h
 exec --no-startup-id $term -name dropdown 
 
-# Hides the mouse after 1 sec
-exec unclutter -idle 1 -root
+# Hides the mouse after 3 secs
+exec unclutter -idle 3 -root
 
 ### Bells and whistles ###
 
 # compositor
-# exec compton
+exec compton
 
 # wallpaper
-exec feh --bg-scale ~/.wallpaper
+exec sleep 5 && feh --bg-fill ~/.wallpaper

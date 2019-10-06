@@ -1,5 +1,10 @@
 # Este é o ficheiro de configuração do Git do utilizador.
 [user]
 # Adapte e retire os comentários das seguintes linhas:
-name = Andre Furlan
-email = ensismoebius@gmail.com
+	name = Andre Furlan
+	email = ensismoebius@gmail.com
+[cola]
+	spellcheck = false
+[filesystem "Oracle Corporation|1.8.0_201|/dev/sdc3"]
+	timestampResolution = 1001 milliseconds
+	minRacyThreshold = 0 nanoseconds

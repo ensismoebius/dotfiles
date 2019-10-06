@@ -1,6 +1,6 @@
 #!/bin/bash
-ip=$(ip address show wlp2s0 | grep inet | grep wlp2s0 | awk '{ print $2 }')
-activeNetwork=$(iwconfig wlp2s0 | grep ESSID | sed 's/.*ESSID://' | sed 's/"//g')
+ip=$(ip address show wlx503eaab65e33 | grep inet | grep wlx503eaab65e33 | awk '{ print $2 }')
+activeNetwork=$(iwconfig wlx503eaab65e33 | grep ESSID | sed 's/.*ESSID://' | sed 's/"//g')
 if [ "$ip" == "" ]
 then
 	echo  No wifi
