@@ -170,3 +170,5 @@ workspace/
 .jupyter/
 .oracle_jre_usage/
 .python_history
+*.sv*
+*.sw*

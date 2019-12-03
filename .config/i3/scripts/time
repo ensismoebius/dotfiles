@@ -1,0 +1,12 @@
+clear;
+minutes=0;
+for s in {2..38}; 
+do 
+	for t in {90..1};
+	do
+		minutes=$(($minutes + 1));
+		echo -ne "Slide $s at $t \nMin: $(($minutes/60)) \r\033[1A";
+		sleep 1s;
+	done
+done
+clear;

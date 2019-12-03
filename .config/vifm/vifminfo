@@ -4,19 +4,19 @@
 'H
 	/home/ensis/
 	..
-1564172330
+1569871381
 'b
 	/home/ensis/bin/
 	..
-1564172330
+1569871381
 'h
 	/home/ensis/
 	..
-1564172330
+1569871381
 'z
 	/home/ensis/.config/vifm
 	..
-1564172330
+1569871381
 
 # Bookmarks:
 
@@ -30,105 +30,30 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ensis
-	cursoDeDigitacao
-6
-d/home
-	ensis
-1
-d/
-	home
-5
-d/home
-	ensis
-1
-d/home/ensis
-	cursoDeDigitacao
-6
-d/home/ensis/cursoDeDigitacao
+d/home/ensis/downloads
 	..
 0
-d/home/ensis
-	cursoDeDigitacao
-6
-d/home/ensis/cursoDeDigitacao
+d/home/ensis/Downloads/Closer (2004) - wolverdonfilmes.com
 	..
 0
-d/home/ensis
-	cursoDeDigitacao
-6
-d/home/ensis/cursoDeDigitacao
-	..
-0
-d/home/ensis
-	cursoDeDigitacao
-6
-d/home/ensis/cursoDeDigitacao
-	..
-0
-d/home/ensis
-	Desktop
-1
-d/home/ensis/Desktop
-	..
-0
-d/home/ensis
-	Desktop
-1
-d/home/ensis/Desktop
-	..
-0
-d/home/ensis
-	workspaces
-24
-d/home/ensis/workspaces
-	c-workspace
-4
-d/home/ensis/workspaces/c-workspace
-	..
-0
-d/home/ensis/workspaces
-	c-workspace
-4
-d/home/ensis
-	imagens
-11
-d/home/ensis/imagens
-	teste.jpg
-10
-d/tmp/mozilla_ensis0
-	..
-0
-d/tmp
-	..
-0
-d/
-	0
-22
-d/home/ensis
-	imagens
-11
-d/tmp
-	..
-0
-d/media/ensis/usb01
-	..
-0
-d/home/ensis/workspaces/python-workspace/IA
-	ia-aula-2019-21-03
-1
-d/home/ensis/workspaces/python-workspace/IA/ia-aula-2019-21-03
-	images
-2
-d/home/ensis/workspaces/python-workspace/IA/ia-aula-2019-21-03/images
-	-0.04.jpg
+d/home/ensis/Downloads/A Chegada 2017 [1080p] WWW.BLUDV.COM
+	A.Chegada.2017.1080p.BluRay.5.1.x264.DUAL-WWW.BLUDV.COM.forced.srt
 1
 d/home/ensis/Downloads
-	..
-0
-d/tmp/mozilla_ensis0
-	csp.zip
-3
+	A Chegada 2017 [1080p] WWW.BLUDV.COM
+1
+d/home/ensis
+	Downloads
+2
+d/home/ensis/Downloads
+	A Chegada 2017 [1080p] WWW.BLUDV.COM
+1
+d/home/ensis/Downloads/A Chegada 2017 [1080p] WWW.BLUDV.COM
+	A.Chegada.2017.1080p.BluRay.5.1.x264.DUAL-WWW.BLUDV.COM.forced.srt
+1
+d/home/ensis/Downloads/Mae! 2017 [BluRay] [720p] [DUAL] COMANDOTORRENTS.COM
+	Mae.2017.720p.BluRay.6CH.x264.DUAL-WWW.COMANDOTORRENTS.COM.mkv
+5
 d
 
 # Right window history (oldest to newest):
@@ -138,7 +63,6 @@ D/home/ensis
 D
 
 # Command line history (oldest to newest):
-:q
 
 # Search history (oldest to newest):
 
