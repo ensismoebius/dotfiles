@@ -1,0 +1,3 @@
+[filesystem "localhost|Oracle Corporation|12.0.2|/dev/sda2"]
+	timestampResolution = 21000 nanoseconds
+	minRacyThreshold = 4154 microseconds
