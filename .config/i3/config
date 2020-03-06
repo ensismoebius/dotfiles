@@ -65,11 +65,12 @@ font xft:Droid Sans Mono, FontAwesome 11
 
 # Press $Mod+o to enter in the "launch mode"
 # Press esc or return to go back to default mode
-set $mode_launcher [c]-IDE, [b]rowser, [f]ile Manager, [w]ifi, [t]exstudio, [m]ount media
+set $mode_launcher [c]-IDE, [b]rowser, [f]ile Manager, [w]ifi, [t]exstudio, [m]ount media, [s]yncthing
 bindsym $Mod+o mode "$mode_launcher"
 
 mode "$mode_launcher" {
-    bindsym c exec /opt/eclipse_c/eclipse; mode "default"
+    bindsym c exec /opt/c-eclipse/eclipse; mode "default"
+    bindsym s exec syncthing; mode "default"
     bindsym b exec firefox; mode "default"
     bindsym t exec texstudio; mode "default"
     bindsym f exec $term -e $fm; mode "default"
@@ -157,6 +158,7 @@ bindsym $Mod+q kill
 
 # change focus
 bindsym $Mod+$left focus left
+bindsym $Mod+z focus left
 bindsym $Mod+$down focus down
 bindsym $Mod+$up focus up
 bindsym $Mod+$right focus right

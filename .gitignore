@@ -172,3 +172,11 @@ workspace/
 .python_history
 *.sv*
 *.sw*
+Mestrado/
+.config/syncthing/
+.config/syncthing-gtk/
+culinária/
+roms/
+.config/jgit/
+.config/transmission/
+anotacoes.txt

@@ -3,3 +3,13 @@ video/mp4=mpv.desktop;
 image/jpeg=shotwell-viewer.desktop;feh.desktop;
 audio/x-wav=audacity.desktop;
 application/x-httpd-php=gedit.desktop;
+application/pdf=org.gnome.Evince.desktop;
+
+[Default Applications]
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
+inode/diretory=ranger.desktop
+application/x-gnome-saved-search=ranger.desktop

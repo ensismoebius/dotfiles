@@ -3,3 +3,5 @@
 # Adapte e retire os comentários das seguintes linhas:
 name = Andre Furlan
 email = ensismoebius@gmail.com
+[core]
+	editor = vim
