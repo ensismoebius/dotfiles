@@ -180,3 +180,5 @@ roms/
 .config/jgit/
 .config/transmission/
 anotacoes.txt
+devedores/
+entregar/
