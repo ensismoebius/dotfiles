@@ -159,6 +159,7 @@ bindsym $Mod+q kill
 # change focus
 bindsym $Mod+$left focus left
 bindsym $Mod+z focus left
+bindsym $Mod+x focus right
 bindsym $Mod+$down focus down
 bindsym $Mod+$up focus up
 bindsym $Mod+$right focus right

@@ -32,9 +32,9 @@
 URxvt.intensityStyles:	false
 URxvt.background:       [80]#000000
 URxvt.depth:		32
-URxvt.font: 		xft:monospace:size=13
+URxvt.font: 		xft:monospace:size=13, xft:Iosevka:size=13:hinting=false
 URxvt.scrollBar:	false
-URxvt.cursorColor:	white
+URxvt.cursorColor:	green
 
 !! Extensions
 URxvt.perl-ext-common:	default,matcher,resize-font,keyboard-select

@@ -50,6 +50,7 @@ menubar, menubutton, menulist, menu, menuitem {
   border-radius: 0.5em;
   color: limegreen !important;
   height: 0.2em !important;
+  padding-left: 1em;
 
   /* Set background color to something a little prettier */
   background-color: rgb(0, 0, 0) !important;
