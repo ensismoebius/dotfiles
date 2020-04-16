@@ -162,6 +162,9 @@ bindsym $Mod+$down focus down
 bindsym $Mod+$up focus up
 bindsym $Mod+$right focus right
 
+bindsym $Mod+z focus left
+bindsym $Mod+x focus right
+
 # alternatively, you can use the cursor keys:
 bindsym $Mod+Left focus left
 bindsym $Mod+Down focus down
@@ -298,7 +301,7 @@ bar {
 exec redshift
 
 # nodm is active so we must ask for some password
-exec convert -resize 1440x1024 -blur 10x9 ~/.wallpaper ~/.lock.png
+exec convert -resize 1440x900 -blur 10x9 ~/.wallpaper ~/.lock.png
 exec i3lock -i ~/.lock.png -c 335533 -f 
 
 # Floating terminal
@@ -314,3 +317,6 @@ exec compton
 
 # wallpaper
 exec sleep 5 && feh --bg-fill ~/.wallpaper
+
+# Enables noise reduction on pulse audio
+exec pactl load-module module-echo-cancel aec_method=webrtc sink_properties=device.description="Noise_Reduction" aec_args="analog_gain_control=0\ digital_gain_control=0" 

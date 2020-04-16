@@ -133,5 +133,18 @@ xrandr --addmode VGA-0 "1440x900_60.00"
 xrandr --output VGA-0 --mode "1440x900_60.00"
 
 export PATH=~/.local/bin:$PATH
-export PATH=/opt/apache-jena-3.13.0/bin:$PATH
-export PATH=/opt/apache-jena-fuseki-3.13.0:$PATH
+
+
+
+# get current branch in git repo
+function parse_git_branch() {
+	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+	if [ ! "${BRANCH}" == "" ]
+	then
+		#STAT=`parse_git_dirty`
+		echo "[${BRANCH}]"
+	else
+		echo ""
+	fi
+}
+export PS1="\u@\h\w\`parse_git_branch\`\\$\n"
