@@ -198,3 +198,8 @@ workspace/
 .processing/
 .python_history
 dadosRedesSociais/
+.config/obs-studio/
+.dia/
+.mysql/
+.viminfo.tmp
+

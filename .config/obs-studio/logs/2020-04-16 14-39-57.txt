@@ -16012,3 +16012,407 @@
 15:05:14.394: User added source 'Captura de Tela (XSHM)' (xshm_input) to scene 'Cena'
 15:05:22.267: xshm-input: Geometry 1440x900 @ 0,0
 15:05:24.916: xshm-input: Geometry 1440x900 @ 0,0
+15:52:05.192: ---------------------------------
+15:52:05.192: [x264 encoder: 'simple_h264_stream'] preset: veryfast
+15:52:05.192: [x264 encoder: 'simple_h264_stream'] settings:
+15:52:05.192: 	rate_control: CBR
+15:52:05.192: 	bitrate:      2500
+15:52:05.192: 	buffer size:  2500
+15:52:05.192: 	crf:          0
+15:52:05.192: 	fps_num:      30
+15:52:05.192: 	fps_den:      1
+15:52:05.192: 	width:        1152
+15:52:05.192: 	height:       720
+15:52:05.192: 	keyint:       250
+15:52:05.192: 
+15:52:05.195: libfdk_aac encoder created
+15:52:05.195: libfdk_aac bitrate: 160, channels: 2
+15:52:05.204: ==== Recording Start ===============================================
+15:52:05.204: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ensismoebius/2020-04-16 15-52-05.flv'...
+15:52:20.402: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ensismoebius/2020-04-16 15-52-05.flv' stopped
+15:52:20.402: Output 'simple_file_output': stopping
+15:52:20.402: Output 'simple_file_output': Total frames output: 432
+15:52:20.402: Output 'simple_file_output': Total drawn frames: 456
+15:52:20.402: ==== Recording Stop ================================================
+15:52:20.413: libfdk_aac encoder destroyed
+15:52:58.421: ---------------------------------
+15:52:58.421: [x264 encoder: 'simple_h264_stream'] preset: veryfast
+15:52:58.421: [x264 encoder: 'simple_h264_stream'] settings:
+15:52:58.421: 	rate_control: CBR
+15:52:58.421: 	bitrate:      2500
+15:52:58.421: 	buffer size:  2500
+15:52:58.421: 	crf:          0
+15:52:58.421: 	fps_num:      30
+15:52:58.421: 	fps_den:      1
+15:52:58.421: 	width:        1152
+15:52:58.421: 	height:       720
+15:52:58.421: 	keyint:       250
+15:52:58.421: 
+15:52:58.427: libfdk_aac encoder created
+15:52:58.427: libfdk_aac bitrate: 160, channels: 2
+15:52:58.436: ==== Recording Start ===============================================
+15:52:58.436: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ensismoebius/2020-04-16 15-52-58.flv'...
+15:53:10.901: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ensismoebius/2020-04-16 15-52-58.flv' stopped
+15:53:10.901: Output 'simple_file_output': stopping
+15:53:10.901: Output 'simple_file_output': Total frames output: 350
+15:53:10.901: Output 'simple_file_output': Total drawn frames: 374
+15:53:10.901: ==== Recording Stop ================================================
+15:53:10.914: libfdk_aac encoder destroyed
+15:53:38.957: ---------------------------------
+15:53:38.957: [x264 encoder: 'simple_h264_stream'] preset: veryfast
+15:53:38.957: [x264 encoder: 'simple_h264_stream'] settings:
+15:53:38.957: 	rate_control: CBR
+15:53:38.957: 	bitrate:      2500
+15:53:38.957: 	buffer size:  2500
+15:53:38.957: 	crf:          0
+15:53:38.957: 	fps_num:      30
+15:53:38.957: 	fps_den:      1
+15:53:38.957: 	width:        1152
+15:53:38.957: 	height:       720
+15:53:38.957: 	keyint:       250
+15:53:38.957: 
+15:53:38.960: libfdk_aac encoder created
+15:53:38.960: libfdk_aac bitrate: 160, channels: 2
+15:53:38.970: ==== Recording Start ===============================================
+15:53:38.970: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ensismoebius/2020-04-16 15-53-38.flv'...
+15:54:05.866: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ensismoebius/2020-04-16 15-53-38.flv' stopped
+15:54:05.866: Output 'simple_file_output': stopping
+15:54:05.867: Output 'simple_file_output': Total frames output: 783
+15:54:05.867: Output 'simple_file_output': Total drawn frames: 807
+15:54:05.867: ==== Recording Stop ================================================
+15:54:05.877: libfdk_aac encoder destroyed
+15:55:04.789: ---------------------------------
+15:55:04.790: [x264 encoder: 'simple_h264_stream'] preset: veryfast
+15:55:04.790: [x264 encoder: 'simple_h264_stream'] settings:
+15:55:04.790: 	rate_control: CBR
+15:55:04.790: 	bitrate:      2500
+15:55:04.790: 	buffer size:  2500
+15:55:04.790: 	crf:          0
+15:55:04.790: 	fps_num:      30
+15:55:04.790: 	fps_den:      1
+15:55:04.790: 	width:        1152
+15:55:04.790: 	height:       720
+15:55:04.790: 	keyint:       250
+15:55:04.790: 
+15:55:04.793: libfdk_aac encoder created
+15:55:04.793: libfdk_aac bitrate: 160, channels: 2
+15:55:04.802: ==== Recording Start ===============================================
+15:55:04.802: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ensismoebius/2020-04-16 15-55-04.flv'...
+15:55:19.734: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ensismoebius/2020-04-16 15-55-04.flv' stopped
+15:55:19.734: Output 'simple_file_output': stopping
+15:55:19.734: Output 'simple_file_output': Total frames output: 424
+15:55:19.734: Output 'simple_file_output': Total drawn frames: 448
+15:55:19.735: ==== Recording Stop ================================================
+15:55:19.745: libfdk_aac encoder destroyed
+15:55:26.924: ---------------------------------
+15:55:26.924: [x264 encoder: 'simple_h264_stream'] preset: veryfast
+15:55:26.925: [x264 encoder: 'simple_h264_stream'] settings:
+15:55:26.925: 	rate_control: CBR
+15:55:26.925: 	bitrate:      2500
+15:55:26.925: 	buffer size:  2500
+15:55:26.925: 	crf:          0
+15:55:26.925: 	fps_num:      30
+15:55:26.925: 	fps_den:      1
+15:55:26.925: 	width:        1152
+15:55:26.925: 	height:       720
+15:55:26.925: 	keyint:       250
+15:55:26.925: 
+15:55:26.927: libfdk_aac encoder created
+15:55:26.928: libfdk_aac bitrate: 160, channels: 2
+15:55:26.937: ==== Recording Start ===============================================
+15:55:26.937: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ensismoebius/2020-04-16 15-55-26.flv'...
+15:55:34.741: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ensismoebius/2020-04-16 15-55-26.flv' stopped
+15:55:34.741: Output 'simple_file_output': stopping
+15:55:34.741: Output 'simple_file_output': Total frames output: 210
+15:55:34.741: Output 'simple_file_output': Total drawn frames: 234
+15:55:34.742: ==== Recording Stop ================================================
+15:55:34.751: libfdk_aac encoder destroyed
+15:55:51.565: ---------------------------------
+15:55:51.565: [x264 encoder: 'simple_h264_stream'] preset: veryfast
+15:55:51.565: [x264 encoder: 'simple_h264_stream'] settings:
+15:55:51.565: 	rate_control: CBR
+15:55:51.565: 	bitrate:      2500
+15:55:51.565: 	buffer size:  2500
+15:55:51.565: 	crf:          0
+15:55:51.565: 	fps_num:      30
+15:55:51.565: 	fps_den:      1
+15:55:51.565: 	width:        1152
+15:55:51.565: 	height:       720
+15:55:51.565: 	keyint:       250
+15:55:51.565: 
+15:55:51.571: libfdk_aac encoder created
+15:55:51.571: libfdk_aac bitrate: 160, channels: 2
+15:55:51.581: ==== Recording Start ===============================================
+15:55:51.581: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ensismoebius/2020-04-16 15-55-51.flv'...
+15:56:11.766: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ensismoebius/2020-04-16 15-55-51.flv' stopped
+15:56:11.766: Output 'simple_file_output': stopping
+15:56:11.767: Output 'simple_file_output': Total frames output: 582
+15:56:11.767: Output 'simple_file_output': Total drawn frames: 606
+15:56:11.767: ==== Recording Stop ================================================
+15:56:11.778: libfdk_aac encoder destroyed
+15:56:21.008: ---------------------------------
+15:56:21.008: [x264 encoder: 'simple_h264_stream'] preset: veryfast
+15:56:21.008: [x264 encoder: 'simple_h264_stream'] settings:
+15:56:21.008: 	rate_control: CBR
+15:56:21.008: 	bitrate:      2500
+15:56:21.008: 	buffer size:  2500
+15:56:21.008: 	crf:          0
+15:56:21.008: 	fps_num:      30
+15:56:21.008: 	fps_den:      1
+15:56:21.008: 	width:        1152
+15:56:21.008: 	height:       720
+15:56:21.008: 	keyint:       250
+15:56:21.008: 
+15:56:21.011: libfdk_aac encoder created
+15:56:21.011: libfdk_aac bitrate: 160, channels: 2
+15:56:21.031: ==== Recording Start ===============================================
+15:56:21.031: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ensismoebius/2020-04-16 15-56-21.flv'...
+15:56:54.699: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ensismoebius/2020-04-16 15-56-21.flv' stopped
+15:56:54.699: Output 'simple_file_output': stopping
+15:56:54.699: Output 'simple_file_output': Total frames output: 987
+15:56:54.699: Output 'simple_file_output': Total drawn frames: 1010
+15:56:54.700: ==== Recording Stop ================================================
+15:56:54.711: libfdk_aac encoder destroyed
+15:57:04.197: ---------------------------------
+15:57:04.197: [x264 encoder: 'simple_h264_stream'] preset: veryfast
+15:57:04.197: [x264 encoder: 'simple_h264_stream'] settings:
+15:57:04.197: 	rate_control: CBR
+15:57:04.197: 	bitrate:      2500
+15:57:04.197: 	buffer size:  2500
+15:57:04.197: 	crf:          0
+15:57:04.197: 	fps_num:      30
+15:57:04.197: 	fps_den:      1
+15:57:04.197: 	width:        1152
+15:57:04.197: 	height:       720
+15:57:04.197: 	keyint:       250
+15:57:04.197: 
+15:57:04.200: libfdk_aac encoder created
+15:57:04.200: libfdk_aac bitrate: 160, channels: 2
+15:57:04.209: ==== Recording Start ===============================================
+15:57:04.209: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ensismoebius/2020-04-16 15-57-04.flv'...
+15:57:57.532: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ensismoebius/2020-04-16 15-57-04.flv' stopped
+15:57:57.532: Output 'simple_file_output': stopping
+15:57:57.532: Output 'simple_file_output': Total frames output: 1576
+15:57:57.532: Output 'simple_file_output': Total drawn frames: 1600
+15:57:57.532: ==== Recording Stop ================================================
+15:57:57.541: libfdk_aac encoder destroyed
+15:59:08.720: ---------------------------------
+15:59:08.720: [x264 encoder: 'simple_h264_stream'] preset: veryfast
+15:59:08.720: [x264 encoder: 'simple_h264_stream'] settings:
+15:59:08.720: 	rate_control: CBR
+15:59:08.720: 	bitrate:      2500
+15:59:08.720: 	buffer size:  2500
+15:59:08.720: 	crf:          0
+15:59:08.720: 	fps_num:      30
+15:59:08.720: 	fps_den:      1
+15:59:08.720: 	width:        1152
+15:59:08.720: 	height:       720
+15:59:08.720: 	keyint:       250
+15:59:08.720: 
+15:59:08.724: libfdk_aac encoder created
+15:59:08.724: libfdk_aac bitrate: 160, channels: 2
+15:59:08.734: ==== Recording Start ===============================================
+15:59:08.734: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ensismoebius/2020-04-16 15-59-08.flv'...
+15:59:13.667: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ensismoebius/2020-04-16 15-59-08.flv' stopped
+15:59:13.667: Output 'simple_file_output': stopping
+15:59:13.667: Output 'simple_file_output': Total frames output: 124
+15:59:13.667: Output 'simple_file_output': Total drawn frames: 148
+15:59:13.667: ==== Recording Stop ================================================
+15:59:13.681: libfdk_aac encoder destroyed
+15:59:52.929: ---------------------------------
+15:59:52.929: [x264 encoder: 'simple_h264_stream'] preset: veryfast
+15:59:52.929: [x264 encoder: 'simple_h264_stream'] settings:
+15:59:52.929: 	rate_control: CBR
+15:59:52.929: 	bitrate:      2500
+15:59:52.929: 	buffer size:  2500
+15:59:52.929: 	crf:          0
+15:59:52.929: 	fps_num:      30
+15:59:52.929: 	fps_den:      1
+15:59:52.929: 	width:        1152
+15:59:52.929: 	height:       720
+15:59:52.929: 	keyint:       250
+15:59:52.929: 
+15:59:52.932: libfdk_aac encoder created
+15:59:52.932: libfdk_aac bitrate: 160, channels: 2
+15:59:52.947: ==== Recording Start ===============================================
+15:59:52.947: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ensismoebius/2020-04-16 15-59-52.flv'...
+16:02:14.399: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ensismoebius/2020-04-16 15-59-52.flv' stopped
+16:02:14.399: Output 'simple_file_output': stopping
+16:02:14.399: Output 'simple_file_output': Total frames output: 4220
+16:02:14.399: Output 'simple_file_output': Total drawn frames: 4244
+16:02:14.399: ==== Recording Stop ================================================
+16:02:14.408: libfdk_aac encoder destroyed
+16:02:22.766: ---------------------------------
+16:02:22.766: [x264 encoder: 'simple_h264_stream'] preset: veryfast
+16:02:22.766: [x264 encoder: 'simple_h264_stream'] settings:
+16:02:22.766: 	rate_control: CBR
+16:02:22.766: 	bitrate:      2500
+16:02:22.766: 	buffer size:  2500
+16:02:22.766: 	crf:          0
+16:02:22.766: 	fps_num:      30
+16:02:22.766: 	fps_den:      1
+16:02:22.766: 	width:        1152
+16:02:22.766: 	height:       720
+16:02:22.766: 	keyint:       250
+16:02:22.766: 
+16:02:22.769: libfdk_aac encoder created
+16:02:22.769: libfdk_aac bitrate: 160, channels: 2
+16:02:22.784: ==== Recording Start ===============================================
+16:02:22.784: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ensismoebius/2020-04-16 16-02-22.flv'...
+16:02:37.066: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ensismoebius/2020-04-16 16-02-22.flv' stopped
+16:02:37.066: Output 'simple_file_output': stopping
+16:02:37.066: Output 'simple_file_output': Total frames output: 405
+16:02:37.066: Output 'simple_file_output': Total drawn frames: 429
+16:02:37.067: ==== Recording Stop ================================================
+16:02:37.076: libfdk_aac encoder destroyed
+16:02:43.252: ---------------------------------
+16:02:43.252: [x264 encoder: 'simple_h264_stream'] preset: veryfast
+16:02:43.252: [x264 encoder: 'simple_h264_stream'] settings:
+16:02:43.252: 	rate_control: CBR
+16:02:43.252: 	bitrate:      2500
+16:02:43.252: 	buffer size:  2500
+16:02:43.252: 	crf:          0
+16:02:43.252: 	fps_num:      30
+16:02:43.252: 	fps_den:      1
+16:02:43.252: 	width:        1152
+16:02:43.252: 	height:       720
+16:02:43.252: 	keyint:       250
+16:02:43.252: 
+16:02:43.256: libfdk_aac encoder created
+16:02:43.256: libfdk_aac bitrate: 160, channels: 2
+16:02:43.267: ==== Recording Start ===============================================
+16:02:43.267: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ensismoebius/2020-04-16 16-02-43.flv'...
+16:03:02.527: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ensismoebius/2020-04-16 16-02-43.flv' stopped
+16:03:02.527: Output 'simple_file_output': stopping
+16:03:02.527: Output 'simple_file_output': Total frames output: 554
+16:03:02.527: Output 'simple_file_output': Total drawn frames: 578
+16:03:02.527: ==== Recording Stop ================================================
+16:03:02.539: libfdk_aac encoder destroyed
+16:03:11.663: ---------------------------------
+16:03:11.663: [x264 encoder: 'simple_h264_stream'] preset: veryfast
+16:03:11.663: [x264 encoder: 'simple_h264_stream'] settings:
+16:03:11.663: 	rate_control: CBR
+16:03:11.663: 	bitrate:      2500
+16:03:11.663: 	buffer size:  2500
+16:03:11.663: 	crf:          0
+16:03:11.663: 	fps_num:      30
+16:03:11.663: 	fps_den:      1
+16:03:11.663: 	width:        1152
+16:03:11.663: 	height:       720
+16:03:11.663: 	keyint:       250
+16:03:11.663: 
+16:03:11.665: libfdk_aac encoder created
+16:03:11.665: libfdk_aac bitrate: 160, channels: 2
+16:03:11.679: ==== Recording Start ===============================================
+16:03:11.679: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ensismoebius/2020-04-16 16-03-11.flv'...
+16:03:18.875: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ensismoebius/2020-04-16 16-03-11.flv' stopped
+16:03:18.875: Output 'simple_file_output': stopping
+16:03:18.875: Output 'simple_file_output': Total frames output: 192
+16:03:18.875: Output 'simple_file_output': Total drawn frames: 216
+16:03:18.876: ==== Recording Stop ================================================
+16:03:18.884: libfdk_aac encoder destroyed
+16:03:25.932: ---------------------------------
+16:03:25.932: [x264 encoder: 'simple_h264_stream'] preset: veryfast
+16:03:25.932: [x264 encoder: 'simple_h264_stream'] settings:
+16:03:25.932: 	rate_control: CBR
+16:03:25.932: 	bitrate:      2500
+16:03:25.932: 	buffer size:  2500
+16:03:25.932: 	crf:          0
+16:03:25.932: 	fps_num:      30
+16:03:25.932: 	fps_den:      1
+16:03:25.932: 	width:        1152
+16:03:25.932: 	height:       720
+16:03:25.932: 	keyint:       250
+16:03:25.932: 
+16:03:25.935: libfdk_aac encoder created
+16:03:25.935: libfdk_aac bitrate: 160, channels: 2
+16:03:25.945: ==== Recording Start ===============================================
+16:03:25.945: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ensismoebius/2020-04-16 16-03-25.flv'...
+16:51:01.633: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ensismoebius/2020-04-16 16-03-25.flv' stopped
+16:51:01.633: Output 'simple_file_output': stopping
+16:51:01.633: Output 'simple_file_output': Total frames output: 85647
+16:51:01.634: Output 'simple_file_output': Total drawn frames: 85671
+16:51:01.634: ==== Recording Stop ================================================
+16:51:01.642: libfdk_aac encoder destroyed
+19:42:56.306: adding 23 milliseconds of audio buffering, total audio buffering is now 69 milliseconds (source: Mic/Aux)
+19:42:56.306: 
+19:47:43.699: adding 23 milliseconds of audio buffering, total audio buffering is now 92 milliseconds (source: Mic/Aux)
+19:47:43.699: 
+22:20:00.821: adding 23 milliseconds of audio buffering, total audio buffering is now 116 milliseconds (source: Mic/Aux)
+22:20:00.821: 
+23:49:51.814: ==== Shutting down ==================================================
+23:49:51.858: Switched to scene '(null)'
+23:49:51.863: pulse-input: Stopped recording from 'alsa_output.pci-0000_00_14.2.analog-stereo.echo-cancel.monitor'
+23:49:51.863: pulse-input: Got 12366713 packets with 1056552683 frames
+23:49:51.863: pulse-input: Stopped recording from 'alsa_input.pci-0000_00_14.2.analog-stereo.echo-cancel'
+23:49:51.863: pulse-input: Got 3299503 packets with 1055840960 frames
+23:49:51.864: All scene data cleared
+23:49:51.864: ------------------------------------------------
+23:49:51.889: Freeing OBS context data
+23:49:51.913: [Scripting] Total detached callbacks: 0
+23:49:51.934: == Profiler Results =============================
+23:49:51.935: run_program_init: 860,888 ms
+23:49:51.935:  ┣OBSApp::AppInit: 2,808 ms
+23:49:51.935:  ┃ ┗OBSApp::InitLocale: 1,592 ms
+23:49:51.935:  ┗OBSApp::OBSInit: 831,436 ms
+23:49:51.935:    ┣obs_startup: 19,059 ms
+23:49:51.935:    ┗OBSBasic::OBSInit: 728,705 ms
+23:49:51.935:      ┣OBSBasic::InitBasicConfig: 0,145 ms
+23:49:51.935:      ┣OBSBasic::ResetAudio: 0,143 ms
+23:49:51.935:      ┣OBSBasic::ResetVideo: 153,707 ms
+23:49:51.935:      ┣OBSBasic::InitOBSCallbacks: 0,005 ms
+23:49:51.935:      ┣OBSBasic::InitHotkeys: 0,05 ms
+23:49:51.935:      ┣obs_load_all_modules: 198,171 ms
+23:49:51.935:      ┃ ┣obs_init_module(decklink-ouput-ui.so): 0,749 ms
+23:49:51.935:      ┃ ┣obs_init_module(frontend-tools.so): 134,324 ms
+23:49:51.935:      ┃ ┣obs_init_module(image-source.so): 0,006 ms
+23:49:51.935:      ┃ ┣obs_init_module(linux-alsa.so): 0,002 ms
+23:49:51.935:      ┃ ┣obs_init_module(linux-capture.so): 2,056 ms
+23:49:51.935:      ┃ ┣obs_init_module(linux-decklink.so): 0,187 ms
+23:49:51.935:      ┃ ┣obs_init_module(linux-jack.so): 0,003 ms
+23:49:51.935:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0,004 ms
+23:49:51.935:      ┃ ┣obs_init_module(linux-v4l2.so): 0,004 ms
+23:49:51.935:      ┃ ┣obs_init_module(obs-ffmpeg.so): 0,286 ms
+23:49:51.935:      ┃ ┃ ┗nvenc_check: 0,247 ms
+23:49:51.935:      ┃ ┣obs_init_module(obs-filters.so): 0,019 ms
+23:49:51.935:      ┃ ┣obs_init_module(obs-libfdk.so): 0,001 ms
+23:49:51.935:      ┃ ┣obs_init_module(obs-outputs.so): 0,004 ms
+23:49:51.935:      ┃ ┣obs_init_module(obs-transitions.so): 0,013 ms
+23:49:51.935:      ┃ ┣obs_init_module(obs-x264.so): 0,002 ms
+23:49:51.935:      ┃ ┣obs_init_module(rtmp-services.so): 0,666 ms
+23:49:51.935:      ┃ ┣obs_init_module(text-freetype2.so): 0,014 ms
+23:49:51.935:      ┃ ┗obs_init_module(vlc-video.so): 1,727 ms
+23:49:51.935:      ┣OBSBasic::ResetOutputs: 0,142 ms
+23:49:51.935:      ┣OBSBasic::CreateHotkeys: 0,032 ms
+23:49:51.935:      ┣OBSBasic::InitService: 1,449 ms
+23:49:51.935:      ┣OBSBasic::InitPrimitives: 0,334 ms
+23:49:51.935:      ┗OBSBasic::Load: 229,199 ms
+23:49:51.935: obs_hotkey_thread(25 ms): min=0,064 ms, median=0,251 ms, max=588,461 ms, 99th percentile=3,269 ms, 99,9931% below 25 ms
+23:49:51.935: audio_thread(Audio): min=0,03 ms, median=0,224 ms, max=11,291 ms, 99th percentile=1,607 ms
+23:49:51.935:  ┗receive_audio: min=0,002 ms, median=0,832 ms, max=7,745 ms, 99th percentile=1,7 ms, 0,103004 calls per parent call
+23:49:51.935:    ┣buffer_audio: min=0,001 ms, median=0,002 ms, max=3,957 ms, 99th percentile=0,004 ms
+23:49:51.935:    ┗do_encode: min=0,164 ms, median=0,826 ms, max=7,736 ms, 99th percentile=1,689 ms
+23:49:51.935:      ┗encode(simple_aac): min=0,161 ms, median=0,794 ms, max=7,536 ms, 99th percentile=1,631 ms
+23:49:51.935: obs_graphics_thread(33,3333 ms): min=0,19 ms, median=4,684 ms, max=1410,51 ms, 99th percentile=9,08 ms, 99,9888% below 33,333 ms
+23:49:51.935:  ┣tick_sources: min=0,001 ms, median=4,098 ms, max=1189,59 ms, 99th percentile=6,27 ms
+23:49:51.935:  ┣output_frame: min=0,18 ms, median=0,369 ms, max=47,475 ms, 99th percentile=2,555 ms
+23:49:51.935:  ┃ ┣gs_context(video->graphics): min=0,179 ms, median=0,368 ms, max=46,768 ms, 99th percentile=1,875 ms
+23:49:51.935:  ┃ ┃ ┣render_video: min=0,033 ms, median=0,182 ms, max=45,698 ms, 99th percentile=1,571 ms
+23:49:51.935:  ┃ ┃ ┃ ┣render_main_texture: min=0,027 ms, median=0,174 ms, max=7,964 ms, 99th percentile=0,446 ms
+23:49:51.935:  ┃ ┃ ┃ ┣render_output_texture: min=0,003 ms, median=0,042 ms, max=1,001 ms, 99th percentile=0,117 ms, 0,101876 calls per parent call
+23:49:51.935:  ┃ ┃ ┃ ┣render_convert_texture: min=0,002 ms, median=0,043 ms, max=1,828 ms, 99th percentile=0,229 ms, 0,101876 calls per parent call
+23:49:51.935:  ┃ ┃ ┃ ┗stage_output_texture: min=0 ms, median=1,102 ms, max=45,437 ms, 99th percentile=1,792 ms, 0,101876 calls per parent call
+23:49:51.935:  ┃ ┃ ┣gs_flush: min=0,032 ms, median=0,141 ms, max=7,076 ms, 99th percentile=0,526 ms
+23:49:51.935:  ┃ ┃ ┗download_frame: min=0 ms, median=0,019 ms, max=1,492 ms, 99th percentile=0,066 ms, 0,101876 calls per parent call
+23:49:51.935:  ┃ ┗output_video_data: min=0,353 ms, median=0,606 ms, max=13,558 ms, 99th percentile=1,1 ms, 0,101811 calls per parent call
+23:49:51.935:  ┗render_displays: min=0,004 ms, median=0,009 ms, max=1197,26 ms, 99th percentile=3,486 ms
+23:49:51.936: video_thread(video): min=1,211 ms, median=1,901 ms, max=14,466 ms, 99th percentile=3,435 ms
+23:49:51.936:  ┗receive_video: min=1,208 ms, median=1,895 ms, max=14,464 ms, 99th percentile=3,43 ms
+23:49:51.936:    ┗do_encode: min=1,207 ms, median=1,893 ms, max=14,462 ms, 99th percentile=3,425 ms
+23:49:51.936:      ┗encode(simple_h264_stream): min=1,169 ms, median=1,815 ms, max=14,449 ms, 99th percentile=3,247 ms
+23:49:51.936: =================================================
+23:49:51.936: == Profiler Time Between Calls ==================
+23:49:51.936: obs_hotkey_thread(25 ms): min=25,123 ms, median=25,39 ms, max=613,708 ms, 75,1128% within ±2% of 25 ms (0% lower, 24,8872% higher)
+23:49:51.936: obs_graphics_thread(33,3333 ms): min=4,375 ms, median=33,333 ms, max=1410,56 ms, 99,8921% within ±2% of 33,333 ms (0,0540662% lower, 0,0538641% higher)
+23:49:51.936: =================================================
+23:49:52.145: Number of memory leaks: 0

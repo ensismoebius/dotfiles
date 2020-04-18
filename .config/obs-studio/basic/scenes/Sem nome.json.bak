@@ -25,7 +25,7 @@
             "device_id": "default"
         },
         "sync": 0,
-        "volume": 1.1481536626815796
+        "volume": 1.0
     },
     "DesktopAudioDevice1": {
         "balance": 0.5,
@@ -117,7 +117,9 @@
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
-            "settings": {},
+            "settings": {
+                "advanced": false
+            },
             "sync": 0,
             "volume": 1.0
         },
