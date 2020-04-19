@@ -139,7 +139,7 @@ export PATH=~/.local/bin:$PATH
 # get current branch in git repo
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
-	REV=`git rev-list --left-right --count origin..$BRANCH`
+	REV=`git rev-list --left-right --count origin/$BRANCH..$BRANCH`
 
 	AHEAD=`echo $REV | awk '{print $2}'`
 	BEHIND=`echo $REV | awk '{print $1}'`
@@ -154,6 +154,7 @@ function parse_git_branch() {
 bGfB="\e[30;42m"
 bPfG="\e[42;45m"
 bPfW="\e[45;97m"
+bNfP="\e[35;49m"
 close="\e[0m"
 
-export PS1="$bGfB\u@\h\w$close$bPfG▶$close$bPfW\`parse_git_branch\`\\$ $close\n"
+export PS1="$bGfB\u@\h\w$close$bPfG▶$close$bPfW\`parse_git_branch\`\$$bNfP▶$close\n"
