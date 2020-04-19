@@ -142,11 +142,10 @@ function parse_git_branch() {
 	REV=`git rev-list --left-right --count origin/$BRANCH..$BRANCH`
 
 	AHEAD=`echo $REV | awk '{print $2}'`
-	BEHIND=`echo $REV | awk '{print $1}'`
 
 	if [ ! "${BRANCH}" == "" ]
 	then
-		echo "[${BRANCH}↑${AHEAD}↓${BEHIND}]"
+		echo "[${BRANCH}↑${AHEAD}]"
 	else
 		echo ""
 	fi
@@ -155,6 +154,6 @@ bGfB="\e[30;42m"
 bPfG="\e[42;45m"
 bPfW="\e[45;97m"
 bNfP="\e[35;49m"
-close="\e[0m"
+reset="\e[0m"
 
-export PS1="$bGfB\u@\h\w$close$bPfG▶$close$bPfW\`parse_git_branch\`\$$bNfP▶$close\n"
+export PS1="$bGfB\u\w$reset$bPfG▶$bPfW\`parse_git_branch\`\$$bNfP▶$reset\n"
