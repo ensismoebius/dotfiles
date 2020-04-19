@@ -117,7 +117,7 @@ if ! shopt -oq posix; then
 fi
 shopt -s autocd
 
-
+# Ensures to run this part only once
 if [ ! -f /tmp/resconf ]
 then
 	#Screen resolution
@@ -138,8 +138,6 @@ then
 fi
 export PATH=~/.local/bin:$PATH
 
-
-
 # get current branch in git repo
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
@@ -158,6 +156,8 @@ bGfB="\e[30;42m"
 bPfG="\e[42;45m"
 bPfW="\e[45;97m"
 bNfP="\e[35;49m"
+bBfW="\e[30;44m"
+bGfB="\e[34;42m"
 reset="\e[0m"
 
-export PS1="$bGfB\u\w$reset$bPfG▶$bPfW\`parse_git_branch\`\$$bNfP▶$reset\n"
+export PS1="$bBfW \u $bGfB▶$reset$bGfB \w $reset$bPfG▶$bPfW\`parse_git_branch\`\$$bNfP▶$reset\n"
