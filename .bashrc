@@ -139,12 +139,21 @@ export PATH=~/.local/bin:$PATH
 # get current branch in git repo
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+	REV=`git rev-list --left-right --count origin..$BRANCH`
+
+	AHEAD=`echo $REV | awk '{print $2}'`
+	BEHIND=`echo $REV | awk '{print $1}'`
+
 	if [ ! "${BRANCH}" == "" ]
 	then
-		#STAT=`parse_git_dirty`
-		echo "[${BRANCH}]"
+		echo "[${BRANCH}↑${AHEAD}↓${BEHIND}]"
 	else
 		echo ""
 	fi
 }
-export PS1="\u@\h\w\`parse_git_branch\`\\$\n"
+bGfB="\e[30;42m"
+bPfG="\e[42;45m"
+bPfW="\e[45;97m"
+close="\e[0m"
+
+export PS1="$bGfB\u@\h\w$close$bPfG▶$close$bPfW\`parse_git_branch\`\\$ $close\n"
