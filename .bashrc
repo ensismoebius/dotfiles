@@ -152,12 +152,12 @@ function parse_git_branch() {
 		echo ""
 	fi
 }
-bGfB="\e[30;42m"
-bPfG="\e[42;45m"
+bPfG="\e[32;45m"
 bPfW="\e[45;97m"
 bNfP="\e[35;49m"
 bBfW="\e[30;44m"
 bGfB="\e[34;42m"
+bGfB2="\e[30;42m"
 reset="\e[0m"
 
-export PS1="$bBfW \u $bGfB▶$reset$bGfB \w $reset$bPfG▶$bPfW\`parse_git_branch\`\$$bNfP▶$reset\n"
+export PS1="$bBfW \u $bGfB▶$bGfB2 \w $reset$bPfG▶$bPfW\`parse_git_branch\`\$$bNfP▶$reset\n"
