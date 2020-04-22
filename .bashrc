@@ -140,16 +140,27 @@ export PATH=~/.local/bin:$PATH
 
 # get current branch in git repo
 function parse_git_branch() {
-	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
-	REV=`git rev-list --left-right --count origin/$BRANCH..$BRANCH`
-
-	AHEAD=`echo $REV | awk '{print $2}'`
-
-	if [ ! "${BRANCH}" == "" ]
-	then
-		echo "[${BRANCH}↑${AHEAD}]"
-	else
-		echo ""
+	
+	# Checks if is a git repo
+	if [ -d .git ]
+       	then
+		#if yes the get the info
+		BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+		REV=`git rev-list --left-right --count origin/$BRANCH..$BRANCH`
+	
+		AHEAD=`echo $REV | awk '{print $2}'`
+	
+		if [ ! "${BRANCH}" == "" ]
+		then
+			if [ "$AHEAD" == "0" ]
+			then
+				echo "[${BRANCH}]"
+			else
+				echo "[${BRANCH}↑${AHEAD}]"
+			fi
+		else
+			echo ""
+		fi
 	fi
 }
 bPfG="\e[32;45m"
