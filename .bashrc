@@ -171,4 +171,4 @@ bGfB="\e[34;42m"
 bGfB2="\e[30;42m"
 reset="\e[0m"
 
-export PS1="$bBfW \u $bGfB▶$bGfB2 \w $reset$bPfG▶$bPfW\`parse_git_branch\`\$$bNfP▶$reset\n"
+export PS1="$bBfW \u $bGfB▶$bGfB2 \w $reset$bPfG▶$bPfW\`parse_git_branch\`\$$reset\n↳"
