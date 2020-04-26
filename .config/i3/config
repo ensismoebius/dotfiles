@@ -9,7 +9,8 @@ set $left j
 set $right semicolon
 
 # Default terminal
-set $term urxvt
+# set $term urxvt
+set $term alacritty
 
 # Default dile manager
 set $fm ranger
@@ -45,11 +46,11 @@ hide_edge_borders none
 
 # Move the dropdow window to scratchpad (aka hides)
 # this is an substitution for tilda or guake 
-for_window [instance="dropdown"] floating enable
-for_window [instance="dropdown"] resize set 1366 350
-for_window [instance="dropdown"] move scratchpad
-for_window [instance="dropdown"] border pixel 5
-for_window [instance="dropdown"] floating enable
+for_window [class="dropdown"] floating enable
+for_window [class="dropdown"] resize set 1366 350
+for_window [class="dropdown"] move scratchpad
+for_window [class="dropdown"] border pixel 5
+for_window [class="dropdown"] floating enable
 
 #######################
 #    System font      #
@@ -305,7 +306,8 @@ exec convert -resize 1440x900 -blur 10x9 ~/.wallpaper ~/.lock.png
 exec i3lock -i ~/.lock.png -c 335533 -f 
 
 # Floating terminal
-exec --no-startup-id $term -name dropdown 
+# exec --no-startup-id $term --class dropdown 
+exec $term --class dropdown 
 
 # Hides the mouse after 3 secs
 exec unclutter -idle 3 -root
