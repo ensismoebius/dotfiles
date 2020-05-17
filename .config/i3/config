@@ -301,6 +301,9 @@ bar {
 # redshift
 exec redshift
 
+# load keyboard configuration
+exec ~/.config/keyboardConfig.sh
+
 # nodm is active so we must ask for some password
 exec convert -resize 1440x900 -blur 10x9 ~/.wallpaper ~/.lock.png
 exec i3lock -i ~/.lock.png -c 335533 -f 
@@ -312,6 +315,9 @@ exec $term --class dropdown
 # Hides the mouse after 3 secs
 exec unclutter -idle 3 -root
 
+# Enables noise reduction on pulse audio
+exec pactl load-module module-echo-cancel aec_method=webrtc sink_properties=device.description="Noise_Reduction" aec_args="analog_gain_control=0\ digital_gain_control=0" 
+
 ### Bells and whistles ###
 
 # compositor
@@ -320,5 +326,3 @@ exec compton
 # wallpaper
 exec sleep 5 && feh --bg-fill ~/.wallpaper
 
-# Enables noise reduction on pulse audio
-exec pactl load-module module-echo-cancel aec_method=webrtc sink_properties=device.description="Noise_Reduction" aec_args="analog_gain_control=0\ digital_gain_control=0" 

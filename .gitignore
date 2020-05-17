@@ -202,4 +202,5 @@ dadosRedesSociais/
 .dia/
 .mysql/
 .viminfo.tmp
-
+.config/keyboardConfig.sh
+.config/obs-studio/

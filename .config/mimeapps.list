@@ -1,10 +1,11 @@
 [Added Associations]
 video/mp4=mpv.desktop;
-image/jpeg=shotwell-viewer.desktop;gimp.desktop;feh.desktop;
+image/jpeg=shotwell-viewer.desktop;sxiv.desktop;gimp.desktop;feh.desktop;
 audio/x-wav=audacity.desktop;
 application/x-httpd-php=gedit.desktop;
 text/html=org.gnome.gedit.desktop;
 application/x-extension-html=firefox.desktop;
+image/png=shotwell-viewer.desktop;sxiv.desktop;feh.desktop;
 
 [Default Applications]
 x-scheme-handler/msteams=teams.desktop
