@@ -204,3 +204,9 @@ dadosRedesSociais/
 .viminfo.tmp
 .config/keyboardConfig.sh
 .config/obs-studio/
+.config/katepartrc
+.config/katevirc
+.config/kdeglobals
+.config/kilerc
+.mycli-history
+.myclirc
