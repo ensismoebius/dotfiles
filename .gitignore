@@ -210,3 +210,7 @@ dadosRedesSociais/
 .config/kilerc
 .mycli-history
 .myclirc
+.AndroidStudio3.6/
+.config/Android Open Source Project/
+.emulator_console_auth_token
+AndroidStudioProjects/

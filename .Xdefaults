@@ -30,7 +30,7 @@
 *color15: #f1efee
 
 URxvt.intensityStyles:	false
-URxvt.background:       [80]#000000
+URxvt.background:       [90]#000000
 URxvt.depth:		32
 URxvt.font: 		xft:monospace:size=13
 URxvt.scrollBar:	false

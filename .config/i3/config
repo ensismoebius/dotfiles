@@ -18,14 +18,14 @@ set $fm ranger
 set $Mod Mod4
 
 # Workspaces names
-set $workspace1 <span foreground="#ffff00">1</span>
-set $workspace2 <span foreground="#ff0055">2</span>
-set $workspace3 <span foreground="#0055ff">3</span>
-set $workspace4 4
-set $workspace5 5
-set $workspace6 6
-set $workspace7 7
-set $workspace8 8
+set $workspace1 [1]
+set $workspace2 [2]
+set $workspace3 [3]
+set $workspace4 [4]
+set $workspace5 [5]
+set $workspace6 [6]
+set $workspace7 [7]
+set $workspace8 [8]
 
 #######################
 #       Windows       #
@@ -35,6 +35,9 @@ set $workspace8 8
 # to help out indentify who is selected
 for_window [class="^.*"] border pixel 1
 hide_edge_borders none
+
+# Android emulator floats by default
+for_window [title=".*Android Emulator.*"] floating enable
 
 # Move the dropdow window to scratchpad (aka hides)
 # This make the clipboard available for all applications without getting in the way 
@@ -301,7 +304,7 @@ bar {
 exec redshift
 
 # nodm is active so we must ask for some password
-exec convert -resize 1440x900 -blur 10x9 ~/.wallpaper ~/.lock.png
+exec convert -resize 1440x1200 -blur 10x9 ~/.wallpaper ~/.lock.png
 exec i3lock -i ~/.lock.png -c 335533 -f 
 
 # Global clipboard
