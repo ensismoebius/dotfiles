@@ -214,3 +214,6 @@ dadosRedesSociais/
 .config/Android Open Source Project/
 .emulator_console_auth_token
 AndroidStudioProjects/
+eclipse/
+*.sw*
+/.config/obs-studio
