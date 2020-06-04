@@ -18,11 +18,11 @@ set $fm ranger
 set $Mod Mod4
 
 # Workspaces names
-set $workspace1 [1]
-set $workspace2 [2]
-set $workspace3 [3]
-set $workspace4 [4]
-set $workspace5 [5]
+set $workspace1 [1-Text editors]
+set $workspace2 [2-Web related]
+set $workspace3 [3-Development]
+set $workspace4 [4-Misc]
+set $workspace5 [5-VMs]
 set $workspace6 [6]
 set $workspace7 [7]
 set $workspace8 [8]
@@ -49,7 +49,7 @@ for_window [window_type="dialog"] move position center
 for_window [window_type="splash"] floating enable
 for_window [window_type="splash"] move position center
 
-# Stops microsoft teams annoying
+# Stops microsoft teams annoying me
 for_window [title="Microsoft Teams Notification"] floating enable
 for_window [title="Notificação do Microsoft Teams"] floating enable
 
@@ -135,28 +135,6 @@ mode "$mode_resize" {
 # keyboard shortcuts  #
 #######################
 
-# notifies the i3blocks of the Caps Lock key
-bindsym --release Caps_Lock exec pkill -SIGRTMIN+10 i3blocks
-
-# use Mouse+Mod to drag floating windows to their wanted position
-floating_modifier $Mod
-
-### Programs shortcuts ###
-
-# terminal
-bindsym $Mod+Return exec $term
-
-# restart i3
-bindsym $Mod+Shift+r restart
-
-# lock i3
-bindsym $Mod+Shift+x exec import -window root /tmp/.lock.png && convert -blur 10x9 /tmp/.lock.png /tmp/.lock.png && i3lock -i /tmp/.lock.png -t -c 335533 -f 
-
-
-# dmenu (user applications are priority)
-bindsym $Mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $Mod+Shift+d exec dmenu_run
-
 ### Xorg shotcuts ###
 
 # Pulse Audio controls
@@ -176,6 +154,27 @@ bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
+### Window manager shortcuts ###
+
+# notifies the i3blocks of the Caps Lock key
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+10 i3blocks
+
+# use Mouse+Mod to drag floating windows to their wanted position
+floating_modifier $Mod
+
+# terminal
+bindsym $Mod+Return exec $term
+
+# restart i3
+bindsym $Mod+Shift+r restart
+
+# lock i3
+bindsym $Mod+Shift+x exec import -window root /tmp/.lock.png && convert -blur 10x9 /tmp/.lock.png /tmp/.lock.png && i3lock -i /tmp/.lock.png -t -c 335533 -f 
+
+# dmenu (user applications are priority)
+bindsym $Mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $Mod+Shift+d exec dmenu_run
 
 # kill focused window
 bindsym $Mod+q kill
@@ -243,7 +242,7 @@ bindsym $Mod+Shift+e exec ~/.config/i3/scripts/doPowerThings
 # Show bluetooth options
 bindsym $Mod+Shift+b exec ~/.config/i3/scripts/doBluetoothThings
 
-# Change wallpaper
+# Change wallpaper (not working still)
 bindsym $Mod+Shift+w exec ~/.config/i3/scripts/changeWallpaper 
 
 # Show dropdown terminal
@@ -331,7 +330,7 @@ exec redshift
 exec convert -resize 1440x1200 -blur 10x9 ~/.wallpaper ~/.lock.png && i3lock -i ~/.lock.png -c 335533 -f 
 
 # Floating terminal
-exec --no-startup-id $term -name floatingTerm
+exec --no-startup-id while [ 1 ]; do $term -name floatingTerm; done
 
 # Hides the mouse after 3 secs
 exec unclutter -idle 3 -root
