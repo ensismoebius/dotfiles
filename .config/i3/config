@@ -280,6 +280,7 @@ bindsym $Mod+Shift+8 move container to workspace $workspace8
 
 # Programs default workspaces
 assign [class="Firefox"] $workspace2
+assign [class="Eclipse"] $workspace3
 
 #######################
 #       i3 bars       #
@@ -291,7 +292,7 @@ set $active-bg-color		#00ff00
 set $active-text-color		#000000
 set $inactive-bg-color	 	#000000
 set $text-color			#00ff00
-set $inactive-text-color	#cccccc
+set $inactive-text-color	#7777ff
 set $urgent-bg-color		#0000aa
 set $urgent-text-color		#ffffff
 
