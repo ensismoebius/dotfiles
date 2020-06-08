@@ -304,7 +304,7 @@ client.urgent		$urgent-bg-color	$urgent-bg-color	$urgent-text-color	$indicator-c
 
 # bar
 bar {
-	separator_symbol /
+	separator_symbol " "
 	font xft:Droid Sans Mono, FontAwesome 11
 	position top
   	status_command i3blocks -c ~/.config/i3/i3blocks.conf
