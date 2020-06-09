@@ -242,8 +242,8 @@ bindsym $Mod+Shift+e exec ~/.config/i3/scripts/doPowerThings
 # Show bluetooth options
 bindsym $Mod+Shift+b exec ~/.config/i3/scripts/doBluetoothThings
 
-# Change wallpaper (not working still)
-bindsym $Mod+Shift+w exec ~/.config/i3/scripts/changeWallpaper 
+# Changes wallpaper 
+bindsym $Mod+Shift+w exec ~/.config/i3/scripts/doWallpaperThings
 
 # Show dropdown terminal
 bindsym $Mod+Control+Return [instance="floatingTerm"] scratchpad show; [instance="floatingTerm"] move position center; 
