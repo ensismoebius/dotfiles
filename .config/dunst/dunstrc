@@ -1,5 +1,5 @@
 [global]
-    font = Helvetica 8
+    font = monospace 8
  
     # allow a small subset of html markup:
     # <b>bold</b>
@@ -7,7 +7,6 @@
     # <s>strikethrough<s/>
     # <u>underline</u>
     #
-    # for a complete reference see http://developer.gnome.org/pango/stable/PangoMarkupFormat.html
     # If markup is not allowed, those tags will be stripped out of the message.
     markup = yes
  
@@ -39,7 +38,7 @@
  
     # show age of message if message is older than show_age_threshold seconds.
     # set to -1 to disable
-    show_age_threshold = 60
+    show_age_threshold = 30
  
     # split notifications into multiple lines if they don't fit into geometry
     word_wrap = yes
@@ -56,15 +55,13 @@
     # Scale small icons up to this size, set to 0 to disable. Helpful
     # for e.g. small files or high-dpi screens. In case of conflict,
     # max_icon_size takes precedence over this.
-    min_icon_size = 0
+    min_icon_size = 48
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 32
+    max_icon_size = 48
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/Gilouche/16x16/actions:/usr/share/icons/Gilouche/16x16/places:/usr/share/icons/Gilouche/16x16/status
-
-
+    icon_path = /usr/share/icons/Gilouche/48x48/actions:/usr/share/icons/Gilouche/48x48/places:/usr/share/icons/Gilouche/48x48/status:/usr/share/icons/gnome/48x48/actions:/usr/share/icons/gnome/48x48/animations:/usr/share/icons/gnome/48x48/apps:/usr/share/icons/gnome/48x48/categories:/usr/share/icons/gnome/48x48/devices:/usr/share/icons/gnome/48x48/emblems:/usr/share/icons/gnome/48x48/emotes:/usr/share/icons/gnome/48x48/mimetypes:/usr/share/icons/gnome/48x48/places:/usr/share/icons/gnome/48x48/status
  
     # the geometry of the window
     # geometry [{width}]x{height}][+/-{x}+/-{y}]

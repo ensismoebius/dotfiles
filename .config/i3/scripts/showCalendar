@@ -1,0 +1,7 @@
+#!/bin/bash
+date +%T\ %Y-%m-%d
+
+case $BLOCK_BUTTON in
+	1) notify-send --icon=stock_calendar -t 0 "$(ncal -b | cat -A | sed -E 's/\_\^H(.)/<span color="#000000" font="14px"><b>\1<\/b><\/span>/g' | sed 's/M-CM-!/á/g' | sed 's/\$//g')";;
+esac
+

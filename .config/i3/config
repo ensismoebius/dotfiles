@@ -88,11 +88,12 @@ mode "$screenshot_mode" {
 
 # Press $Mod+o to enter in the "launch mode"
 # Press esc or return to go back to default mode
-set $mode_launcher [c]-IDE, [b]rowser, [f]ile Manager, [w]ifi, [t]exstudio, [e]quation editor, [m]ount media
+set $mode_launcher [c]-IDE, [b]rowser, [f]ile Manager, [w]ifi, [t]exstudio, [e]quation editor, [m]ount media, [d]date and calendar
 bindsym $Mod+o mode "$mode_launcher"
 
 mode "$mode_launcher" {
     bindsym c exec /opt/eclipse_c/eclipse; mode "default"
+    bindsym d exec --no-startup-id ~/.config/i3/scripts/showCalendar; mode "default"
     bindsym b exec firefox; mode "default"
     bindsym t exec texstudio; mode "default"
     bindsym e exec equalx; mode "default"
@@ -170,7 +171,7 @@ bindsym $Mod+Return exec $term
 bindsym $Mod+Shift+r restart
 
 # lock i3
-bindsym $Mod+Shift+x exec import -window root /tmp/.lock.png && convert -blur 10x9 /tmp/.lock.png /tmp/.lock.png && i3lock -i /tmp/.lock.png -t -c 335533 -f 
+bindsym $Mod+Shift+x exec import -window root /tmp/.lock.png && convert -blur 10x10 /tmp/.lock.png /tmp/.lock.png && i3lock -i /tmp/.lock.png -t -c 335533 -f 
 
 # dmenu (user applications are priority)
 bindsym $Mod+d exec --no-startup-id i3-dmenu-desktop
@@ -281,7 +282,7 @@ bindsym $Mod+Shift+8 move container to workspace $workspace8
 # Programs default workspaces
 assign [class="Firefox"] $workspace2
 assign [class="Eclipse"] $workspace3
-
+assign [title="Eclipse IDE"] $workspace3
 #######################
 #       i3 bars       #
 #######################
@@ -328,7 +329,7 @@ bar {
 exec redshift
 
 # nodm is active so we must ask for some password
-exec convert -resize 1440x1200 -blur 10x9 ~/.wallpaper ~/.lock.png && i3lock -i ~/.lock.png -c 335533 -f 
+exec convert -resize 1440x1200 -blur 10x10 ~/.wallpaper ~/.lock.png && i3lock -i ~/.lock.png -c 335533 -f 
 
 # Floating terminal
 exec --no-startup-id while [ 1 ]; do $term -name floatingTerm; done
@@ -347,7 +348,6 @@ exec compton
 # wallpaper
 exec sleep 5 && feh --bg-fill ~/.wallpaper
 
-# load keyboard configuration
-# exec the file generate by
-# doKeyboardThings script
+# load keyboard configuration:
+# exec the file generate by doKeyboardThings script
 exec ~/.config/keyboardConfig.sh
