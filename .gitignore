@@ -217,3 +217,5 @@ AndroidStudioProjects/
 eclipse/
 *.sw*
 /.config/obs-studio
+/repos
+/.config/calcurse
