@@ -83,26 +83,31 @@ bindsym Print mode "$screenshot_mode"
 mode "$screenshot_mode" {
 	bindsym f exec filename=$(date +"/tmp/screenshot_%Y-%m-%d-%H:%M:%S.png") && import -window root $filename && notify-send "Copied to clipboard! Saved on $filename" && xclip -se c -t image/png -i $filename; mode "default"
 	bindsym r --release exec filename=$(date +"/tmp/screenshot_%Y-%m-%d-%H:%M:%S.png")&& import $filename && notify-send "Copied to clipboard! Saved on $filename" && xclip -se c -t image/png -i $filename; mode "default"
+
+        # back to normal: Enter or Escape
+	bindsym Escape mode "default"
+	bindsym Return mode "default"
 }
 
 
 # Press $Mod+o to enter in the "launch mode"
 # Press esc or return to go back to default mode
-set $mode_launcher [c]-IDE, [b]rowser, [f]ile Manager, [w]ifi, [t]exstudio, [e]quation editor, [m]ount media, [d]date and calendar
+set $mode_launcher [c]-IDE, [b]rowser, [f]ile Manager, [w]ifi, [t]exstudio, [e]quation editor, [m]ount media, [d]ate and calendar
 bindsym $Mod+o mode "$mode_launcher"
 
 mode "$mode_launcher" {
-    bindsym c exec /opt/eclipse_c/eclipse; mode "default"
-    bindsym d exec --no-startup-id ~/.config/i3/scripts/showCalendar; mode "default"
-    bindsym b exec firefox; mode "default"
-    bindsym t exec texstudio; mode "default"
-    bindsym e exec equalx; mode "default"
-    bindsym f exec $term -e $fm; mode "default"
-    bindsym w exec $term -e nmtui; mode "default"
-    bindsym m exec --no-startup-id udiskie -ans -f ~/.config/i3/scripts/openNewRangerWindow; mode "default"
+	bindsym c exec /opt/eclipse_c/eclipse; mode "default"
+	bindsym b exec firefox; mode "default"
+	bindsym t exec texstudio; mode "default"
+	bindsym e exec equalx; mode "default"
+	bindsym f exec $term -e $fm; mode "default"
+	bindsym w exec $term -e nmtui; mode "default"
+	bindsym d exec --no-startup-id ~/.config/i3/scripts/showCalendar 1; mode "default"
+	bindsym m exec --no-startup-id udiskie -ans -f ~/.config/i3/scripts/openNewRangerWindow; mode "default"
 
-    bindsym Escape mode "default"
-    bindsym Return mode "default"
+        # back to normal: Enter or Escape
+	bindsym Escape mode "default"
+	bindsym Return mode "default"
 }
 
 # Press $Mod+r to enter in the "resize mode" 
