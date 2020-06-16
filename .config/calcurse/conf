@@ -22,7 +22,7 @@ notification.command=notify-send --icon=stock_calendar -t 0 '\a'
 notification.notifyall=all
 notification.warning=300
 appearance.headerline=yes
-appearance.eventseparator=no
+appearance.eventseparator=yes
 appearance.dayseparator=no
 appearance.emptyline=no
 appearance.emptyday=--
