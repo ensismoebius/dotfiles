@@ -92,7 +92,7 @@ mode "$screenshot_mode" {
 
 # Press $Mod+o to enter in the "launch mode"
 # Press esc or return to go back to default mode
-set $mode_launcher [c]-IDE, [b]rowser, [f]ile Manager, [w]ifi, [t]exstudio, [e]quation editor, [m]ount media, [d]ate and calendar
+set $mode_launcher [c]-IDE, [b]rowser, [f]ile Manager, [w]ifi, [t]exstudio, [e]quation editor, [m]ount media, [d]ate and calendar, [a]genda
 bindsym $Mod+o mode "$mode_launcher"
 
 mode "$mode_launcher" {
@@ -103,7 +103,9 @@ mode "$mode_launcher" {
 	bindsym f exec $term -e $fm; mode "default"
 	bindsym w exec $term -e nmtui; mode "default"
 	bindsym d exec --no-startup-id ~/.config/i3/scripts/showCalendar 1; mode "default"
+	bindsym a exec --no-startup-id $term -e ~/.config/i3/scripts/openCalcurse; mode "default"
 	bindsym m exec --no-startup-id udiskie -ans -f ~/.config/i3/scripts/openNewRangerWindow; mode "default"
+
 
         # back to normal: Enter or Escape
 	bindsym Escape mode "default"
@@ -352,6 +354,12 @@ exec pactl load-module module-echo-cancel aec_method=webrtc sink_properties=devi
 # load keyboard configuration:
 # exec the file generate by doKeyboardThings script
 exec ~/.config/keyboardConfig.sh
+
+### Calcurse
+# Synchronize
+exec --no-startup-id sleep 120 && calcurse-caldav --config=.config/calcurse/caldav/config &> /tmp/outDav
+# Starts daemon
+exec --no-startup-id LC_ALL=en_US calcurse --daemon -D ~/.config/calcurse/ &> /tmp/outCal
 
 ### Bells and whistles ###
 

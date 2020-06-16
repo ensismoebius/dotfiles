@@ -1,0 +1,3 @@
+#!/bin/sh
+LC_ALL=en_US calcurse -D /home/ensismoebius/.config/calcurse/
+
