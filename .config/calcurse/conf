@@ -8,7 +8,7 @@ appearance.theme=magenta on default
 appearance.todoview=show-completed
 daemon.enable=yes
 daemon.log=yes
-format.inputdate=3
+format.inputdate=4
 format.notifydate=%a %F
 format.notifytime=%T
 format.outputdate=%D
@@ -18,9 +18,9 @@ general.confirmdelete=yes
 general.confirmquit=no
 general.firstdayofweek=sunday
 general.periodicsave=1
-notification.command=notify-send --icon=stock_calendar -t 0 '\a'
+notification.command=notify-send --icon=stock_calendar -t 0 "$(calcurse -D ~/.config/calcurse/ -n)"
 notification.notifyall=all
-notification.warning=300
+notification.warning=1800
 appearance.headerline=yes
 appearance.eventseparator=yes
 appearance.dayseparator=no

@@ -103,7 +103,7 @@ mode "$mode_launcher" {
 	bindsym f exec $term -e $fm; mode "default"
 	bindsym w exec $term -e nmtui; mode "default"
 	bindsym d exec --no-startup-id ~/.config/i3/scripts/showCalendar 1; mode "default"
-	bindsym a exec --no-startup-id $term -e ~/.config/i3/scripts/openCalcurse; mode "default"
+	bindsym a exec $term -e ~/.config/i3/scripts/openCalcurse; mode "default"
 	bindsym m exec --no-startup-id udiskie -ans -f ~/.config/i3/scripts/openNewRangerWindow; mode "default"
 
 
@@ -355,11 +355,14 @@ exec pactl load-module module-echo-cancel aec_method=webrtc sink_properties=devi
 # exec the file generate by doKeyboardThings script
 exec ~/.config/keyboardConfig.sh
 
-### Calcurse
+## Calcurse
 # Synchronize
-exec --no-startup-id sleep 120 && calcurse-caldav --config=~/.config/calcurse/caldav/config &> /tmp/outDav
+# exec --no-startup-id sleep 120 && calcurse-caldav --config=~/.config/calcurse/caldav/config &> /tmp/outDav
+exec --no-startup-id sleep 60 && calcurse-caldav > /tmp/outDav
+
 # Starts daemon
-exec --no-startup-id LC_ALL=en_US calcurse --daemon -D ~/.config/calcurse/ &> /tmp/outCal
+#exec --no-startup-id LC_ALL=en_US calcurse --daemon -D ~/.config/calcurse/ &> /tmp/outCal
+exec --no-startup-id calcurse --daemon > /tmp/outCal
 
 ### Bells and whistles ###
 
