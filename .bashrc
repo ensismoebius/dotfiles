@@ -122,7 +122,7 @@ fi
 shopt -s autocd
 
 # Aliases for calcurse
-alias calcurse="LC_ALL=en_US calcurse -D $HOME/.local/share/calcurse -C $HOME/.config/calcurse/"
+alias calcurse="calcurse -D $HOME/.local/share/calcurse -C $HOME/.config/calcurse"
 alias calcurse-caldav="calcurse-caldav --config=$HOME/.config/calcurse/caldav/config"
 
 # Ensures to run this part only once

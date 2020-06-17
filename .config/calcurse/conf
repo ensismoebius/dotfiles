@@ -3,22 +3,22 @@ appearance.compactpanels=yes
 appearance.defaultpanel=appointments
 appearance.layout=3
 appearance.notifybar=yes
-appearance.sidebarwidth=0
-appearance.theme=magenta on default
+appearance.sidebarwidth=6
+appearance.theme=none
 appearance.todoview=show-completed
 daemon.enable=yes
 daemon.log=yes
 format.inputdate=4
 format.notifydate=%a %F
 format.notifytime=%T
-format.outputdate=%D
+format.outputdate=%F
 general.autogc=yes
 general.autosave=yes
 general.confirmdelete=yes
-general.confirmquit=no
+general.confirmquit=yes
 general.firstdayofweek=sunday
 general.periodicsave=1
-notification.command=notify-send --icon=stock_calendar -t 0 "$(calcurse -D ~/.config/calcurse/ -n)"
+notification.command=notify-send --icon=stock_calendar -t 0 "$(calcurse -n)"
 notification.notifyall=all
 notification.warning=1800
 appearance.headerline=yes

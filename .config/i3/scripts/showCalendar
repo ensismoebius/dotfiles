@@ -3,7 +3,7 @@
 function notify {
 	calendar=$(ncal -b | cat -A | sed -E 's/\_\^H(.)/<span color="#000000" font="14px"><b>\1<\/b><\/span>/g' | sed 's/M-CM-!/á/g' | sed 's/\$//g')
 
-	appointments=$(calcurse -d 3 --format-apt=' - %m (%S → %E)\n' --format-recur-apt=' - %m (%S → %E)\n' | sed 's/*/-/'| sed -E 's/(..\/..\/..:)/<span color="#000055" font="14px"><b>\1<\/b><\/span>/')
+	appointments=$(calcurse -d 3 --format-apt=' - %m (%S → %E)\n' --format-recur-apt=' - %m (%S → %E)\n' | sed 's/*/-/'| sed -E 's/(.*-..-.*:)/<span color="#000055" font="14px"><b>\1<\/b><\/span>/')
 
 	todos=$(calcurse -t --format-todo '(%p) %m\n' | sed -E 's/(.*:)/<span color="#000055" font="14px"><b>\1<\/b><\/span>/')
 
