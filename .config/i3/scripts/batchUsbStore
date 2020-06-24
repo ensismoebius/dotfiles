@@ -1,0 +1,7 @@
+destiny=$2
+
+# Selection dialog on which user must choose where to save the files
+fileDestiny=$(dialog --title "Select the files you want to send" --fselect "$PWD" 10 70 --stdout)
+
+
+notify-send $1 $2

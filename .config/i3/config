@@ -18,11 +18,11 @@ set $fm ranger
 set $Mod Mod4
 
 # Workspaces names
-set $workspace1 [1-Text editors]
+set $workspace1 [1-Misc]
 set $workspace2 [2-Web related]
 set $workspace3 [3-Development]
-set $workspace4 [4-Misc]
-set $workspace5 [5-VMs]
+set $workspace4 [4-Vms]
+set $workspace5 [5]
 set $workspace6 [6]
 set $workspace7 [7]
 set $workspace8 [8]
@@ -92,7 +92,7 @@ mode "$screenshot_mode" {
 
 # Press $Mod+o to enter in the "launch mode"
 # Press esc or return to go back to default mode
-set $mode_launcher [c]-IDE, [b]rowser, [f]ile Manager, [w]ifi, [t]exstudio, [e]quation editor, [m]ount media, [d]ate and calendar, [a]genda
+set $mode_launcher [c]-IDE, [b]rowser, [f]ile Manager, [w]ifi, [t]exstudio, [e]quation editor, [m]ount media, [d]ate and calendar, [a]genda, batch store in [u]sb drives
 bindsym $Mod+o mode "$mode_launcher"
 
 mode "$mode_launcher" {
@@ -105,7 +105,7 @@ mode "$mode_launcher" {
 	bindsym d exec --no-startup-id ~/.config/i3/scripts/showCalendar 1; mode "default"
 	bindsym a exec $term -e ~/.config/i3/scripts/openCalcurse; mode "default"
 	bindsym m exec --no-startup-id udiskie -ans -f ~/.config/i3/scripts/openNewRangerWindow; mode "default"
-
+	bindsym u exec --no-startup-id udiskie --notify-command "$term -e ~/.config/i3/scripts/batchUsbStore {event} {mount_path}"; mode "default"
 
         # back to normal: Enter or Escape
 	bindsym Escape mode "default"

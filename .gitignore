@@ -219,3 +219,7 @@ eclipse/
 /.config/obs-studio
 /repos
 /.config/calcurse
+*.sv*
+*.mscz
+Documents/
+*.mscz,
