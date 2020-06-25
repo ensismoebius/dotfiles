@@ -104,8 +104,8 @@ mode "$mode_launcher" {
 	bindsym w exec $term -e nmtui; mode "default"
 	bindsym d exec --no-startup-id ~/.config/i3/scripts/showCalendar 1; mode "default"
 	bindsym a exec $term -e ~/.config/i3/scripts/openCalcurse; mode "default"
+	bindsym u exec $term -e ~/.config/i3/scripts/batchUsbStore; mode "default"
 	bindsym m exec --no-startup-id udiskie -ans -f ~/.config/i3/scripts/openNewRangerWindow; mode "default"
-	bindsym u exec --no-startup-id udiskie --notify-command "$term -e ~/.config/i3/scripts/batchUsbStore {event} {mount_path}"; mode "default"
 
         # back to normal: Enter or Escape
 	bindsym Escape mode "default"
