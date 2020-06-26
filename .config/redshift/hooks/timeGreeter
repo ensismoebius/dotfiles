@@ -1,0 +1,5 @@
+#!/bin/bash
+case $1 in
+    period-changed)
+        exec notify-send "Redshift" "Good $3 !"
+esac

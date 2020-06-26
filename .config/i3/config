@@ -337,7 +337,7 @@ bar {
 ### Utilities ###
 
 # redshift
-exec redshift
+exec redshift -c ~/.config/redshift/redshift.conf
 
 # nodm is active so we must ask for some password
 exec convert -resize 1440x1200 -blur 10x10 ~/.wallpaper ~/.lock.png && i3lock -i ~/.lock.png -c 335533 -f 
