@@ -62,7 +62,7 @@
     max_icon_size = 48
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/Gilouche/48x48/actions:/usr/share/icons/Gilouche/48x48/places:/usr/share/icons/Gilouche/48x48/status:/usr/share/icons/gnome/48x48/actions:/usr/share/icons/gnome/48x48/animations:/usr/share/icons/gnome/48x48/apps:/usr/share/icons/gnome/48x48/categories:/usr/share/icons/gnome/48x48/devices:/usr/share/icons/gnome/48x48/emblems:/usr/share/icons/gnome/48x48/emotes:/usr/share/icons/gnome/48x48/mimetypes:/usr/share/icons/gnome/48x48/places:/usr/share/icons/gnome/48x48/status
+    icon_path =/usr/share/icons/breeze-dark/actions:/usr/share/icons/breeze-dark/applets:/usr/share/icons/breeze-dark/devices:/usr/share/icons/breeze-dark/animations:/usr/share/icons/breeze-dark/apps:/usr/share/icons/breeze-dark/categories:/usr/share/icons/breeze-dark/emblems:/usr/share/icons/breeze-dark/emotes:/usr/share/icons/breeze-dark/mimetypes:/usr/share/icons/breeze-dark/places:/usr/share/icons/breeze-dark/preferences:/usr/share/icons/breeze-dark/status
  
     # the geometry of the window
     # geometry [{width}]x{height}][+/-{x}+/-{y}]
