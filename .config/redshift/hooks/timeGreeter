@@ -1,5 +1,5 @@
 #!/bin/bash
 case $1 in
     period-changed)
-        exec notify-send "Redshift" "Good $3!"
+        exec notify-send -t 0 --icon=evolution-calendar "Redshift" "Good $3!"
 esac

@@ -7,7 +7,7 @@ function notify {
 
 	todos=$(calcurse -t --format-todo '(%p) %m\n' | sed -E 's/(.*:)/<span color="#000055" font="14px"><b>\1<\/b><\/span>/')
 
-	notify-send --icon=stock_calendar -t 0 " " "$calendar
+	notify-send --icon=evolution-calendar -t 0 " " "$calendar
 $todos
 
 $appointments"

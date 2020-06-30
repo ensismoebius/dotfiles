@@ -357,11 +357,9 @@ exec ~/.config/keyboardConfig.sh
 
 ## Calcurse
 # Synchronize
-# exec --no-startup-id sleep 120 && calcurse-caldav --config=~/.config/calcurse/caldav/config &> /tmp/outDav
 exec --no-startup-id sleep 60 && calcurse-caldav > /tmp/outDav
 
 # Starts daemon
-#exec --no-startup-id LC_ALL=en_US calcurse --daemon -D ~/.config/calcurse/ &> /tmp/outCal
 exec --no-startup-id calcurse --daemon > /tmp/outCal
 
 ### Bells and whistles ###

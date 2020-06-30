@@ -8,7 +8,9 @@ application/x-extension-html=firefox.desktop;
 image/png=shotwell-viewer.desktop;sxiv.desktop;feh.desktop;
 application/x-wine-extension-appref-ms=gedit.desktop;
 application/x-python-bytecode=gedit.desktop;
+application/x-wine-extension-ini=org.gnome.gedit.desktop;
 
 [Default Applications]
 x-scheme-handler/msteams=teams.desktop
 x-scheme-handler/eclipse+installer=_home_ensismoebius_Downloads_eclipse-installer_.desktop
+x-scheme-handler/eclipse+command x-scheme-handler/eclipse+mpc=_opt_eclipse_c_.desktop

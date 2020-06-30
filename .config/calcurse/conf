@@ -18,7 +18,7 @@ general.confirmdelete=yes
 general.confirmquit=no
 general.firstdayofweek=sunday
 general.periodicsave=1
-notification.command=notify-send --icon=stock_calendar -t 0 "$(calcurse -n)"
+notification.command=notify-send --icon=evolution-calendar -t 0 "$(calcurse -n)"
 notification.notifyall=all
 notification.warning=1800
 appearance.headerline=yes
