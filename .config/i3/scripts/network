@@ -11,7 +11,7 @@ do
 
 	if [ "$statuz" == "100" ]
 	then
-		activeNetwork="$activeNetwork [$icon] $name - $addrez"
+		activeNetwork="$activeNetwork $icon $name - $addrez"
 	fi
 done
 

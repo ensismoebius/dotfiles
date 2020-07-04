@@ -14,7 +14,7 @@ then
 	echo
 	echo "#000000"
 else
-	echo  $lefperc/$rigperc
+	echo $lefperc/$rigperc
 	echo
 	if (( $(echo "$lefperc > 1" | bc) ))
 	then
