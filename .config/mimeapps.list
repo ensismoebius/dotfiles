@@ -9,6 +9,7 @@ image/png=shotwell-viewer.desktop;sxiv.desktop;feh.desktop;
 application/x-wine-extension-appref-ms=gedit.desktop;
 application/x-python-bytecode=gedit.desktop;
 application/x-wine-extension-ini=org.gnome.gedit.desktop;
+audio/midi=timidity.desktop;
 
 [Default Applications]
 x-scheme-handler/msteams=teams.desktop
