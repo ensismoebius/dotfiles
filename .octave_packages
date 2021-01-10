@@ -1,4 +1,4 @@
-# Created by Octave 4.2.2, Thu Mar 19 16:02:28 2020 -03 <ensismoebius@sabugo>
+# Created by Octave 5.2.0, Thu Jul 23 07:34:56 2020 -03 <ensismoebius@sabugo>
 # name: local_packages
 # type: cell
 # rows: 1
@@ -7,7 +7,7 @@
 # type: scalar struct
 # ndims: 2
  1 1
-# length: 14
+# length: 13
 # name: name
 # type: sq_string
 # elements: 1
@@ -125,11 +125,6 @@ http://ltfat.github.io/
 # elements: 1
 # length: 37
 /home/ensismoebius/octave/ltfat-2.3.1
-
-
-# name: loaded
-# type: bool
-0
 
 
 

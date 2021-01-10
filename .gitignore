@@ -223,3 +223,6 @@ eclipse/
 *.mscz
 Documents/
 *.mscz,
+.conan
+Applicattions/
+VirtualBoxVms/

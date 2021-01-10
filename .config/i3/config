@@ -69,7 +69,7 @@ for_window [instance="floatingTerm"] border pixel 5
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font xft:Droid Sans Mono, FontAwesome 11
+font xft:Droid Sans Mono, Linux Libertine Initials
 
 ################################
 # i3 Modes and modes shortcuts #
@@ -361,6 +361,9 @@ exec --no-startup-id sleep 60 && calcurse-caldav > /tmp/outDav
 
 # Starts daemon
 exec --no-startup-id calcurse --daemon > /tmp/outCal
+
+## Firefox
+exec firefox
 
 ### Bells and whistles ###
 

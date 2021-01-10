@@ -10,8 +10,12 @@ application/x-wine-extension-appref-ms=gedit.desktop;
 application/x-python-bytecode=gedit.desktop;
 application/x-wine-extension-ini=org.gnome.gedit.desktop;
 audio/midi=timidity.desktop;
+application/zip=org.gnome.FileRoller.desktop;firefox.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice7.0-writer.desktop;
+text/x-c++src=org.gnome.gedit.desktop;
+application/xml=org.gnome.gedit.desktop;
 
 [Default Applications]
 x-scheme-handler/msteams=teams.desktop
 x-scheme-handler/eclipse+installer=_home_ensismoebius_Downloads_eclipse-installer_.desktop
-x-scheme-handler/eclipse+command x-scheme-handler/eclipse+mpc=_opt_eclipse_c_.desktop
+x-scheme-handler/eclipse+command x-scheme-handler/eclipse+mpc=_opt_eclipse_rust_eclipse_.desktop

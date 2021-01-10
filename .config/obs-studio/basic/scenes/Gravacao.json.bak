@@ -1,36 +1,4 @@
 {
-    "AuxAudioDevice1": {
-        "balance": 0.5,
-        "deinterlace_field_order": 0,
-        "deinterlace_mode": 0,
-        "enabled": true,
-        "flags": 0,
-        "hotkeys": {
-            "libobs.mute": [],
-            "libobs.push-to-mute": [],
-            "libobs.push-to-talk": [],
-            "libobs.unmute": []
-        },
-        "id": "pulse_input_capture",
-        "mixers": 255,
-        "monitoring_type": 0,
-        "muted": false,
-        "name": "Mic/Aux",
-        "prev_ver": 419430403,
-        "private_settings": {
-            "mixer_hidden": true
-        },
-        "push-to-mute": false,
-        "push-to-mute-delay": 0,
-        "push-to-talk": false,
-        "push-to-talk-delay": 0,
-        "settings": {
-            "device_id": "default"
-        },
-        "sync": 0,
-        "versioned_id": "pulse_input_capture",
-        "volume": 1.0
-    },
     "DesktopAudioDevice1": {
         "balance": 0.5,
         "deinterlace_field_order": 0,
@@ -61,8 +29,8 @@
         "versioned_id": "pulse_output_capture",
         "volume": 1.0
     },
-    "current_program_scene": "OldPC - Ctrl+F4",
-    "current_scene": "OldPC - Ctrl+F4",
+    "current_program_scene": "Cena principal - Ctrl+F1",
+    "current_scene": "Cena principal - Ctrl+F1",
     "current_transition": "Luma Wipe",
     "groups": [],
     "modules": {
@@ -124,250 +92,10 @@
             "name": "Toasty - Ctrl+F2"
         },
         {
-            "name": "GitHub - Ctrl+F3"
-        },
-        {
-            "name": "OldPC - Ctrl+F4"
+            "name": "Congratrs - Ctrl+F3"
         }
     ],
     "sources": [
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "filters": [
-                {
-                    "balance": 0.5,
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "crop_filter",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Recortar/Preencher",
-                    "prev_ver": 419430403,
-                    "private_settings": {},
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "left": 200,
-                        "right": 238
-                    },
-                    "sync": 0,
-                    "versioned_id": "crop_filter",
-                    "volume": 1.0
-                },
-                {
-                    "balance": 0.5,
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "obs-stream-effects-filter-transform",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "3D Transform",
-                    "prev_ver": 419430403,
-                    "private_settings": {},
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "Commit": "e343e4cb",
-                        "Filter.Transform.Camera": 1,
-                        "Filter.Transform.Camera.FieldOfView": 116.93000000000001,
-                        "Filter.Transform.Rotation.X": 0.089999999999999997,
-                        "Filter.Transform.Rotation.Y": -2.6099999999999999,
-                        "Filter.Transform.Rotation.Z": 11.300000000000001,
-                        "Filter.Transform.Shear.X": -9.5899999999999999,
-                        "Filter.Transform.Shear.Y": 1.3700000000000001,
-                        "Version": 34359738368
-                    },
-                    "sync": 0,
-                    "versioned_id": "obs-stream-effects-filter-transform",
-                    "volume": 1.0
-                }
-            ],
-            "flags": 0,
-            "hotkeys": {},
-            "id": "xshm_input",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Tela2",
-            "prev_ver": 419430403,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {},
-            "sync": 0,
-            "versioned_id": "xshm_input",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "oldPc",
-            "prev_ver": 419430403,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "/home/ensismoebius/videos/vlog/arte/linux_pc_velho_1.png"
-            },
-            "sync": 0,
-            "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [
-                    {
-                        "control": true,
-                        "key": "OBS_KEY_F4"
-                    }
-                ],
-                "libobs.hide_scene_item.Microfone": [],
-                "libobs.hide_scene_item.Tela2": [],
-                "libobs.hide_scene_item.oldPc": [],
-                "libobs.show_scene_item.Microfone": [],
-                "libobs.show_scene_item.Tela2": [],
-                "libobs.show_scene_item.oldPc": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "OldPC - Ctrl+F4",
-            "prev_ver": 419430403,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 6,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": true,
-                        "name": "Microfone",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 6,
-                        "locked": true,
-                        "name": "Tela2",
-                        "pos": {
-                            "x": 136.0,
-                            "y": -99.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.99600797891616821,
-                            "y": 0.995555579662323
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": true,
-                        "name": "oldPc",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.9277108907699585,
-                            "y": 1.9282137155532837
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "versioned_id": "scene",
-            "volume": 1.0
-        },
         {
             "balance": 0.5,
             "deinterlace_field_order": 0,
@@ -386,7 +114,7 @@
             },
             "id": "ffmpeg_source",
             "mixers": 255,
-            "monitoring_type": 1,
+            "monitoring_type": 2,
             "muted": false,
             "name": "miau",
             "prev_ver": 419430403,
@@ -408,31 +136,6 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "github",
-            "prev_ver": 419430403,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "/home/ensismoebius/videos/vlog/arte/github.png"
-            },
-            "sync": 0,
-            "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [
                     {
@@ -440,20 +143,18 @@
                         "key": "OBS_KEY_F3"
                     }
                 ],
+                "libobs.hide_scene_item.Desktop": [],
                 "libobs.hide_scene_item.Microfone": [],
-                "libobs.hide_scene_item.Tela": [],
-                "libobs.hide_scene_item.github": [],
                 "libobs.hide_scene_item.miau": [],
+                "libobs.show_scene_item.Desktop": [],
                 "libobs.show_scene_item.Microfone": [],
-                "libobs.show_scene_item.Tela": [],
-                "libobs.show_scene_item.github": [],
                 "libobs.show_scene_item.miau": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "GitHub - Ctrl+F3",
+            "name": "Congratrs - Ctrl+F3",
             "prev_ver": 419430403,
             "private_settings": {},
             "push-to-mute": false,
@@ -462,7 +163,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 6,
+                "id_counter": 9,
                 "items": [
                     {
                         "align": 5,
@@ -477,9 +178,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 1,
-                        "locked": true,
-                        "name": "Tela",
+                        "id": 9,
+                        "locked": false,
+                        "name": "Desktop",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -489,64 +190,6 @@
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": true,
-                        "name": "Microfone",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 5,
-                        "locked": true,
-                        "name": "github",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 516.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.40736478567123413,
-                            "y": 0.40764331817626953
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -579,6 +222,35 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 7,
+                        "locked": false,
+                        "name": "Microfone",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
                     }
                 ]
             },
@@ -599,10 +271,10 @@
                         "key": "OBS_KEY_F1"
                     }
                 ],
+                "libobs.hide_scene_item.Desktop": [],
                 "libobs.hide_scene_item.Microfone": [],
-                "libobs.hide_scene_item.Tela": [],
-                "libobs.show_scene_item.Microfone": [],
-                "libobs.show_scene_item.Tela": []
+                "libobs.show_scene_item.Desktop": [],
+                "libobs.show_scene_item.Microfone": []
             },
             "id": "scene",
             "mixers": 0,
@@ -617,7 +289,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 6,
+                "id_counter": 16,
                 "items": [
                     {
                         "align": 5,
@@ -632,9 +304,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 2,
-                        "locked": true,
-                        "name": "Tela",
+                        "id": 10,
+                        "locked": false,
+                        "name": "Microfone",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -661,9 +333,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 3,
-                        "locked": true,
-                        "name": "Microfone",
+                        "id": 15,
+                        "locked": false,
+                        "name": "Desktop",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -689,86 +361,6 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
-            "id": "xshm_input",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Tela",
-            "prev_ver": 419430403,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "advanced": false
-            },
-            "sync": 0,
-            "versioned_id": "xshm_input",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "filters": [
-                {
-                    "balance": 0.5,
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "noise_suppress_filter",
-                    "mixers": 255,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Redução de ruídos",
-                    "prev_ver": 419430403,
-                    "private_settings": {},
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {},
-                    "sync": 0,
-                    "versioned_id": "noise_suppress_filter",
-                    "volume": 1.0
-                }
-            ],
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "pulse_input_capture",
-            "mixers": 255,
-            "monitoring_type": 1,
-            "muted": false,
-            "name": "Microfone",
-            "prev_ver": 419430403,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "device_id": "alsa_input.pci-0000_00_14.2.analog-stereo"
-            },
-            "sync": 0,
-            "versioned_id": "pulse_input_capture",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [
                     {
@@ -776,12 +368,12 @@
                         "key": "OBS_KEY_F2"
                     }
                 ],
+                "libobs.hide_scene_item.Desktop": [],
                 "libobs.hide_scene_item.Microfone": [],
-                "libobs.hide_scene_item.Tela": [],
                 "libobs.hide_scene_item.Toasty": [],
                 "libobs.hide_scene_item.Toasty-Audio": [],
+                "libobs.show_scene_item.Desktop": [],
                 "libobs.show_scene_item.Microfone": [],
-                "libobs.show_scene_item.Tela": [],
                 "libobs.show_scene_item.Toasty": [],
                 "libobs.show_scene_item.Toasty-Audio": []
             },
@@ -798,7 +390,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 6,
+                "id_counter": 9,
                 "items": [
                     {
                         "align": 5,
@@ -813,38 +405,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 2,
-                        "locked": true,
-                        "name": "Tela",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": true,
-                        "name": "Microfone",
+                        "id": 9,
+                        "locked": false,
+                        "name": "Desktop",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -872,7 +435,7 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 5,
-                        "locked": true,
+                        "locked": false,
                         "name": "Toasty",
                         "pos": {
                             "x": 1135.0,
@@ -901,8 +464,37 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 6,
-                        "locked": true,
+                        "locked": false,
                         "name": "Toasty-Audio",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 7,
+                        "locked": false,
+                        "name": "Microfone",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -965,7 +557,7 @@
             },
             "id": "ffmpeg_source",
             "mixers": 255,
-            "monitoring_type": 1,
+            "monitoring_type": 2,
             "muted": false,
             "name": "Toasty-Audio",
             "prev_ver": 419430403,
@@ -980,6 +572,84 @@
             "sync": 0,
             "versioned_id": "ffmpeg_source",
             "volume": 0.14402545988559723
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "filters": [
+                {
+                    "balance": 0.5,
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "noise_suppress_filter",
+                    "mixers": 255,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Redução de ruídos",
+                    "prev_ver": 419430403,
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {},
+                    "sync": 0,
+                    "versioned_id": "noise_suppress_filter",
+                    "volume": 1.0
+                }
+            ],
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "pulse_input_capture",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Microfone",
+            "prev_ver": 419430403,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "device_id": "alsa_input.pci-0000_00_14.2.analog-stereo"
+            },
+            "sync": 0,
+            "versioned_id": "pulse_input_capture",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "xshm_input",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Desktop",
+            "prev_ver": 419430403,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {},
+            "sync": 0,
+            "versioned_id": "xshm_input",
+            "volume": 1.0
         }
     ],
     "transition_duration": 300,
