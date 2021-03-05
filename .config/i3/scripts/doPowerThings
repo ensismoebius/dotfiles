@@ -1,5 +1,5 @@
 #!/bin/bash
-option=$(echo -e "Nothing\nSleep\nPoweroff\nReboot" | dmenu -i -p "Choose your destiny!!" -nb red)
+option=$(echo -e "Nothing\nSleep\nPoweroff\nReboot" | LANG="pt_PT.UTF-8" dmenu -i -p "Choose your destiny!!" -nb red)
 
 case $option in 
 	Poweroff) poweroff;;

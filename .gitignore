@@ -226,3 +226,11 @@ Documents/
 .conan
 Applicattions/
 VirtualBoxVms/
+.config/GIMP/
+.config/composer/
+.nbi/
+.netbeans/
+.texlive2019/
+.viminfz.tmp
+netbeans-12.2/
+.config/filezilla/

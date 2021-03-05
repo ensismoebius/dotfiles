@@ -9,7 +9,7 @@ set $left j
 set $right semicolon
 
 # Default terminal
-set $term urxvt
+set $term LANG="pt_PT.UTF-8" urxvt
 
 # Default dile manager
 set $fm ranger
@@ -181,8 +181,8 @@ bindsym $Mod+Shift+r restart
 bindsym $Mod+Shift+x exec import -window root /tmp/.lock.png && convert -blur 10x10 /tmp/.lock.png /tmp/.lock.png && i3lock -i /tmp/.lock.png -t -c 335533 -f 
 
 # dmenu (user applications are priority)
-bindsym $Mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $Mod+Shift+d exec dmenu_run
+bindsym $Mod+d exec --no-startup-id LANG="pt_PT.UTF-8" i3-dmenu-desktop
+bindsym $Mod+Shift+d exec LANG="pt_PT.UTF-8" dmenu_run
 
 # kill focused window
 bindsym $Mod+q kill

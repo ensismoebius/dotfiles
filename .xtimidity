@@ -1,0 +1,16 @@
+set RepeatPlay 0
+set ShufflePlay 0
+set ExtOptions 47
+set ChorusOption 1
+set CurVol 70
+set Showdotfiles 0
+set DefaultDir /home/ensismoebius
+set Disp:trace 0
+set Disp:text 1
+set Tooltips 1
+set AutoStart 1
+set AutoExit 0
+set ConfirmExit 0
+set SaveList 1
+set SaveConfigOnExit 1
+set File /tmp/mozilla_ensismoebius0/368106.mid
