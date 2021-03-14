@@ -238,6 +238,9 @@ bindsym $Mod+Shift+space floating toggle
 # show keyboard layout options
 bindsym $Mod+space exec ~/.config/i3/scripts/doKeyboardThings
 
+# show google translation dmenu
+bindsym $Mod+t exec ~/.config/i3/scripts/doTranslationThings
+
 # focus the parent container
 bindsym $Mod+a focus parent
 
