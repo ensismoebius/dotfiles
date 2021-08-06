@@ -234,3 +234,20 @@ VirtualBoxVms/
 .viminfz.tmp
 netbeans-12.2/
 .config/filezilla/
+workspaces/
+.config/Code/
+.config/LanguageTool/
+.config/Visual Studio Live Share/
+.config/droidcam
+.config/electron/
+.config/font-manager/
+.config/fontconfig/
+.config/kconf_updaterc
+.config/kdenlive-layoutsrc
+.config/kwalletrc
+.gitmodules
+.languagetool.cfg
+.vscode/
+Android/
+*.mp4
+javaServers/
