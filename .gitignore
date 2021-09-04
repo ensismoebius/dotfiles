@@ -25,6 +25,12 @@ zoomus.conf
 *.swp
 *.swo
 *.save
+*.mkv
+*.txt
+*.png
+*.bmp
+*.gif
+*.jpg
 .ICEauthority
 .Xauthority
 .dbus/
@@ -251,3 +257,6 @@ workspaces/
 Android/
 *.mp4
 javaServers/
+.jdks/
+.mplayer/
+.config/JetBrains/
