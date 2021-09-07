@@ -260,3 +260,4 @@ javaServers/
 .jdks/
 .mplayer/
 .config/JetBrains/
+.config/ibus/
