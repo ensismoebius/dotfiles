@@ -16,6 +16,7 @@ text/x-c++src=org.gnome.gedit.desktop;
 application/xml=org.gnome.gedit.desktop;
 video/x-matroska=mpv.desktop;vlc.desktop;
 text/x-tex=texstudio.desktop;
+application/pdf=libreoffice-draw.desktop;
 
 [Default Applications]
 x-scheme-handler/msteams=teams.desktop
