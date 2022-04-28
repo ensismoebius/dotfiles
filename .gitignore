@@ -115,7 +115,7 @@ codigosFonteHistoricos/
 .p2/
 Downloads/
 octave-workspace
-.swm
+.sw*
 .swl
 .debug/
 .gradle/
@@ -183,3 +183,4 @@ anotacoes.txt
 devedores/
 entregar/
 .config/nvim/plugged/
+.dotfiles
