@@ -258,6 +258,9 @@ Android/
 *.mp4
 javaServers/
 .jdks/
-.mplayer/
-.config/JetBrains/
 .config/ibus/
+.fontconfig/
+StudioProjects/
+netbeans-13/
+Área\ de\ Trabalho/
+.thunderbird/
