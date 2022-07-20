@@ -30,11 +30,11 @@
 *color15: #f1efee
 
 URxvt.intensityStyles:	false
-URxvt.background:       [80]#000000
+URxvt.background:       [90]#000000
 URxvt.depth:		32
-URxvt.font: 		xft:monospace:size=13, xft:Iosevka:size=13:hinting=false
+URxvt.font: 		xft:DroidSansMono\ Nerd\ Font\ Mono:size=12
 URxvt.scrollBar:	false
-URxvt.cursorColor:	green
+URxvt.cursorColor:	white
 
 !! Extensions
 URxvt.perl-ext-common:	default,matcher,resize-font,keyboard-select
@@ -52,6 +52,14 @@ URxvt.resize-font.bigger:	C-Up
 !! Matcher
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button:	1
+
+!! Disables iso14755 mode yellow box
+URxvt.iso14755: false
+
+!!Disables default key binding for copy and paste
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+
 !!Change copy and paste keys
-URxvt.keysym.Control-p: eval:paste_clipboard
-URxvt.keysym.Control-y: eval:selection_to_clipboard
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard

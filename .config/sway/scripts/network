@@ -1,0 +1,27 @@
+#!/bin/bash
+devices=$(nmcli device show | grep GENERAL.DEVICE | awk '{print $2}')
+for device in $devices
+do 
+	data=$(nmcli device show $device | egrep "(IP4.ADDRESS|STATE)" | awk '{print $2}')
+
+	statuz=$(echo $data | awk '{print $1}')
+	addrez=$(echo $data | awk '{print $2}')
+	icon=$(nmcli device wifi list ifname $device 2>/dev/null | grep '*' | awk '{print $9}' )
+	name=$(iwconfig wlx503eaab65e33 | grep ESSID | sed 's/.*ESSID://' | sed 's/"//g')
+
+	if [ "$statuz" == "100" ]
+	then
+		activeNetwork="$activeNetwork $icon $name - $addrez"
+	fi
+done
+
+if [ "$activeNetwork" == "" ]
+then
+	echo  No wifi
+	echo
+	echo "#ff0000"
+else
+	echo $activeNetwork
+	echo
+	echo "#00ffff"
+fi

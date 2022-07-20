@@ -8,12 +8,14 @@ case $- in
       *) return;;
 esac
 
-# don't put duplicate lines or lines starting with space in the history.
-# See bash(1) for more options
-HISTCONTROL=ignoreboth
+# Avoid duplicates
+HISTCONTROL=ignoredups:erasedups  
 
 # append to the history file, don't overwrite it
 shopt -s histappend
+
+# After each command, append to the history file and reread it
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
@@ -115,4 +117,45 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Enables auto cd
 shopt -s autocd
+
+# Aliases for calcurse
+alias calcurse="calcurse -D $HOME/.local/share/calcurse -C $HOME/.config/calcurse"
+alias calcurse-caldav="calcurse-caldav --config=$HOME/.config/calcurse/caldav/config"
+
+export PATH=~/.local/bin:$PATH
+
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles.git/ --work-tree=$HOME'
+
+bPfG="\e[32;45m"
+bPfW="\e[45;97m"
+bNfP="\e[35;49m"
+bBfW="\e[30;44m"
+bGfB="\e[34;42m"
+bGfB2="\e[30;42m"
+reset="\e[0m"
+
+export PS1="$bBfW \u $bGfB▶$bGfB2 \w $reset$bPfG▶$bPfW\`parse_git_branch\`\$$reset \n↳"
+
+## For wayland
+#export MOZ_ENABLE_WAYLAND=1
+#export QT_QPA_PLATFORM=wayland-egl
+## For gnome
+#export QT_QPA_PLATFORM=xcb
+#export XDG_SESSION_TYPE=gnome
+
+### Any
+#export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+#export ECORE_EVAS_ENGINE=wayland_egl
+#export ELM_ENGINE=wayland_egl
+#export SDL_VIDEODRIVER=wayland
+#export XDG_WM_NON_REPARENTING=1
+#export _JAVA_AWT_WM_NONREPARENTING=1
+. "$HOME/.cargo/env"
+

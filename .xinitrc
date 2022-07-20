@@ -1,1 +1,1 @@
-startx /usr/bin/i3
+#startx /usr/bin/i3

@@ -1,7 +1,12 @@
 # Este é o ficheiro de configuração do Git do utilizador.
 [user]
 # Adapte e retire os comentários das seguintes linhas:
-name = Andre Furlan
-email = ensismoebius@gmail.com
+	name = Andre Furlan
+	email = ensismoebius@gmail.com
+[filesystem "Private Build|14.0.2|/dev/sdc3"]
+	timestampResolution = 10000 nanoseconds
+	minRacyThreshold = 5726 microseconds
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
 [core]
-	editor = vim
+	autocrlf = input

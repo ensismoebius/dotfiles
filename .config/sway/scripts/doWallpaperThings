@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Retrieves an random beetween 0 and 1
+rand=$(echo $RANDOM / 32767 | bc -l)
+
+# Retrieves the amount of wallpapers we have
+amount=$(ls -l ~/Imagens/Wallpapers/ | wc -l)
+
+# Calculates the index of choosen wallpaper
+wallpaperIndex=$(echo $rand*$amount+1 | bc -l)
+wallpaperIndex=${wallpaperIndex/.*}
+
+# Retrives the file name from a list
+wallpaper=$(ls -1 Imagens/Wallpapers/ | head -n $wallpaperIndex | tail -n 1)
+
+echo $wallpaper
+
+# Copies the wallpaper 
+cp ~/Imagens/Wallpapers/$wallpaper ~/.wallpaper
+
+# Sets wallpaper
+swaymsg output "*" background ~/.wallpaper fill
+

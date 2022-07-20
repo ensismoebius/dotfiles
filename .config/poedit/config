@@ -1,0 +1,5 @@
+version=3.0.1
+[Parsers]
+MigratedTo20=1
+[TM]
+search_paths=/home/ensismoebius:/usr/share/locale:/usr/local/share/locale

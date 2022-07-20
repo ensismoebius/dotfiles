@@ -1,7 +1,0 @@
-#!/bin/bash
-option=$(echo -e "Nothing\nPoweroff\nReboot" | dmenu -i -p "Choose your destiny!!" -nb red)
-
-case $option in 
-	Poweroff) poweroff;;
-	Reboot) reboot;;
-esac

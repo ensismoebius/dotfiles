@@ -1,7 +1,0 @@
-#!/bin/bash
-option=$(echo -e "\nUS-Intrnc\nBR-ABNT-2" | dmenu -i -p "Choose your keyboard")
-
-case $option in 
-	US-Intrnc) setxkbmap -model pc104 -layout us_intl;;
-	BR-ABNT-2) setxkbmap -layout br -model abnt2 -variant abnt2;;
-esac

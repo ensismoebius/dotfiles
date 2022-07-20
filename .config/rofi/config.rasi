@@ -1,0 +1,126 @@
+* {
+  background-color: transparent;
+  text-color: white;
+}
+
+window {
+  padding: 1em;
+  border-color: blue;
+  border:       1px;
+  border-radius: 10px;
+  width:  1024px; 
+  background-color: rgba(0,0,0,0.5);
+}
+
+mainbox {
+  spacing: 0px;
+  children: [inputbar,wrapper-mode-switcher,listview];
+}
+
+element {
+  background: transparent;
+  children: [ element-icon, element-text ];
+}
+element,element-text,element-icon, button {
+    cursor: pointer;
+}
+
+inputbar {
+  margin: 0px 0px 10px 10px;
+  spacing: 0.4em;
+  children: [ button-iggy1, entry,overlay,case-indicator, button-iggy2];
+}
+
+button-iggy1, button-iggy2 {
+  expand: false;
+  action: "kb-primary-paste";
+  horizontal-align: 0.5;
+}
+button-iggy2 {
+  action: "kb-screenshot";
+}
+
+listview, inputbar, message {
+  padding: 0.5em;  
+  border-color: yellow;
+  border:        1px;
+  border-radius: 10px;
+  background-color: black/70%;
+
+  lines:2;
+  columns: 4;
+}
+
+listview {
+  border: 0px 1px 1px 1px;
+  border-radius: 0px 0px 1px 1px;
+}
+
+element {
+    border:  0;
+    padding: 10px;
+    font: "Mono 12";
+    orientation: vertical;
+    border-radius: 5px;
+}
+element-icon {
+  size: 3em;
+}
+
+element  selected {
+  border-color: orange;
+  border: 3px;
+  border-radius: 5px;
+}
+
+element-text, element-icon {
+  font: inherit; 
+  horizontal-align: 0.5;
+}
+
+wrapper-mode-switcher {
+    orientation: horizontal;
+
+    expand:     false;
+    spacing:    0;
+    children: [ icon-ms-ic1, mode-switcher, icon-ms-ic2 ];
+}
+icon-ms-ic1 {
+    filename: "go-previous";
+    action: "kb-mode-previous";
+}
+icon-ms-ic2 {
+    filename: "go-next";
+    action: "kb-mode-next";
+}
+icon-ms-ic1,icon-ms-ic2 {
+    size: 16;
+    vertical-align: 0.8;
+    expand:        false;
+    border:       0px 0px 5px ;
+    border-color: lightgreen;
+}
+
+mode-switcher {
+    border:  0px;
+    spacing: 0px;
+    expand: true;
+}
+button {
+    text-color: white;
+    border:       0px 0px 1px ;
+    border-color: lightgreen;
+    border-radius:    5px 5px 0 0;
+    horizontal-align: 0.5;
+}
+button selected.normal {
+    text-color: white;
+    margin: 0px;
+    padding: 0px;
+    border:       1px 1px 0px ;
+    border-radius:    5px 5px 0 0;
+}
+
+entry {
+    placeholder-color: darkgrey/30%;
+}
