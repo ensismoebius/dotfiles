@@ -133,7 +133,7 @@ parse_git_branch() {
 
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles.git/ --work-tree=$HOME'
 alias configCommit='config add . && config commit'
-alias configPush='config origin master'
+alias configPush='config push origin master'
 
 bPfG="\e[32;45m"
 bPfW="\e[45;97m"
