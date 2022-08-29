@@ -159,5 +159,7 @@ export PS1="$bBfW \u $bGfB▶$bGfB2 \w $reset$bPfG▶$bPfW\`parse_git_branch\`\$
 #export SDL_VIDEODRIVER=wayland
 #export XDG_WM_NON_REPARENTING=1
 #export _JAVA_AWT_WM_NONREPARENTING=1
+export QT_QPA_PLATFORM=xcb
+export _JAVA_AWT_WM_NONREPARENTING=1
 . "$HOME/.cargo/env"
 

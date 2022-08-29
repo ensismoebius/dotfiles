@@ -276,3 +276,19 @@ netbeans-13/
 /.config/kdeconnect/
 /.config/Google/
 /.config/lhelp
+/.config/BraveSoftware
+/.config/MongoDB*
+/.config/gnome-builder
+/.config/godot
+/.config/webOS\ TV\ 22\ Simulator/
+/.config/xm1
+/.config/yelp
+/.mongodb
+/.npm
+/.var
+/projeto
+/.webos
+/node
+/.config/eog
+/.config/microsoft-edge*
+/node_modules

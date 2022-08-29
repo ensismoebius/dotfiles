@@ -1,6 +1,6 @@
 [Added Associations]
 video/mp4=mpv.desktop;
-image/jpeg=shotwell-viewer.desktop;feh.desktop;sxiv.desktop;gimp.desktop;
+image/jpeg=gimp.desktop;shotwell-viewer.desktop;feh.desktop;sxiv.desktop;
 audio/x-wav=audacity.desktop;
 application/x-httpd-php=gedit.desktop;
 text/html=org.gnome.gedit.desktop;
