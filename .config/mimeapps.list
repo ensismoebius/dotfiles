@@ -21,6 +21,10 @@ text/plain=org.gnome.gedit.desktop;code.desktop;
 x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
 x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
 application/x-java-archive=openjdk-11-java.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;
+application/x-ms-dos-executable=q4wine.desktop;
+application/epub+zip=FBReader.desktop;
+image/webp=gimp.desktop;
 
 [Default Applications]
 x-scheme-handler/msteams=teams.desktop

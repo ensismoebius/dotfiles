@@ -78,8 +78,8 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
@@ -87,7 +87,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -133,7 +133,6 @@ parse_git_branch() {
 
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles.git/ --work-tree=$HOME'
 alias configCommit='config add . && config commit'
-alias configPush='config push origin master'
 
 bPfG="\e[32;45m"
 bPfW="\e[45;97m"
@@ -143,7 +142,7 @@ bGfB="\e[34;42m"
 bGfB2="\e[30;42m"
 reset="\e[0m"
 
-export PS1="$bBfW \u $bGfB▶$bGfB2 \w $reset$bPfG▶$bPfW\`parse_git_branch\`\$$reset \n↳"
+export PS1="$bBfW \u $bGfB▶$bGfB2 \w $reset$bPfG▶$bPfW\`parse_git_branch\` \$$reset \n▷ "
 
 ## For wayland
 #export MOZ_ENABLE_WAYLAND=1
@@ -162,4 +161,5 @@ export PS1="$bBfW \u $bGfB▶$bGfB2 \w $reset$bPfG▶$bPfW\`parse_git_branch\`\$
 export QT_QPA_PLATFORM=xcb
 export _JAVA_AWT_WM_NONREPARENTING=1
 . "$HOME/.cargo/env"
+
 

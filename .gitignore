@@ -292,3 +292,16 @@ netbeans-13/
 /.config/eog
 /.config/microsoft-edge*
 /node_modules
+/.FBReader
+/.PlayOnLinux
+/.config/QtProject/
+/.config/Theia Blueprint
+/.config/VSCodium
+/.config/dev-manager-desktop
+/.config/session/
+/.theia-blueprint/
+/.config/ulduzsoft
+/.ti/
+/.vscode-oss/
+/Música
+/.config/q4wine

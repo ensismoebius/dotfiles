@@ -6,7 +6,7 @@
 [filesystem "Private Build|14.0.2|/dev/sdc3"]
 	timestampResolution = 10000 nanoseconds
 	minRacyThreshold = 5726 microseconds
-[credential]
-	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
 [core]
 	autocrlf = input
+[init]
+	defaultBranch = main
