@@ -305,3 +305,4 @@ netbeans-13/
 /.vscode-oss/
 /Música
 /.config/q4wine
+.config/clangd/

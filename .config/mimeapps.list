@@ -24,7 +24,7 @@ application/x-java-archive=openjdk-11-java.desktop;
 image/svg+xml=org.inkscape.Inkscape.desktop;
 application/x-ms-dos-executable=q4wine.desktop;
 application/epub+zip=FBReader.desktop;
-image/webp=gimp.desktop;
+image/webp=gimp.desktop;org.gnome.eog.desktop;
 
 [Default Applications]
 x-scheme-handler/msteams=teams.desktop
@@ -32,3 +32,4 @@ x-scheme-handler/eclipse+installer=_home_ensismoebius_Downloads_eclipse-installe
 x-scheme-handler/eclipse+command x-scheme-handler/eclipse+mpc=_opt_eclipse_rust_eclipse_.desktop
 x-scheme-handler/xdebug=_opt_eclipse_php_eclipse_.desktop
 x-scheme-handler/eclipse+command x-scheme-handler/eclipse+mpc x-scheme-handler/xdebug=_home_ensismoebius_eclipse_eclipse_.desktop
+image/webp=org.gnome.eog.desktop

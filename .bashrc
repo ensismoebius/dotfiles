@@ -121,10 +121,6 @@ fi
 # Enables auto cd
 shopt -s autocd
 
-# Aliases for calcurse
-alias calcurse="calcurse -D $HOME/.local/share/calcurse -C $HOME/.config/calcurse"
-alias calcurse-caldav="calcurse-caldav --config=$HOME/.config/calcurse/caldav/config"
-
 export PATH=~/.local/bin:$PATH
 
 parse_git_branch() {
@@ -142,7 +138,7 @@ bGfB="\e[34;42m"
 bGfB2="\e[30;42m"
 reset="\e[0m"
 
-export PS1="$bBfW \u $bGfB▶$bGfB2 \w $reset$bPfG▶$bPfW\`parse_git_branch\` \$$reset \n▷ "
+export PS1="$bBfW \u $bGfB▶$bGfB2 \w $reset$bPfG▶$bPfW\`parse_git_branch\` \$$reset\n▷ "
 
 ## For wayland
 #export MOZ_ENABLE_WAYLAND=1
@@ -158,8 +154,8 @@ export PS1="$bBfW \u $bGfB▶$bGfB2 \w $reset$bPfG▶$bPfW\`parse_git_branch\` \
 #export SDL_VIDEODRIVER=wayland
 #export XDG_WM_NON_REPARENTING=1
 #export _JAVA_AWT_WM_NONREPARENTING=1
-export QT_QPA_PLATFORM=xcb
-export _JAVA_AWT_WM_NONREPARENTING=1
+#export QT_QPA_PLATFORM=xcb
+#export _JAVA_AWT_WM_NONREPARENTING=1
 . "$HOME/.cargo/env"
 
 

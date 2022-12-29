@@ -1,10 +1,9 @@
 <monitors version="2">
   <configuration>
     <logicalmonitor>
-      <x>0</x>
+      <x>1920</x>
       <y>0</y>
       <scale>1</scale>
-      <primary>yes</primary>
       <monitor>
         <monitorspec>
           <connector>HDMI-1</connector>
@@ -15,9 +14,15 @@
         <mode>
           <width>1920</width>
           <height>1080</height>
-          <rate>60</rate>
+          <rate>60.000</rate>
         </mode>
       </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>0</x>
+      <y>0</y>
+      <scale>1</scale>
+      <primary>yes</primary>
       <monitor>
         <monitorspec>
           <connector>eDP-1</connector>
@@ -28,7 +33,7 @@
         <mode>
           <width>1920</width>
           <height>1080</height>
-          <rate>60.000808715820312</rate>
+          <rate>60.001</rate>
         </mode>
       </monitor>
     </logicalmonitor>
@@ -41,16 +46,15 @@
       <monitor>
         <monitorspec>
           <connector>HDMI-1</connector>
-          <vendor>NEC</vendor>
-          <product>NP-VE282</product>
-          <serial>B2Y001274</serial>
+          <vendor>MST</vendor>
+          <product>MStar Demo</product>
+          <serial>0x00000001</serial>
         </monitorspec>
         <mode>
-          <width>800</width>
-          <height>600</height>
-          <rate>60.316539764404297</rate>
+          <width>1280</width>
+          <height>720</height>
+          <rate>60.000</rate>
         </mode>
-        <underscanning>yes</underscanning>
       </monitor>
     </logicalmonitor>
     <logicalmonitor>
@@ -68,7 +72,7 @@
         <mode>
           <width>1920</width>
           <height>1080</height>
-          <rate>60.000808715820312</rate>
+          <rate>60.001</rate>
         </mode>
       </monitor>
     </logicalmonitor>
@@ -88,7 +92,7 @@
         <mode>
           <width>1920</width>
           <height>1080</height>
-          <rate>60</rate>
+          <rate>60.000</rate>
         </mode>
       </monitor>
     </logicalmonitor>
@@ -107,7 +111,7 @@
         <mode>
           <width>1920</width>
           <height>1080</height>
-          <rate>60.000808715820312</rate>
+          <rate>60.001</rate>
         </mode>
       </monitor>
     </logicalmonitor>
@@ -128,7 +132,7 @@
         <mode>
           <width>1920</width>
           <height>1080</height>
-          <rate>60.000808715820312</rate>
+          <rate>60.001</rate>
         </mode>
       </monitor>
       <monitor>
@@ -141,44 +145,9 @@
         <mode>
           <width>1920</width>
           <height>1080</height>
-          <rate>60</rate>
+          <rate>60.000</rate>
         </mode>
         <underscanning>yes</underscanning>
-      </monitor>
-    </logicalmonitor>
-  </configuration>
-  <configuration>
-    <logicalmonitor>
-      <x>0</x>
-      <y>0</y>
-      <scale>1</scale>
-      <primary>yes</primary>
-      <monitor>
-        <monitorspec>
-          <connector>HDMI-1</connector>
-          <vendor>SEC</vendor>
-          <product>EPSON PJ</product>
-          <serial>0x01010101</serial>
-        </monitorspec>
-        <mode>
-          <width>1280</width>
-          <height>720</height>
-          <rate>60</rate>
-        </mode>
-        <underscanning>yes</underscanning>
-      </monitor>
-      <monitor>
-        <monitorspec>
-          <connector>eDP-1</connector>
-          <vendor>BOE</vendor>
-          <product>0x08d5</product>
-          <serial>0x00000000</serial>
-        </monitorspec>
-        <mode>
-          <width>1280</width>
-          <height>720</height>
-          <rate>60.000808715820312</rate>
-        </mode>
       </monitor>
     </logicalmonitor>
   </configuration>
@@ -198,7 +167,87 @@
         <mode>
           <width>1920</width>
           <height>1080</height>
-          <rate>60.000808715820312</rate>
+          <rate>60.001</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <logicalmonitor>
+      <x>1920</x>
+      <y>0</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>HDMI-1</connector>
+          <vendor>NEC</vendor>
+          <product>NP-VE282</product>
+          <serial>B2Y001274</serial>
+        </monitorspec>
+        <mode>
+          <width>800</width>
+          <height>600</height>
+          <rate>60.317</rate>
+        </mode>
+        <underscanning>yes</underscanning>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>0</x>
+      <y>0</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>eDP-1</connector>
+          <vendor>BOE</vendor>
+          <product>0x08d5</product>
+          <serial>0x00000000</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.001</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <logicalmonitor>
+      <x>1920</x>
+      <y>0</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>HDMI-1</connector>
+          <vendor>SEC</vendor>
+          <product>EPSON PJ</product>
+          <serial>0x01010101</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
+        </mode>
+        <underscanning>yes</underscanning>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>0</x>
+      <y>0</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>eDP-1</connector>
+          <vendor>BOE</vendor>
+          <product>0x08d5</product>
+          <serial>0x00000000</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.001</rate>
         </mode>
       </monitor>
     </logicalmonitor>
