@@ -1,7 +1,0 @@
-#!/bin/bash
-
-file=$(dialog --title "Select the files you want to send" --fselect "$PWD" 10 70 --stdout)
-
-echo "Selected file: $file"
-
-udiskie -ans --notify-command "zenity --info --text '{event}: {mount_path}'"
