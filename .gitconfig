@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = ensismoebius@gmail.com
+	name = Andre Furlan
+[core]
+	editor = vim
