@@ -1,3 +1,5 @@
+repos/
+.cargo/
 .ssh
 .bash_history
 .bash_logout
