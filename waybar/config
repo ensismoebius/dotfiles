@@ -12,14 +12,14 @@
         "cpu",
         "memory",
         "disk",
-        "temperature"
+        "temperature",
+        "wlr/taskbar"
     ],
     "modules-center": [
         "custom/archicon",
         "clock"
     ],
     "modules-right": [
-        "wlr/taskbar",
         "idle_inhibitor",
         "pulseaudio/slider",
         "pulseaudio",
