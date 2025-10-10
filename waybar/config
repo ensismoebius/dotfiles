@@ -126,5 +126,26 @@
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
         "format-es": "ESP",
         "format-en": "ENG"
+    },
+    "custom/dunst": {
+        "format": "{}",
+        "return-type": "json",
+        "exec": "/home/ensismoebius/.config/hypr/scripts/check_dunst.sh",
+        "on-click": "dunstctl history-pop",
+        "on-click-right": "dunstctl close-all",
+        "tooltip": true
+    },
+    "mpris": {
+        "format": "{player_icon} {title}",
+        "format-stopped": "",
+        "player-icons": {
+            "default": "▶",
+            "mpv": "🎵"
+        },
+        "status-icons": {
+            "playing": "▶",
+            "paused": "⏸"
+        },
+        "max-length": 20
     }
 }

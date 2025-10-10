@@ -165,6 +165,16 @@ window#waybar.hidden {
     padding-right: 15px;
 }
 
+#custom-dunst {
+    background: #008F11;
+    padding-right: 13px;
+}
+
+#mpris {
+    background: #0D0208;
+    padding-right: 15px;
+}
+
 /* === Optional animation === */
 @keyframes blink {
     to {
