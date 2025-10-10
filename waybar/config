@@ -21,6 +21,7 @@
     ],
     "modules-right": [
         "idle_inhibitor",
+        "custom/monitor-layout",
         "pulseaudio/slider",
         "pulseaudio",
         "network",
@@ -100,6 +101,13 @@
             "activated": "",
             "deactivated": ""
         }
+    },
+    "custom/monitor-layout": {
+        "format": "{}",
+        "exec": "/home/ensismoebius/.config/hypr/scripts/monitor_switch.sh",
+        "on-click": "/home/ensismoebius/.config/hypr/scripts/monitor_switch.sh --switch",
+        "return-type": "json",
+        "signal": 8
     },
     "pulseaudio/slider": {
         "format": "{volume}%",
