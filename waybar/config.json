@@ -24,6 +24,7 @@
         "pulseaudio/slider",
         "pulseaudio",
         "network",
+        "dunst",
         "mpris",
         "battery",
         "custom/bluetooth",
@@ -59,6 +60,7 @@
         "tooltip-format": "Espacio libre: {free} / {total} ({percentage_free}%)"
     },
     "temperature": {
+        "thermal-zone": 0,
         "format": "{temperatureC}°C {icon}",
         "tooltip": true,
         "tooltip-format": "Temperatura actual: {temperatureC}°C\nCrítico si > 80°C",
@@ -130,14 +132,6 @@
         "format-es": "ESP",
         "format-en": "ENG"
     },
-    "custom/dunst": {
-        "format": "{}",
-        "return-type": "json",
-        "exec": "/home/ensismoebius/.config/hypr/scripts/check_dunst.sh",
-        "on-click": "dunstctl history-pop",
-        "on-click-right": "dunstctl close-all",
-        "tooltip": true
-    },
     "mpris": {
         "format": "{player_icon} {title}",
         "format-stopped": "",
@@ -150,6 +144,18 @@
             "paused": "⏸"
         },
         "max-length": 20
+    },
+    "dunst": {
+        "format": "{state}",
+        "format-icons": {
+            "notification": "",
+            "notifications": " ({count})",
+            "urgent": "",
+            "paused": "",
+            "disabled": ""
+        },
+        "tooltip": true,
+        "tooltip-format": "<b>{summary}</b>\n{body}"
     },
     "battery": {
         "states": {

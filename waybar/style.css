@@ -25,6 +25,7 @@ window#waybar.hidden {
 #pulseaudio,
 #pulseaudio-slider,
 #network,
+#dunst,
 #battery,
 #language {
     color: #00FF41;
@@ -166,14 +167,36 @@ window#waybar.hidden {
     padding-right: 15px;
 }
 
-#custom-dunst {
-    background: #008F11;
-    padding-right: 13px;
-}
-
 #battery {
     background: #0D0208;
     padding-right: 15px;
+}
+
+#battery.good,
+#battery.full {
+    color: #00FF41;
+    /* Default Green */
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #00FFFF;
+    /* Cyan */
+}
+
+#battery.warning {
+    color: #FFFF00;
+    /* Yellow */
+}
+
+#battery.critical:not(.charging) {
+    color: #FF0000;
+    /* Red */
+    animation-name: blink-red;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #mpris {
@@ -186,10 +209,22 @@ window#waybar.hidden {
     padding-right: 13px;
 }
 
+#dunst {
+    background: #008F11;
+    padding-right: 13px;
+}
+
 /* === Optional animation === */
-@keyframes blink {
+@keyframes blink-green {
     to {
         background-color: #00FF41;
+        color: #0D0208;
+    }
+}
+
+@keyframes blink-red {
+    to {
+        background-color: #FF0000;
         color: #0D0208;
     }
 }
