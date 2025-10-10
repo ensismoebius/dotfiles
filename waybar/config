@@ -8,15 +8,15 @@
     "gtk-layer-shell": true,
     /* === Modules Order === */
     "modules-left": [
-        "custom/archicon",
-        "clock",
+        "hyprland/workspaces",
         "cpu",
         "memory",
         "disk",
         "temperature"
     ],
     "modules-center": [
-        "hyprland/workspaces"
+        "custom/archicon",
+        "clock"
     ],
     "modules-right": [
         "wlr/taskbar",
@@ -24,9 +24,11 @@
         "pulseaudio/slider",
         "pulseaudio",
         "network",
+        "dunst",
+        "custom/usb",
         "mpris",
-        "custom/bluetooth",
-        "hyprland/language"
+        "battery",
+        "custom/bluetooth"
     ],
     /* === Modules Left === */
     "custom/archicon": {
@@ -58,6 +60,7 @@
         "tooltip-format": "Espacio libre: {free} / {total} ({percentage_free}%)"
     },
     "temperature": {
+        "thermal-zone": 0,
         "format": "{temperatureC}°C {icon}",
         "tooltip": true,
         "tooltip-format": "Temperatura actual: {temperatureC}°C\nCrítico si > 80°C",
@@ -129,14 +132,6 @@
         "format-es": "ESP",
         "format-en": "ENG"
     },
-    "custom/dunst": {
-        "format": "{}",
-        "return-type": "json",
-        "exec": "/home/ensismoebius/.config/hypr/scripts/check_dunst.sh",
-        "on-click": "dunstctl history-pop",
-        "on-click-right": "dunstctl close-all",
-        "tooltip": true
-    },
     "mpris": {
         "format": "{player_icon} {title}",
         "format-stopped": "",
@@ -149,5 +144,42 @@
             "paused": "⏸"
         },
         "max-length": 20
+    },
+    "custom/usb": {
+        "format": "{}",
+        "return-type": "json",
+        "interval": 5,
+        "exec": "~/.config/hypr/scripts/check_usb.sh",
+        "on-click": "nautilus",
+        "tooltip": true
+    },
+    "dunst": {
+        "format": "{state}",
+        "format-icons": {
+            "notification": "",
+            "notifications": " ({count})",
+            "urgent": "",
+            "paused": "",
+            "disabled": ""
+        },
+        "tooltip": true,
+        "tooltip-format": "<b>{summary}</b>\n{body}"
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     }
 }

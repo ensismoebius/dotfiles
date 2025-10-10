@@ -26,6 +26,7 @@ window#waybar.hidden {
 #pulseaudio-slider,
 #network,
 #dunst,
+#custom-usb,
 #battery,
 #language {
     color: #00FF41;
@@ -211,6 +212,11 @@ window#waybar.hidden {
 
 #dunst {
     background: #008F11;
+    padding-right: 13px;
+}
+
+#custom-usb {
+    background: #0D0208;
     padding-right: 13px;
 }
 
