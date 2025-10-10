@@ -25,6 +25,7 @@ window#waybar.hidden {
 #pulseaudio,
 #pulseaudio-slider,
 #network,
+#battery,
 #language {
     color: #00FF41;
     margin-top: 6px;
@@ -170,9 +171,19 @@ window#waybar.hidden {
     padding-right: 13px;
 }
 
+#battery {
+    background: #0D0208;
+    padding-right: 15px;
+}
+
 #mpris {
     background: #0D0208;
     padding-right: 15px;
+}
+
+#custom-bluetooth {
+    background: #008F11;
+    padding-right: 13px;
 }
 
 /* === Optional animation === */
