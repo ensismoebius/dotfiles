@@ -1,0 +1,7 @@
+program_options:
+  file_manager: nautilus
+automount:
+  enabled: true
+  open_dir: nautilus
+notifications:
+  enabled: true

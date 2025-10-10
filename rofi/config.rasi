@@ -1,0 +1,114 @@
+/*
+ *                       __                __
+ *      ____  ____  ____/ /___  ____ ______/ /_
+ *     / __ \/ __ \/ __  / __ \/ __ `/ ___/ __/
+ *    / /_/ / /_/ / /_/ / /_/ / /_/ / /__/ /_
+ *   / .___/\____/\__,_/\____/\__,_/\___/\__/
+ *  /_/
+ *
+ *  Author: @4l3x-ab
+ *  https://github.com/4l3x-ab
+ */
+configuration {
+  font: "JetBrainsMono Nerd Font 10";
+  show-icons: true;
+  icon-theme: "Papirus";
+  display-drun: "";
+  drun-display-format: "{name}";
+  disable-history: false;
+  sidebar-mode: false;
+}
+
+@import "colors.rasi"
+
+window {
+  transparency: "real";
+  background-color: @bg;
+  text-color: @fg;
+  border: 2px;
+  border-color: @ac;
+  border-radius: 12px;
+  width: 50%;
+  location: center;
+  anchor: center;
+  height: 50%;
+  x-offset: 0;
+  y-offset: 0;
+}
+
+prompt {
+  enabled: true;
+  padding: 0.5% 1% 0.5% 1%;
+  background-color: @bga;
+  text-color: @fg;
+  font: "JetBrainsMono Nerd Font 12";
+}
+
+entry {
+  background-color: @bga;
+  text-color: @fg;
+  placeholder-color: @gray;
+  expand: true;
+  horizontal-align: 0;
+  placeholder: "Search";
+  padding: 0.5% 0 0 0;
+  blink: true;
+}
+
+inputbar {
+  children: [prompt, entry];
+  background-color: @bga;
+  text-color: @fg;
+  expand: false;
+  border: 0 0 1px 0;
+  border-color: @ac;
+  border-radius: 8px;
+  margin: 0 0 1% 0;
+  padding: 1%;
+}
+
+listview {
+  background-color: @bg;
+  columns: 2;
+  spacing: 1%;
+  cycle: true;
+  dynamic: true;
+  layout: vertical;
+}
+
+mainbox {
+  background-color: @bg;
+  border: 0;
+  border-radius: 0 0 12px 12px;
+  border-color: @ac;
+  children: [inputbar, listview];
+  spacing: 1%;
+  padding: 1% 1% 1% 1%;
+}
+
+element {
+  background-color: @bg;
+  text-color: @fg;
+  orientation: horizontal;
+  border-radius: 8px;
+  padding: 1% 0.5% 1% 0.5%;
+}
+
+element-icon {
+  size: 24px;
+  border: 0;
+}
+
+element-text {
+  expand: true;
+  horizontal-align: 0;
+  vertical-align: 0.5;
+  margin: 0 0.5% 0 0.5%;
+}
+
+element selected {
+  background-color: @bgs;
+  text-color: @ac;
+  border: 0 0 2px 0;
+  border-color: @ac;
+}
