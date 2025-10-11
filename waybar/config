@@ -17,20 +17,26 @@
     ],
     "modules-center": [
         "custom/archicon",
-        "clock"
-    ],
-    "modules-right": [
+        "clock",
         "idle_inhibitor",
         "custom/monitor-layout",
+        "dunst",
+        "custom/usb",
+        "custom/bluetooth"
+    ],
+    "modules-right": [
+        "tray",
         "pulseaudio/slider",
         "pulseaudio",
         "network",
-        "dunst",
-        "custom/usb",
-        "mpris",
         "battery",
-        "custom/bluetooth"
+        "mpris"
     ],
+
+    "tray": {
+        "spacing": 10
+    },
+
     /* === Modules Left === */
     "custom/archicon": {
         "format": "",
@@ -132,7 +138,8 @@
         "tooltip-format": " {ifname} via {gwaddr}",
         "tooltip-format-ethernet": " {ifname} {ipaddr}/{cidr}",
         "tooltip-format-disconnected": "Disconnected",
-        "max-length": 50
+        "max-length": 50,
+        "on-click": "nm-applet"
     },
     "hyprland/language": {
         "format": "{} ",
@@ -157,7 +164,7 @@
         "format": "{}",
         "return-type": "json",
         "interval": 5,
-        "exec": "~/.config/hypr/scripts/check_usb.sh",
+        "exec": "/home/ensismoebius/.config/hypr/scripts/check_usb.sh",
         "on-click": "nautilus",
         "tooltip": true
     },
@@ -189,5 +196,12 @@
             "",
             ""
         ]
+    },
+    "custom/bluetooth": {
+        "format": "{}",
+        "return-type": "json",
+        "interval": 5,
+        "exec": "/home/ensismoebius/.config/hypr/scripts/bluetooth_status.sh",
+        "on-click": "/home/ensismoebius/.config/hypr/scripts/toggle_bluetooth.sh"
     }
 }
