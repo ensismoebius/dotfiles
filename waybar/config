@@ -38,7 +38,7 @@
         "tooltip": false
     },
     "clock": {
-        "timezone": "America/Mexico_City",
+        "timezone": "America/Sao_Paulo",
         "format": "{:%d/%m/%Y - %H:%M:%S}",
         "tooltip-format": "{calendar}",
         "calendar": {
