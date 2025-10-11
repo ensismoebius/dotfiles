@@ -12,7 +12,6 @@
         "cpu",
         "memory",
         "disk",
-        "temperature",
         "wlr/taskbar"
     ],
     "modules-center": [
@@ -20,23 +19,21 @@
         "clock",
         "idle_inhibitor",
         "custom/monitor-layout",
-        "dunst",
-        "custom/usb",
-        "custom/bluetooth"
+        "custom/dunst"
     ],
     "modules-right": [
-        "tray",
+        "custom/usb",
+        "custom/bluetooth",
+        "battery",
         "pulseaudio/slider",
         "pulseaudio",
         "network",
-        "battery",
-        "mpris"
+        "mpris",
+        "tray"
     ],
-
     "tray": {
         "spacing": 10
     },
-
     /* === Modules Left === */
     "custom/archicon": {
         "format": "",
@@ -168,17 +165,13 @@
         "on-click": "nautilus",
         "tooltip": true
     },
-    "dunst": {
-        "format": "{state}",
-        "format-icons": {
-            "notification": "",
-            "notifications": " ({count})",
-            "urgent": "",
-            "paused": "",
-            "disabled": ""
-        },
-        "tooltip": true,
-        "tooltip-format": "<b>{summary}</b>\n{body}"
+    "custom/dunst": {
+        "exec": "~/.config/hypr/scripts/check_dunst.sh",
+        "return-type": "json",
+        "interval": 1,
+        "on-click": "makoctl mode -t do-not-disturb",
+        "on-click-right": "makoctl restore",
+        "tooltip": true
     },
     "battery": {
         "states": {

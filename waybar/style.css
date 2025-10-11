@@ -113,8 +113,6 @@ window#waybar.hidden {
     color: #00FF41;
 }
 
-#workspaces button.active:hover {}
-
 /* Modules right */
 #taskbar {
     background: transparent;
@@ -155,7 +153,6 @@ window#waybar.hidden {
     min-width: 50px;
 }
 
-#pulseaudio-slider slider {}
 
 
 #network {
@@ -210,7 +207,7 @@ window#waybar.hidden {
     padding-right: 13px;
 }
 
-#dunst {
+#notification {
     background: #008F11;
     padding-right: 13px;
 }
@@ -218,6 +215,39 @@ window#waybar.hidden {
 #custom-usb {
     background: #0D0208;
     padding-right: 13px;
+}
+
+#tray {
+    background: #0D0208;
+    margin: 6px 5px;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+#tray menu {
+    background: #0D0208;
+    color: #00FF41;
+}
+
+#tray>.needs-attention {
+    background: #008F11;
+    border-radius: 5px;
+}
+
+#tray * {
+    -gtk-icon-shadow: none;
+    -gtk-icon-transform: none;
+    min-height: 16px;
+    min-width: 16px;
+    margin: 0 4px;
+    padding: 2px;
+    border-radius: 4px;
+    background: #008F11;
+}
+
+#tray *:hover {
+    background: #00FF41;
+    box-shadow: 0 0 5px #00FF41;
 }
 
 /* === Optional animation === */

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if bluetoothctl show | grep -q "Powered: yes"; then
-  echo "󰂯"
+    echo '{"text": "󰂯", "tooltip": "Bluetooth: On"}'
 else
-  echo "󰂲"
+    echo '{"text": "󰂲", "tooltip": "Bluetooth: Off"}'
 fi
