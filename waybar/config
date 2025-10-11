@@ -195,6 +195,7 @@
         "return-type": "json",
         "interval": 5,
         "exec": "/home/ensismoebius/.config/hypr/scripts/bluetooth_status.sh",
-        "on-click": "/home/ensismoebius/.config/hypr/scripts/toggle_bluetooth.sh"
+        "on-click": "/home/ensismoebius/.config/hypr/scripts/toggle_bluetooth.sh",
+        "tooltip": true
     }
 }
