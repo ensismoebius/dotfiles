@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "autohide": true,
+    "autohide": false,
     "autohide-blocked": false,
     "exclusive": true,
     "passthrough": false,
