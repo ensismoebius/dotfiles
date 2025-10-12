@@ -2,6 +2,7 @@
     0% {
         background-position: 0 0;
     }
+
     100% {
         background-position: 0 100%;
     }
@@ -11,6 +12,7 @@
     0% {
         box-shadow: 0 0 5px #00FF41, 0 0 10px #00FF41, 0 0 15px #008F11;
     }
+
     100% {
         box-shadow: 0 0 10px #00FF41, 0 0 20px #00FF41, 0 0 30px #008F11;
     }
@@ -27,13 +29,11 @@
 
 window#waybar {
     background: rgba(13, 2, 8, 0.85);
-    background-image: repeating-linear-gradient(
-        0deg,
-        rgba(0, 255, 65, 0.03) 0px,
-        rgba(0, 255, 65, 0.03) 1px,
-        transparent 1px,
-        transparent 2px
-    );
+    background-image: repeating-linear-gradient(0deg,
+            rgba(0, 255, 65, 0.03) 0px,
+            rgba(0, 255, 65, 0.03) 1px,
+            transparent 1px,
+            transparent 2px);
     animation: scanline 10s linear infinite;
     border-bottom: 2px solid #FF0000;
     box-shadow: 0 0 10px #00FF41, 0 0 20px #008F11, 0 5px 15px #FF0000;
