@@ -1,0 +1,253 @@
+{
+    "layer": "top",
+    "position": "top",
+    "autohide": false,
+    "autohide-blocked": false,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    /* === Modules Order === */
+    "modules-left": [
+        "hyprland/workspaces",
+        "cpu",
+        "memory",
+        "disk",
+        "wlr/taskbar"
+    ],
+    "modules-center": [
+        "custom/archicon",
+        "mpris",
+        "clock",
+        "idle_inhibitor",
+        "battery",
+        "custom/notifications"
+    ],
+    "modules-right": [
+        "custom/clipboard",
+        "custom/monitor-layout",
+        "custom/usb",
+        "custom/bluetooth",
+        "pulseaudio",
+        "pulseaudio#microphone",
+        "network",
+        "tray"
+    ],
+    "tray": {
+        "spacing": 10
+    },
+    /* === Modules Left === */
+    "custom/archicon": {
+        "format": "",
+        "on-click": "wofi --show drun",
+        "tooltip": false
+    },
+    "clock": {
+        "timezone": "America/Sao_Paulo",
+        "format": "{:%d/%m/%Y - %H:%M}",
+        "tooltip-format": "{calendar}",
+        "calendar": {
+            "mode": "month"
+        }
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": true,
+        "tooltip-format": "Uso de CPU: {usage}%\nNúcleos: {cores}",
+        "interval": 1
+    },
+    "memory": {
+        "format": "{}% 󰍛",
+        "tooltip": true,
+        "tooltip-format": "RAM en uso: {used} / {total} ({percentage}%)"
+    },
+    "disk": {
+        "format": "{percentage_free}% ",
+        "tooltip": true,
+        "tooltip-format": "Espacio libre: {free} / {total} ({percentage_free}%)"
+    },
+    "temperature": {
+        "thermal-zone": 0,
+        "format": "{temperatureC}°C {icon}",
+        "tooltip": true,
+        "tooltip-format": "Temperatura actual: {temperatureC}°C\nCrítico si > 80°C",
+        "format-icons": [
+            ""
+        ]
+    },
+    /* === Modules Center === */
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": "",
+            "active": ""
+        },
+        "persistent-workspaces": {
+            "*": 2
+        },
+        "disable-scroll": true,
+        "all-outputs": true,
+        "show-special": false
+    },
+    /* === Modules Right === */
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "all-outputs": true,
+        "active-first": true,
+        "tooltip-format": "{name}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [
+            "floating-terminal"
+        ]
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "custom/monitor-layout": {
+        "format": "{}",
+        "exec": "~/.config/hypr/scripts/display/monitor/monitor_switch.sh",
+        "on-click": "~/.config/hypr/scripts/display/monitor/monitor_switch.sh --switch",
+        "return-type": "json",
+        "signal": 8
+    },
+    "pulseaudio/slider": {
+        "format": "{volume}%",
+        "format-muted": "MUTE",
+        "step": 5,
+        "tooltip": false,
+        "max-volume": 100,
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "show-volume": true
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "� Muted",
+        "format-icons": {
+            "default": [
+                "󰕿",
+                "󰖀",
+                "󰕾"
+            ],
+            "headphone": "󰋋",
+            "headset": "󰋎",
+            "bluetooth": "󰂯"
+        },
+        "scroll-step": 5,
+        "on-click": "pamixer -t",
+        "tooltip": true
+    },
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": "󰍬 {volume}%",
+        "format-source-muted": "󰍭 Muted",
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "scroll-step": 5,
+        "show-volume": true
+    },
+    "pulseaudio/slider#microphone": {
+        "format": "{volume}%",
+        "format-source": "{volume}%",
+        "format-source-muted": "MUTE",
+        "tooltip": false,
+        "max-volume": 100,
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "step": 5,
+        "show-volume": true,
+        "source": true
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-ethernet": "{ifname} 󰈀",
+        "format-disconnected": " ",
+        "tooltip-format": " {ifname} via {gwaddr}",
+        "tooltip-format-ethernet": " {ifname} {ipaddr}/{cidr}",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50,
+        "on-click": "nm-applet"
+    },
+    "hyprland/language": {
+        "format": "{} ",
+        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
+        "format-es": "ESP",
+        "format-en": "ENG"
+    },
+    "mpris": {
+        "format": "{player_icon} {title}",
+        "format-stopped": "",
+        "player-icons": {
+            "default": "▶",
+            "mpv": "🎵"
+        },
+        "status-icons": {
+            "playing": "▶",
+            "paused": "⏸"
+        },
+        "max-length": 20
+    },
+    "custom/usb": {
+        "format": "{}",
+        "return-type": "json",
+        "interval": 2,
+        "exec": "~/.config/hypr/scripts/system/usb/check_usb.sh",
+        "on-click": "~/.config/hypr/scripts/system/usb/open_usb_device.sh",
+        "tooltip": true
+    },
+    "custom/notifications": {
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "",
+            "none": "",
+            "dnd-notification": "",
+            "dnd-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which makoctl",
+        "exec": "makoctl summary",
+        "on-click": "makoctl invoke",
+        "on-click-right": "makoctl mode -t do-not-disturb",
+        "tooltip": true
+    },
+    "custom/clipboard": {
+        "format": "󰅌 ",
+        "tooltip": true,
+        "tooltip-format": "Clipboard Manager",
+        "on-click": "~/.config/hypr/scripts/ui/clipboard/clipboard_manager.sh show",
+        "on-click-right": "~/.config/hypr/scripts/ui/clipboard/clipboard_manager.sh delete",
+        "on-click-middle": "~/.config/hypr/scripts/ui/clipboard/clipboard_manager.sh clear"
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "custom/bluetooth": {
+        "format": "{}",
+        "return-type": "json",
+        "interval": 5,
+        "exec": "~/.config/hypr/scripts/audio/bluetooth/bluetooth_status.sh",
+        "on-click": "~/.config/hypr/scripts/audio/bluetooth/toggle_bluetooth.sh",
+        "tooltip": true
+    }
+}

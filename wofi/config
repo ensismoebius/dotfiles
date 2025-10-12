@@ -1,0 +1,9 @@
+show_icons=true
+width=50%
+height=50%
+location=center
+columns=2
+cycle_scrolling=true
+prompt=Search
+icon_size=32
+font=JetBrainsMono Nerd Font 11

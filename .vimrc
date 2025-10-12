@@ -1,16 +1,16 @@
-"" IDE settings
+colorscheme dracula
 
-" Activate syntax highlight
-syntax on
-
-" Auto indentation 
-set autoindent
-
-" Highlights the current line
+set number
+set relativenumber
 set cursorline
 
-" Changes the title of terminal to current file
-set title
+" Always show the status line
+set laststatus=2
 
-" Better responses 
-set updatetime=300
+" A more informative status line
+set statusline=
+set statusline+=%#PmenuSel#\ %{toupper(mode())[0]}\ %*         " Mode indicator (N, I, V)
+set statusline+=%#StatusLine#\ %f\ %m%r                       " File path, modified/readonly flags
+set statusline+=%=                                           " Right-align the following
+set statusline+=%#PmenuSel#\ %y\ %*                           " Filetype
+set statusline+=%#StatusLine#\ %l:%c\ [%p%%]                  " Line, column, and percentage

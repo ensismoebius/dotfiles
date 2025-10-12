@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Movie Theme
+Comment=A dark theme with green accents
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=movie-gtk-theme
+IconTheme=Papirus-Dark
+CursorTheme=catppuccin-mocha-mauve
