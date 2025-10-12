@@ -28,7 +28,7 @@
         "custom/usb",
         "custom/bluetooth",
         "pulseaudio",
-        "pulseaudio/slider",
+        "pulseaudio#microphone",
         "network",
         "tray"
     ],
@@ -116,19 +116,54 @@
     },
     "pulseaudio/slider": {
         "format": "{volume}%",
-        "format-muted": " MUTE",
+        "format-muted": "MUTE",
         "step": 5,
-        "tooltip": false
+        "tooltip": false,
+        "max-volume": 100,
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "show-volume": true
     },
     "pulseaudio": {
-        "format": "{volume}% {icon}",
-        "format-muted": " {format_source}",
+        "format": "{icon} {volume}%",
+        "format-muted": "� Muted",
         "format-icons": {
             "default": [
-                "",
-                ""
-            ]
-        }
+                "󰕿",
+                "󰖀",
+                "󰕾"
+            ],
+            "headphone": "󰋋",
+            "headset": "󰋎",
+            "bluetooth": "󰂯"
+        },
+        "scroll-step": 5,
+        "on-click": "pamixer -t",
+        "tooltip": true
+    },
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": "󰍬 {volume}%",
+        "format-source-muted": "󰍭 Muted",
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "scroll-step": 5,
+        "show-volume": true
+    },
+    "pulseaudio/slider#microphone": {
+        "format": "{volume}%",
+        "format-source": "{volume}%",
+        "format-source-muted": "MUTE",
+        "tooltip": false,
+        "max-volume": 100,
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "step": 5,
+        "show-volume": true,
+        "source": true
     },
     "network": {
         "format": "{ifname}",
