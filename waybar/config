@@ -109,8 +109,8 @@
     },
     "custom/monitor-layout": {
         "format": "{}",
-        "exec": "~/.config/hypr/scripts/monitor_switch.sh",
-        "on-click": "~/.config/hypr/scripts/monitor_switch.sh --switch",
+        "exec": "~/.config/hypr/scripts/display/monitor/monitor_switch.sh",
+        "on-click": "~/.config/hypr/scripts/display/monitor/monitor_switch.sh --switch",
         "return-type": "json",
         "signal": 8
     },
@@ -198,8 +198,8 @@
         "format": "{}",
         "return-type": "json",
         "interval": 2,
-        "exec": "~/.config/hypr/scripts/check_usb.sh",
-        "on-click": "~/.config/hypr/scripts/open_usb_device.sh",
+        "exec": "~/.config/hypr/scripts/system/usb/check_usb.sh",
+        "on-click": "~/.config/hypr/scripts/system/usb/open_usb_device.sh",
         "tooltip": true
     },
     "custom/notifications": {
@@ -221,9 +221,9 @@
         "format": "󰅌 ",
         "tooltip": true,
         "tooltip-format": "Clipboard Manager",
-        "on-click": "~/.config/hypr/scripts/clipboard_manager.sh show",
-        "on-click-right": "~/.config/hypr/scripts/clipboard_manager.sh delete",
-        "on-click-middle": "~/.config/hypr/scripts/clipboard_manager.sh clear"
+        "on-click": "~/.config/hypr/scripts/ui/clipboard/clipboard_manager.sh show",
+        "on-click-right": "~/.config/hypr/scripts/ui/clipboard/clipboard_manager.sh delete",
+        "on-click-middle": "~/.config/hypr/scripts/ui/clipboard/clipboard_manager.sh clear"
     },
     "battery": {
         "states": {
@@ -246,8 +246,8 @@
         "format": "{}",
         "return-type": "json",
         "interval": 5,
-        "exec": "~/.config/hypr/scripts/bluetooth_status.sh",
-        "on-click": "~/.config/hypr/scripts/toggle_bluetooth.sh",
+        "exec": "~/.config/hypr/scripts/audio/bluetooth/bluetooth_status.sh",
+        "on-click": "~/.config/hypr/scripts/audio/bluetooth/toggle_bluetooth.sh",
         "tooltip": true
     }
 }
