@@ -51,7 +51,8 @@
     "cpu": {
         "format": "{usage}% ",
         "tooltip": true,
-        "tooltip-format": "Uso de CPU: {usage}%\nNúcleos: {cores}"
+        "tooltip-format": "Uso de CPU: {usage}%\nNúcleos: {cores}",
+        "interval": 1
     },
     "memory": {
         "format": "{}% 󰍛",
@@ -160,7 +161,7 @@
     "custom/usb": {
         "format": "{}",
         "return-type": "json",
-        "interval": 5,
+        "interval": 2,
         "exec": "/home/ensismoebius/.config/hypr/scripts/check_usb.sh",
         "on-click": "/home/ensismoebius/.config/hypr/scripts/open_usb_device.sh",
         "tooltip": true
