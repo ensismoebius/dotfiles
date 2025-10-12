@@ -102,6 +102,7 @@ XDG_CONFIG_DIRS_TO_LINK=(
     "dunst"
     "gtk-3.0"
     "gtk-4.0"
+    "icons"
     "kitty"
     "qt5ct"
     "qt6ct"
@@ -182,4 +183,18 @@ EOF
 update-desktop-database ~/.local/share/applications
 
 echo "XDG MIME configuration for Nautilus completed."
+
+# Set up icon theme
+echo "Setting up Cyberpunk-Neon icon theme..."
+mkdir -p ~/.local/share/icons
+# Create symbolic link for icons directory
+if [ -e ~/.local/share/icons/Cyberpunk-Neon ]; then
+    rm -rf ~/.local/share/icons/Cyberpunk-Neon
+fi
+ln -sf ~/.config/hypr/icons/Cyberpunk-Neon ~/.local/share/icons/
+
+# Update icon cache
+gtk-update-icon-cache -f ~/.config/hypr/icons/Cyberpunk-Neon
+
+echo "Icon theme setup completed."
 echo "Done."
