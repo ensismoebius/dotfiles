@@ -16,7 +16,7 @@
     ],
     "modules-center": [
         "custom/archicon",
-        "mpris",
+        "custom/mpris-scroll",
         "clock",
         "idle_inhibitor",
         "battery",
@@ -181,18 +181,13 @@
         "format-es": "ESP",
         "format-en": "ENG"
     },
-    "mpris": {
-        "format": "{player_icon} {title}",
-        "format-stopped": "",
-        "player-icons": {
-            "default": "▶",
-            "mpv": "🎵"
-        },
-        "status-icons": {
-            "playing": "▶",
-            "paused": "⏸"
-        },
-        "max-length": 20
+    "custom/mpris-scroll": {
+        "format": "{}",
+        "return-type": "json",
+        "exec": "~/.config/hypr/scripts/ui/mpris_scroll.sh",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
     },
     "custom/usb": {
         "format": "{}",

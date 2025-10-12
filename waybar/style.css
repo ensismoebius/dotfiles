@@ -57,7 +57,8 @@ window#waybar.hidden {
 #dunst,
 #custom-usb,
 #battery,
-#language {
+#language,
+#custom-mpris-scroll {
     color: #00FF41;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -258,6 +259,12 @@ window#waybar.hidden {
 #mpris {
     background: #0D0208;
     padding-right: 15px;
+}
+
+#custom-mpris-scroll {
+    background: #0D0208;
+    padding-right: 15px;
+    min-width: 150px;
 }
 
 #custom-bluetooth {
