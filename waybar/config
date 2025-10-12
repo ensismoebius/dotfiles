@@ -23,6 +23,7 @@
         "custom/notifications"
     ],
     "modules-right": [
+        "custom/clipboard",
         "custom/monitor-layout",
         "custom/usb",
         "custom/bluetooth",
@@ -180,6 +181,14 @@
         "on-click": "makoctl invoke",
         "on-click-right": "makoctl mode -t do-not-disturb",
         "tooltip": true
+    },
+    "custom/clipboard": {
+        "format": "󰅌 ",
+        "tooltip": true,
+        "tooltip-format": "Clipboard Manager",
+        "on-click": "~/.config/hypr/scripts/clipboard_manager.sh show",
+        "on-click-right": "~/.config/hypr/scripts/clipboard_manager.sh delete",
+        "on-click-middle": "~/.config/hypr/scripts/clipboard_manager.sh clear"
     },
     "battery": {
         "states": {

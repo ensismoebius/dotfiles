@@ -242,8 +242,24 @@ window#waybar.hidden {
 }
 
 #custom-usb {
+    color: #f9e2af;
+    padding: 0 15px;
+    margin: 6px 0;
+    border-radius: 10px;
+}
+
+#custom-clipboard {
+    color: #00FF41;
     background: #0D0208;
-    padding-right: 13px;
+    padding: 0 15px;
+    margin: 6px 0;
+    border-radius: 10px;
+}
+
+#custom-clipboard:hover {
+    background: #008F11;
+    color: #00FF41;
+    transition: all 0.3s ease;
 }
 
 #tray {
