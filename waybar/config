@@ -16,19 +16,19 @@
     ],
     "modules-center": [
         "custom/archicon",
+        "mpris",
         "clock",
         "idle_inhibitor",
-        "custom/monitor-layout",
         "custom/dunst"
     ],
     "modules-right": [
+        "custom/monitor-layout",
         "custom/usb",
         "custom/bluetooth",
         "battery",
         "pulseaudio/slider",
         "pulseaudio",
         "network",
-        "mpris",
         "tray"
     ],
     "tray": {

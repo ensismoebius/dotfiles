@@ -121,6 +121,12 @@ window#waybar.hidden {
     margin: 6px 5px;
 }
 
+#custom-monitor-layout {
+    background: #008F11;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 #taskbar button {
     padding: 0px 5px;
     margin: 0px 3px;
