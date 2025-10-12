@@ -16,7 +16,8 @@
     ],
     "modules-center": [
         "custom/archicon",
-        "custom/mpris-scroll",
+        "custom/mpris-icon",
+        "custom/mpris-text",
         "clock",
         "idle_inhibitor",
         "battery",
@@ -181,11 +182,17 @@
         "format-es": "ESP",
         "format-en": "ENG"
     },
-    "custom/mpris-scroll": {
+    "custom/mpris-icon": {
         "format": "{}",
         "return-type": "json",
-        "exec": "~/.config/hypr/scripts/ui/mpris_scroll.sh",
+        "exec": "~/.config/hypr/scripts/ui/mpris_icon.sh",
         "on-click": "playerctl play-pause",
+        "tooltip": true
+    },
+    "custom/mpris-text": {
+        "format": "{}",
+        "return-type": "json",
+        "exec": "~/.config/hypr/scripts/ui/mpris_text.sh",
         "on-scroll-up": "playerctl next",
         "on-scroll-down": "playerctl previous"
     },

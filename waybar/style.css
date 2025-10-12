@@ -58,7 +58,8 @@ window#waybar.hidden {
 #custom-usb,
 #battery,
 #language,
-#custom-mpris-scroll {
+#custom-mpris-icon,
+#custom-mpris-text {
     color: #00FF41;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -261,10 +262,19 @@ window#waybar.hidden {
     padding-right: 15px;
 }
 
-#custom-mpris-scroll {
+#custom-mpris-icon,
+#custom-mpris-text {
     background: #0D0208;
-    padding-right: 15px;
-    min-width: 150px;
+}
+
+#custom-mpris-icon {
+    padding-right: 0px;
+}
+
+#custom-mpris-text {
+    padding-left: 0;
+    padding-right: 0px;
+    min-width: 160px;
 }
 
 #custom-bluetooth {

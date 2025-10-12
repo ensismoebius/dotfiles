@@ -1,21 +1,13 @@
 #!/bin/bash
 
-# Waybar module for scrolling playerctl metadata with icons
+# Waybar module for scrolling playerctl metadata text
 
 # --- Configuration ---
-MAX_LEN=20          # Total max length of the module
+MAX_LEN=20          # Max length of the text to show
 INTERVAL=0.2        # Update interval in seconds
 
-# --- Icon Configuration ---
-PLAYER_ICON_DEFAULT="▶"
-PLAYER_ICON_MPV="🎵"
-# Add more player-specific icons here, e.g., PLAYER_ICON_SPOTIFY=""
-
-STATUS_ICON_PLAYING="▶"
-STATUS_ICON_PAUSED="⏸"
-
 # --- Script Internals ---
-POS_FILE="/tmp/waybar_mpris_scroll_pos"
+POS_FILE="/tmp/waybar_mpris_text_scroll_pos" # Use a new position file
 
 # Initialize position file
 if [ ! -f "$POS_FILE" ]; then
@@ -37,9 +29,9 @@ LAST_METADATA=""
 while true; do
     PLAYER_STATUS=$(playerctl status 2>/dev/null)
     
+    # We only want to show text if player is playing or paused
     if [ "$PLAYER_STATUS" = "Playing" ] || [ "$PLAYER_STATUS" = "Paused" ]; then
         METADATA=$(playerctl metadata --format '''{{artist}} - {{title}}''')
-        PLAYER_NAME=$(playerctl metadata --format '''{{playerName}}''')
     else
         # Player is stopped or not running
         if [ "$LAST_METADATA" != "" ]; then
@@ -51,20 +43,6 @@ while true; do
         continue
     fi
 
-    # --- Determine Icon ---
-    ICON=""
-    if [ "$PLAYER_STATUS" = "Playing" ]; then
-        ICON=$STATUS_ICON_PLAYING
-    elif [ "$PLAYER_STATUS" = "Paused" ]; then
-        ICON=$STATUS_ICON_PAUSED
-    fi
-
-    case $PLAYER_NAME in
-        "mpv")
-            ICON=$PLAYER_ICON_MPV
-            ;; 
-    esac
-
     # --- Reset scroll if metadata changed ---
     if [ "$METADATA" != "$LAST_METADATA" ]; then
         reset_scroll
@@ -72,12 +50,11 @@ while true; do
     fi
 
     # --- Prepare Output ---
-    ICON_LEN=${#ICON}
-    AVAILABLE_LEN=$((MAX_LEN - ICON_LEN - 1))
+    AVAILABLE_LEN=$MAX_LEN
 
     # If metadata fits, display it statically
     if [ ${#METADATA} -le $AVAILABLE_LEN ]; then
-        TEXT_TO_SHOW="$ICON $METADATA"
+        TEXT_TO_SHOW="$METADATA"
         ESCAPED_TEXT=$(safe_escape "$TEXT_TO_SHOW")
         echo "{\"text\": \"$ESCAPED_TEXT\"}"
         sleep 1
@@ -85,9 +62,19 @@ while true; do
     fi
 
     # --- Scrolling Logic (if text is too long) ---
+    # Don't scroll if paused
+    if [ "$PLAYER_STATUS" = "Paused" ]; then
+        # Just show the truncated text
+        TEXT_TO_SHOW=$(echo "$METADATA" | cut -c 1-$AVAILABLE_LEN)
+        ESCAPED_TEXT=$(safe_escape "$TEXT_TO_SHOW")
+        echo "{\"text\": \"$ESCAPED_TEXT\"}"
+        sleep 1
+        continue
+    fi
+
     POS=$(cat "$POS_FILE")
     
-    PADDED_METADATA="$METADATA   "
+    PADDED_METADATA="$METADATA   " # Padding for seamless scroll
     LEN=${#PADDED_METADATA}
 
     SCROLLING_TEXT=$(echo "$PADDED_METADATA$PADDED_METADATA" | cut -c $((POS + 1))-$((POS + AVAILABLE_LEN)))
@@ -95,9 +82,7 @@ while true; do
     NEW_POS=$(( (POS + 1) % LEN ))
     echo $NEW_POS > "$POS_FILE"
 
-    FINAL_TEXT="$ICON $SCROLLING_TEXT"
-
-    ESCAPED_TEXT=$(safe_escape "$FINAL_TEXT")
+    ESCAPED_TEXT=$(safe_escape "$SCROLLING_TEXT")
     echo "{\"text\": \"$ESCAPED_TEXT\"}"
 
     sleep $INTERVAL
