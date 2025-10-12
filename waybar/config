@@ -19,15 +19,15 @@
         "mpris",
         "clock",
         "idle_inhibitor",
+        "battery",
         "custom/dunst"
     ],
     "modules-right": [
         "custom/monitor-layout",
         "custom/usb",
         "custom/bluetooth",
-        "battery",
-        "pulseaudio/slider",
         "pulseaudio",
+        "pulseaudio/slider",
         "network",
         "tray"
     ],

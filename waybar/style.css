@@ -38,6 +38,12 @@ window#waybar.hidden {
 }
 
 /* Separation to the left */
+#disk {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
 #custom-archicon,
 #cpu,
 #idle_inhibitor {
@@ -63,6 +69,21 @@ window#waybar.hidden {
     color: #00FF41;
     background: #0D0208;
     padding-right: 17px;
+}
+
+#custom-monitor-layout {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#mpris,
+#custom-bluetooth {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 #clock {
@@ -150,20 +171,20 @@ window#waybar.hidden {
 #pulseaudio {
     min-width: 55px;
     color: #00FF41;
-    background: #008F11;
+    background: #0D0208;
 }
 
 #pulseaudio-slider {
     color: #00FF41;
     background: #0D0208;
-    min-width: 50px;
+    min-width: 25px;
 }
-
-
 
 #network {
     background: #008F11;
     padding-right: 13px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #language {
@@ -174,6 +195,8 @@ window#waybar.hidden {
 #battery {
     background: #0D0208;
     padding-right: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #battery.good,
@@ -246,14 +269,14 @@ window#waybar.hidden {
     min-height: 16px;
     min-width: 16px;
     margin: 0 4px;
-    padding: 2px;
+    padding: 0px;
     border-radius: 4px;
-    background: #008F11;
 }
 
 #tray *:hover {
-    background: #00FF41;
-    box-shadow: 0 0 5px #00FF41;
+    background: #008F11;
+    box-shadow: 0 0 2px #00FF41;
+    color: #0D0208;
 }
 
 /* === Optional animation === */

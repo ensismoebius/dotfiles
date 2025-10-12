@@ -9,5 +9,5 @@ if [ -d "$MOUNT_BASE" ] && [ -n "$(ls -A "$MOUNT_BASE")" ]; then
     COUNT=$(ls -A "$MOUNT_BASE" | wc -l)
     echo "{\"text\": \" $COUNT\", \"tooltip\": \"$COUNT USB device(s) connected\"}"
 else
-    echo "" # Output nothing if no devices are connected
+    echo "{\"text\": \" 0\", \"tooltip\": \"No USB device(s) connected\"}"
 fi
