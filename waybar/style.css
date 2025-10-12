@@ -245,15 +245,16 @@ window#waybar.hidden {
     color: #f9e2af;
     padding: 0 15px;
     margin: 6px 0;
-    border-radius: 10px;
+    background: #000000;
 }
 
 #custom-clipboard {
     color: #00FF41;
     background: #0D0208;
-    padding: 0 15px;
-    margin: 6px 0;
+    padding: 0 5px 0 10px;
+    margin: 6px 0 6px 5px;
     border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 #custom-clipboard:hover {
