@@ -42,7 +42,7 @@
     },
     "clock": {
         "timezone": "America/Sao_Paulo",
-        "format": "{:%d/%m/%Y - %H:%M:%S}",
+        "format": "{:%d/%m/%Y - %H:%M}",
         "tooltip-format": "{calendar}",
         "calendar": {
             "mode": "month"
@@ -162,7 +162,7 @@
         "return-type": "json",
         "interval": 5,
         "exec": "/home/ensismoebius/.config/hypr/scripts/check_usb.sh",
-        "on-click": "nautilus",
+        "on-click": "/home/ensismoebius/.config/hypr/scripts/open_usb_device.sh",
         "tooltip": true
     },
     "custom/dunst": {
