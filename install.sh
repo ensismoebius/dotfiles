@@ -1,5 +1,66 @@
 #!/bin/bash
 
+# --- Dependency Installation ---
+echo "This script will install all necessary software for the Hyprland configuration."
+echo "The following packages will be installed:"
+echo "
+--- Core Components ---
+hyprland: The Wayland compositor
+waybar: Status bar
+dunst: Notification daemon
+rofi: Application launcher
+wofi: Used for emoji picker
+kitty: Terminal emulator
+nautilus: File manager
+wlogout: Logout menu
+
+--- System & Theming ---
+swww: Wallpaper daemon
+polkit-kde-agent: PolicyKit authentication agent
+qt5ct qt6ct kvantum: For Qt theming
+papirus-icon-theme: Icon theme
+ttf-jetbrains-mono noto-fonts ttf-font-awesome: Fonts
+hyprcursor: For cursor theming
+catppuccin-cursors-mocha (AUR): Cursor theme
+
+--- Utilities ---
+firefox: Web browser
+network-manager-applet: Network manager GUI
+bluez-utils: For Bluetooth
+udiskie: Automounter for removable media
+pipewire-pulse: For audio control (pactl)
+pavucontrol: Volume control panel
+grim slurp grimblast (AUR): Screenshot tools
+wl-clipboard: Clipboard utilities
+jq: JSON processor for scripts
+zsh: The Z shell
+swaync (AUR): Notification center
+waypaper (AUR): Wallpaper selector GUI
+xdg-utils: For opening files and URLs
+git base-devel: For installing AUR packages
+
+"
+read -p "Do you want to proceed with the installation? (y/N) " choice
+case "$choice" in
+  y|Y ) echo "Starting installation...";;
+  * ) echo "Installation aborted." && exit 0;;
+esac
+
+# Check if yay is installed, if not, install it
+if ! command -v yay &> /dev/null; then
+    echo "yay could not be found, installing it now."
+    sudo pacman -S --needed --noconfirm git base-devel
+    git clone https://aur.archlinux.org/yay.git
+    (cd yay && makepkg -si --noconfirm)
+    rm -rf yay
+fi
+
+# Install all packages with yay
+yay -S --needed hyprland waybar wofi rofi kitty nautilus firefox dunst swww polkit-kde-agent qt5ct qt6ct kvantum papirus-icon-theme ttf-jetbrains-mono noto-fonts ttf-font-awesome network-manager-applet bluez-utils udiskie pipewire-pulse pavucontrol grim slurp wl-clipboard jq zsh hyprcursor wlogout xdg-utils grimblast swaync waypaper catppuccin-cursors-mocha
+
+echo "All dependencies installed successfully."
+echo ""
+
 # This script creates symbolic links from the home directory to the configuration files in this directory.
 
 # Directory where the configuration files are located
