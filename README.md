@@ -87,7 +87,7 @@ The setup includes a cyberpunk-inspired theme with:
 
 ### Directory Structure
 
-\`\`\`plaintext
+<pre>
 ~/.config/hypr/
 │
 ├── hyprland.conf.d/        # Modular Hyprland configuration
@@ -120,7 +120,7 @@ The setup includes a cyberpunk-inspired theme with:
 └── themes/                # Theme-related configurations
     ├── movie.conf        # Main theme configuration
     └── movie-gtk-theme/  # GTK theme files
-\`\`\`
+</pre>
 
 ### Installation Details
 
@@ -171,7 +171,7 @@ The `install.sh` script automates the entire setup process:
 ```bash
 $ chmod +x install.sh  # Make the script executable
 $ ./install.sh        # Run the installer
-\`\`\`
+```
 
 ## 🛠️ Scripts
 
