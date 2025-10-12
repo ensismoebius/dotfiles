@@ -56,7 +56,12 @@ if ! command -v yay &> /dev/null; then
 fi
 
 # Install all packages with yay
-yay -S --needed hyprland waybar wofi rofi kitty nautilus firefox dunst swww polkit-kde-agent qt5ct qt6ct kvantum papirus-icon-theme ttf-jetbrains-mono noto-fonts ttf-font-awesome network-manager-applet bluez-utils udiskie pipewire-pulse pavucontrol grim slurp wl-clipboard jq zsh hyprcursor wlogout xdg-utils grimblast swaync waypaper catppuccin-cursors-mocha
+yay -S --needed hyprland waybar wofi rofi kitty nautilus firefox dunst swww polkit-kde-agent qt5ct qt6ct kvantum papirus-icon-theme ttf-jetbrains-mono noto-fonts ttf-font-awesome network-manager-applet bluez-utils udiskie pipewire-pulse pavucontrol grim slurp wl-clipboard jq zsh hyprcursor wlogout xdg-utils grimblast swaync waypaper catppuccin-cursors-mocha vim neovim ccls
+
+# Install vim-plug for plugin management
+echo "Installing vim-plug..."
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 echo "All dependencies installed successfully."
 echo ""
@@ -77,6 +82,20 @@ FILES_TO_LINK=(
     ".gtkrc-2.0"
     ".Xresources"
 )
+
+# Vim specific configuration
+echo "Setting up Vim configuration..."
+# Create necessary vim directories
+mkdir -p ~/.vim/autoload
+mkdir -p ~/.config/coc
+
+# Link vim configuration files
+ln -sf "$CONFIG_DIR/vim/.vimrc" ~/.vimrc
+ln -sf "$CONFIG_DIR/vim/coc-settings.json" ~/.vim/coc-settings.json
+
+# Install coc-clangd for C/C++ support
+echo "Please run ':PlugInstall' when you first open Vim"
+echo "After plugins are installed, run ':CocInstall coc-clangd' for C/C++ support"
 
 # XDG config directories to link to ~/.config
 XDG_CONFIG_DIRS_TO_LINK=(
