@@ -7,19 +7,28 @@
     offset = 10x50
     scale = 0
     notification_limit = 20
+    
+    # Progress bar
     progress_bar = true
     progress_bar_height = 10
-    progress_bar_frame_width = 1
+    progress_bar_frame_width = 2
     progress_bar_min_width = 150
     progress_bar_max_width = 300
-    indicate_hidden = yes
-    transparency = 10
+    
+    # Appearance
+    transparency = 20
     separator_height = 2
-    padding = 8
-    horizontal_padding = 8
-    text_icon_padding = 0
+    padding = 15
+    horizontal_padding = 15
+    text_icon_padding = 10
     frame_width = 2
     frame_color = "#00FF41"
+    separator_color = "#00FF41"
+    
+    # Effects and styling
+    corner_radius = 0
+    background = "#0D0208DD"
+    highlight = "#00FF41"
     gap_size = 5
     separator_color = frame
     sort = yes
@@ -57,23 +66,28 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#0D0208EE"
+    background = "#0D0208AA"
     foreground = "#00FF41"
     frame_color = "#008F11"
     timeout = 10
+    highlight = "#008F11"
+    format = "<span foreground='#00FF41' weight='bold' size='larger'>%s</span>\n%b"
 
 [urgency_normal]
-    background = "#0D0208EE"
+    background = "#0D0208AA"
     foreground = "#00FF41"
     frame_color = "#00FF41"
     highlight = "#00FF41"
     timeout = 10
+    format = "<span foreground='#00FF41' weight='bold' size='larger'>%s</span>\n<span foreground='#00FF41'>%b</span>"
 
 [urgency_critical]
-    background = "#0D0208EE"
+    background = "#0D0208AA"
     foreground = "#FF0000"
     frame_color = "#FF0000"
+    highlight = "#FF0000"
     timeout = 0
+    format = "<span foreground='#FF0000' weight='bold' size='larger'>%s</span>\n<span foreground='#FF0000'>%b</span>"
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.
