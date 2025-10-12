@@ -109,8 +109,8 @@
     },
     "custom/monitor-layout": {
         "format": "{}",
-        "exec": "/home/ensismoebius/.config/hypr/scripts/monitor_switch.sh",
-        "on-click": "/home/ensismoebius/.config/hypr/scripts/monitor_switch.sh --switch",
+        "exec": "~/.config/hypr/scripts/monitor_switch.sh",
+        "on-click": "~/.config/hypr/scripts/monitor_switch.sh --switch",
         "return-type": "json",
         "signal": 8
     },
@@ -198,8 +198,8 @@
         "format": "{}",
         "return-type": "json",
         "interval": 2,
-        "exec": "/home/ensismoebius/.config/hypr/scripts/check_usb.sh",
-        "on-click": "/home/ensismoebius/.config/hypr/scripts/open_usb_device.sh",
+        "exec": "~/.config/hypr/scripts/check_usb.sh",
+        "on-click": "~/.config/hypr/scripts/open_usb_device.sh",
         "tooltip": true
     },
     "custom/notifications": {
@@ -246,8 +246,8 @@
         "format": "{}",
         "return-type": "json",
         "interval": 5,
-        "exec": "/home/ensismoebius/.config/hypr/scripts/bluetooth_status.sh",
-        "on-click": "/home/ensismoebius/.config/hypr/scripts/toggle_bluetooth.sh",
+        "exec": "~/.config/hypr/scripts/bluetooth_status.sh",
+        "on-click": "~/.config/hypr/scripts/toggle_bluetooth.sh",
         "tooltip": true
     }
 }
