@@ -1,241 +1,323 @@
-😀 Grinning Face
-😃 Grinning Face with Big Eyes
-😄 Grinning Face with Smiling Eyes
-😁 Beaming Face with Smiling Eyes
-😆 Grinning Squinting Face
-😅 Grinning Face with Sweat
-🤣 Rolling on the Floor Laughing
-😂 Face with Tears of Joy
-🙂 Slightly Smiling Face
-🙃 Upside-Down Face
-😉 Winking Face
-😊 Smiling Face with Smiling Eyes
-😇 Smiling Face with Halo
-🥰 Smiling Face with Hearts
-😍 Smiling Face with Heart-Eyes
-🤩 Star-Struck
-😘 Face Blowing a Kiss
-😗 Kissing Face
-😚 Kissing Face with Closed Eyes
-😙 Kissing Face with Smiling Eyes
-😋 Face Savoring Food
-😛 Face with Tongue
-😜 Winking Face with Tongue
-🤪 Zany Face
-😝 Squinting Face with Tongue
-🤑 Money-Mouth Face
-🤗 Hugging Face
-🤭 Face with Hand Over Mouth
-🤫 Shushing Face
-🤔 Thinking Face
-🤐 Zipper-Mouth Face
-🤨 Face with Raised Eyebrow
-😐 Neutral Face
-😑 Expressionless Face
-😶 Face Without Mouth
-😏 Smirking Face
-😒 Unamused Face
-🙄 Face with Rolling Eyes
-😬 Grimacing Face
-🤥 Lying Face
-😌 Relieved Face
-😔 Pensive Face
-😪 Sleepy Face
-🤤 Drooling Face
-😴 Sleeping Face
-😷 Face with Medical Mask
-🤒 Face with Thermometer
-🤕 Face with Head-Bandage
-🤢 Nauseated Face
-🤮 Face Vomiting
-🤧 Sneezing Face
-🥵 Hot Face
-🥶 Cold Face
-🥴 Woozy Face
-😵 Dizzy Face
-🤯 Exploding Head
-🤠 Cowboy Hat Face
-🥳 Partying Face
-😎 Smiling Face with Sunglasses
-🤓 Nerding Face
-🧐 Face with Monocle
-😕 Confused Face
-😟 Worried Face
-🙁 Slightly Frowning Face
-😮 Face with Open Mouth
-😯 Hushed Face
-😲 Astonished Face
-😳 Flushed Face
-🥺 Pleading Face
-😦 Frowning Face with Open Mouth
-😧 Anguished Face
-😨 Fearful Face
-😰 Anxious Face with Sweat
-😥 Sad but Relieved Face
-😢 Crying Face
-😭 Loudly Crying Face
-😱 Face Screaming in Fear
-😖 Confounded Face
-😣 Persevering Face
-😞 Disappointed Face
-😓 Downcast Face with Sweat
-😩 Weary Face
-😫 Tired Face
-🥱 Yawning Face
-😤 Face with Steam From Nose
-😡 Pouting Face
-😠 Angry Face
-🤬 Face with Symbols on Mouth
-😈 Smiling Face with Horns
-👿 Angry Face with Horns
-💀 Skull
-☠️ Skull and Crossbones
-💩 Pile of Poo
-🤡 Clown Face
-👹 Ogre
+😀 Rosto Sorridente
+😃 Rosto Sorridente com Olhos Grandes
+😄 Rosto Sorridente com Olhos Sorridentes
+😁 Rosto Radiante com Olhos Sorridentes
+😆 Rosto Sorridente com Olhos Apertados
+😅 Rosto Sorridente com Suor
+🤣 Rolando no Chão de Rir
+😂 Rosto com Lágrimas de Alegria
+🙂 Rosto Levemente Sorridente
+🙃 Rosto de Cabeça para Baixo
+😉 Rosto Piscando
+😊 Rosto Sorridente com Olhos Sorridentes
+😇 Rosto Sorridente com Auréola
+🥰 Rosto Sorridente com Corações
+😍 Rosto Sorridente com Olhos em Forma de Coração
+🤩 Rosto Encantado
+😘 Rosto Mandando Beijo
+😗 Rosto Beijando
+😚 Rosto Beijando com Olhos Fechados
+😙 Rosto Beijando com Olhos Sorridentes
+😋 Rosto Saboreando Comida
+😛 Rosto com Língua de Fora
+😜 Rosto Piscando com Língua de Fora
+🤪 Rosto Maluco
+😝 Rosto Apertando os Olhos com Língua de Fora
+🤑 Rosto com Dinheiro na Boca
+🤗 Rosto Abraçando
+🤭 Rosto com Mão na Boca
+🤫 Rosto Silencioso
+🤔 Rosto Pensativo
+🤐 Rosto com Boca Zíper
+🤨 Rosto com Sobrancelha Erguida
+😐 Rosto Neutro
+😑 Rosto Sem Expressão
+😶 Rosto Sem Boca
+😏 Rosto Sorridente de Lado
+😒 Rosto Desapontado
+🙄 Rosto Revirando os Olhos
+😬 Rosto Grimace
+🤥 Rosto Mentiroso
+😌 Rosto Aliviado
+😔 Rosto Pensativo e Triste
+😪 Rosto Sonolento
+🤤 Rosto Babando
+😴 Rosto Dormindo
+😷 Rosto com Máscara Médica
+🤒 Rosto com Termômetro
+🤕 Rosto com Curativo na Cabeça
+🤢 Rosto Enjoado
+🤮 Rosto Vomitando
+🤧 Rosto Espirrando
+🥵 Rosto com Calor
+🥶 Rosto com Frio
+🥴 Rosto Tonto
+😵 Rosto Tonto / Confuso
+🤯 Cabeça Explodindo
+🤠 Rosto com Chapéu de Cowboy
+🥳 Rosto de Festa
+😎 Rosto Sorridente com Óculos Escuros
+🤓 Rosto Nerd
+🧐 Rosto com Monóculo
+😕 Rosto Confuso
+😟 Rosto Preocupado
+🙁 Rosto Levemente Triste
+😮 Rosto Surpreso com Boca Aberta
+😯 Rosto Silencioso / Assombrado
+😲 Rosto Estupefato
+😳 Rosto Corado
+🥺 Rosto Implorando / Suplicante
+😦 Rosto Triste com Boca Aberta
+😧 Rosto Angustiado
+😨 Rosto Amedrontado
+😰 Rosto Ansioso com Suor
+😥 Rosto Triste mas Aliviado
+😢 Rosto Chorando
+😭 Rosto Chorando Alto
+😱 Rosto Gritando de Medo
+😖 Rosto Confuso / Frustrado
+😣 Rosto Perseverante
+😞 Rosto Desapontado
+😓 Rosto Triste com Suor
+😩 Rosto Cansado / Exausto
+😫 Rosto Muito Cansado
+🥱 Rosto Bocejando
+😤 Rosto com Vapor pelo Nariz
+😡 Rosto Irritado
+😠 Rosto Bravo
+🤬 Rosto com Símbolos na Boca (raiva)
+😈 Rosto Sorridente com Chifres
+👿 Rosto Bravo com Chifres
+💀 Caveira
+☠️ Caveira e Ossos Cruzados
+💩 Pilha de Cocô
+🤡 Rosto de Palhaço
+👹 Ogro
 👺 Goblin
-👻 Ghost
-👽 Alien
-👾 Alien Monster
-🤖 Robot
-😺 Grinning Cat
-😸 Grinning Cat with Smiling Eyes
-😹 Cat with Tears of Joy
-😻 Smiling Cat with Heart-Eyes
-😼 Cat with Wry Smile
-😽 Kissing Cat
-🙀 Weary Cat
-😿 Crying Cat
-😾 Pouting Cat
-🙈 See-No-Evil Monkey
-🙉 Hear-No-Evil Monkey
-🙊 Speak-No-Evil Monkey
-💋 Kiss Mark
-💌 Love Letter
-💘 Heart with Arrow
-💝 Heart with Ribbon
-💖 Sparkling Heart
-💗 Growing Heart
-💓 Beating Heart
-💞 Revolving Hearts
-💕 Two Hearts
-💟 Heart Decoration
-💔 Broken Heart
-❤️ Red Heart
-🧡 Orange Heart
-💛 Yellow Heart
-💚 Green Heart
-💙 Blue Heart
-💜 Purple Heart
-🤎 Brown Heart
-🖤 Black Heart
-🤍 White Heart
-💯 Hundred Points
-💢 Anger Symbol
-💥 Collision
-💫 Dizzy
-💦 Sweat Droplets
-💨 Dashing Away
-🕳️ Hole
-💣 Bomb
-💬 Speech Balloon
-👁️‍🗨️ Eye in Speech Bubble
-🗨️ Left Speech Bubble
-🗯️ Right Anger Bubble
-💭 Thought Balloon
-💤 Zzz
-👋 Waving Hand
-🤚 Raised Back of Hand
-🖐️ Hand with Fingers Splayed
-✋ Raised Hand
-🖖 Vulcan Salute
-👌 OK Hand
-🤏 Pinching Hand
-✌️ Victory Hand
-🤞 Crossed Fingers
-🤟 Love-You Gesture
-🤘 Sign of the Horns
-🤙 Call Me Hand
-👈 Backhand Index Pointing Left
-👉 Backhand Index Pointing Right
-👆 Backhand Index Pointing Up
-🖕 Middle Finger
-👇 Backhand Index Pointing Down
-☝️ Index Pointing Up
-👍 Thumbs Up
-👎 Thumbs Down
-✊ Raised Fist
-👊 Oncoming Fist
-🤛 Left-Facing Fist
-🤜 Right-Facing Fist
-👏 Clapping Hands
-🙌 Raising Hands
-👐 Open Hands
-🤲 Palms Up Together
-🤝 Handshake
-🙏 Folded Hands
-✍️ Writing Hand
-💅 Nail Polish
-🤳 Selfie
-💪 Flexed Biceps
-🦾 Mechanical Arm
-🦿 Mechanical Leg
-🦵 Leg
-🦶 Foot
-👂 Ear
-🦻 Ear with Hearing Aid
-👃 Nose
-🧠 Brain
-🦷 Tooth
-🦴 Bone
-👀 Eyes
-👁️ Eye
-👅 Tongue
-👄 Mouth
-👶 Baby
-🧒 Child
-👦 Boy
-👧 Girl
-🧑 Person
-👱 Person: Blond Hair
-👨 Man
-🧔 Man: Beard
-👨‍🦰 Man: Red Hair
-👨‍🦱 Man: Curly Hair
-👨‍🦳 Man: White Hair
-👨‍🦲 Man: Bald
-👩 Woman
-👩‍🦰 Woman: Red Hair
-🧑‍🦰 Person: Red Hair
-👩‍🦱 Woman: Curly Hair
-🧑‍🦱 Person: Curly Hair
-👩‍🦳 Woman: White Hair
-🧑‍🦳 Person: White Hair
-👩‍🦲 Woman: Bald
-🧑‍🦲 Person: Bald
-👱‍♀️ Woman: Blond Hair
-👱‍♂️ Man: Blond Hair
-🧓 Older Person
-👴 Old Man
-👵 Old Woman
-🙍 Person Frowning
-🙍‍♂️ Man Frowning
-🙍‍♀️ Woman Frowning
-🙎 Person Pouting
-🙎‍♂️ Man Pouting
-🙎‍♀️ Woman Pouting
-🙅 Person Gesturing No
-🙅‍♂️ Man Gesturing No
-🙅‍♀️ Woman Gesturing No
-🙆 Person Gesturing OK
-🙆‍♂️ Man Gesturing OK
-🙆‍♀️ Woman Gesturing OK
-💁 Person Tipping Hand
-💁‍♂️ Man Tipping Hand
-💁‍♀️ Woman Tipping Hand
-🙋 Person Raising Hand
-🙋‍♂️ Man Raising Hand
-🙋‍♀️ Woman Raising Hand
-🧏 Deaf Person
-🧏‍♂️ Deaf Man
-d
+👻 Fantasma
+👽 Alienígena
+👾 Monstro Alienígena
+🤖 Robô
+😺 Gato Sorridente
+😸 Gato Sorridente com Olhos Sorridentes
+😹 Gato com Lágrimas de Alegria
+😻 Gato Sorridente com Olhos de Coração
+😼 Gato com Sorriso Irônico
+😽 Gato Beijando
+🙀 Gato Assustado
+😿 Gato Chorando
+😾 Gato Irritado / Bufando
+🙈 Macaco Não Vê
+🙉 Macaco Não Ouve
+🙊 Macaco Não Fala
+💋 Marca de Beijo
+💌 Carta de Amor
+💘 Coração com Flecha
+💝 Coração com Laço
+💖 Coração Brilhante
+💗 Coração Crescente
+💓 Coração Batendo
+💞 Corações Giratórios
+💕 Dois Corações
+💟 Decoração de Coração
+💔 Coração Partido
+❤️ Coração Vermelho
+🧡 Coração Laranja
+💛 Coração Amarelo
+💚 Coração Verde
+💙 Coração Azul
+💜 Coração Roxo
+🤎 Coração Marrom
+🖤 Coração Preto
+🤍 Coração Branco
+💯 Cem Pontos
+💢 Símbolo de Raiva
+💥 Colisão
+💫 Tontura / Estrelas
+💦 Gotas de Suor
+💨 Correndo / Soprando
+🕳️ Buraco
+💣 Bomba
+💬 Balão de Fala
+👁️‍🗨️ Olho no Balão de Fala
+🗨️ Balão de Fala Esquerdo
+🗯️ Balão de Raiva Direito
+💭 Balão de Pensamento
+💤 Zzz / Dormindo
+👋 Mão Acenando
+🤚 Parte de Trás da Mão
+🖐️ Mão com Dedos Abertos
+✋ Mão Levantada
+🖖 Saudação Vulcana
+👌 Mão Fazendo OK
+🤏 Mão Pinçando
+✌️ Mão da Vitória / Paz
+🤞 Dedos Cruzados
+🤟 Gesto de Amor / “I Love You”
+🤘 Mão com Chifres
+🤙 Mão “Me Liga”
+👈 Indicando Esquerda
+👉 Indicando Direita
+👆 Indicando Para Cima
+🖕 Dedo do Meio
+👇 Indicando Para Baixo
+☝️ Indicando Para Cima
+👍 Polegar para Cima
+👎 Polegar para Baixo
+✊ Punho Levantado
+👊 Punho Socando
+🤛 Punho Para Esquerda
+🤜 Punho Para Direita
+👏 Palmas Aplaudindo
+🙌 Mãos Levantadas
+👐 Mãos Abertas
+🤲 Palmas Juntas Para Cima
+🤝 Aperto de Mãos
+🙏 Mãos Juntas / Oração
+✍️ Mão Escrevendo
+💅 Esmalte nas Unhas
+🤳 Tirando Selfie
+💪 Bíceps Flexionado
+🦾 Braço Mecânico
+🦿 Perna Mecânica
+🦵 Perna
+🦶 Pé
+👂 Orelha
+🦻 Orelha com Aparelho Auditivo
+👃 Nariz
+🧠 Cérebro
+🦷 Dente
+🦴 Osso
+👀 Olhos
+👁️ Olho
+👅 Língua
+👄 Boca
+👶 Bebê
+🧒 Criança
+👦 Menino
+👧 Menina
+🧑 Pessoa
+👱 Pessoa com Cabelo Loiro
+👨 Homem
+🧔 Homem com Barba
+👨‍🦰 Homem com Cabelo Ruivo
+👨‍🦱 Homem com Cabelo Cacheado
+👨‍🦳 Homem com Cabelo Branco
+👨‍🦲 Homem Careca
+👩 Mulher
+👩‍🦰 Mulher com Cabelo Ruivo
+🧑‍🦰 Pessoa com Cabelo Ruivo
+👩‍🦱 Mulher com Cabelo Cacheado
+🧑‍🦱 Pessoa com Cabelo Cacheado
+👩‍🦳 Mulher com Cabelo Branco
+🧑‍🦳 Pessoa com Cabelo Branco
+👩‍🦲 Mulher Careca
+🧑‍🦲 Pessoa Careca
+👱‍♀️ Mulher com Cabelo Loiro
+👱‍♂️ Homem com Cabelo Loiro
+🧓 Pessoa Idosa
+👴 Homem Idoso
+👵 Mulher Idosa
+🙍 Pessoa Franze a Testa
+🙍‍♂️ Homem Franze a Testa
+🙍‍♀️ Mulher Franze a Testa
+🙎 Pessoa Fazendo Bico
+🙎‍♂️ Homem Fazendo Bico
+🙎‍♀️ Mulher Fazendo Bico
+🙅 Pessoa Fazendo “Não”
+🙅‍♂️ Homem Fazendo “Não”
+🙅‍♀️ Mulher Fazendo “Não”
+🙆 Pessoa Fazendo “Ok”
+🙆‍♂️ Homem Fazendo “Ok”
+🙆‍♀️ Mulher Fazendo “Ok”
+💁 Pessoa Fazendo Gestos com a Mão
+💁‍♂️ Homem Fazendo Gestos com a Mão
+💁‍♀️ Mulher Fazendo Gestos com a Mão
+🙋 Pessoa Levantando a Mão
+🙋‍♂️ Homem Levantando a Mão
+🙋‍♀️ Mulher Levantando a Mão
+🧏 Pessoa Surda
+🧏‍♂️ Homem Surdo
+🧏‍♀️ Mulher Surda
+🙇 Pessoa Curvando a Cabeça
+🙇‍♂️ Homem Curvando a Cabeça
+🙇‍♀️ Mulher Curvando a Cabeça
+🤦 Pessoa Batendo a Testa
+🤦‍♂️ Homem Batendo a Testa
+🤦‍♀️ Mulher Batendo a Testa
+🤷 Pessoa Encolhendo os Ombros
+🤷‍♂️ Homem Encolhendo os Ombros
+🤷‍♀️ Mulher Encolhendo os Ombros
+💆 Pessoa Fazendo Massagem na Cabeça
+💆‍♂️ Homem Fazendo Massagem na Cabeça
+💆‍♀️ Mulher Fazendo Massagem na Cabeça
+💇 Pessoa Cortando o Cabelo
+💇‍♂️ Homem Cortando o Cabelo
+💇‍♀️ Mulher Cortando o Cabelo
+🚶 Pessoa Andando
+🚶‍♂️ Homem Andando
+🚶‍♀️ Mulher Andando
+🏃 Pessoa Correndo
+🏃‍♂️ Homem Correndo
+🏃‍♀️ Mulher Correndo
+💃 Mulher Dançando
+🕺 Homem Dançando
+👯 Pessoas com Orelhas de Coelho
+👯‍♂️ Homens com Orelhas de Coelho
+👯‍♀️ Mulheres com Orelhas de Coelho
+🧖 Pessoa na Sauna / Spa
+🧖‍♂️ Homem na Sauna / Spa
+🧖‍♀️ Mulher na Sauna / Spa
+🧗 Pessoa Escalando
+🧗‍♂️ Homem Escalando
+🧗‍♀️ Mulher Escalando
+🤺 Pessoa Lutando com Espada / Esgrimista
+🏇 Pessoa Montando Cavalo / Jockey
+⛷️ Pessoa Esquiando
+🏂 Pessoa Snowboard
+🏌️ Pessoa Jogando Golfe
+🏌️‍♂️ Homem Jogando Golfe
+🏌️‍♀️ Mulher Jogando Golfe
+🏄 Pessoa Surfando
+🏄‍♂️ Homem Surfando
+🏄‍♀️ Mulher Surfando
+🚣 Pessoa Remando
+🚣‍♂️ Homem Remando
+🚣‍♀️ Mulher Remando
+🧘 Pessoa Meditando / Yoga
+🧘‍♂️ Homem Meditando / Yoga
+🧘‍♀️ Mulher Meditando / Yoga
+🛀 Pessoa Tomando Banho
+🛌 Pessoa deitada / Dormindo
+🕺 Homem Dançando
+💑 Casal com Coração
+👩‍❤️‍👨 Mulher e Homem com Coração
+👨‍❤️‍👨 Dois Homens com Coração
+👩‍❤️‍👩 Duas Mulheres com Coração
+💏 Casal se Beijando
+👩‍❤️‍💋‍👨 Mulher e Homem se Beijando
+👨‍❤️‍💋‍👨 Dois Homens se Beijando
+👩‍❤️‍💋‍👩 Duas Mulheres se Beijando
+👪 Família
+👨‍👩‍👦 Família: Pai, Mãe e Filho
+👨‍👩‍👧 Família: Pai, Mãe e Filha
+👨‍👩‍👧‍👦 Família: Pai, Mãe, Filho e Filha
+👨‍👩‍👦‍👦 Família: Pai, Mãe e Dois Filhos
+👨‍👩‍👧‍👧 Família: Pai, Mãe e Duas Filhas
+👨‍👨‍👦 Família: Dois Homens e Filho
+👨‍👨‍👧 Família: Dois Homens e Filha
+👨‍👨‍👧‍👦 Família: Dois Homens, Filho e Filha
+👨‍👨‍👦‍👦 Família: Dois Homens e Dois Filhos
+👨‍👨‍👧‍👧 Família: Dois Homens e Duas Filhas
+👩‍👩‍👦 Família: Duas Mulheres e Filho
+👩‍👩‍👧 Família: Duas Mulheres e Filha
+👩‍👩‍👧‍👦 Família: Duas Mulheres, Filho e Filha
+👩‍👩‍👦‍👦 Família: Duas Mulheres e Dois Filhos
+👩‍👩‍👧‍👧 Família: Duas Mulheres e Duas Filhas
+🗣️ Pessoa Falando
+👤 Silhueta de Pessoa
+👥 Duas Pessoas
+🫂 Abraço
+💭 Balão de Pensamento
+🫀 Coração Anatômico
+🫁 Pulmões

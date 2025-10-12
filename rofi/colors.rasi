@@ -10,10 +10,10 @@
  *  https://github.com/4l3x-ab
  */
 * {
-  bg: #0a0a0a;
+  bg: #0a0a0aaf;
   bga: #1a1a1a;
   bgs: #2a2a2a;
-  fg: #d9d9d9;
-  ac: #00aaff;
+  fg: #39b300ff;
+  ac: #39b300ff;
   gray: #666666;
 }

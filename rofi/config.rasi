@@ -10,7 +10,7 @@
  *  https://github.com/4l3x-ab
  */
 configuration {
-  font: "JetBrainsMono Nerd Font 10";
+  font: "JetBrainsMono Nerd Font 11";
   show-icons: true;
   icon-theme: "Papirus";
   display-drun: "";
@@ -25,7 +25,7 @@ window {
   transparency: "real";
   background-color: @bg;
   text-color: @fg;
-  border: 2px;
+  border: 1px;
   border-color: @ac;
   border-radius: 12px;
   width: 50%;
