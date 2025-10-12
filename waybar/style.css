@@ -123,6 +123,7 @@ window#waybar.hidden {
 
 #cpu {
     background: #0D0208;
+    min-width: 50px;
 }
 
 #memory {
