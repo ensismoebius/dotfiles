@@ -84,7 +84,7 @@
         },
         "disable-scroll": true,
         "all-outputs": true,
-        "show-special": true
+        "show-special": false
     },
     /* === Modules Right === */
     "wlr/taskbar": {
