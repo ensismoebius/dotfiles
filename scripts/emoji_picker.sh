@@ -12,10 +12,10 @@ if [ ! -f "$EMOJI_FILE" ]; then
     exit 1
 fi
 
-# Let the user select an emoji with rofi
-# The -dmenu flag tells rofi to work as a dynamic menu
+# Let the user select an emoji with wofi
+# The -dmenu flag tells wofi to work as a dynamic menu
 # The -p flag sets the prompt text
-selected_line=$(rofi -dmenu -p "Select Emoji" < "$EMOJI_FILE")
+selected_line=$(wofi -dmenu -p "Select Emoji" < "$EMOJI_FILE")
 
 # If the user selected an emoji (the line is not empty)
 if [ -n "$selected_line" ]; then

@@ -95,7 +95,7 @@
         "on-click": "activate",
         "on-click-middle": "close",
         "ignore-list": [
-            "rofi"
+            "floating-terminal"
         ]
     },
     "idle_inhibitor": {

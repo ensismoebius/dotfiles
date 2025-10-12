@@ -8,7 +8,7 @@ echo "
 hyprland: The Wayland compositor
 waybar: Status bar
 dunst: Notification daemon
-rofi: Application launcher
+wofi: Application launcher
 wofi: Used for emoji picker
 kitty: Terminal emulator
 nautilus: File manager
@@ -92,6 +92,7 @@ XDG_CONFIG_DIRS_TO_LINK=(
     "waybar"
     "waypaper"
     "wlogout"
+    "wofi"
 )
 
 # Create symbolic links for files in $HOME
