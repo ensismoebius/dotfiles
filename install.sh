@@ -197,4 +197,14 @@ ln -sf ~/.config/hypr/icons/Cyberpunk-Neon ~/.local/share/icons/
 gtk-update-icon-cache -f ~/.config/hypr/icons/Cyberpunk-Neon
 
 echo "Icon theme setup completed."
+
+# Set up personal scripts
+echo "Setting up personal scripts..."
+mkdir -p ~/Scripts
+# Remove existing files if any
+rm -f ~/Scripts/*
+# Create symbolic links for utility scripts
+ln -sf ~/.config/hypr/scripts/utils/* ~/Scripts/
+
+echo "Personal scripts setup completed."
 echo "Done."
