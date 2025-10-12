@@ -22,7 +22,7 @@
     horizontal_padding = 10
     frame_width = 2
     separator_height = 2
-    separator_color = frame
+    separator_color = "#008F11"
 
     ### Text ###
     font = JetBrainsMono Nerd Font 10
@@ -62,23 +62,23 @@
 ### Urgency sections
 # Low urgency
 [urgency_low]
-    background = "#1e1e2e"
-    foreground = "#cdd6f4"
-    frame_color = "#45475a"
+    background = "#0D0208"
+    foreground = "#00FF41"
+    frame_color = "#008F11"
     timeout = 5
 
 # Normal urgency
 [urgency_normal]
-    background = "#000000ff"
-    foreground = "#cdd6f4"
-    frame_color = "#89b4fa" # Blue
+    background = "#0D0208"
+    foreground = "#00FF41"
+    frame_color = "#008F11"
     timeout = 10
 
 # Critical urgency
 [urgency_critical]
-    background = "#1e1e2e"
-    foreground = "#f38ba8"
-    frame_color = "#f38ba8" # Red
+    background = "#0D0208"
+    foreground = "#00FF41"
+    frame_color = "#008F11"
     timeout = 0
 
 ### Rules for media control ###
