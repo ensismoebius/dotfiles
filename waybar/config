@@ -20,7 +20,7 @@
         "clock",
         "idle_inhibitor",
         "battery",
-        "custom/dunst"
+        "custom/notifications"
     ],
     "modules-right": [
         "custom/monitor-layout",
@@ -166,12 +166,19 @@
         "on-click": "/home/ensismoebius/.config/hypr/scripts/open_usb_device.sh",
         "tooltip": true
     },
-    "custom/dunst": {
-        "exec": "~/.config/hypr/scripts/check_dunst.sh",
+    "custom/notifications": {
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "",
+            "none": "",
+            "dnd-notification": "",
+            "dnd-none": ""
+        },
         "return-type": "json",
-        "interval": 1,
-        "on-click": "makoctl mode -t do-not-disturb",
-        "on-click-right": "makoctl restore",
+        "exec-if": "which makoctl",
+        "exec": "makoctl summary",
+        "on-click": "makoctl invoke",
+        "on-click-right": "makoctl mode -t do-not-disturb",
         "tooltip": true
     },
     "battery": {
