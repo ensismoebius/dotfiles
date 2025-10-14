@@ -21,7 +21,7 @@
         "clock",
         "idle_inhibitor",
         "battery",
-        "custom/notifications"
+        "custom/notification"
     ],
     "modules-right": [
         "custom/clipboard",
@@ -53,24 +53,24 @@
     "cpu": {
         "format": "{usage}% ",
         "tooltip": true,
-        "tooltip-format": "Uso de CPU: {usage}%\nNúcleos: {cores}",
+        "tooltip-format": "Uso de CPU: {usage}% Núcleos: {cores}",
         "interval": 1
     },
     "memory": {
         "format": "{}% 󰍛",
         "tooltip": true,
-        "tooltip-format": "RAM en uso: {used} / {total} ({percentage}%)"
+        "tooltip-format": "RAM em uso: {used} / {total} ({percentage}%)"
     },
     "disk": {
         "format": "{percentage_free}% ",
         "tooltip": true,
-        "tooltip-format": "Espacio libre: {free} / {total} ({percentage_free}%)"
+        "tooltip-format": "Espaço livre: {free} / {total} ({percentage_free}%)"
     },
     "temperature": {
         "thermal-zone": 0,
         "format": "{temperatureC}°C {icon}",
         "tooltip": true,
-        "tooltip-format": "Temperatura actual: {temperatureC}°C\nCrítico si > 80°C",
+        "tooltip-format": "Temperatura atual: {temperatureC}",
         "format-icons": [
             ""
         ]
@@ -88,6 +88,40 @@
         "disable-scroll": true,
         "all-outputs": true,
         "show-special": false
+    },
+    "mpris": {
+        "format": "{player_icon} {dynamic}",
+        "format-paused": "{player_icon} <i>{dynamic}</i>",
+        "player-icons": {
+            "default": "󰥔",
+            "spotify": "󰓇",
+            "firefox": "󰈹"
+        },
+        "status-icons": {
+            "playing": "󰐊",
+            "paused": "󰏤",
+            "stopped": "󰓛"
+        },
+        "tooltip": true,
+        "tooltip-format": "{player}: {title} - {artist}",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
+    },
+    "custom/notification": {
+        "tooltip": true,
+        "format": "{icon}<sup>{}</sup>",
+        "format-icons": {
+            "notification": "",
+            "none": "",
+            "dnd-notification": "",
+            "dnd-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw"
     },
     /* === Modules Right === */
     "wlr/taskbar": {
@@ -128,7 +162,7 @@
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "format-muted": "� Muted",
+        "format-muted": " Muted",
         "format-icons": {
             "default": [
                 "󰕿",
@@ -182,41 +216,12 @@
         "format-es": "ESP",
         "format-en": "ENG"
     },
-    "custom/mpris-icon": {
-        "format": "{}",
-        "return-type": "json",
-        "exec": "~/.config/hypr/scripts/ui/mpris_icon.sh",
-        "on-click": "playerctl play-pause",
-        "tooltip": true
-    },
-    "custom/mpris-text": {
-        "format": "{}",
-        "return-type": "json",
-        "exec": "~/.config/hypr/scripts/ui/mpris_text.sh",
-        "on-scroll-up": "playerctl next",
-        "on-scroll-down": "playerctl previous"
-    },
     "custom/usb": {
         "format": "{}",
         "return-type": "json",
         "interval": 2,
         "exec": "~/.config/hypr/scripts/system/usb/check_usb.sh",
         "on-click": "~/.config/hypr/scripts/system/usb/open_usb_device.sh",
-        "tooltip": true
-    },
-    "custom/notifications": {
-        "format": "{icon}",
-        "format-icons": {
-            "notification": "",
-            "none": "",
-            "dnd-notification": "",
-            "dnd-none": ""
-        },
-        "return-type": "json",
-        "exec-if": "which makoctl",
-        "exec": "makoctl summary",
-        "on-click": "makoctl invoke",
-        "on-click-right": "makoctl mode -t do-not-disturb",
         "tooltip": true
     },
     "custom/clipboard": {

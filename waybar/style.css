@@ -357,3 +357,12 @@ window#waybar.hidden {
         color: #0D0208;
     }
 }
+
+#custom-notification {
+    color: #00FF41;
+    background: #008F11;
+    padding-left: 10px;
+    padding-right: 13px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}

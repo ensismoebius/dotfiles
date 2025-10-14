@@ -48,3 +48,59 @@
     border: 1px solid red;
     background-color: rgba(100, 0, 0, 0.9);
 }
+
+/* --- Control Center Styles --- */
+
+/* Make sure the notification rows themselves don't have a separate background inside the control center */
+.control-center .notification-row {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* The main control center window */
+.control-center {
+    background-color: rgba(13, 2, 8, 0.85); /* User's background with transparency */
+    border: 2px solid #00FF41;
+    border-radius: 12px;
+}
+
+/* The top title widget */
+.widget-title {
+    color: #00FF41;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* The DND (Do Not Disturb) widget */
+.widget-dnd {
+    margin: 5px;
+    font-size: 1.1em;
+}
+
+.widget-dnd > switch {
+    font-size: 1rem;
+    border: 1px solid #00FF41;
+    border-radius: 20px;
+    background: #0D0208;
+}
+
+.widget-dnd > switch:checked {
+    background: #008F11;
+}
+
+/* Buttons like 'Clear All' */
+button {
+    background-color: #0D0208;
+    color: #00FF41;
+    border: 1px solid #00FF41;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #008F11;
+}
