@@ -1,57 +1,50 @@
-* {
-    font-family: "JetBrainsMono Nerd Font";
+/* Main notification container */
+.notification {
+    background-color: rgba(13, 2, 8, 0.9); /* User's bg color with transparency */
+    border: 1px solid #00FF41; /* User's border color */
+    border-radius: 8px;
+    margin: 6px 12px;
+    padding: 10px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #00FF41; /* User's text color */
 }
 
-.notification-row {
-    background-color: #0D0208;
-    border: 2px solid #00FF41;
-    border-radius: 12px;
-    padding: 8px;
+/* Hover effect */
+.notification:hover {
+    background-color: #008F11; /* User's hover color */
 }
 
-.notification-row:hover {
-    background-color: #008F11;
-}
-
-.notification-content {
-    background-color: #0D0208;
-    padding: 8px;
-}
-
-.title {
-    color: #00FF41;
-    font-size: 1.2em;
+/* Styling for the notification summary (title) */
+.notification-content .summary {
     font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #00FF41; /* User's text color */
 }
 
-.body {
-    color: #00FF41;
+/* Styling for the notification body */
+.notification-content .body {
+    font-size: 0.95em;
+    color: #00FF41; /* User's text color */
 }
 
-.control-center {
-    background-color: rgba(13, 2, 8, 0.6);
-    border: 2px solid #00FF41;
-    border-radius: 12px;
+/* Styling for the notification time */
+.notification-content .time {
+    font-size: 0.8em;
+    color: #00FF41; /* User's text color */
+    margin-top: 5px;
+    text-align: right;
 }
 
-.control-center .notification-row {
-    background-color: #0D0208;
-    border: 1px solid #008F11;
-    border-radius: 8px;
-    padding: 8px;
+/* Remove outline on focus/hover for a cleaner look if desired */
+.notification-row:focus,
+.notification-row:hover {
+    outline: none;
+    background: transparent; /* This might be redundant now but safe to keep */
 }
 
-.control-center .notification-row:hover {
-    background-color: #008F11;
-}
-
-.control-center-dnd {
-    background-color: #0D0208;
-    border: 1px solid #008F11;
-    border-radius: 8px;
-    padding: 8px;
-}
-
-.control-center-dnd:hover {
-    background-color: #008F11;
+/* Style for critical notifications */
+.notification.critical {
+    border: 1px solid red;
+    background-color: rgba(100, 0, 0, 0.9);
 }
