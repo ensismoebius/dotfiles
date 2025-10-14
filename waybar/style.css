@@ -266,8 +266,7 @@ window#waybar.hidden {
 }
 
 #notification {
-    background: #008F11;
-    padding-right: 13px;
+    background: #000000;
 }
 
 #custom-usb {
@@ -342,7 +341,7 @@ window#waybar.hidden {
 
 #custom-notification {
     color: #00FF41;
-    background: #008F11;
+    background: #000000;
     padding-left: 10px;
     padding-right: 13px;
     margin-top: 6px;

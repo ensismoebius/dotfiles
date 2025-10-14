@@ -19,8 +19,7 @@
         "mpris",
         "clock",
         "idle_inhibitor",
-        "battery",
-        "custom/notifications"
+        "battery"
     ],
     "modules-right": [
         "custom/clipboard",
@@ -30,7 +29,8 @@
         "pulseaudio",
         "pulseaudio#microphone",
         "network",
-        "tray"
+        "tray",
+        "custom/notification"
     ],
     "tray": {
         "spacing": 10
@@ -202,20 +202,11 @@
         "on-click": "~/.config/hypr/scripts/system/usb/open_usb_device.sh",
         "tooltip": true
     },
-    "custom/notifications": {
-        "format": "{icon}",
-        "format-icons": {
-            "notification": "",
-            "none": "",
-            "dnd-notification": "",
-            "dnd-none": ""
-        },
-        "return-type": "json",
-        "exec-if": "which makoctl",
-        "exec": "makoctl summary",
-        "on-click": "makoctl invoke",
-        "on-click-right": "makoctl mode -t do-not-disturb",
-        "tooltip": true
+    "custom/notification": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw"
     },
     "custom/clipboard": {
         "format": "󰅌 ",
