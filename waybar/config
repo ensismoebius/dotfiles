@@ -20,8 +20,7 @@
         "custom/mpris-text",
         "clock",
         "idle_inhibitor",
-        "battery",
-        "custom/notification"
+        "battery"
     ],
     "modules-right": [
         "custom/clipboard",
@@ -30,6 +29,7 @@
         "custom/bluetooth",
         "pulseaudio",
         "pulseaudio#microphone",
+        "custom/notification",
         "network",
         "tray"
     ],
@@ -110,7 +110,7 @@
     },
     "custom/notification": {
         "tooltip": true,
-        "format": "{icon}<sup>{}</sup>",
+        "format": "{icon}",
         "format-icons": {
             "notification": "",
             "none": "",
@@ -169,9 +169,9 @@
                 "󰖀",
                 "󰕾"
             ],
-            "headphone": "󰋋",
-            "headset": "󰋎",
-            "bluetooth": "󰂯"
+            "headphone": " 󰋋 ",
+            "headset": " 󰋎 ",
+            "bluetooth": " 󰂯 "
         },
         "scroll-step": 5,
         "on-click": "pamixer -t",
@@ -214,7 +214,8 @@
         "format": "{} ",
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
         "format-es": "ESP",
-        "format-en": "ENG"
+        "format-en": "ENG",
+        "format-br": "BR"
     },
     "custom/usb": {
         "format": "{}",

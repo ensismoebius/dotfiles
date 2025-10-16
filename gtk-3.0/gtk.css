@@ -99,3 +99,7 @@ notebook tab:checked {
     border-bottom: 2px solid @borders_color;
     box-shadow: 0 0 5px #00FF41;
 }
+
+.widget-title label {
+    font-size: 12px !important;
+}
