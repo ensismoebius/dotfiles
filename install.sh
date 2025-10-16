@@ -7,15 +7,16 @@ echo "
 --- Core Components ---
 hyprland: The Wayland compositor
 waybar: Status bar
-dunst: Notification daemon
+swaync: Notification center
 wofi: Application launcher
-wofi: Used for emoji picker
 kitty: Terminal emulator
 nautilus: File manager
 wlogout: Logout menu
+swaylock: Screen locker
 
 --- System & Theming ---
 swww: Wallpaper daemon
+waypaper: Wallpaper selector GUI
 polkit-kde-agent: PolicyKit authentication agent
 qt5ct qt6ct kvantum: For Qt theming
 papirus-icon-theme: Icon theme
@@ -30,12 +31,11 @@ bluez-utils: For Bluetooth
 udiskie: Automounter for removable media
 pipewire-pulse: For audio control (pactl)
 pavucontrol: Volume control panel
+playerctl: For media player control
 grim slurp grimblast (AUR): Screenshot tools
 wl-clipboard: Clipboard utilities
 jq: JSON processor for scripts
 zsh: The Z shell
-swaync (AUR): Notification center
-waypaper (AUR): Wallpaper selector GUI
 xdg-utils: For opening files and URLs
 git base-devel: For installing AUR packages
 
@@ -56,7 +56,7 @@ if ! command -v yay &> /dev/null; then
 fi
 
 # Install all packages with yay
-yay -S --needed hyprland waybar wofi rofi kitty nautilus firefox dunst swww polkit-kde-agent qt5ct qt6ct kvantum papirus-icon-theme ttf-jetbrains-mono noto-fonts ttf-font-awesome network-manager-applet bluez-utils udiskie pipewire-pulse pavucontrol grim slurp wl-clipboard jq zsh hyprcursor wlogout xdg-utils grimblast swaync waypaper catppuccin-cursors-mocha vim neovim ccls
+yay -S --needed hyprland waybar wofi kitty nautilus firefox swww polkit-kde-agent qt5ct qt6ct kvantum papirus-icon-theme ttf-jetbrains-mono noto-fonts ttf-font-awesome network-manager-applet bluez-utils udiskie pipewire-pulse pavucontrol grim slurp wl-clipboard jq zsh hyprcursor wlogout xdg-utils grimblast swaync waypaper catppuccin-cursors-mocha vim neovim ccls swaylock playerctl
 
 # Install vim-plug for plugin management
 echo "Installing vim-plug..."
@@ -74,9 +74,7 @@ CONFIG_DIR=$(cd "$(dirname "$0")" && pwd)
 # Files and directories to link to $HOME
 FILES_TO_LINK=(
     ".bash_profile"
-    ".vim"
     ".zshrc"
-    ".vimrc"
     ".oh-my-zsh"
     ".p10k.zsh"
     ".gtkrc-2.0"
@@ -86,12 +84,11 @@ FILES_TO_LINK=(
 # Vim specific configuration
 echo "Setting up Vim configuration..."
 # Create necessary vim directories
-mkdir -p ~/.vim/autoload
-mkdir -p ~/.config/coc
-
+mkdir -p ~/.vim/pack/themes/start
 # Link vim configuration files
 ln -sf "$CONFIG_DIR/vim/.vimrc" ~/.vimrc
-ln -sf "$CONFIG_DIR/vim/coc-settings.json" ~/.vim/coc-settings.json
+ln -sf "$CONFIG_DIR/vim/coc-settings.json" ~/.config/coc/coc-settings.json
+ln -sf "$CONFIG_DIR/vim/pack" ~/.vim/pack
 
 # Install coc-clangd for C/C++ support
 echo "Please run ':PlugInstall' when you first open Vim"
@@ -99,20 +96,19 @@ echo "After plugins are installed, run ':CocInstall coc-clangd' for C/C++ suppor
 
 # XDG config directories to link to ~/.config
 XDG_CONFIG_DIRS_TO_LINK=(
-    "dunst"
     "gtk-3.0"
     "gtk-4.0"
-    "icons"
     "kitty"
     "qt5ct"
     "qt6ct"
-    "rofi"
     "swaync"
     "udiskie"
     "waybar"
     "waypaper"
     "wlogout"
     "wofi"
+    "khal"
+    "vdirsyncer"
 )
 
 # Create symbolic links for files in $HOME
@@ -194,7 +190,7 @@ fi
 ln -sf ~/.config/hypr/icons/Cyberpunk-Neon ~/.local/share/icons/
 
 # Update icon cache
-gtk-update-icon-cache -f ~/.config/hypr/icons/Cyberpunk-Neon
+gtk-update-icon-cache -f ~/.local/share/icons/Cyberpunk-Neon
 
 echo "Icon theme setup completed."
 
