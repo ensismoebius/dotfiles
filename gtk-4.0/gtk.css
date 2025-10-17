@@ -1,192 +1,281 @@
-/* ~/.config/gtk-4.0/gtk.css
-   Tema: verde neon / fundo escuro (GTK4)
-*/
+/* gtk-4.0/gtk.css — skeleton gerado a partir do dump (fechar lacunas) */
+/* Fonte: gtk4_widgets_dump.json (inventário do seu app). */
 
-/* --- cores --- */
 @define-color bg_color rgba(13, 2, 8, 0.95);
 @define-color fg_color #00FF41;
 @define-color selected_bg_color #008F11;
 @define-color selected_fg_color #00FF41;
-@define-color text_color #00FF41;
-@define-color base_color rgba(13, 2, 8, 0.95);
 @define-color borders_color #00FF41;
 @define-color unfocused_borders_color rgba(0, 255, 65, 0.3);
 @define-color warning_color #FFFF00;
 @define-color error_color #FF0000;
 @define-color success_color #00FF41;
 
-/* --- regras globais --- */
+/* --- defaults globais --- */
 * {
-    border-radius: 2px;
-    transition: all 200ms ease;
     color: @fg_color;
     background-color: transparent;
+    border-radius: 2px;
+    transition: all 180ms ease;
 }
 
-/* janela / fundo global */
+/* --- janela / headerbar / titlebar --- */
+applicationwindow,
 window,
-.window,
-#window {
+ApplicationWindow,
+.background,
+#main_window {
     background-color: @bg_color;
     color: @fg_color;
-    background-image: repeating-linear-gradient(0deg,
-            rgba(0, 255, 65, 0.03) 0px,
-            rgba(0, 255, 65, 0.03) 1px,
-            transparent 1px,
-            transparent 2px);
 }
 
-/* headerbar */
 headerbar,
-.headerbar {
+.titlebar,
+HeaderBar,
+#GtkHeaderBar {
     background-color: @bg_color;
     color: @fg_color;
     border-bottom: 1px solid @borders_color;
-    box-shadow: 0 0 8px rgba(0, 255, 65, 0.08);
 }
 
-/* botão (GTK4 mantém 'button' node) */
-button,
-/* widgets que costumam usar classes text-button, flat, etc. */
-button.text,
-button.flat {
+/* --- scrolled window / viewport --- */
+scrolledwindow,
+ScrolledWindow,
+viewport,
+Viewport,
+#main_scroller {
+    background-color: transparent;
+}
+
+/* --- boxes / layout --- */
+box,
+Box,
+.vertical,
+.horizontal,
+GtkBox {
     background-color: transparent;
     color: @fg_color;
-    border: 1px solid @borders_color;
-    padding: 6px 10px;
-    min-height: 28px;
-    box-shadow: none;
 }
 
-button:hover,
-button:backdrop {
-    background-color: rgba(0, 143, 17, 0.12);
-    box-shadow: 0 0 6px rgba(0, 255, 65, 0.6);
+/* --- labels --- */
+label,
+Label,
+.title,
+#title_label,
+#info_label,
+GtkLabel {
+    color: @fg_color;
 }
 
-button:active {
-    background-color: @selected_bg_color;
-    color: @selected_fg_color;
-    box-shadow: 0 0 10px rgba(0, 255, 65, 0.85);
-}
-
-/* entradas de texto (GtkEntry em GTK4) */
+/* --- entry / search / textview --- */
 entry,
+Entry,
 text,
+Text,
 textview,
-.entry {
-    background-color: rgba(13, 2, 8, 0.82);
+TextView,
+#sample_entry,
+#sample_textview,
+SearchEntry,
+.search {
+    background-color: rgba(13, 2, 8, 0.86);
     color: @fg_color;
     border: 1px solid @borders_color;
     padding: 6px 8px;
-    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.06);
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.05);
 }
 
 entry:focus,
-.entry:focus {
+Entry:focus,
+textview:focus,
+TextView:focus {
     border-color: @selected_bg_color;
     box-shadow: 0 0 10px rgba(0, 255, 65, 0.9);
-    background-color: rgba(13, 2, 8, 0.9);
 }
 
-/* labels */
-label,
-.label {
-    color: @text_color;
+/* --- buttons (inclui text-button, suggested-action, image-button) --- */
+button,
+Button,
+.text-button,
+.image-button,
+#btn_plain,
+#btn_suggested,
+#btn_dump_json,
+#btn_open_dialog {
+    background-color: transparent;
+    color: @fg_color;
+    border: 1px solid rgba(0, 255, 65, 0.06);
+    padding: 6px 10px;
+    min-height: 26px;
 }
 
-/* menubar / menus */
-menubar,
-.menubar,
-menu,
+button:hover,
+Button:hover,
+.text-button:hover {
+    background-color: rgba(0, 143, 17, 0.10);
+    box-shadow: 0 0 6px rgba(0, 255, 65, 0.55);
+}
+
+button.suggested-action,
+.suggested-action,
+Button.suggested-action,
+#btn_suggested {
+    border-color: @borders_color;
+    background-color: rgba(0, 143, 17, 0.06);
+}
+
+/* --- toggle / togglebutton / switches / check / radio-fallback --- */
+togglebutton,
+ToggleButton,
+.toggle,
+#btn_toggle,
+.toggle-button,
+switch,
+Switch,
+checkbutton,
+CheckButton {
+    color: @fg_color;
+    background-color: rgba(13, 2, 8, 0.86);
+    border: 1px solid rgba(0, 255, 65, 0.04);
+}
+
+/* radio fallback (ToggleButton usado como radio) */
+#rb1,
+#rb2,
+.radio-fallback {
+    background-color: rgba(13, 2, 8, 0.86);
+    border: 1px solid rgba(0, 255, 65, 0.04);
+}
+
+/* --- menubutton / popover / popover content / treepopover --- */
+menubutton,
+MenuButton,
+.popup,
+#menu_button_example {
+    background-color: transparent;
+    border: 1px solid rgba(0, 255, 65, 0.04);
+}
+
+popover,
+Popover,
+PopoverContent,
+GtkPopoverContent,
+.background,
 .menu {
     background-color: @bg_color;
     color: @fg_color;
-    border: 1px solid rgba(0, 255, 65, 0.04);
+    border: 1px solid rgba(0, 255, 65, 0.06);
+    box-shadow: 0 6px 18px rgba(0, 255, 65, 0.06);
 }
 
-menuitem,
-.menuitem {
+menubutton popup button,
+Popover button {
     color: @fg_color;
-    padding: 6px 12px;
 }
 
-menuitem:hover,
-.menuitem:hover {
-    background-color: rgba(0, 143, 17, 0.12);
-    box-shadow: 0 0 6px rgba(0, 255, 65, 0.6);
+/* --- combobox / comboboxtext / popover menus --- */
+combobox,
+ComboBoxText,
+#sample_combobox,
+.combo,
+GtkTreePopover {
+    background-color: rgba(13, 2, 8, 0.88);
+    border: 1px solid rgba(0, 255, 65, 0.05);
 }
 
-/* notebook / abas (GtkNotebook) */
-notebook,
-.notebook {
-    border: 1px solid @borders_color;
+/* --- listbox / listboxrow / list selections --- */
+listbox,
+ListBox,
+listboxrow,
+ListBoxRow,
+.activatable {
     background-color: transparent;
-}
-
-notebook tab,
-.notebook .tab {
-    background-color: transparent;
     color: @fg_color;
-    padding: 6px 14px;
-    border-radius: 2px;
 }
 
-notebook tab:checked,
-.notebook .tab:selected {
-    background-color: rgba(0, 143, 17, 0.12);
-    border-bottom: 2px solid @borders_color;
-    box-shadow: 0 0 6px rgba(0, 255, 65, 0.6);
-}
-
-/* TreeView / Listas */
-treeview,
-.treeview,
-#treeview {
-    background-color: rgba(13, 2, 8, 0.9);
-    color: @fg_color;
-    border: 1px solid rgba(0, 255, 65, 0.04);
-}
-
-treeview:selected,
-.treeview:selected,
-treeview row:selected {
+listbox row:selected,
+ListBoxRow:selected {
     background-color: @selected_bg_color;
     color: @selected_fg_color;
 }
 
-/* barras de rolagem / slider / progress */
+/* --- tree/list widgets / cellview / builtin icons / gizmos --- */
+cellview,
+CellView,
+GtkCellView,
+.view,
+.flat {
+    background-color: transparent;
+    color: @fg_color;
+}
+
+GtkBuiltinIcon,
+.down,
+.right {
+    color: @fg_color;
+    opacity: 0.95;
+}
+
+/* --- scale / range / progressbar / scrollbar --- */
+scale,
+Scale,
+range,
+Range,
+progressbar,
+ProgressBar,
 scrollbar,
-.scrollbar {
-    background-color: rgba(13, 2, 8, 0.6);
+Scrollbar,
+GtkScrollbar {
+    background-color: rgba(13, 2, 8, 0.8);
+    color: @fg_color;
     border: 1px solid rgba(0, 255, 65, 0.04);
 }
 
-progressbar,
-scale,
-.progressbar {
+progressbar.horizontal,
+ProgressBar.horizontal,
+ProgressBar {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+scrollbar.overlay-indicator,
+.overlay-indicator {
+    background-color: rgba(13, 2, 8, 0.6);
+}
+
+/* --- headerbar / titlebar controls / window controls --- */
+.headerbar,
+headerbar,
+HeaderBar,
+.titlebar,
+.title {
+    background-color: @bg_color;
+    color: @fg_color;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.05);
+}
+
+.WindowControls,
+WindowControls,
+.titlebar .end {
     color: @fg_color;
 }
 
-/* switch / check / radio (simples) */
-switch,
-checkbutton,
-radiobutton,
-.switch,
-.checkbutton,
-.radiobutton {
-    color: @fg_color;
-}
-
-/* tooltips */
+/* --- tooltip / tooltip window --- */
 tooltip,
-.tooltip {
+Tooltip,
+GtkTooltipWindow,
+.background {
     background-color: rgba(0, 0, 0, 0.85);
     color: @fg_color;
-    border: 1px solid rgba(0, 255, 65, 0.12);
+    border: 1px solid rgba(0, 255, 65, 0.08);
 }
 
-/* mensagens */
+/* --- special states: insensitive / unfocused borders / warnings --- */
+:insensitive,
+.insensitive {
+    opacity: 0.5;
+    border-color: @unfocused_borders_color;
+}
+
 .warning {
     background-color: rgba(255, 255, 0, 0.06);
     color: @warning_color;
@@ -205,17 +294,79 @@ tooltip,
     border: 1px solid rgba(0, 255, 65, 0.18);
 }
 
-/* widgets sem foco */
-:backdrop,
-.backdrop {
-    border-color: @unfocused_borders_color;
-}
-
-/* fallback */
-.frame,
-.view,
-.box,
-.grid {
-    background-color: transparent;
+/* --- IDs (prioridade) para widgets identificados no dump --- */
+/* títulos e principais controles */
+#main_window {
+    background-color: @bg_color;
     color: @fg_color;
 }
+
+#main_scroller {
+    background-color: transparent;
+}
+
+#root_box {}
+
+#row1 {}
+
+#sample_label {}
+
+#sample_entry {}
+
+#sample_textview {}
+
+#row2 {}
+
+#btn_plain {}
+
+#btn_suggested {}
+
+#btn_toggle {}
+
+#menu_button_example {}
+
+#mi_a {}
+
+#mi_b {}
+
+#row4 {}
+
+#sample_switch {}
+
+#sample_check {}
+
+#rb1 {}
+
+#rb2 {}
+
+#row5 {}
+
+#sample_combobox {}
+
+#sample_scale {}
+
+#sample_progress {}
+
+#sample_listbox {}
+
+#btn_open_dialog {}
+
+#sample_searchentry {}
+
+#info_label {}
+
+#btn_dump_json {
+    border: 1px solid @borders_color;
+}
+
+/* --- fallback generic to catch unknown nodes/classes --- */
+[tooltip],
+[title],
+.background,
+.popup,
+.menu,
+.view {
+    color: @fg_color;
+}
+
+/* fim do skeleton */

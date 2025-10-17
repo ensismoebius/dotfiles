@@ -1,8 +1,9 @@
 /* ~/.config/gtk-3.0/gtk.css
-   Tema: verde neon / fundo escuro (adaptado para GTK3)
+   Tema: neon verde / fundo escuro — GTK3
+   Gerado a partir do inventário fornecido.
 */
 
-/* --- cores --- */
+/* ---------- cores ---------- */
 @define-color bg_color rgba(13, 2, 8, 0.95);
 @define-color fg_color #00FF41;
 @define-color selected_bg_color #008F11;
@@ -10,248 +11,334 @@
 @define-color text_color #00FF41;
 @define-color base_color rgba(13, 2, 8, 0.95);
 @define-color borders_color #00FF41;
-@define-color unfocused_borders_color rgba(0, 255, 65, 0.3);
+@define-color unfocused_borders_color rgba(0, 255, 65, 0.30);
 @define-color warning_color #FFFF00;
 @define-color error_color #FF0000;
 @define-color success_color #00FF41;
 
-/* --- regras globais --- */
+/* ---------- defaults globais ---------- */
 * {
-    border-radius: 2px;
-    transition: all 200ms ease;
     color: @fg_color;
     background-color: transparent;
+    border-radius: 2px;
+    transition: all 180ms ease;
+    -GtkWidget-focus-line-width: 0;
 }
 
-/* janela / fundo global */
+/* ---------- janela / headerbar / titlebar ---------- */
 window,
-.window,
-GtkWindow {
+GtkWindow,
+.background,
+#main_window {
     background-color: @bg_color;
     color: @fg_color;
 }
 
-/* padrão de textura sutil (repeating gradient) aplicado em janelas */
-window {
-    background-image: repeating-linear-gradient(0deg,
-            rgba(0, 255, 65, 0.03) 0px,
-            rgba(0, 255, 65, 0.03) 1px,
-            transparent 1px,
-            transparent 2px);
-}
-
-/* headerbar / barras */
 headerbar,
 .headerbar,
 GtkHeaderBar {
     background-color: @bg_color;
     color: @fg_color;
-    border-bottom: 1px solid @borders_color;
-    box-shadow: 0 0 8px rgba(0, 255, 65, 0.12);
+    border-bottom: 1px solid rgba(0, 255, 65, 0.06);
+    padding: 6px;
 }
 
-/* botões */
-button,
-.button,
-GtkButton {
+/* ---------- scrolled window / viewport ---------- */
+scrolledwindow,
+GtkScrolledWindow,
+.viewport,
+viewport,
+#main_scroller {
+    background-color: transparent;
+}
+
+/* ---------- layout / boxes ---------- */
+box,
+GtkBox,
+.box,
+.vbox,
+.hbox,
+.grid {
     background-color: transparent;
     color: @fg_color;
-    border: 1px solid @borders_color;
-    padding: 5px 10px;
-    min-height: 26px;
-    box-shadow: none;
 }
 
-button:hover,
-.button:hover,
-GtkButton:hover {
-    background-color: rgba(0, 143, 17, 0.12);
-    /* alpha(@selected_bg_color, 0.3) ~ 0.12 visual */
-    box-shadow: 0 0 6px rgba(0, 255, 65, 0.65);
-}
-
-button:active,
-.button:active,
-GtkButton:active {
-    background-color: @selected_bg_color;
-    color: @selected_fg_color;
-    box-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
-}
-
-/* entradas de texto */
-entry,
-.entry,
-GtkEntry {
-    background-color: rgba(13, 2, 8, 0.82);
-    /* alpha(@bg_color,0.8) */
+/* ---------- labels / títulos ---------- */
+label,
+GtkLabel,
+.title,
+#title_label,
+#info_label {
     color: @fg_color;
-    border: 1px solid @borders_color;
+    font-family: "Sans", "DejaVu Sans", Arial;
+}
+
+/* ---------- entries / search / textview ---------- */
+entry,
+GtkEntry,
+.entry,
+textview,
+GtkTextView,
+.text-view,
+#sample_entry,
+#sample_textview,
+.searchentry,
+GtkSearchEntry {
+    background-color: rgba(13, 2, 8, 0.86);
+    color: @fg_color;
+    border: 1px solid rgba(0, 255, 65, 0.06);
     padding: 6px 8px;
-    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.06);
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.04);
 }
 
 entry:focus,
-.entry:focus,
-GtkEntry:focus {
+GtkEntry:focus,
+textview:focus,
+GtkTextView:focus {
     border-color: @selected_bg_color;
     box-shadow: 0 0 10px rgba(0, 255, 65, 0.9);
-    background-color: rgba(13, 2, 8, 0.9);
+    background-color: rgba(13, 2, 8, 0.92);
 }
 
-/* labels e títulos */
-label,
-.label,
-GtkLabel {
-    color: @text_color;
-}
-
-.widget-title label,
-.title,
-.dialog-title {
-    font-size: 12px !important;
+/* ---------- buttons (inclui suggested/text/image) ---------- */
+button,
+GtkButton,
+.button,
+.text-button,
+.image-button,
+#btn_plain,
+#btn_suggested,
+#btn_dump_json,
+#btn_open_dialog {
+    background-color: transparent;
     color: @fg_color;
+    border: 1px solid rgba(0, 255, 65, 0.06);
+    padding: 6px 10px;
+    min-height: 26px;
+    -GtkWidget-focus-line-width: 0;
 }
 
-/* menubar / menus */
+button:hover,
+GtkButton:hover,
+.text-button:hover {
+    background-color: rgba(0, 143, 17, 0.10);
+    box-shadow: 0 0 6px rgba(0, 255, 65, 0.55);
+}
+
+button:active,
+GtkButton:active {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.85);
+}
+
+button.suggested-action,
+GtkButton.suggested-action,
+.suggested-action,
+#btn_suggested {
+    background-color: rgba(0, 143, 17, 0.06);
+    border-color: @borders_color;
+}
+
+/* ---------- toggle / switch / check / radio ---------- */
+togglebutton,
+GtkToggleButton,
+.toggle,
+#btn_toggle,
+switch,
+GtkSwitch,
+checkbutton,
+GtkCheckButton,
+radiobutton,
+GtkRadioButton,
+#sample_switch,
+#sample_check,
+#rb1,
+#rb2 {
+    color: @fg_color;
+    background-color: rgba(13, 2, 8, 0.86);
+    border: 1px solid rgba(0, 255, 65, 0.04);
+    padding: 4px 8px;
+}
+
+/* radio explicit styling (quando presente) */
+radiobutton,
+GtkRadioButton {
+    padding: 2px 6px;
+}
+
+/* ---------- menubar / menu / menuitem (GTK3) ---------- */
 menubar,
-.menubar,
-GtkMenuBar {
+GtkMenuBar,
+.menubar {
     background-color: @bg_color;
-    border-bottom: 1px solid @borders_color;
-    box-shadow: 0 0 8px rgba(0, 255, 65, 0.08);
+    color: @fg_color;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.04);
 }
 
 menu,
-.menu,
-GtkMenu {
+GtkMenu,
+menuitem,
+GtkMenuItem,
+#mi_a,
+#mi_b,
+#mi_file {
     background-color: @bg_color;
     color: @fg_color;
-    border: 1px solid @borders_color;
-}
-
-menuitem,
-.menuitem,
-GtkMenuItem {
-    color: @fg_color;
-    padding: 6px 12px;
+    border: 1px solid rgba(0, 255, 65, 0.04);
+    padding: 4px 10px;
 }
 
 menuitem:hover,
-.menuitem:hover,
 GtkMenuItem:hover {
     background-color: rgba(0, 143, 17, 0.12);
     box-shadow: 0 0 6px rgba(0, 255, 65, 0.6);
 }
 
-/* notebook / abas */
-notebook,
-.notebook,
-GtkNotebook {
-    border: 1px solid @borders_color;
-    background-color: transparent;
+/* ---------- combobox / comboboxtext ---------- */
+combobox,
+GtkComboBox,
+comboboxtext,
+GtkComboBoxText,
+#sample_combobox {
+    background-color: rgba(13, 2, 8, 0.88);
+    border: 1px solid rgba(0, 255, 65, 0.05);
+    color: @fg_color;
+    padding: 4px 8px;
 }
 
-notebook tab,
-.notebook tab,
-.notebook .tab,
-GtkNotebook>GtkNotebookTab {
+/* ---------- listbox / listboxrow / selections ---------- */
+listbox,
+GtkListBox,
+listboxrow,
+GtkListBoxRow,
+.listbox,
+#sample_listbox {
     background-color: transparent;
     color: @fg_color;
-    padding: 6px 14px;
-    border-radius: 2px;
 }
 
-notebook tab:checked,
-.notebook .tab:checked,
-GtkNotebook>.tab:selected {
-    background-color: rgba(0, 143, 17, 0.12);
-    border-bottom: 2px solid @borders_color;
-    box-shadow: 0 0 6px rgba(0, 255, 65, 0.6);
+listbox row:selected,
+GtkListBoxRow:selected,
+.selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
 }
 
-/* TreeView / Listas */
+/* ---------- treeview / tree selection / cells ---------- */
 treeview,
+GtkTreeView,
 .treeview,
-GtkTreeView {
-    background-color: rgba(13, 2, 8, 0.9);
+#sample_treeview {
+    background-color: rgba(13, 2, 8, 0.90);
     color: @fg_color;
-    grid-lines: both;
-    border: 1px solid rgba(0, 255, 65, 0.06);
+    border: 1px solid rgba(0, 255, 65, 0.04);
 }
 
-treeview view,
-.treeview .view {
-    color: @fg_color;
-}
-
-treeview row:selected,
-.treeview row:selected,
+treeview:selected,
 GtkTreeView:selected {
     background-color: @selected_bg_color;
     color: @selected_fg_color;
 }
 
-/* Scrollbars */
+/* ---------- scale / range / progressbar / scrollbar ---------- */
+scale,
+GtkScale,
+range,
+GtkRange,
+progressbar,
+GtkProgressBar,
 scrollbar,
-.scrollbar,
+GtkScrollbar {
+    background-color: rgba(13, 2, 8, 0.80);
+    color: @fg_color;
+    border: 1px solid rgba(0, 255, 65, 0.04);
+}
+
+progressbar,
+GtkProgressBar {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+/* scrollbar specifics */
+scrollbar trough,
+scrollbar slider,
 GtkScrollbar {
     background-color: rgba(13, 2, 8, 0.6);
+}
+
+/* ---------- notebook / tabs ---------- */
+notebook,
+GtkNotebook {
     border: 1px solid rgba(0, 255, 65, 0.06);
+    background-color: transparent;
 }
 
-/* Progress / scale / sliders */
-progressbar,
-scale,
-.progressbar,
-.scale,
-GtkProgressBar,
-GtkScale {
-    background-color: rgba(0, 0, 0, 0.12);
+notebook tab,
+GtkNotebook tab {
+    background-color: transparent;
+    color: @fg_color;
+    padding: 6px 12px;
+}
+
+notebook tab:checked,
+GtkNotebook tab:checked {
+    background-color: rgba(0, 143, 17, 0.12);
+    border-bottom: 2px solid @borders_color;
+    box-shadow: 0 0 6px rgba(0, 255, 65, 0.6);
+}
+
+/* ---------- frame / expander / separator ---------- */
+frame,
+GtkFrame,
+expander,
+GtkExpander {
+    background-color: rgba(13, 2, 8, 0.88);
+    color: @fg_color;
+    border: 1px solid rgba(0, 255, 65, 0.04);
+}
+
+separator,
+GtkSeparator {
+    background-color: rgba(0, 255, 65, 0.04);
+    color: rgba(0, 255, 65, 0.04);
+}
+
+/* ---------- dialogs / infobar / statusbar ---------- */
+dialog,
+GtkDialog,
+messagedialog,
+GtkMessageDialog,
+#example_dialog,
+#example_dialog_fallback {
+    background-color: @bg_color;
     color: @fg_color;
     border: 1px solid rgba(0, 255, 65, 0.06);
+    padding: 8px;
 }
 
-.progress {
-    background-color: @selected_bg_color;
-}
-
-/* switches / check / radio */
-switch,
-.switch,
-GtkSwitch,
-checkbutton,
-.checkbutton,
-GtkCheckButton,
-radiobutton,
-.radiobutton,
-GtkRadioButton {
+infobar,
+GtkInfoBar,
+#sample_infobar {
+    background-color: rgba(13, 2, 8, 0.88);
     color: @fg_color;
 }
 
-/* combo / drop-down */
-combobox,
-.combobox,
-GtkComboBox {
-    background-color: rgba(13, 2, 8, 0.85);
-    border: 1px solid @borders_color;
-    color: @fg_color;
-}
-
-/* tooltips */
+/* ---------- tooltip ---------- */
 tooltip,
-.tooltip,
-GtkTooltip {
+GtkTooltip,
+.tooltip {
     background-color: rgba(0, 0, 0, 0.85);
     color: @fg_color;
-    border: 1px solid rgba(0, 255, 65, 0.12);
+    border: 1px solid rgba(0, 255, 65, 0.08);
+    padding: 4px 6px;
 }
 
-/* mensagens de status / warnings / erros */
-.message,
-.warning,
-.error,
-GtkMessageDialog {
-    color: @fg_color;
+/* ---------- states: insensitive / unfocused / warnings ---------- */
+:insensitive,
+.insensitive {
+    opacity: 0.55;
+    border-color: @unfocused_borders_color;
 }
 
 .warning {
@@ -272,28 +359,79 @@ GtkMessageDialog {
     border: 1px solid rgba(0, 255, 65, 0.18);
 }
 
-/* bordas desfocadas (quando o widget perde foco) */
-:insensitive,
-.insensitive,
-GtkWidget:insensitive {
-    border-color: @unfocused_borders_color;
-}
-
-/* separadores */
-separator,
-.separator,
-GtkSeparator {
-    background-color: rgba(0, 255, 65, 0.06);
-    color: rgba(0, 255, 65, 0.06);
-}
-
-/* fallback para objetos desconhecidos */
-.frame,
-.view,
-.box,
-.grid {
-    background-color: transparent;
+/* ---------- IDs detectados no dump (prioridade alta) ---------- */
+#main_window {
+    background-color: @bg_color;
     color: @fg_color;
 }
 
-/* fim do arquivo */
+#main_scroller {}
+
+#root_box {}
+
+#row1 {}
+
+#sample_label {}
+
+#sample_entry {}
+
+#sample_textview {}
+
+#row2 {}
+
+#btn_plain {}
+
+#btn_suggested {}
+
+#btn_toggle {}
+
+#menu_button_example {}
+
+#mi_a {}
+
+#mi_b {}
+
+#row4 {}
+
+#sample_switch {}
+
+#sample_check {}
+
+#rb1 {}
+
+#rb2 {}
+
+#row5 {}
+
+#sample_combobox {}
+
+#sample_scale {}
+
+#sample_progress {}
+
+#sample_listbox {}
+
+#btn_open_dialog {}
+
+#sample_searchentry {}
+
+#info_label {}
+
+#btn_dump_json {
+    border: 1px solid @borders_color;
+}
+
+/* ---------- fallback generic para nodes/classes desconhecidas ---------- */
+.frame,
+.view,
+.box,
+.grid,
+.background,
+.popup,
+.menu,
+.view {
+    color: @fg_color;
+}
+
+/* ---------- final ---------- */
+/* usar GTK Inspector (GTK_DEBUG=interactive) p/ ajustes finos */
