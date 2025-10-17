@@ -27,7 +27,7 @@
 * {
     color: @fg_color;
     background-color: transparent;
-    border-radius: 2px;
+    border-radius: 1px;
     transition: all 180ms ease;
     -GtkWidget-focus-line-width: 0;
 }
@@ -121,7 +121,7 @@ GtkButton,
     color: @fg_color;
     border: 1px solid rgba(0, 255, 65, 0.06);
     padding: 6px 10px;
-    min-height: 26px;
+    min-height: 20px;
     -GtkWidget-focus-line-width: 0;
 }
 
