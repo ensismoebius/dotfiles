@@ -1,5 +1,5 @@
-/* ~/.config/gtk-3.0/gtk.css
-   Tema: verde neon / fundo escuro (adaptado para GTK3)
+/* ~/.config/gtk-4.0/gtk.css
+   Tema: verde neon / fundo escuro (GTK4)
 */
 
 /* --- cores --- */
@@ -26,13 +26,9 @@
 /* janela / fundo global */
 window,
 .window,
-GtkWindow {
+#window {
     background-color: @bg_color;
     color: @fg_color;
-}
-
-/* padrão de textura sutil (repeating gradient) aplicado em janelas */
-window {
     background-image: repeating-linear-gradient(0deg,
             rgba(0, 255, 65, 0.03) 0px,
             rgba(0, 255, 65, 0.03) 1px,
@@ -40,50 +36,46 @@ window {
             transparent 2px);
 }
 
-/* headerbar / barras */
+/* headerbar */
 headerbar,
-.headerbar,
-GtkHeaderBar {
+.headerbar {
     background-color: @bg_color;
     color: @fg_color;
     border-bottom: 1px solid @borders_color;
-    box-shadow: 0 0 8px rgba(0, 255, 65, 0.12);
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.08);
 }
 
-/* botões */
+/* botão (GTK4 mantém 'button' node) */
 button,
-.button,
-GtkButton {
+/* widgets que costumam usar classes text-button, flat, etc. */
+button.text,
+button.flat {
     background-color: transparent;
     color: @fg_color;
     border: 1px solid @borders_color;
-    padding: 5px 10px;
-    min-height: 26px;
+    padding: 6px 10px;
+    min-height: 28px;
     box-shadow: none;
 }
 
 button:hover,
-.button:hover,
-GtkButton:hover {
+button:backdrop {
     background-color: rgba(0, 143, 17, 0.12);
-    /* alpha(@selected_bg_color, 0.3) ~ 0.12 visual */
-    box-shadow: 0 0 6px rgba(0, 255, 65, 0.65);
+    box-shadow: 0 0 6px rgba(0, 255, 65, 0.6);
 }
 
-button:active,
-.button:active,
-GtkButton:active {
+button:active {
     background-color: @selected_bg_color;
     color: @selected_fg_color;
-    box-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.85);
 }
 
-/* entradas de texto */
+/* entradas de texto (GtkEntry em GTK4) */
 entry,
-.entry,
-GtkEntry {
+text,
+textview,
+.entry {
     background-color: rgba(13, 2, 8, 0.82);
-    /* alpha(@bg_color,0.8) */
     color: @fg_color;
     border: 1px solid @borders_color;
     padding: 6px 8px;
@@ -91,70 +83,49 @@ GtkEntry {
 }
 
 entry:focus,
-.entry:focus,
-GtkEntry:focus {
+.entry:focus {
     border-color: @selected_bg_color;
     box-shadow: 0 0 10px rgba(0, 255, 65, 0.9);
     background-color: rgba(13, 2, 8, 0.9);
 }
 
-/* labels e títulos */
+/* labels */
 label,
-.label,
-GtkLabel {
+.label {
     color: @text_color;
-}
-
-.widget-title label,
-.title,
-.dialog-title {
-    font-size: 12px !important;
-    color: @fg_color;
 }
 
 /* menubar / menus */
 menubar,
 .menubar,
-GtkMenuBar {
-    background-color: @bg_color;
-    border-bottom: 1px solid @borders_color;
-    box-shadow: 0 0 8px rgba(0, 255, 65, 0.08);
-}
-
 menu,
-.menu,
-GtkMenu {
+.menu {
     background-color: @bg_color;
     color: @fg_color;
-    border: 1px solid @borders_color;
+    border: 1px solid rgba(0, 255, 65, 0.04);
 }
 
 menuitem,
-.menuitem,
-GtkMenuItem {
+.menuitem {
     color: @fg_color;
     padding: 6px 12px;
 }
 
 menuitem:hover,
-.menuitem:hover,
-GtkMenuItem:hover {
+.menuitem:hover {
     background-color: rgba(0, 143, 17, 0.12);
     box-shadow: 0 0 6px rgba(0, 255, 65, 0.6);
 }
 
-/* notebook / abas */
+/* notebook / abas (GtkNotebook) */
 notebook,
-.notebook,
-GtkNotebook {
+.notebook {
     border: 1px solid @borders_color;
     background-color: transparent;
 }
 
 notebook tab,
-.notebook tab,
-.notebook .tab,
-GtkNotebook>GtkNotebookTab {
+.notebook .tab {
     background-color: transparent;
     color: @fg_color;
     padding: 6px 14px;
@@ -162,8 +133,7 @@ GtkNotebook>GtkNotebookTab {
 }
 
 notebook tab:checked,
-.notebook .tab:checked,
-GtkNotebook>.tab:selected {
+.notebook .tab:selected {
     background-color: rgba(0, 143, 17, 0.12);
     border-bottom: 2px solid @borders_color;
     box-shadow: 0 0 6px rgba(0, 255, 65, 0.6);
@@ -172,88 +142,51 @@ GtkNotebook>.tab:selected {
 /* TreeView / Listas */
 treeview,
 .treeview,
-GtkTreeView {
+#treeview {
     background-color: rgba(13, 2, 8, 0.9);
     color: @fg_color;
-    grid-lines: both;
-    border: 1px solid rgba(0, 255, 65, 0.06);
+    border: 1px solid rgba(0, 255, 65, 0.04);
 }
 
-treeview view,
-.treeview .view {
-    color: @fg_color;
-}
-
-treeview row:selected,
-.treeview row:selected,
-GtkTreeView:selected {
+treeview:selected,
+.treeview:selected,
+treeview row:selected {
     background-color: @selected_bg_color;
     color: @selected_fg_color;
 }
 
-/* Scrollbars */
+/* barras de rolagem / slider / progress */
 scrollbar,
-.scrollbar,
-GtkScrollbar {
+.scrollbar {
     background-color: rgba(13, 2, 8, 0.6);
-    border: 1px solid rgba(0, 255, 65, 0.06);
+    border: 1px solid rgba(0, 255, 65, 0.04);
 }
 
-/* Progress / scale / sliders */
 progressbar,
 scale,
-.progressbar,
-.scale,
-GtkProgressBar,
-GtkScale {
-    background-color: rgba(0, 0, 0, 0.12);
+.progressbar {
     color: @fg_color;
-    border: 1px solid rgba(0, 255, 65, 0.06);
 }
 
-.progress {
-    background-color: @selected_bg_color;
-}
-
-/* switches / check / radio */
+/* switch / check / radio (simples) */
 switch,
-.switch,
-GtkSwitch,
 checkbutton,
-.checkbutton,
-GtkCheckButton,
 radiobutton,
-.radiobutton,
-GtkRadioButton {
-    color: @fg_color;
-}
-
-/* combo / drop-down */
-combobox,
-.combobox,
-GtkComboBox {
-    background-color: rgba(13, 2, 8, 0.85);
-    border: 1px solid @borders_color;
+.switch,
+.checkbutton,
+.radiobutton {
     color: @fg_color;
 }
 
 /* tooltips */
 tooltip,
-.tooltip,
-GtkTooltip {
+.tooltip {
     background-color: rgba(0, 0, 0, 0.85);
     color: @fg_color;
     border: 1px solid rgba(0, 255, 65, 0.12);
 }
 
-/* mensagens de status / warnings / erros */
-.message,
-.warning,
-.error,
-GtkMessageDialog {
-    color: @fg_color;
-}
-
+/* mensagens */
 .warning {
     background-color: rgba(255, 255, 0, 0.06);
     color: @warning_color;
@@ -272,22 +205,13 @@ GtkMessageDialog {
     border: 1px solid rgba(0, 255, 65, 0.18);
 }
 
-/* bordas desfocadas (quando o widget perde foco) */
-:insensitive,
-.insensitive,
-GtkWidget:insensitive {
+/* widgets sem foco */
+:backdrop,
+.backdrop {
     border-color: @unfocused_borders_color;
 }
 
-/* separadores */
-separator,
-.separator,
-GtkSeparator {
-    background-color: rgba(0, 255, 65, 0.06);
-    color: rgba(0, 255, 65, 0.06);
-}
-
-/* fallback para objetos desconhecidos */
+/* fallback */
 .frame,
 .view,
 .box,
@@ -295,5 +219,3 @@ GtkSeparator {
     background-color: transparent;
     color: @fg_color;
 }
-
-/* fim do arquivo */
