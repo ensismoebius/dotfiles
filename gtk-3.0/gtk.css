@@ -1,7 +1,14 @@
 /* ~/.config/gtk-3.0/gtk.css
    Tema: neon verde / fundo escuro — GTK3
-   Gerado a partir do inventário fornecido.
+   Fixed version with proper text selection highlighting
 */
+
+/* Force dark theme variant */
+@import url("resource:///org/gtk/libgtk/theme/Adwaita/gtk-dark.css");
+
+* {
+    -gtk-application-prefer-dark-theme: 1;
+}
 
 /* ---------- cores ---------- */
 @define-color bg_color rgba(13, 2, 8, 0.95);
