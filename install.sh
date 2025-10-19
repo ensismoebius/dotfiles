@@ -7,8 +7,9 @@ echo "
 --- Core Components ---
 hyprland: The Wayland compositor
 waybar: Status bar
-swaync: Notification center
+dunst: Notification daemon
 wofi: Application launcher
+wofi: Used for emoji picker
 kitty: Terminal emulator
 nautilus: File manager
 wlogout: Logout menu
@@ -36,6 +37,8 @@ grim slurp grimblast (AUR): Screenshot tools
 wl-clipboard: Clipboard utilities
 jq: JSON processor for scripts
 zsh: The Z shell
+swaync (AUR): Notification center
+waypaper (AUR): Wallpaper selector GUI
 xdg-utils: For opening files and URLs
 git base-devel: For installing AUR packages
 
@@ -74,7 +77,9 @@ CONFIG_DIR=$(cd "$(dirname "$0")" && pwd)
 # Files and directories to link to $HOME
 FILES_TO_LINK=(
     ".bash_profile"
+    ".vim"
     ".zshrc"
+    ".vimrc"
     ".oh-my-zsh"
     ".p10k.zsh"
     ".gtkrc-2.0"
@@ -84,11 +89,12 @@ FILES_TO_LINK=(
 # Vim specific configuration
 echo "Setting up Vim configuration..."
 # Create necessary vim directories
-mkdir -p ~/.vim/pack/themes/start
+mkdir -p ~/.vim/autoload
+mkdir -p ~/.config/coc
+
 # Link vim configuration files
 ln -sf "$CONFIG_DIR/vim/.vimrc" ~/.vimrc
-ln -sf "$CONFIG_DIR/vim/coc-settings.json" ~/.config/coc/coc-settings.json
-ln -sf "$CONFIG_DIR/vim/pack" ~/.vim/pack
+ln -sf "$CONFIG_DIR/vim/coc-settings.json" ~/.vim/coc-settings.json
 
 # Install coc-clangd for C/C++ support
 echo "Please run ':PlugInstall' when you first open Vim"
@@ -98,6 +104,7 @@ echo "After plugins are installed, run ':CocInstall coc-clangd' for C/C++ suppor
 XDG_CONFIG_DIRS_TO_LINK=(
     "gtk-3.0"
     "gtk-4.0"
+    "icons"
     "kitty"
     "qt5ct"
     "qt6ct"
@@ -107,8 +114,6 @@ XDG_CONFIG_DIRS_TO_LINK=(
     "waypaper"
     "wlogout"
     "wofi"
-    "khal"
-    "vdirsyncer"
 )
 
 # Create symbolic links for files in $HOME
@@ -190,7 +195,7 @@ fi
 ln -sf ~/.config/hypr/icons/Cyberpunk-Neon ~/.local/share/icons/
 
 # Update icon cache
-gtk-update-icon-cache -f ~/.local/share/icons/Cyberpunk-Neon
+gtk-update-icon-cache -f ~/.config/hypr/icons/Cyberpunk-Neon
 
 echo "Icon theme setup completed."
 

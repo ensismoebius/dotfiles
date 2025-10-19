@@ -22,7 +22,7 @@
 * {
     border: none;
     font-family: "JetbrainsMono Nerd Font";
-    font-size: 15px;
+    font-size: 12px;
     min-height: 10px;
     transition: all 0.3s ease;
 }
@@ -96,14 +96,14 @@ window#waybar.hidden {
 
 /* Modules left */
 #custom-archicon {
-    font-size: 20px;
+    font-size: 12px;
     color: #00FF41;
     background: #0D0208;
     padding-right: 17px;
 }
 
 #custom-monitor-layout {
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 6px;
     margin-bottom: 6px;
     border-top-left-radius: 10px;
@@ -112,7 +112,7 @@ window#waybar.hidden {
 
 #mpris,
 #custom-bluetooth {
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 6px;
     margin-bottom: 6px;
 }
@@ -284,8 +284,7 @@ window#waybar.hidden {
 }
 
 #notification {
-    background: #008F11;
-    padding-right: 13px;
+    background: #000000;
 }
 
 #custom-usb {
@@ -360,7 +359,7 @@ window#waybar.hidden {
 
 #custom-notification {
     color: #00FF41;
-    background: #008F11;
+    background: #000000;
     padding-left: 10px;
     padding-right: 13px;
     margin-top: 6px;

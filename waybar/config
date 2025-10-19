@@ -29,9 +29,9 @@
         "custom/bluetooth",
         "pulseaudio",
         "pulseaudio#microphone",
-        "custom/notification",
         "network",
-        "tray"
+        "tray",
+        "custom/notification"
     ],
     "tray": {
         "spacing": 10
