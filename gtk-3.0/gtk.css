@@ -132,6 +132,19 @@
         selection-color: @selected_fg_color;
     }
 
+    /* Entry (single-line) selection — covers inline rename and address bar */
+    entry selection,
+    entry:selected,
+    GtkEntry selection,
+    GtkEntry:selected,
+    entry text:selected {
+        background-color: @selected_bg_color;
+        color: @selected_fg_color;
+        box-shadow: 0 0 12px rgba(0, 255, 65, 0.85);
+        border-radius: 3px;
+    }
+
+
     textview text:selected,
     textview:selected,
     textview selection {

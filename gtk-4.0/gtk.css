@@ -236,6 +236,18 @@ textview:selected {
     box-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
 }
 
+/* Entry selection (inline rename, address bar) */
+entry selection,
+Entry selection,
+entry:selected,
+Entry:selected,
+entry text:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.85);
+    border-radius: 3px;
+}
+
 /* --- tree/list widgets / cellview / builtin icons / gizmos --- */
 cellview,
 CellView,
