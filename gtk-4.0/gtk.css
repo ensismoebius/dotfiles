@@ -201,6 +201,31 @@ ListBoxRow:selected {
     border-radius: 4px;
 }
 
+/* ---------- File manager selections (tree/icon/flow) ---------- */
+treeview row:selected,
+GtkTreeView row:selected,
+treeview:selected,
+GtkTreeView:selected,
+iconview item:selected,
+GtkIconView:selected,
+flowbox child:selected,
+GtkFlowBox:selected,
+.view row:selected,
+.view:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    box-shadow: 0 0 18px rgba(0, 255, 65, 0.9);
+    border-radius: 6px;
+}
+
+treeview row:selected:focus,
+GtkTreeView row:selected:focus,
+iconview item:selected:focus,
+GtkIconView:selected:focus {
+    box-shadow: 0 0 22px rgba(0, 255, 65, 0.95);
+    border: 1px solid rgba(0, 255, 65, 0.25);
+}
+
 /* Text selection glow for GTK4 text widgets */
 textview selection,
 TextView selection,

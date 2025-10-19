@@ -141,6 +141,34 @@
         border-radius: 4px;
     }
 
+    /* ---------- File manager: tree/icon/flow selections (files/folders) ---------- */
+    /* Targets common GTK widgets used by file managers to highlight selected items */
+    treeview row:selected,
+    GtkTreeView row:selected,
+    treeview:selected,
+    GtkTreeView:selected,
+    iconview item:selected,
+    GtkIconView:selected,
+    flowbox child:selected,
+    GtkFlowBox:selected,
+    .view row:selected,
+    .view:selected {
+        background-color: @selected_bg_color;
+        color: @selected_fg_color;
+        box-shadow: 0 0 18px rgba(0, 255, 65, 0.9);
+        border-radius: 6px;
+        transition: box-shadow 0.25s ease;
+    }
+
+    /* Slightly stronger outline for focused selections */
+    treeview row:selected:focus,
+    GtkTreeView row:selected:focus,
+    iconview item:selected:focus,
+    GtkIconView:selected:focus {
+        box-shadow: 0 0 22px rgba(0, 255, 65, 0.95);
+        border: 1px solid rgba(0, 255, 65, 0.25);
+    }
+
     /* ---------- menubar / menu / menuitem (GTK3) ---------- */
     menubar,
     .menubar {
