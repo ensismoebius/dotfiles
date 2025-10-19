@@ -39,229 +39,286 @@
 }
 
 .background {
-    background-color: @bg_color;
-    color: @fg_color;
-    border-bottom: 1px solid rgba(0, 255, 65, 0.06);
-    padding: 6px;
-}
+    /* ~/.config/gtk-3.0/gtk.css
+       Tema: neon verde / fundo escuro — GTK3
+       Fixed version with proper text selection highlighting
+    */
 
-window {
-    background-image: repeating-linear-gradient(0deg,
-            rgba(0, 255, 65, 0.03) 0px,
-            rgba(0, 255, 65, 0.03) 1px,
-            transparent 1px,
-            transparent 2px);
-}
+    /* Force dark theme variant */
+    @import url("resource:///org/gtk/libgtk/theme/Adwaita/gtk-dark.css");
 
-button {
-    background-color: @bg_color;
-    color: @fg_color;
-    border: 1px solid @borders_color;
-    padding: 5px 10px;
-}
+    * {
+        -gtk-application-prefer-dark-theme: 1;
+    }
 
-button:hover {
-    background-color: alpha(@selected_bg_color, 0.3);
-    box-shadow: 0 0 5px #00FF41;
-}
+    /* ---------- cores ---------- */
+    @define-color bg_color rgba(13, 2, 8, 0.95);
+    @define-color fg_color #00FF41;
+    @define-color selected_bg_color #008F11;
+    @define-color selected_fg_color #00FF41;
+    @define-color text_color #00FF41;
+    @define-color base_color rgba(13, 2, 8, 0.95);
+    @define-color borders_color #00FF41;
+    @define-color unfocused_borders_color rgba(0, 255, 65, 0.3);
+    @define-color warning_color #FFFF00;
+    @define-color error_color #FF0000;
+    @define-color success_color #00FF41;
 
-button:active {
-    background-color: @selected_bg_color;
-    color: @selected_fg_color;
-    box-shadow: 0 0 10px rgba(0, 255, 65, 0.85);
-}
+    @keyframes glow {
+        0% {
+            box-shadow: 0 0 5px #00FF41, 0 0 10px #00FF41, 0 0 15px #008F11;
+        }
 
-entry {
-    background-color: alpha(@bg_color, 0.8);
-    color: @fg_color;
-    border: 1px solid @borders_color;
-    padding: 5px;
-    box-shadow: inset 0 0 5px #00FF41;
-}
+        100% {
+            box-shadow: 0 0 10px #00FF41, 0 0 20px #00FF41, 0 0 30px #008F11;
+        }
+    }
 
-entry:focus {
-    border-color: @selected_bg_color;
-    box-shadow: 0 0 10px #00FF41;
-}
+    * {
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
 
-/* ---------- menubar / menu / menuitem (GTK3) ---------- */
-menubar,
-.menubar {
-    background-color: @bg_color;
-    border-bottom: 1px solid @borders_color;
-    box-shadow: 0 0 10px #00FF41;
-}
+    .background {
+        background-color: @bg_color;
+        color: @fg_color;
+        border-bottom: 1px solid rgba(0, 255, 65, 0.06);
+        padding: 6px;
+    }
 
-menuitem {
-    color: @fg_color;
-    padding: 5px 10px;
-}
+    window {
+        background-image: repeating-linear-gradient(0deg,
+                rgba(0, 255, 65, 0.03) 0px,
+                rgba(0, 255, 65, 0.03) 1px,
+                transparent 1px,
+                transparent 2px);
+    }
 
-menuitem:hover {
-    background-color: alpha(@selected_bg_color, 0.3);
-    box-shadow: 0 0 5px #00FF41;
-}
+    button {
+        background-color: @bg_color;
+        color: @fg_color;
+        border: 1px solid @borders_color;
+        padding: 5px 10px;
+    }
 
-notebook {
-    border: 1px solid @borders_color;
-}
+    button:hover {
+        background-color: alpha(@selected_bg_color, 0.3);
+        box-shadow: 0 0 5px #00FF41;
+    }
 
-notebook tab {
-    background-color: @bg_color;
-    color: @fg_color;
-    padding: 5px 15px;
-}
+    button:active {
+        background-color: @selected_bg_color;
+        color: @selected_fg_color;
+        box-shadow: 0 0 10px rgba(0, 255, 65, 0.85);
+    }
 
-notebook tab:checked {
-    background-color: alpha(@selected_bg_color, 0.3);
-    border-bottom: 2px solid @borders_color;
-    box-shadow: 0 0 5px #00FF41;
-}
+    entry {
+        background-color: alpha(@bg_color, 0.8);
+        color: @fg_color;
+        border: 1px solid @borders_color;
+        padding: 5px;
+        box-shadow: inset 0 0 5px #00FF41;
+    }
 
-/* ---------- frame / expander / separator ---------- */
-frame,
-GtkFrame,
-expander,
-GtkExpander {
-    background-color: rgba(13, 2, 8, 0.88);
-    color: @fg_color;
-    border: 1px solid rgba(0, 255, 65, 0.04);
-}
+    entry:focus {
+        border-color: @selected_bg_color;
+        box-shadow: 0 0 10px #00FF41;
+    }
 
-separator,
-GtkSeparator {
-    background-color: rgba(0, 255, 65, 0.04);
-    color: rgba(0, 255, 65, 0.04);
-}
+    /* Text selection and glowing highlight */
+    textview text,
+    textview {
+        selection-background-color: @selected_bg_color;
+        selection-color: @selected_fg_color;
+    }
 
-/* ---------- dialogs / infobar / statusbar ---------- */
-dialog,
-GtkDialog,
-messagedialog,
-GtkMessageDialog,
-#example_dialog,
-#example_dialog_fallback {
-    background-color: @bg_color;
-    color: @fg_color;
-    border: 1px solid rgba(0, 255, 65, 0.06);
-    padding: 8px;
-}
+    textview text:selected,
+    textview:selected,
+    textview selection {
+        background-color: @selected_bg_color;
+        color: @selected_fg_color;
+        box-shadow: 0 0 12px rgba(0, 255, 65, 0.85);
+        border-radius: 4px;
+    }
 
-infobar,
-GtkInfoBar,
-#sample_infobar {
-    background-color: rgba(13, 2, 8, 0.88);
-    color: @fg_color;
-}
+    /* ---------- menubar / menu / menuitem (GTK3) ---------- */
+    menubar,
+    .menubar {
+        background-color: @bg_color;
+        border-bottom: 1px solid @borders_color;
+        box-shadow: 0 0 10px #00FF41;
+    }
 
-/* ---------- tooltip ---------- */
-tooltip,
-GtkTooltip,
-.tooltip {
-    background-color: rgba(0, 0, 0, 0.85);
-    color: @fg_color;
-    border: 1px solid rgba(0, 255, 65, 0.08);
-    padding: 4px 6px;
-}
+    menuitem {
+        color: @fg_color;
+        padding: 5px 10px;
+    }
 
-/* ---------- states: insensitive / unfocused / warnings ---------- */
-:insensitive,
-.insensitive {
-    opacity: 0.55;
-    border-color: @unfocused_borders_color;
-}
+    menuitem:hover {
+        background-color: alpha(@selected_bg_color, 0.3);
+        box-shadow: 0 0 5px #00FF41;
+    }
 
-.warning {
-    background-color: rgba(255, 255, 0, 0.06);
-    color: @warning_color;
-    border: 1px solid rgba(255, 255, 0, 0.18);
-}
+    notebook {
+        border: 1px solid @borders_color;
+    }
 
-.error {
-    background-color: rgba(255, 0, 0, 0.06);
-    color: @error_color;
-    border: 1px solid rgba(255, 0, 0, 0.18);
-}
+    notebook tab {
+        background-color: @bg_color;
+        color: @fg_color;
+        padding: 5px 15px;
+    }
 
-.success {
-    background-color: rgba(0, 255, 65, 0.06);
-    color: @success_color;
-    border: 1px solid rgba(0, 255, 65, 0.18);
-}
+    notebook tab:checked {
+        background-color: alpha(@selected_bg_color, 0.3);
+        border-bottom: 2px solid @borders_color;
+        box-shadow: 0 0 5px #00FF41;
+    }
 
-/* ---------- IDs detectados no dump (prioridade alta) ---------- */
-#main_window {
-    background-color: @bg_color;
-    color: @fg_color;
-}
+    /* ---------- frame / expander / separator ---------- */
+    frame,
+    GtkFrame,
+    expander,
+    GtkExpander {
+        background-color: rgba(13, 2, 8, 0.88);
+        color: @fg_color;
+        border: 1px solid rgba(0, 255, 65, 0.04);
+    }
 
-#main_scroller {}
+    separator,
+    GtkSeparator {
+        background-color: rgba(0, 255, 65, 0.04);
+        color: rgba(0, 255, 65, 0.04);
+    }
 
-#root_box {}
+    /* ---------- dialogs / infobar / statusbar ---------- */
+    dialog,
+    GtkDialog,
+    messagedialog,
+    GtkMessageDialog,
+    #example_dialog,
+    #example_dialog_fallback {
+        background-color: @bg_color;
+        color: @fg_color;
+        border: 1px solid rgba(0, 255, 65, 0.06);
+        padding: 8px;
+    }
 
-#row1 {}
+    infobar,
+    GtkInfoBar,
+    #sample_infobar {
+        background-color: rgba(13, 2, 8, 0.88);
+        color: @fg_color;
+    }
 
-#sample_label {}
+    /* ---------- tooltip ---------- */
+    tooltip,
+    GtkTooltip,
+    .tooltip {
+        background-color: rgba(0, 0, 0, 0.85);
+        color: @fg_color;
+        border: 1px solid rgba(0, 255, 65, 0.08);
+        padding: 4px 6px;
+    }
 
-#sample_entry {}
+    /* ---------- states: insensitive / unfocused / warnings ---------- */
+    :insensitive,
+    .insensitive {
+        opacity: 0.55;
+        border-color: @unfocused_borders_color;
+    }
 
-#sample_textview {}
+    .warning {
+        background-color: rgba(255, 255, 0, 0.06);
+        color: @warning_color;
+        border: 1px solid rgba(255, 255, 0, 0.18);
+    }
 
-#row2 {}
+    .error {
+        background-color: rgba(255, 0, 0, 0.06);
+        color: @error_color;
+        border: 1px solid rgba(255, 0, 0, 0.18);
+    }
 
-#btn_plain {}
+    .success {
+        background-color: rgba(0, 255, 65, 0.06);
+        color: @success_color;
+        border: 1px solid rgba(0, 255, 65, 0.18);
+    }
 
-#btn_suggested {}
+    /* ---------- IDs detectados no dump (prioridade alta) ---------- */
+    #main_window {
+        background-color: @bg_color;
+        color: @fg_color;
+    }
 
-#btn_toggle {}
+    #main_scroller {}
 
-#menu_button_example {}
+    #root_box {}
 
-#mi_a {}
+    #row1 {}
 
-#mi_b {}
+    #sample_label {}
 
-#row4 {}
+    #sample_entry {}
 
-#sample_switch {}
+    #sample_textview {}
 
-#sample_check {}
+    #row2 {}
 
-#rb1 {}
+    #btn_plain {}
 
-#rb2 {}
+    #btn_suggested {}
 
-#row5 {}
+    #btn_toggle {}
 
-#sample_combobox {}
+    #menu_button_example {}
 
-#sample_scale {}
+    #mi_a {}
 
-#sample_progress {}
+    #mi_b {}
 
-#sample_listbox {}
+    #row4 {}
 
-#btn_open_dialog {}
+    #sample_switch {}
 
-#sample_searchentry {}
+    #sample_check {}
 
-#info_label {}
+    #rb1 {}
 
-#btn_dump_json {
-    border: 1px solid @borders_color;
-}
+    #rb2 {}
 
-/* ---------- fallback generic para nodes/classes desconhecidas ---------- */
-.frame,
-.view,
-.box,
-.grid,
-.background,
-.popup,
-.menu,
-.view {
-    color: @fg_color;
-}
+    #row5 {}
 
-/* ---------- final ---------- */
-/* usar GTK Inspector (GTK_DEBUG=interactive) p/ ajustes finos */
+    #sample_combobox {}
+
+    #sample_scale {}
+
+    #sample_progress {}
+
+    #sample_listbox {}
+
+    #btn_open_dialog {}
+
+    #sample_searchentry {}
+
+    #info_label {}
+
+    #btn_dump_json {
+        border: 1px solid @borders_color;
+    }
+
+    /* ---------- fallback generic para nodes/classes desconhecidas ---------- */
+    .frame,
+    .view,
+    .box,
+    .grid,
+    .background,
+    .popup,
+    .menu,
+    .view {
+        color: @fg_color;
+    }
+
+    /* ---------- final ---------- */
+    /* usar GTK Inspector (GTK_DEBUG=interactive) p/ ajustes finos */

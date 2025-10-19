@@ -197,6 +197,18 @@ listbox row:selected,
 ListBoxRow:selected {
     background-color: @selected_bg_color;
     color: @selected_fg_color;
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.85);
+    border-radius: 4px;
+}
+
+/* Text selection glow for GTK4 text widgets */
+textview selection,
+TextView selection,
+textview selection,
+textview:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
 }
 
 /* --- tree/list widgets / cellview / builtin icons / gizmos --- */

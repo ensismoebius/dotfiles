@@ -43,6 +43,9 @@ window {
 }
 
 #entry:selected {
-    background-color: #008F11;
-    border-radius: 5px;
+    background-color: rgba(0, 143, 17, 0.9);
+    border-radius: 6px;
+    box-shadow: 0 0 16px rgba(0, 255, 65, 0.9), inset 0 0 8px rgba(0, 255, 65, 0.6);
+    border-left: 3px solid #00FF41;
+    animation: glow 2s ease-in-out infinite alternate;
 }
