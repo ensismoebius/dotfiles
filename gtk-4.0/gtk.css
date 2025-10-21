@@ -319,7 +319,7 @@ GtkTooltipWindow,
 }
 
 /* --- special states: insensitive / unfocused borders / warnings --- */
-:insensitive,
+:disabled,
 .insensitive {
     opacity: 0.5;
     border-color: @unfocused_borders_color;
@@ -354,63 +354,96 @@ GtkTooltipWindow,
     background-color: transparent;
 }
 
-#root_box {}
+/*
+ * Placeholder IDs - keeping for reference
+ * 
+ * #root_box
+ * #row1
+ * #sample_label
+ * #sample_entry
+ * #sample_textview
+ * #row2
+ * #btn_plain
+ * #btn_suggested
+ * #btn_toggle
+ * #menu_button_example
+ * #mi_a
+ * #mi_b
+ * #row4
+ * #sample_switch
+ * #sample_check
+ * #rb1
+ * #rb2
+ * #row5
+ * #sample_combobox
+ * #sample_scale
+ * #sample_progress
+ * #sample_listbox
+ * #btn_open_dialog
+ * #sample_searchentry
+ * #info_label
+ */
 
-#row1 {}
+/* Nautilus compact layout */
+window.background.nautilus-window headerbar,
+window.background.nautilus-window .path-bar-box,
+window.background.nautilus-window .path-bar {
+    min-height: 28px;
+    margin: 0;
+    padding: 0;
+}
 
-#sample_label {}
+window.background.nautilus-window placessidebar>box.frame {
+    margin: 0;
+    padding: 0;
+}
 
-#sample_entry {}
+window.background.nautilus-window placessidebar row {
+    min-height: 28px;
+    padding: 2px 4px;
+}
 
-#sample_textview {}
+window.background.nautilus-window placessidebar row button.sidebar-button {
+    min-height: 28px;
+    padding: 2px 4px;
+    margin: 0;
+}
 
-#row2 {}
+window.background.nautilus-window placessidebar>box.frame>revealer>scrolledwindow>box.view {
+    min-height: 28px;
+    padding: 0;
+    margin: 0;
+}
 
-#btn_plain {}
+window.background.nautilus-window .path-bar-box entry {
+    min-height: 22px;
+    margin: 1px 0;
+    padding: 0 4px;
+}
 
-#btn_suggested {}
+window.background.nautilus-window .path-bar-box button {
+    min-height: 22px;
+    margin: 1px 0;
+    padding: 0 4px;
+}
 
-#btn_toggle {}
+window.background.nautilus-window headerbar button.toggle {
+    min-height: 30px;
+    margin: 1px 2px;
+    padding: 0 4px;
+}
 
-#menu_button_example {}
+window.background.nautilus-window searchbar {
+    margin: 0;
+    padding: 0;
+}
 
-#mi_a {}
-
-#mi_b {}
-
-#row4 {}
-
-#sample_switch {}
-
-#sample_check {}
-
-#rb1 {}
-
-#rb2 {}
-
-#row5 {}
-
-#sample_combobox {}
-
-#sample_scale {}
-
-#sample_progress {}
-
-#sample_listbox {}
-
-#btn_open_dialog {}
-
-#sample_searchentry {}
-
-#info_label {}
-
+/* Core widget styles */
 #btn_dump_json {
     border: 1px solid @borders_color;
 }
 
-/* --- fallback generic to catch unknown nodes/classes --- */
-[tooltip],
-[title],
+/* Generic selectors */
 .background,
 .popup,
 .menu,
@@ -419,3 +452,57 @@ GtkTooltipWindow,
 }
 
 /* fim do skeleton */
+
+/* Ultra-compact Nautilus headerbar */
+window.background.nautilus-window .headerbar,
+window.background.nautilus-window .titlebar {
+    min-height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+window.background.nautilus-window .headerbar button,
+window.background.nautilus-window .titlebar button {
+    padding: 1px;
+    margin: 0;
+    min-height: 20px;
+}
+
+window.background.nautilus-window .titlebar .window-controls button,
+window.background.nautilus-window .headerbar .window-controls button {
+    padding: 0;
+    margin: 0;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+/* Ultra-compact Nautilus address bar */
+window.background.nautilus-window .path-bar-box entry,
+window.background.nautilus-window .path-bar-box button {
+    min-height: 20px;
+    padding: 0 4px;
+    margin: 1px 0;
+}
+
+window.background.nautilus-window .path-bar-box {
+    margin: 0;
+    padding: 0;
+}
+
+window.background.nautilus-window .path-bar button {
+    padding: 0 4px;
+    min-height: 20px;
+    margin: 1px 0;
+}
+
+/* Additional compactness for Nautilus */
+window.background.nautilus-window headerbar * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+window.background.nautilus-window .path-bar {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
