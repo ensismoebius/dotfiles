@@ -39,13 +39,17 @@
 }
 
 .background {
-    /* ~/.config/gtk-3.0/gtk.css
-       Tema: neon verde / fundo escuro — GTK3
-       Fixed version with proper text selection highlighting
-    */
+    background-color: @bg_color;
+    color: @fg_color;
+}
 
-    /* Force dark theme variant */
-    @import url("resource:///org/gtk/libgtk/theme/Adwaita/gtk-dark.css");
+window {
+    background-image: repeating-linear-gradient(0deg,
+            rgba(0, 255, 65, 0.03) 0px,
+            rgba(0, 255, 65, 0.03) 1px,
+            transparent 1px,
+            transparent 2px);
+}
 
     * {
         -gtk-application-prefer-dark-theme: 1;
