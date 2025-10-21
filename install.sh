@@ -79,7 +79,6 @@ FILES_TO_LINK=(
     ".bash_profile"
     ".vim"
     ".zshrc"
-    ".vimrc"
     ".oh-my-zsh"
     ".p10k.zsh"
     ".gtkrc-2.0"
