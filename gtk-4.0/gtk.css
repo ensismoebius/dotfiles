@@ -1,17 +1,50 @@
-/* gtk-4.0/gtk.css — skeleton gerado a partir do dump (fechar lacunas) */
-/* Fonte: gtk4_widgets_dump.json (inventário do seu app). */
+/**
+ * GTK-4.0 Theme: Cyberpunk Neon
+ *
+ * This theme provides a dark, neon green aesthetic for GTK-4 applications.
+ * It is a skeleton theme generated from a widget dump and may require
+ * adjustments for specific applications.
+ *
+ * Location: ~/.config/hypr/gtk-4.0/gtk.css
+ */
+
+/*
+ * ===================================================================
+ * COLOR PALETTE
+ *
+ * Define the core colors used throughout the theme.
+ * ===================================================================
+ */
 
 @define-color bg_color rgba(13, 2, 8, 0.95);
+/* Dark background */
 @define-color fg_color #00FF41;
-@define-color selected_bg_color #008F11;
-@define-color selected_fg_color #00FF41;
-@define-color borders_color #00FF41;
-@define-color unfocused_borders_color rgba(0, 255, 65, 0.3);
-@define-color warning_color #FFFF00;
-@define-color error_color #FF0000;
-@define-color success_color #00FF41;
+/* Neon green foreground/text */
 
-/* --- defaults globais --- */
+@define-color selected_bg_color #008F11;
+/* Background for selected items */
+@define-color selected_fg_color #00FF41;
+/* Text color for selected items */
+
+@define-color borders_color #00FF41;
+/* Border color for focused elements */
+@define-color unfocused_borders_color rgba(0, 255, 65, 0.3);
+/* Border color for unfocused elements */
+
+/* Status Colors */
+@define-color warning_color #FFFF00;
+/* Yellow for warnings */
+@define-color error_color #FF0000;
+/* Red for errors */
+@define-color success_color #00FF41;
+/* Green for success indicators */
+
+/*
+ * ===================================================================
+ * GLOBAL DEFAULTS
+ * ===================================================================
+ */
+
 * {
     color: @fg_color;
     background-color: transparent;
@@ -19,10 +52,14 @@
     transition: all 180ms ease;
 }
 
-/* --- janela / headerbar / titlebar --- */
+/*
+ * ===================================================================
+ * WINDOW & HEADERBAR
+ * ===================================================================
+ */
+
 applicationwindow,
 window,
-ApplicationWindow,
 .background,
 #main_window {
     background-color: @bg_color;
@@ -31,52 +68,48 @@ ApplicationWindow,
 
 headerbar,
 .titlebar,
-HeaderBar,
 #GtkHeaderBar {
     background-color: @bg_color;
     color: @fg_color;
     border-bottom: 1px solid @borders_color;
 }
 
-/* --- scrolled window / viewport --- */
+/*
+ * ===================================================================
+ * CORE WIDGETS
+ * ===================================================================
+ */
+
+/* --- Scrolled Window & Viewport --- */
 scrolledwindow,
-ScrolledWindow,
 viewport,
-Viewport,
 #main_scroller {
     background-color: transparent;
 }
 
-/* --- boxes / layout --- */
+/* --- Layout Containers --- */
 box,
-Box,
 .vertical,
-.horizontal,
-GtkBox {
+.horizontal {
     background-color: transparent;
     color: @fg_color;
 }
 
-/* --- labels --- */
+/* --- Labels --- */
 label,
-Label,
 .title,
 #title_label,
-#info_label,
-GtkLabel {
+#info_label {
     color: @fg_color;
 }
 
-/* --- entry / search / textview --- */
+/* --- Text Entry, Search, and Text View --- */
 entry,
-Entry,
 text,
-Text,
 textview,
-TextView,
 #sample_entry,
 #sample_textview,
-SearchEntry,
+searchentry,
 .search {
     background-color: rgba(13, 2, 8, 0.86);
     color: @fg_color;
@@ -86,16 +119,13 @@ SearchEntry,
 }
 
 entry:focus,
-Entry:focus,
-textview:focus,
-TextView:focus {
+textview:focus {
     border-color: @selected_bg_color;
     box-shadow: 0 0 10px rgba(0, 255, 65, 0.9);
 }
 
-/* --- buttons (inclui text-button, suggested-action, image-button) --- */
+/* --- Buttons --- */
 button,
-Button,
 .text-button,
 .image-button,
 #btn_plain,
@@ -110,7 +140,6 @@ Button,
 }
 
 button:hover,
-Button:hover,
 .text-button:hover {
     background-color: rgba(0, 143, 17, 0.10);
     box-shadow: 0 0 6px rgba(0, 255, 65, 0.55);
@@ -118,28 +147,23 @@ Button:hover,
 
 button.suggested-action,
 .suggested-action,
-Button.suggested-action,
 #btn_suggested {
     border-color: @borders_color;
     background-color: rgba(0, 143, 17, 0.06);
 }
 
-/* --- toggle / togglebutton / switches / check / radio-fallback --- */
+/* --- Toggles, Switches, Checks, and Radios --- */
 togglebutton,
-ToggleButton,
 .toggle,
 #btn_toggle,
-.toggle-button,
 switch,
-Switch,
-checkbutton,
-CheckButton {
+checkbutton {
     color: @fg_color;
     background-color: rgba(13, 2, 8, 0.86);
     border: 1px solid rgba(0, 255, 65, 0.04);
 }
 
-/* radio fallback (ToggleButton usado como radio) */
+/* Radio button fallback (often implemented with ToggleButton) */
 #rb1,
 #rb2,
 .radio-fallback {
@@ -147,9 +171,13 @@ CheckButton {
     border: 1px solid rgba(0, 255, 65, 0.04);
 }
 
-/* --- menubutton / popover / popover content / treepopover --- */
+/*
+ * ===================================================================
+ * MENUS & POPOVERS
+ * ===================================================================
+ */
+
 menubutton,
-MenuButton,
 .popup,
 #menu_button_example {
     background-color: transparent;
@@ -157,9 +185,6 @@ MenuButton,
 }
 
 popover,
-Popover,
-PopoverContent,
-GtkPopoverContent,
 .background,
 .menu {
     background-color: @bg_color;
@@ -169,49 +194,46 @@ GtkPopoverContent,
 }
 
 menubutton popup button,
-Popover button {
+popover button {
     color: @fg_color;
 }
 
-/* --- combobox / comboboxtext / popover menus --- */
+/* --- Combo Box --- */
 combobox,
-ComboBoxText,
+comboboxtext,
 #sample_combobox,
-.combo,
-GtkTreePopover {
+.combo {
     background-color: rgba(13, 2, 8, 0.88);
     border: 1px solid rgba(0, 255, 65, 0.05);
 }
 
-/* --- listbox / listboxrow / list selections --- */
+/*
+ * ===================================================================
+ * LISTS & SELECTION
+ * ===================================================================
+ */
+
+/* --- ListBox --- */
 listbox,
-ListBox,
 listboxrow,
-ListBoxRow,
 .activatable {
     background-color: transparent;
     color: @fg_color;
 }
 
 listbox row:selected,
-ListBoxRow:selected {
+listboxrow:selected {
     background-color: @selected_bg_color;
     color: @selected_fg_color;
     box-shadow: 0 0 12px rgba(0, 255, 65, 0.85);
     border-radius: 4px;
 }
 
-/* ---------- File manager selections (tree/icon/flow) ---------- */
+/* --- File Manager Selection (Tree, Icon, Flow) --- */
 treeview row:selected,
-GtkTreeView row:selected,
-treeview:selected,
-GtkTreeView:selected,
 iconview item:selected,
-GtkIconView:selected,
 flowbox child:selected,
-GtkFlowBox:selected,
-.view row:selected,
-.view:selected {
+.view row:selected {
     background-color: @selected_bg_color;
     color: @selected_fg_color;
     box-shadow: 0 0 18px rgba(0, 255, 65, 0.9);
@@ -219,16 +241,12 @@ GtkFlowBox:selected,
 }
 
 treeview row:selected:focus,
-GtkTreeView row:selected:focus,
-iconview item:selected:focus,
-GtkIconView:selected:focus {
+iconview item:selected:focus {
     box-shadow: 0 0 22px rgba(0, 255, 65, 0.95);
     border: 1px solid rgba(0, 255, 65, 0.25);
 }
 
-/* Text selection glow for GTK4 text widgets */
-textview selection,
-TextView selection,
+/* --- Text Selection --- */
 textview selection,
 textview:selected {
     background-color: @selected_bg_color;
@@ -236,11 +254,8 @@ textview:selected {
     box-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
 }
 
-/* Entry selection (inline rename, address bar) */
 entry selection,
-Entry selection,
 entry:selected,
-Entry:selected,
 entry text:selected {
     background-color: @selected_bg_color;
     color: @selected_fg_color;
@@ -248,16 +263,21 @@ entry text:selected {
     border-radius: 3px;
 }
 
-/* --- tree/list widgets / cellview / builtin icons / gizmos --- */
+/*
+ * ===================================================================
+ * MISCELLANEOUS WIDGETS
+ * ===================================================================
+ */
+
+/* --- Tree/List Internals --- */
 cellview,
-CellView,
-GtkCellView,
 .view,
 .flat {
     background-color: transparent;
     color: @fg_color;
 }
 
+/* --- Built-in Icons (e.g., arrows in trees) --- */
 GtkBuiltinIcon,
 .down,
 .right {
@@ -265,60 +285,38 @@ GtkBuiltinIcon,
     opacity: 0.95;
 }
 
-/* --- scale / range / progressbar / scrollbar --- */
+/* --- Scale, Progressbar, Scrollbar --- */
 scale,
-Scale,
 range,
-Range,
 progressbar,
-ProgressBar,
-scrollbar,
-Scrollbar,
-GtkScrollbar {
+scrollbar {
     background-color: rgba(13, 2, 8, 0.8);
     color: @fg_color;
     border: 1px solid rgba(0, 255, 65, 0.04);
 }
 
-progressbar.horizontal,
-ProgressBar.horizontal,
-ProgressBar {
+progressbar.horizontal {
     background-color: rgba(0, 0, 0, 0.12);
 }
 
-scrollbar.overlay-indicator,
-.overlay-indicator {
+scrollbar.overlay-indicator {
     background-color: rgba(13, 2, 8, 0.6);
 }
 
-/* --- headerbar / titlebar controls / window controls --- */
-.headerbar,
-headerbar,
-HeaderBar,
-.titlebar,
-.title {
-    background-color: @bg_color;
-    color: @fg_color;
-    border-bottom: 1px solid rgba(0, 255, 65, 0.05);
-}
-
-.WindowControls,
-WindowControls,
-.titlebar .end {
-    color: @fg_color;
-}
-
-/* --- tooltip / tooltip window --- */
+/* --- Tooltips --- */
 tooltip,
-Tooltip,
-GtkTooltipWindow,
-.background {
+GtkTooltipWindow {
     background-color: rgba(0, 0, 0, 0.85);
     color: @fg_color;
     border: 1px solid rgba(0, 255, 65, 0.08);
 }
 
-/* --- special states: insensitive / unfocused borders / warnings --- */
+/*
+ * ===================================================================
+ * WIDGET STATES
+ * ===================================================================
+ */
+
 :disabled,
 .insensitive {
     opacity: 0.5;
@@ -343,8 +341,13 @@ GtkTooltipWindow,
     border: 1px solid rgba(0, 255, 65, 0.18);
 }
 
-/* --- IDs (prioridade) para widgets identificados no dump --- */
-/* títulos e principais controles */
+/*
+ * ===================================================================
+ * APPLICATION-SPECIFIC STYLES
+ * ===================================================================
+ */
+
+/* --- High-priority IDs from GTK Inspector --- */
 #main_window {
     background-color: @bg_color;
     color: @fg_color;
@@ -354,46 +357,15 @@ GtkTooltipWindow,
     background-color: transparent;
 }
 
-/*
- * Placeholder IDs - keeping for reference
- * 
- * #root_box
- * #row1
- * #sample_label
- * #sample_entry
- * #sample_textview
- * #row2
- * #btn_plain
- * #btn_suggested
- * #btn_toggle
- * #menu_button_example
- * #mi_a
- * #mi_b
- * #row4
- * #sample_switch
- * #sample_check
- * #rb1
- * #rb2
- * #row5
- * #sample_combobox
- * #sample_scale
- * #sample_progress
- * #sample_listbox
- * #btn_open_dialog
- * #sample_searchentry
- * #info_label
- */
+#btn_dump_json {
+    border: 1px solid @borders_color;
+}
 
-/* Nautilus compact layout */
+/* --- Nautilus (File Manager) Compact Layout --- */
 window.background.nautilus-window headerbar,
 window.background.nautilus-window .path-bar-box,
 window.background.nautilus-window .path-bar {
     min-height: 28px;
-    margin: 0;
-    padding: 0;
-}
-
-window.background.nautilus-window placessidebar>box.frame {
     margin: 0;
     padding: 0;
 }
@@ -403,24 +375,7 @@ window.background.nautilus-window placessidebar row {
     padding: 2px 4px;
 }
 
-window.background.nautilus-window placessidebar row button.sidebar-button {
-    min-height: 28px;
-    padding: 2px 4px;
-    margin: 0;
-}
-
-window.background.nautilus-window placessidebar>box.frame>revealer>scrolledwindow>box.view {
-    min-height: 28px;
-    padding: 0;
-    margin: 0;
-}
-
-window.background.nautilus-window .path-bar-box entry {
-    min-height: 22px;
-    margin: 1px 0;
-    padding: 0 4px;
-}
-
+window.background.nautilus-window .path-bar-box entry,
 window.background.nautilus-window .path-bar-box button {
     min-height: 22px;
     margin: 1px 0;
@@ -433,27 +388,7 @@ window.background.nautilus-window headerbar button.toggle {
     padding: 0 4px;
 }
 
-window.background.nautilus-window searchbar {
-    margin: 0;
-    padding: 0;
-}
-
-/* Core widget styles */
-#btn_dump_json {
-    border: 1px solid @borders_color;
-}
-
-/* Generic selectors */
-.background,
-.popup,
-.menu,
-.view {
-    color: @fg_color;
-}
-
-/* fim do skeleton */
-
-/* Ultra-compact Nautilus headerbar */
+/* Ultra-compact Nautilus styles */
 window.background.nautilus-window .headerbar,
 window.background.nautilus-window .titlebar {
     min-height: 20px;
@@ -468,41 +403,28 @@ window.background.nautilus-window .titlebar button {
     min-height: 20px;
 }
 
-window.background.nautilus-window .titlebar .window-controls button,
-window.background.nautilus-window .headerbar .window-controls button {
-    padding: 0;
-    margin: 0;
-    min-height: 20px;
-    min-width: 20px;
+/* Make Nautilus view and sidebar semi-transparent black and keep blur */
+window.background.nautilus-window .view,
+window.background.nautilus-window placessidebar {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* 0.7 is 70% transparent. We can adjust this. */
 }
 
-/* Ultra-compact Nautilus address bar */
-window.background.nautilus-window .path-bar-box entry,
-window.background.nautilus-window .path-bar-box button {
-    min-height: 20px;
-    padding: 0 4px;
-    margin: 1px 0;
+/*
+ * ===================================================================
+ * GENERIC FALLBACKS
+ * ===================================================================
+ */
+
+.background,
+.popup,
+.menu,
+.view {
+    color: @fg_color;
 }
 
-window.background.nautilus-window .path-bar-box {
-    margin: 0;
-    padding: 0;
-}
-
-window.background.nautilus-window .path-bar button {
-    padding: 0 4px;
-    min-height: 20px;
-    margin: 1px 0;
-}
-
-/* Additional compactness for Nautilus */
-window.background.nautilus-window headerbar * {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-window.background.nautilus-window .path-bar {
-    margin: 0;
-    padding: 0;
-    border-spacing: 0;
-}
+/*
+ * ===================================================================
+ * END OF THEME
+ * ===================================================================
+ */
