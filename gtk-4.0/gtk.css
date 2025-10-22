@@ -587,7 +587,56 @@ window.background.nautilus-window .titlebar button {
 window.background.nautilus-window .view,
 window.background.nautilus-window placessidebar {
     background-color: rgba(0, 0, 0, 0.7);
-    /* 0.7 is 70% transparent. We can adjust this. */
+}
+
+/*
+ * ===================================================================
+ * NAUTILUS BUTTON ENHANCEMENTS
+ * ===================================================================
+ */
+
+/* Ensure Nautilus image buttons get the neon treatment without changing layout */
+window.background.nautilus-window button.image-button,
+.nautilus-window button.image-button {
+    background-color: rgba(13, 2, 8, 0.55);
+    border: 1px solid rgba(0, 255, 65, 0.12);
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.04);
+}
+
+/* Nautilus toggle buttons - subtle neon enhancement */
+window.background.nautilus-window button.toggle,
+.nautilus-window button.toggle {
+    background-color: rgba(13, 2, 8, 0.55);
+    border: 1px solid rgba(0, 255, 65, 0.12);
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.04);
+}
+
+/* Keep the compact headerbar layout but add neon accents on interaction */
+window.background.nautilus-window headerbar button.image-button:hover,
+window.background.nautilus-window headerbar button.toggle:hover {
+    border-color: rgba(0, 255, 65, 0.3);
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.15);
+}
+
+/* Active toggle state in Nautilus */
+window.background.nautilus-window button.toggle:checked,
+.nautilus-window button.toggle:checked {
+    background-color: rgba(0, 143, 17, 0.15);
+    border-color: rgba(0, 255, 65, 0.4);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3), inset 0 0 6px rgba(0, 255, 65, 0.08);
+}
+
+/* Path bar buttons - minimal enhancement */
+window.background.nautilus-window .path-bar button {
+    background-color: rgba(13, 2, 8, 0.6);
+    border: 1px solid rgba(0, 255, 65, 0.1);
+    box-shadow: inset 0 0 4px rgba(0, 255, 65, 0.03);
+}
+
+/* Ensure Nautilus maintains its compact spacing */
+window.background.nautilus-window headerbar button {
+    margin: 0 1px;
+    padding: 2px 4px;
 }
 
 /*
@@ -605,11 +654,10 @@ window.background.nautilus-window placessidebar {
 
 /*
  * ===================================================================
- * END OF THEME
+ * FORCE ALWAYS SEMI-TRANSPARENT NAUTILUS (compositor handles blur)
  * ===================================================================
  */
 
-/* --- FORCE ALWAYS SEMI-TRANSPARENT NAUTILUS (compositor handles blur) --- */
 /* Use window:backdrop syntax where appropriate so GTK parser accepts the selectors */
 window.background.nautilus-window headerbar,
 window.background.nautilus-window:backdrop headerbar,
@@ -622,3 +670,9 @@ window.background.nautilus-window:backdrop placessidebar {
     /* Blur is provided by the compositor (Hyprland); GTK flags backdrop-filter properties as unknown
        so we avoid them here to keep theme parser quiet. */
 }
+
+/*
+ * ===================================================================
+ * END OF THEME
+ * ===================================================================
+ */
