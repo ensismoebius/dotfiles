@@ -1,0 +1,107 @@
+QWidget {
+    background-color: rgba(13, 2, 8, 0.95);
+    color: #00FF41;
+    border: none;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+QWidget::item:selected {
+    background-color: #008F11;
+}
+
+QMenuBar {
+    background-color: rgba(13, 2, 8, 0.95);
+    border-bottom: 2px solid #00FF41;
+}
+
+QMenuBar::item {
+    background: transparent;
+}
+
+QMenuBar::item:selected {
+    background: rgba(0, 255, 65, 0.2);
+    border-bottom: 2px solid #00FF41;
+}
+
+QPushButton {
+    background-color: rgba(13, 2, 8, 0.95);
+    border: 1px solid #00FF41;
+    border-radius: 2px;
+    padding: 5px 15px;
+    color: #00FF41;
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 143, 17, 0.3);
+    box-shadow: 0 0 5px #00FF41;
+}
+
+QPushButton:pressed {
+    background-color: #008F11;
+}
+
+QLineEdit {
+    background-color: rgba(13, 2, 8, 0.95);
+    border: 1px solid #00FF41;
+    border-radius: 2px;
+    padding: 5px;
+    color: #00FF41;
+    selection-background-color: #008F11;
+    selection-color: #00FF41;
+}
+
+QLineEdit:focus {
+    border: 2px solid #00FF41;
+    box-shadow: 0 0 10px #00FF41;
+}
+
+QScrollBar:vertical {
+    border: 1px solid #00FF41;
+    background: rgba(13, 2, 8, 0.95);
+    width: 15px;
+    margin: 15px 0 15px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #008F11;
+    min-height: 20px;
+}
+
+QScrollBar::add-line:vertical {
+    border: 1px solid #00FF41;
+    background: rgba(13, 2, 8, 0.95);
+    height: 15px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    border: 1px solid #00FF41;
+    background: rgba(13, 2, 8, 0.95);
+    height: 15px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QMenu {
+    background-color: rgba(13, 2, 8, 0.95);
+    border: 1px solid #00FF41;
+    margin: 2px;
+}
+
+QMenu::item {
+    padding: 5px 30px 5px 30px;
+    border: 1px solid transparent;
+}
+
+QMenu::item:selected {
+    background-color: rgba(0, 143, 17, 0.3);
+    border: 1px solid #00FF41;
+}
+
+QToolTip {
+    background-color: rgba(13, 2, 8, 0.95);
+    border: 1px solid #00FF41;
+    color: #00FF41;
+    padding: 5px;
+}
