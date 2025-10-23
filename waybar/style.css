@@ -28,7 +28,7 @@
 }
 
 window#waybar {
-    background: rgba(13, 2, 8, 0.85);
+    background: rgba(27, 51, 6, 0.8);
     background-image: repeating-linear-gradient(0deg,
             rgba(0, 255, 65, 0.03) 0px,
             rgba(0, 255, 65, 0.03) 1px,
@@ -307,8 +307,8 @@ window#waybar.hidden {
 #tray {
     background: #0D0208;
     margin: 6px 5px;
-    padding: 0 10px;
-    border-radius: 10px;
+    padding: 0px;
+    border-radius: 5px;
 }
 
 #tray menu {
@@ -354,7 +354,7 @@ window#waybar.hidden {
 
 #custom-notification {
     color: #00FF41;
-    background: #000000;
+    background: transparent;
     padding-left: 10px;
     padding-right: 13px;
     margin-top: 6px;
