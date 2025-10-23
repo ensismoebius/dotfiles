@@ -12,7 +12,7 @@
   "timeout-low": 5,
   "timeout-critical": 0,
   "fit-to-screen": false,
-  "control-center-width": 300,
+  "control-center-width": 400,
   "control-center-height": 600,
   "notification-window-width": 500,
   "keyboard-shortcuts": true,
