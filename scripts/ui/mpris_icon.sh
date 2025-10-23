@@ -4,9 +4,9 @@
 # It is designed to be used with Waybar as a separate module.
 
 # --- Icon Configuration ---
-PLAYER_ICON_MPV="🎵"
-STATUS_ICON_PLAYING="▶"
-STATUS_ICON_PAUSED="⏸"
+PLAYER_ICON_MPV="🎵 "
+STATUS_ICON_PLAYING="▶  "
+STATUS_ICON_PAUSED="⏸  "
 
 update_icon() {
     PLAYER_STATUS=$(playerctl status 2>/dev/null)

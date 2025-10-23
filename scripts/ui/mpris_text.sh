@@ -1,74 +1,59 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# pure bash marquee for waybar (no temp files)
+MAX=${MAX:-25}    # visible chars
+SPEED=${SPEED:-3} # chars per second
+PAD="   "         # trailing padding for nicer wrap
 
-# Waybar module for scrolling playerctl metadata text
+# ensure a UTF-8 locale so bash length/substr work on characters
+# user system must have a UTF-8 locale available; do NOT override if user set LC_* externally
+: "${LANG:=pt_BR.UTF-8}"
+export LANG
 
-# --- Configuration ---
-MAX_LEN=20          # Max length of the text to show
-INTERVAL=0.5        # Update interval in seconds
-
-# --- Script Internals ---
-
-# Function to safely escape text for JSON
-safe_escape() {
-    echo "$1" | sed 's#\\#\\\\#g; s#"#\"#g' | tr -d '\n'
+json_escape() {
+  # escape backslash, double quote and map newlines to spaces
+  local s="$1"
+  s="${s//$'\\'/\\\\}"   # \ -> \\
+  s="${s//\"/\\\"}"      # " -> \"
+  s="${s//$'\n'/ }"      # newline -> space
+  printf '%s' "$s"
 }
 
-LAST_METADATA=""
-scroll_pos=0
+PLAYER_LIST=$(playerctl -l 2>/dev/null || true)
+[ -z "$PLAYER_LIST" ] && { echo '{"text": ""}'; exit 0; }
 
-# --- Main Loop ---
-while true; do
-    PLAYER_STATUS=$(playerctl status 2>/dev/null)
-    
-    if [ "$PLAYER_STATUS" = "Playing" ] || [ "$PLAYER_STATUS" = "Paused" ]; then
-        METADATA=$(playerctl metadata --format '''{{artist}} - {{title}}''')
-    else
-        if [ "$LAST_METADATA" != "" ]; then
-            scroll_pos=0
-            echo '{"text": ""}'
-        fi
-        LAST_METADATA=""
-        sleep 1
-        continue
-    fi
+STATUS=$(playerctl status 2>/dev/null || true)
+META=$(playerctl metadata --format '{{artist}} - {{title}}' 2>/dev/null || true)
+[ -z "$META" ] && { echo '{"text": ""}'; exit 0; }
 
-    # --- Reset scroll if metadata changed ---
-    if [ "$METADATA" != "$LAST_METADATA" ]; then
-        scroll_pos=0
-        LAST_METADATA="$METADATA"
-    fi
+s="${META}${PAD}"
+# normalize newlines to space
+s="${s//$'\n'/ }"
 
-    # --- Prepare Output ---
-    AVAILABLE_LEN=$MAX_LEN
+# character length (bash counts characters with proper locale)
+n=${#s}
+if [ "$n" -le "$MAX" ]; then
+  window="$s"
+else
+  # offset based on current epoch seconds * speed
+  now=$(date +%s)
+  offset=$(( (now * SPEED) % n ))
 
-    # If metadata fits, display it statically
-    if [ ${#METADATA} -le $AVAILABLE_LEN ]; then
-        TEXT_TO_SHOW="$METADATA"
-        ESCAPED_TEXT=$(safe_escape "$TEXT_TO_SHOW")
-        echo "{\"text\": \"$ESCAPED_TEXT\"}"
-        sleep 1
-        continue
-    fi
+  # if window fits without wrap
+  if [ $((offset + MAX)) -le "$n" ]; then
+    window="${s:offset:MAX}"
+  else
+    part1="${s:offset}"
+    # compute remainder length needed (MAX - length(part1))
+    len1=${#part1}
+    need=$((MAX - len1))
+    part2="${s:0:need}"
+    window="${part1}${part2}"
+  fi
+fi
 
-    # --- Scrolling Logic (if text is too long) ---
-    if [ "$PLAYER_STATUS" = "Paused" ]; then
-        TEXT_TO_SHOW=$(echo "$METADATA" | cut -c 1-$AVAILABLE_LEN)
-        ESCAPED_TEXT=$(safe_escape "$TEXT_TO_SHOW")
-        echo "{\"text\": \"$ESCAPED_TEXT\"}"
-        sleep 1
-        continue
-    fi
-    
-PADDED_METADATA="$METADATA   " # Padding for seamless scroll
-LEN=${#PADDED_METADATA}
+ESCAPED=$(json_escape "$window")
+CLS=""
+[ "$STATUS" = "Playing" ] && CLS='"class":"playing",'
+[ "$STATUS" = "Paused"  ] && CLS='"class":"paused",'
 
-SCROLLING_TEXT=$(echo "$PADDED_METADATA$PADDED_METADATA" | cut -c $((scroll_pos + 1))-$((scroll_pos + AVAILABLE_LEN)))
-
-    # Update scroll position for next iteration
-    scroll_pos=$(( (scroll_pos + 1) % LEN ))
-
-    ESCAPED_TEXT=$(safe_escape "$SCROLLING_TEXT")
-    echo "{\"text\": \"$ESCAPED_TEXT\"}"
-
-    sleep $INTERVAL
-done
+echo "{$CLS\"text\": \"$ESCAPED\"}"

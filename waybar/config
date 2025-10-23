@@ -89,24 +89,22 @@
         "all-outputs": true,
         "show-special": false
     },
-    "mpris": {
-        "format": "{player_icon} {dynamic}",
-        "format-paused": "{player_icon} <i>{dynamic}</i>",
-        "player-icons": {
-            "default": "󰥔",
-            "spotify": "󰓇",
-            "firefox": "󰈹"
-        },
-        "status-icons": {
-            "playing": "󰐊",
-            "paused": "󰏤",
-            "stopped": "󰓛"
-        },
-        "tooltip": true,
-        "tooltip-format": "{player}: {title} - {artist}",
+    "custom/mpris-icon": {
+        "format": "{text}",
+        "exec": "~/.config/hypr/scripts/ui/mpris_icon.sh",
+        "on-click": "playerctl play-pause",
+        "return-type": "json",
+        "tooltip": true
+    },
+    "custom/mpris-text": {
+        "format": "{text}",
+        "exec": "~/.config/hypr/scripts/ui/mpris_text.sh",
         "on-click": "playerctl play-pause",
         "on-scroll-up": "playerctl next",
-        "on-scroll-down": "playerctl previous"
+        "on-scroll-down": "playerctl previous",
+        "return-type": "json",
+        "tooltip": true,
+        "interval": 1
     },
     "custom/notification": {
         "tooltip": true,
