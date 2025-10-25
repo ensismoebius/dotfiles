@@ -178,6 +178,18 @@ for dir in "${XDG_CONFIG_DIRS_TO_LINK[@]}"; do
     fi
 done
 
+# Set up GIMP theme
+echo "Setting up GIMP theme..."
+GIMP3_THEME_DIR="$HOME/.config/GIMP/3.0/themes"
+
+mkdir -p "$GIMP3_THEME_DIR"
+if [ -e "$GIMP3_THEME_DIR/Cyberpunk-Neon" ]; then
+    rm -rf "$GIMP3_THEME_DIR/Cyberpunk-Neon"
+fi
+ln -s "$CONFIG_DIR/gimp/themes/Cyberpunk-Neon" "$GIMP3_THEME_DIR/"
+echo "GIMP 3.0 theme setup completed."
+
+
 
 # If we linked a gtk-2.0 directory, ensure GTK2 apps read the theme by creating
 # a per-user ~/.gtkrc-2.0 that includes the gtk-2.0/gtkrc in ~/.config.

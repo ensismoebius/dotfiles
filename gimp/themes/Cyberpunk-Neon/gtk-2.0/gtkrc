@@ -1,3 +1,4 @@
+gtk-theme-name = "Cyberpunk-Neon"
 # GTK2 theme: Cyberpunk Neon (gtk-2.0/gtkrc)
 # Mirrors the look-and-feel from the GTK3/GTK4 css files in this repo.
 # Place this file in ~/.config/gtk-2.0/gtkrc or source it from ~/.gtkrc-2.0
@@ -120,4 +121,3 @@ widget_class "GtkDock" style "cyberpunk-gimp"
 widget_class "GtkToolbox" style "cyberpunk-gimp"
 widget_class "GtkToolItem" style "cyberpunk-gimp"
 widget_class "GtkStatusbar" style "cyberpunk-gimp"
-

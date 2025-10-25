@@ -1,0 +1,350 @@
+/**
+ * GTK-3.0 Theme: Cyberpunk Neon
+ *
+ * This theme provides a dark, neon green aesthetic for GTK-3 applications.
+ * It is designed to be easy to read and visually striking.
+ *
+ * Location: ~/.config/gtk-3.0/gtk.css
+ */
+
+/*
+ * ===================================================================
+ * BASE & CORE
+ *
+ * Import the base Adwaita dark theme to build upon.
+ * This ensures that all widgets have a default style.
+ * ===================================================================
+ */
+
+/* Force dark theme variant for all applications */
+@import url("resource:///org/gtk/libgtk/theme/Adwaita/gtk-dark.css");
+
+* {
+    -gtk-application-prefer-dark-theme: 1;
+}
+
+/*
+ * ===================================================================
+ * COLOR PALETTE
+ *
+ * Define the core colors used throughout the theme.
+ * ===================================================================
+ */
+
+@define-color bg_color      rgba(13, 2, 8, 0.95); /* Dark background */
+@define-color fg_color      #00FF41;              /* Neon green foreground/text */
+@define-color base_color    rgba(13, 2, 8, 0.95); /* Base color for widgets */
+@define-color text_color    #00FF41;              /* Standard text color */
+
+@define-color selected_bg_color #008F11;          /* Background for selected items */
+@define-color selected_fg_color #00FF41;          /* Text color for selected items */
+
+@define-color borders_color #00FF41;              /* Border color for focused elements */
+@define-color unfocused_borders_color rgba(0, 255, 65, 0.3); /* Border color for unfocused elements */
+
+/* Status Colors */
+@define-color warning_color #FFFF00;              /* Yellow for warnings */
+@define-color error_color   #FF0000;              /* Red for errors */
+@define-color success_color #00FF41;              /* Green for success indicators */
+
+/*
+ * ===================================================================
+ * ANIMATIONS & GLOBAL STYLES
+ * ===================================================================
+ */
+
+/* A subtle glow effect for highlighted elements */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px #00FF41, 0 0 10px #00FF41, 0 0 15px #008F11;
+    }
+    to {
+        box-shadow: 0 0 10px #00FF41, 0 0 20px #00FF41, 0 0 30px #008F11;
+    }
+}
+
+/* Apply a slight border radius and smooth transitions to all elements */
+* {
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/*
+ * ===================================================================
+ * GENERAL WIDGET STYLING
+ * ===================================================================
+ */
+
+/* Default background for windows and major widgets */
+.background {
+    background-color: @bg_color;
+    color: @fg_color;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.06);
+    padding: 6px;
+}
+
+/* Add a subtle scanline effect to the main window background */
+window {
+    background-image: repeating-linear-gradient(0deg,
+            rgba(0, 255, 65, 0.03) 0px,
+            rgba(0, 255, 65, 0.03) 1px,
+            transparent 1px,
+            transparent 2px);
+}
+
+/* --- Buttons --- */
+button {
+    background-color: @bg_color;
+    color: @fg_color;
+    border: 1px solid @borders_color;
+    padding: 5px 10px;
+}
+
+button:hover {
+    background-color: alpha(@selected_bg_color, 0.3);
+    box-shadow: 0 0 5px #00FF41;
+}
+
+button:active {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.85);
+}
+
+/* --- Text Entry --- */
+entry {
+    background-color: alpha(@bg_color, 0.8);
+    color: @fg_color;
+    border: 1px solid @borders_color;
+    padding: 5px;
+    box-shadow: inset 0 0 5px #00FF41;
+}
+
+entry:focus {
+    border-color: @selected_bg_color;
+    box-shadow: 0 0 10px #00FF41;
+}
+
+/*
+ * ===================================================================
+ * TEXT & ITEM SELECTION
+ *
+ * Defines the appearance of selected text and items in lists/trees.
+ * ===================================================================
+ */
+
+/* --- Text Selection (Multi-line like Gedit) --- */
+textview text,
+textview {
+    selection-background-color: @selected_bg_color;
+    selection-color: @selected_fg_color;
+}
+
+textview text:selected,
+textview:selected,
+textview selection {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.85);
+    border-radius: 4px;
+}
+
+/* --- Entry Selection (Single-line like file rename) --- */
+entry selection,
+entry:selected,
+GtkEntry selection,
+GtkEntry:selected,
+entry text:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.85);
+    border-radius: 3px;
+}
+
+/* --- File Manager & List Selection (Files/Folders) --- */
+treeview row:selected,
+GtkTreeView row:selected,
+treeview:selected,
+GtkTreeView:selected,
+iconview item:selected,
+GtkIconView:selected,
+flowbox child:selected,
+GtkFlowBox:selected,
+.view row:selected,
+.view:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    box-shadow: 0 0 18px rgba(0, 255, 65, 0.9);
+    border-radius: 6px;
+    transition: box-shadow 0.25s ease;
+}
+
+/* Add a stronger outline for focused selections */
+treeview row:selected:focus,
+GtkTreeView row:selected:focus,
+iconview item:selected:focus,
+GtkIconView:selected:focus {
+    box-shadow: 0 0 22px rgba(0, 255, 65, 0.95);
+    border: 1px solid rgba(0, 255, 65, 0.25);
+}
+
+/*
+ * ===================================================================
+ * CONTAINER & MENU WIDGETS
+ * ===================================================================
+ */
+
+/* --- Menus --- */
+menubar,
+.menubar {
+    background-color: @bg_color;
+    border-bottom: 1px solid @borders_color;
+    box-shadow: 0 0 10px #00FF41;
+}
+
+menuitem {
+    color: @fg_color;
+    padding: 5px 10px;
+}
+
+menuitem:hover {
+    background-color: alpha(@selected_bg_color, 0.3);
+    box-shadow: 0 0 5px #00FF41;
+}
+
+/* --- Notebooks (Tabs) --- */
+notebook {
+    border: 1px solid @borders_color;
+}
+
+notebook tab {
+    background-color: @bg_color;
+    color: @fg_color;
+    padding: 5px 15px;
+}
+
+notebook tab:checked {
+    background-color: alpha(@selected_bg_color, 0.3);
+    border-bottom: 2px solid @borders_color;
+    box-shadow: 0 0 5px #00FF41;
+}
+
+/* --- Frames, Expanders, Separators --- */
+frame,
+GtkFrame,
+expander,
+GtkExpander {
+    background-color: rgba(13, 2, 8, 0.88);
+    color: @fg_color;
+    border: 1px solid rgba(0, 255, 65, 0.04);
+}
+
+separator,
+GtkSeparator {
+    background-color: rgba(0, 255, 65, 0.04);
+    color: rgba(0, 255, 65, 0.04);
+}
+
+/*
+ * ===================================================================
+ * DIALOGS & NOTIFICATIONS
+ * ===================================================================
+ */
+
+/* --- Dialogs --- */
+dialog,
+GtkDialog,
+messagedialog,
+GtkMessageDialog {
+    background-color: @bg_color;
+    color: @fg_color;
+    border: 1px solid rgba(0, 255, 65, 0.06);
+    padding: 8px;
+}
+
+/* --- Info Bars --- */
+infobar,
+GtkInfoBar {
+    background-color: rgba(13, 2, 8, 0.88);
+    color: @fg_color;
+}
+
+/* --- Tooltips --- */
+tooltip,
+GtkTooltip,
+.tooltip {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: @fg_color;
+    border: 1px solid rgba(0, 255, 65, 0.08);
+    padding: 4px 6px;
+}
+
+/*
+ * ===================================================================
+ * WIDGET STATES
+ *
+ * Styles for different widget states like insensitive, warning, etc.
+ * ===================================================================
+ */
+
+/* --- Insensitive (Disabled) --- */
+:insensitive,
+.insensitive {
+    opacity: 0.55;
+    border-color: @unfocused_borders_color;
+}
+
+/* --- Status Indicators --- */
+.warning {
+    background-color: rgba(255, 255, 0, 0.06);
+    color: @warning_color;
+    border: 1px solid rgba(255, 255, 0, 0.18);
+}
+
+.error {
+    background-color: rgba(255, 0, 0, 0.06);
+    color: @error_color;
+    border: 1px solid rgba(255, 0, 0, 0.18);
+}
+
+.success {
+    background-color: rgba(0, 255, 65, 0.06);
+    color: @success_color;
+    border: 1px solid rgba(0, 255, 65, 0.18);
+}
+
+/*
+ * ===================================================================
+ * APPLICATION-SPECIFIC & FALLBACKS
+ *
+ * These are high-priority overrides and generic fallbacks.
+ * Use GTK Inspector (GTK_DEBUG=interactive) for fine-tuning.
+ * ===================================================================
+ */
+
+/* --- High-priority IDs from GTK Inspector --- */
+#main_window {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+#btn_dump_json {
+    border: 1px solid @borders_color;
+}
+
+/* --- Generic Fallbacks --- */
+.frame,
+.view,
+.box,
+.grid,
+.background,
+.popup,
+.menu {
+    color: @fg_color;
+}
+
+/*
+ * ===================================================================
+ * END OF THEME
+ * ===================================================================
+ */
