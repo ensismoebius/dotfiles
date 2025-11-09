@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
 """
-A window switcher for Hyprland using GTK4.
+A window switcher for Hyprland using GTK4, running as a background process.
 
 This application displays a list of open windows with thumbnails and allows
-switching between them, similar to the Windows Alt-Tab functionality.
+switching between them. It is designed to be launched on startup and then
+shown with a keybinding.
+
+To show the switcher, send a SIGUSR1 signal to the process:
+    pkill -f -SIGUSR1 window-switcher.py
 
 It uses `hyprctl` to get the list of windows and `grim` to capture
-window thumbnails. For windows on inactive workspaces, it uses cached
-thumbnails or the application's icon.
+window thumbnails. Thumbnails are stored in memory. For windows on
+inactive workspaces, it uses cached thumbnails from memory or the
+application's icon.
 """
 
 import gi
@@ -20,9 +25,9 @@ from pathlib import Path
 import sys
 import subprocess
 import json
-import tempfile
-import shutil
 import re
+import signal
+import os
 
 # --- Configuration ---
 
@@ -53,9 +58,6 @@ class Hyprland:
     """
     A helper class to interact with Hyprland using hyprctl.
     """
-    def __init__(self, tmp_dir):
-        self.tmp_dir = tmp_dir
-
     def get_windows(self):
         """
         Gets a list of open windows from Hyprland.
@@ -63,7 +65,6 @@ class Hyprland:
         try:
             result = subprocess.run(["hyprctl", "clients", "-j"], capture_output=True, text=True, check=True)
             windows = json.loads(result.stdout)
-            # Filter out floating windows and windows with no title
             return [w for w in windows if not w.get("floating") and w.get("title")]
         except (subprocess.CalledProcessError, FileNotFoundError, json.JSONDecodeError) as e:
             print(f"Error getting Hyprland windows: {e}", file=sys.stderr)
@@ -82,17 +83,15 @@ class Hyprland:
 
     def capture_window_thumbnail(self, window):
         """
-        Captures a thumbnail of a window and saves it to a temporary file.
+        Captures a thumbnail of a window and returns the raw PNG data.
         """
-        address = window["address"]
         x, y = window["at"]
         width, height = window["size"]
         geometry = f"{x},{y} {width}x{height}"
-        path = self.tmp_dir / f"{address}.png"
 
         try:
-            subprocess.run(["grim", "-g", geometry, str(path)], check=True)
-            return str(path)
+            result = subprocess.run(["grim", "-g", geometry, "-"], capture_output=True, check=True)
+            return result.stdout
         except (subprocess.CalledProcessError, FileNotFoundError) as e:
             print(f"Error capturing window thumbnail: {e}", file=sys.stderr)
             return None
@@ -124,7 +123,6 @@ def get_icon_name_for_class(app_class):
     desktop_file = None
 
     for directory in desktop_dirs:
-        # Case-insensitive search for the desktop file
         files = list(directory.glob(f"**/{app_class.lower()}.desktop"))
         if not files:
             files = list(directory.glob(f"**/{app_class}.desktop"))
@@ -147,13 +145,16 @@ def get_icon_name_for_class(app_class):
 
     return None
 
-def load_paintable(path, max_size=None):
+def load_paintable_from_data(data, max_size=None):
     """
-    Loads an image from a file and returns it as a Gdk.Paintable.
-    The image can be scaled down to a maximum size.
+    Loads an image from raw data and returns it as a Gdk.Paintable.
     """
     try:
-        pixbuf = GdkPixbuf.Pixbuf.new_from_file(path)
+        loader = GdkPixbuf.PixbufLoader.new()
+        loader.write(data)
+        loader.close()
+        pixbuf = loader.get_pixbuf()
+
         if max_size is not None:
             width, height = pixbuf.get_width(), pixbuf.get_height()
             scale = min(1.0, max_size / max(width, height))
@@ -167,7 +168,7 @@ def load_paintable(path, max_size=None):
         byte_data = GLib.Bytes.new(buffer)
         return Gdk.Texture.new_from_bytes(byte_data)
     except Exception as e:
-        print(f"Error loading image {path}: {e}")
+        print(f"Error loading image from data: {e}")
         return None
 
 # --- UI Components ---
@@ -191,8 +192,8 @@ class ThumbButton(Gtk.Button):
         Loads the thumbnail image in the background.
         """
         paintable = None
-        if self.thumb_source and Path(self.thumb_source).is_file():
-            paintable = load_paintable(self.thumb_source, size)
+        if isinstance(self.thumb_source, bytes):
+            paintable = load_paintable_from_data(self.thumb_source, size)
 
         if paintable:
             image = Gtk.Picture.new_for_paintable(paintable)
@@ -230,6 +231,9 @@ class WindowSwitcherWindow(Gtk.ApplicationWindow):
         self.set_margin_bottom(margin)
         self.set_margin_start(margin)
         self.set_margin_end(margin)
+        self.set_modal(True)
+        self.set_transient_for(self.get_application().get_active_window())
+
 
     def _setup_css(self):
         """Applies the custom CSS to the application."""
@@ -244,7 +248,6 @@ class WindowSwitcherWindow(Gtk.ApplicationWindow):
         main_vbox = Gtk.Box.new(Gtk.Orientation.VERTICAL, 6)
         self.set_child(main_vbox)
 
-        # Preview area
         self.preview = Gtk.Picture.new()
         frame = Gtk.Frame.new(None)
         frame.set_child(self.preview)
@@ -252,11 +255,9 @@ class WindowSwitcherWindow(Gtk.ApplicationWindow):
         frame.set_hexpand(True)
         main_vbox.append(frame)
 
-        # Info label
         self.info_label = Gtk.Label.new("")
         main_vbox.append(self.info_label)
 
-        # Thumbnail bar
         scrolled_window = Gtk.ScrolledWindow.new()
         scrolled_window.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.NEVER)
         main_vbox.append(scrolled_window)
@@ -280,8 +281,7 @@ class WindowSwitcherWindow(Gtk.ApplicationWindow):
         self.current_index = index
         self.update_preview()
         self.get_application().hyprland.focus_window(self.windows[self.current_index])
-        self.get_application().quit()
-
+        self.close()
 
     def update_preview(self):
         """Updates the preview image and info label."""
@@ -292,8 +292,8 @@ class WindowSwitcherWindow(Gtk.ApplicationWindow):
         thumb_source = self.thumb_sources[self.current_index]
 
         paintable = None
-        if thumb_source and Path(thumb_source).is_file():
-            paintable = load_paintable(thumb_source)
+        if isinstance(thumb_source, bytes):
+            paintable = load_paintable_from_data(thumb_source)
 
         if paintable:
             self.preview.set_paintable(paintable)
@@ -302,7 +302,6 @@ class WindowSwitcherWindow(Gtk.ApplicationWindow):
             placeholder = Gtk.Image.new_from_icon_name(icon_name)
             placeholder.set_pixel_size(256)
             self.preview.set_paintable(placeholder.get_paintable())
-
 
         self.info_label.set_text(f"{self.current_index + 1}/{len(self.windows)} — {window['title']}")
 
@@ -327,10 +326,10 @@ class WindowSwitcherWindow(Gtk.ApplicationWindow):
             return True
         elif key_name == "Return":
             self.get_application().hyprland.focus_window(self.windows[self.current_index])
-            self.get_application().quit()
+            self.close()
             return True
         elif key_name in ("Escape", "q"):
-            self.get_application().quit()
+            self.close()
             return True
         return False
 
@@ -338,53 +337,64 @@ class WindowSwitcherApp(Gtk.Application):
     """
     The main GTK application class.
     """
-    def __init__(self, windows, thumb_sources, hyprland):
-        super().__init__()
-        self.windows = windows
-        self.thumb_sources = thumb_sources
-        self.hyprland = hyprland
+    def __init__(self):
+        super().__init__(application_id="com.example.WindowSwitcher")
+        print("Initializing WindowSwitcherApp", flush=True)
+        self.hold()
+        self.hyprland = Hyprland()
+        self.thumbnail_cache = {}
+        self.window = None
+        self.connect("shutdown", self.on_shutdown)
+
+    def on_shutdown(self, *args):
+        print("WindowSwitcherApp shutting down", flush=True)
 
     def do_activate(self):
-        """Activates the application by creating and showing the main window."""
-        win = WindowSwitcherWindow(self, self.windows, self.thumb_sources)
-        win.present()
+        print("WindowSwitcherApp activated", flush=True)
+        pass
+
+    def show_switcher(self, *args):
+        print("show_switcher called", flush=True)
+        if self.window and self.window.is_visible():
+            self.window.destroy()
+            self.window = None
+            return True
+
+        active_workspace = self.hyprland.get_active_workspace()
+        windows = self.hyprland.get_windows()
+
+        if not windows:
+            print("No open windows found on Hyprland.", file=sys.stderr, flush=True)
+            return True
+
+        thumb_sources = []
+        for window in windows:
+            address = window["address"]
+            if window["workspace"]["id"] == active_workspace:
+                thumb_data = self.hyprland.capture_window_thumbnail(window)
+                if thumb_data:
+                    self.thumbnail_cache[address] = thumb_data
+                    thumb_sources.append(thumb_data)
+                else:
+                    thumb_sources.append(get_icon_name_for_class(window.get("class")))
+            else:
+                if address in self.thumbnail_cache:
+                    thumb_sources.append(self.thumbnail_cache[address])
+                else:
+                    thumb_sources.append(get_icon_name_for_class(window.get("class")))
+
+        self.window = WindowSwitcherWindow(self, windows, thumb_sources)
+        self.window.present()
+        return True
 
 def main():
     """
     The main entry point of the application.
     """
-    tmp_dir = Path(tempfile.mkdtemp())
-    cache_dir = Path.home() / ".cache" / "hypr-window-switcher"
-    cache_dir.mkdir(parents=True, exist_ok=True)
-
-    hyprland = Hyprland(tmp_dir)
-    active_workspace = hyprland.get_active_workspace()
-    windows = hyprland.get_windows()
-
-    if not windows:
-        print("No open windows found on Hyprland.", file=sys.stderr)
-        shutil.rmtree(tmp_dir)
-        sys.exit(1)
-
-    thumb_sources = []
-    for window in windows:
-        if window["workspace"]["id"] == active_workspace:
-            thumb_path = hyprland.capture_window_thumbnail(window)
-            if thumb_path:
-                shutil.copy(thumb_path, cache_dir / f"{window['address']}.png")
-                thumb_sources.append(thumb_path)
-            else:
-                thumb_sources.append(get_icon_name_for_class(window.get("class")))
-        else:
-            cached_thumb = cache_dir / f"{window['address']}.png"
-            if cached_thumb.exists():
-                thumb_sources.append(str(cached_thumb))
-            else:
-                thumb_sources.append(get_icon_name_for_class(window.get("class")))
-
-    app = WindowSwitcherApp(windows, thumb_sources, hyprland)
-    app.connect("shutdown", lambda app: shutil.rmtree(tmp_dir))
-    app.run()
+    print(f"Starting Window Switcher with PID: {os.getpid()}", flush=True)
+    app = WindowSwitcherApp()
+    GLib.unix_signal_add(GLib.PRIORITY_DEFAULT, signal.SIGUSR1, app.show_switcher)
+    app.run(sys.argv)
 
 if __name__ == "__main__":
     main()
