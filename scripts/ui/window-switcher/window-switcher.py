@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 """
-A simple image browser and window switcher using GTK4.
+A window switcher for Hyprland using GTK4.
 
-This application displays a collection of images from a given directory or
-a list of files. It shows a preview of the selected image and a row of
-thumbnails for all available images.
+This application displays a list of open windows with thumbnails and allows
+switching between them, similar to the Windows Alt-Tab functionality.
 
-Usage:
-    ./window-switcher.py <directory|file(s)>
+It uses `hyprctl` to get the list of windows and `grim` to capture
+window thumbnails.
 """
 
 import gi
@@ -18,13 +17,17 @@ gi.require_version("GdkPixbuf", "2.0")
 from gi.repository import Gtk, Gdk, GdkPixbuf, GLib
 from pathlib import Path
 import sys
+import subprocess
+import json
+import tempfile
+import shutil
 
 # --- Configuration ---
 
 APP_CONFIG = {
     "thumb_size": 120,
     "margin": 8,
-    "window_title": "Window Switcher / Image Browser",
+    "window_title": "Window Switcher",
     "default_width": 1000,
     "default_height": 700,
     "css": b"""
@@ -39,27 +42,58 @@ APP_CONFIG = {
             outline: 3px solid #ff8800;
         }
     """,
-    "image_extensions": ("*.png", "*.jpg", "*.jpeg", "*.webp", "*.bmp", "*.gif"),
 }
 
-# --- Helper Functions ---
+# --- Hyprland Interaction ---
 
-def find_image_paths(args):
+class Hyprland:
     """
-    Finds all image paths from the given command-line arguments.
-    Arguments can be directories or individual files.
+    A helper class to interact with Hyprland using hyprctl.
     """
-    paths = []
-    for arg in args:
-        path = Path(arg)
-        if not path.exists():
-            continue
-        if path.is_dir():
-            for ext in APP_CONFIG["image_extensions"]:
-                paths.extend(sorted(path.glob(ext)))
-        else:
-            paths.append(path)
-    return [str(p) for p in paths if p.is_file()]
+    def __init__(self, tmp_dir):
+        self.tmp_dir = tmp_dir
+
+    def get_windows(self):
+        """
+        Gets a list of open windows from Hyprland.
+        """
+        try:
+            result = subprocess.run(["hyprctl", "clients", "-j"], capture_output=True, text=True, check=True)
+            windows = json.loads(result.stdout)
+            # Filter out floating windows and windows with no title
+            return [w for w in windows if not w.get("floating") and w.get("title")]
+        except (subprocess.CalledProcessError, FileNotFoundError, json.JSONDecodeError) as e:
+            print(f"Error getting Hyprland windows: {e}", file=sys.stderr)
+            return []
+
+    def capture_window_thumbnail(self, window):
+        """
+        Captures a thumbnail of a window and saves it to a temporary file.
+        """
+        address = window["address"]
+        x, y = window["at"]
+        width, height = window["size"]
+        geometry = f"{x},{y} {width}x{height}"
+        path = self.tmp_dir / f"{address}.png"
+
+        try:
+            subprocess.run(["grim", "-g", geometry, str(path)], check=True)
+            return str(path)
+        except (subprocess.CalledProcessError, FileNotFoundError) as e:
+            print(f"Error capturing window thumbnail: {e}", file=sys.stderr)
+            return None
+
+    def focus_window(self, window):
+        """
+        Focuses the specified window.
+        """
+        address = window["address"]
+        try:
+            subprocess.run(["hyprctl", "dispatch", "focuswindow", f"address:{address}"], check=True)
+        except (subprocess.CalledProcessError, FileNotFoundError) as e:
+            print(f"Error focusing window: {e}", file=sys.stderr)
+
+# --- Helper Functions ---
 
 def load_paintable(path, max_size=None):
     """
@@ -88,11 +122,12 @@ def load_paintable(path, max_size=None):
 
 class ThumbButton(Gtk.Button):
     """
-    A button that displays a thumbnail of an image.
+    A button that displays a thumbnail of a window.
     """
-    def __init__(self, path, size, index, on_click):
+    def __init__(self, window_info, thumb_path, size, index, on_click):
         super().__init__(hexpand=False, valign=Gtk.Align.CENTER)
-        self.path = path
+        self.window_info = window_info
+        self.thumb_path = thumb_path
         self.index = index
         self.set_has_frame(False)
         self.add_css_class("thumb")
@@ -103,7 +138,7 @@ class ThumbButton(Gtk.Button):
         """
         Loads the thumbnail image in the background.
         """
-        paintable = load_paintable(self.path, size)
+        paintable = load_paintable(self.thumb_path, size)
         if paintable is None:
             image = Gtk.Image.new_from_icon_name("image-missing")
         else:
@@ -111,13 +146,14 @@ class ThumbButton(Gtk.Button):
         self.set_child(image)
         return False
 
-class ImageBrowserWindow(Gtk.ApplicationWindow):
+class WindowSwitcherWindow(Gtk.ApplicationWindow):
     """
-    The main window of the image browser application.
+    The main window of the window switcher application.
     """
-    def __init__(self, app, paths):
+    def __init__(self, app, windows, thumb_paths):
         super().__init__(application=app, title=APP_CONFIG["window_title"])
-        self.paths = paths
+        self.windows = windows
+        self.thumb_paths = thumb_paths
         self.current_index = 0
         self.thumb_buttons = []
 
@@ -169,8 +205,8 @@ class ImageBrowserWindow(Gtk.ApplicationWindow):
         thumb_hbox = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 6)
         scrolled_window.set_child(thumb_hbox)
 
-        for i, path in enumerate(self.paths):
-            btn = ThumbButton(path, APP_CONFIG["thumb_size"], i, self.on_thumb_clicked)
+        for i, (window, thumb_path) in enumerate(zip(self.windows, self.thumb_paths)):
+            btn = ThumbButton(window, thumb_path, APP_CONFIG["thumb_size"], i, self.on_thumb_clicked)
             self.thumb_buttons.append(btn)
             thumb_hbox.append(btn)
 
@@ -185,18 +221,22 @@ class ImageBrowserWindow(Gtk.ApplicationWindow):
         """Handles clicks on the thumbnail buttons."""
         self.current_index = index
         self.update_preview()
+        self.get_application().hyprland.focus_window(self.windows[self.current_index])
+        self.get_application().quit()
+
 
     def update_preview(self):
         """Updates the preview image and info label."""
-        if not self.paths:
+        if not self.windows:
             return
 
-        path = self.paths[self.current_index]
-        paintable = load_paintable(path)
+        window = self.windows[self.current_index]
+        thumb_path = self.thumb_paths[self.current_index]
+        paintable = load_paintable(thumb_path)
         if paintable is not None:
             self.preview.set_paintable(paintable)
 
-        self.info_label.set_text(f"{self.current_index + 1}/{len(self.paths)} — {path}")
+        self.info_label.set_text(f"{self.current_index + 1}/{len(self.windows)} — {window['title']}")
 
         for i, button in enumerate(self.thumb_buttons):
             if i == self.current_index:
@@ -207,48 +247,68 @@ class ImageBrowserWindow(Gtk.ApplicationWindow):
     def on_key_pressed(self, controller, keyval, keycode, state):
         """Handles key press events."""
         key_name = Gdk.keyval_name(keyval)
-        num_paths = len(self.paths)
+        num_windows = len(self.windows)
 
         if key_name in ("Right", "Tab"):
-            self.current_index = (self.current_index + 1) % num_paths
+            self.current_index = (self.current_index + 1) % num_windows
             self.update_preview()
             return True
         elif key_name == "Left":
-            self.current_index = (self.current_index - 1 + num_paths) % num_paths
+            self.current_index = (self.current_index - 1 + num_windows) % num_windows
             self.update_preview()
+            return True
+        elif key_name == "Return":
+            self.get_application().hyprland.focus_window(self.windows[self.current_index])
+            self.get_application().quit()
             return True
         elif key_name in ("Escape", "q"):
             self.get_application().quit()
             return True
         return False
 
-class ImageBrowserApp(Gtk.Application):
+class WindowSwitcherApp(Gtk.Application):
     """
     The main GTK application class.
     """
-    def __init__(self, paths):
+    def __init__(self, windows, thumb_paths, hyprland):
         super().__init__()
-        self.paths = paths
+        self.windows = windows
+        self.thumb_paths = thumb_paths
+        self.hyprland = hyprland
 
     def do_activate(self):
         """Activates the application by creating and showing the main window."""
-        win = ImageBrowserWindow(self, self.paths)
+        win = WindowSwitcherWindow(self, self.windows, self.thumb_paths)
         win.present()
 
 def main():
     """
     The main entry point of the application.
     """
-    if len(sys.argv) < 2:
-        print(f"Usage: {sys.argv[0]} <dir|file(s)>")
+    tmp_dir = Path(tempfile.mkdtemp())
+    hyprland = Hyprland(tmp_dir)
+
+    windows = hyprland.get_windows()
+    if not windows:
+        print("No open windows found on Hyprland.", file=sys.stderr)
+        shutil.rmtree(tmp_dir)
         sys.exit(1)
 
-    image_paths = find_image_paths(sys.argv[1:])
-    if not image_paths:
-        print("No images found.")
+    thumb_paths = [hyprland.capture_window_thumbnail(w) for w in windows]
+    valid_windows = []
+    valid_thumb_paths = []
+    for w, p in zip(windows, thumb_paths):
+        if p:
+            valid_windows.append(w)
+            valid_thumb_paths.append(p)
+
+    if not valid_windows:
+        print("Could not capture any window thumbnails.", file=sys.stderr)
+        shutil.rmtree(tmp_dir)
         sys.exit(1)
 
-    app = ImageBrowserApp(image_paths)
+    app = WindowSwitcherApp(valid_windows, valid_thumb_paths, hyprland)
+    app.connect("shutdown", lambda app: shutil.rmtree(tmp_dir))
     app.run()
 
 if __name__ == "__main__":
