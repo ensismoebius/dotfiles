@@ -7,7 +7,7 @@ switching between them, similar to the Windows Alt-Tab functionality.
 
 It uses `hyprctl` to get the list of windows and `grim` to capture
 window thumbnails. For windows on inactive workspaces, it uses cached
-thumbnails or a generic placeholder icon.
+thumbnails or the application's icon.
 """
 
 import gi
@@ -22,6 +22,7 @@ import subprocess
 import json
 import tempfile
 import shutil
+import re
 
 # --- Configuration ---
 
@@ -108,6 +109,44 @@ class Hyprland:
 
 # --- Helper Functions ---
 
+def get_icon_name_for_class(app_class):
+    """
+    Finds the icon name for a given application class by looking up
+    the .desktop file.
+    """
+    if not app_class:
+        return None
+
+    desktop_dirs = [
+        Path("/usr/share/applications"),
+        Path.home() / ".local/share/applications"
+    ]
+    desktop_file = None
+
+    for directory in desktop_dirs:
+        # Case-insensitive search for the desktop file
+        files = list(directory.glob(f"**/{app_class.lower()}.desktop"))
+        if not files:
+            files = list(directory.glob(f"**/{app_class}.desktop"))
+
+        if files:
+            desktop_file = files[0]
+            break
+
+    if not desktop_file or not desktop_file.exists():
+        return None
+
+    try:
+        with open(desktop_file, "r") as f:
+            content = f.read()
+            match = re.search(r"^Icon=(.*)$", content, re.MULTILINE)
+            if match:
+                return match.group(1).strip()
+    except (IOError, OSError):
+        return None
+
+    return None
+
 def load_paintable(path, max_size=None):
     """
     Loads an image from a file and returns it as a Gdk.Paintable.
@@ -137,10 +176,10 @@ class ThumbButton(Gtk.Button):
     """
     A button that displays a thumbnail of a window.
     """
-    def __init__(self, window_info, thumb_path, size, index, on_click):
+    def __init__(self, window_info, thumb_source, size, index, on_click):
         super().__init__(hexpand=False, valign=Gtk.Align.CENTER)
         self.window_info = window_info
-        self.thumb_path = thumb_path
+        self.thumb_source = thumb_source
         self.index = index
         self.set_has_frame(False)
         self.add_css_class("thumb")
@@ -151,12 +190,17 @@ class ThumbButton(Gtk.Button):
         """
         Loads the thumbnail image in the background.
         """
-        paintable = load_paintable(self.thumb_path, size) if self.thumb_path else None
-        if paintable is None:
-            image = Gtk.Image.new_from_icon_name(APP_CONFIG["placeholder_icon"])
-            image.set_icon_size(Gtk.IconSize.LARGE)
-        else:
+        paintable = None
+        if self.thumb_source and Path(self.thumb_source).is_file():
+            paintable = load_paintable(self.thumb_source, size)
+
+        if paintable:
             image = Gtk.Picture.new_for_paintable(paintable)
+        else:
+            icon_name = self.thumb_source or APP_CONFIG["placeholder_icon"]
+            image = Gtk.Image.new_from_icon_name(icon_name)
+            image.set_icon_size(Gtk.IconSize.LARGE)
+
         self.set_child(image)
         return False
 
@@ -164,10 +208,10 @@ class WindowSwitcherWindow(Gtk.ApplicationWindow):
     """
     The main window of the window switcher application.
     """
-    def __init__(self, app, windows, thumb_paths):
+    def __init__(self, app, windows, thumb_sources):
         super().__init__(application=app, title=APP_CONFIG["window_title"])
         self.windows = windows
-        self.thumb_paths = thumb_paths
+        self.thumb_sources = thumb_sources
         self.current_index = 0
         self.thumb_buttons = []
 
@@ -219,8 +263,8 @@ class WindowSwitcherWindow(Gtk.ApplicationWindow):
         thumb_hbox = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 6)
         scrolled_window.set_child(thumb_hbox)
 
-        for i, (window, thumb_path) in enumerate(zip(self.windows, self.thumb_paths)):
-            btn = ThumbButton(window, thumb_path, APP_CONFIG["thumb_size"], i, self.on_thumb_clicked)
+        for i, (window, thumb_source) in enumerate(zip(self.windows, self.thumb_sources)):
+            btn = ThumbButton(window, thumb_source, APP_CONFIG["thumb_size"], i, self.on_thumb_clicked)
             self.thumb_buttons.append(btn)
             thumb_hbox.append(btn)
 
@@ -245,13 +289,17 @@ class WindowSwitcherWindow(Gtk.ApplicationWindow):
             return
 
         window = self.windows[self.current_index]
-        thumb_path = self.thumb_paths[self.current_index]
-        paintable = load_paintable(thumb_path) if thumb_path else None
+        thumb_source = self.thumb_sources[self.current_index]
 
-        if paintable is not None:
+        paintable = None
+        if thumb_source and Path(thumb_source).is_file():
+            paintable = load_paintable(thumb_source)
+
+        if paintable:
             self.preview.set_paintable(paintable)
         else:
-            placeholder = Gtk.Image.new_from_icon_name(APP_CONFIG["placeholder_icon"])
+            icon_name = thumb_source or APP_CONFIG["placeholder_icon"]
+            placeholder = Gtk.Image.new_from_icon_name(icon_name)
             placeholder.set_pixel_size(256)
             self.preview.set_paintable(placeholder.get_paintable())
 
@@ -290,15 +338,15 @@ class WindowSwitcherApp(Gtk.Application):
     """
     The main GTK application class.
     """
-    def __init__(self, windows, thumb_paths, hyprland):
+    def __init__(self, windows, thumb_sources, hyprland):
         super().__init__()
         self.windows = windows
-        self.thumb_paths = thumb_paths
+        self.thumb_sources = thumb_sources
         self.hyprland = hyprland
 
     def do_activate(self):
         """Activates the application by creating and showing the main window."""
-        win = WindowSwitcherWindow(self, self.windows, self.thumb_paths)
+        win = WindowSwitcherWindow(self, self.windows, self.thumb_sources)
         win.present()
 
 def main():
@@ -318,23 +366,23 @@ def main():
         shutil.rmtree(tmp_dir)
         sys.exit(1)
 
-    thumb_paths = []
+    thumb_sources = []
     for window in windows:
         if window["workspace"]["id"] == active_workspace:
             thumb_path = hyprland.capture_window_thumbnail(window)
             if thumb_path:
                 shutil.copy(thumb_path, cache_dir / f"{window['address']}.png")
-                thumb_paths.append(thumb_path)
+                thumb_sources.append(thumb_path)
             else:
-                thumb_paths.append(None)
+                thumb_sources.append(get_icon_name_for_class(window.get("class")))
         else:
             cached_thumb = cache_dir / f"{window['address']}.png"
             if cached_thumb.exists():
-                thumb_paths.append(str(cached_thumb))
+                thumb_sources.append(str(cached_thumb))
             else:
-                thumb_paths.append(None)
+                thumb_sources.append(get_icon_name_for_class(window.get("class")))
 
-    app = WindowSwitcherApp(windows, thumb_paths, hyprland)
+    app = WindowSwitcherApp(windows, thumb_sources, hyprland)
     app.connect("shutdown", lambda app: shutil.rmtree(tmp_dir))
     app.run()
 
