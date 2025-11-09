@@ -6,7 +6,8 @@ This application displays a list of open windows with thumbnails and allows
 switching between them, similar to the Windows Alt-Tab functionality.
 
 It uses `hyprctl` to get the list of windows and `grim` to capture
-window thumbnails.
+window thumbnails. For windows on inactive workspaces, it uses cached
+thumbnails or a generic placeholder icon.
 """
 
 import gi
@@ -42,6 +43,7 @@ APP_CONFIG = {
             outline: 3px solid #ff8800;
         }
     """,
+    "placeholder_icon": "computer-symbolic",
 }
 
 # --- Hyprland Interaction ---
@@ -65,6 +67,17 @@ class Hyprland:
         except (subprocess.CalledProcessError, FileNotFoundError, json.JSONDecodeError) as e:
             print(f"Error getting Hyprland windows: {e}", file=sys.stderr)
             return []
+
+    def get_active_workspace(self):
+        """
+        Gets the active workspace from Hyprland.
+        """
+        try:
+            result = subprocess.run(["hyprctl", "activeworkspace", "-j"], capture_output=True, text=True, check=True)
+            return json.loads(result.stdout).get("id")
+        except (subprocess.CalledProcessError, FileNotFoundError, json.JSONDecodeError) as e:
+            print(f"Error getting active workspace: {e}", file=sys.stderr)
+            return None
 
     def capture_window_thumbnail(self, window):
         """
@@ -138,9 +151,10 @@ class ThumbButton(Gtk.Button):
         """
         Loads the thumbnail image in the background.
         """
-        paintable = load_paintable(self.thumb_path, size)
+        paintable = load_paintable(self.thumb_path, size) if self.thumb_path else None
         if paintable is None:
-            image = Gtk.Image.new_from_icon_name("image-missing")
+            image = Gtk.Image.new_from_icon_name(APP_CONFIG["placeholder_icon"])
+            image.set_icon_size(Gtk.IconSize.LARGE)
         else:
             image = Gtk.Picture.new_for_paintable(paintable)
         self.set_child(image)
@@ -232,9 +246,15 @@ class WindowSwitcherWindow(Gtk.ApplicationWindow):
 
         window = self.windows[self.current_index]
         thumb_path = self.thumb_paths[self.current_index]
-        paintable = load_paintable(thumb_path)
+        paintable = load_paintable(thumb_path) if thumb_path else None
+
         if paintable is not None:
             self.preview.set_paintable(paintable)
+        else:
+            placeholder = Gtk.Image.new_from_icon_name(APP_CONFIG["placeholder_icon"])
+            placeholder.set_pixel_size(256)
+            self.preview.set_paintable(placeholder.get_paintable())
+
 
         self.info_label.set_text(f"{self.current_index + 1}/{len(self.windows)} — {window['title']}")
 
@@ -286,28 +306,35 @@ def main():
     The main entry point of the application.
     """
     tmp_dir = Path(tempfile.mkdtemp())
-    hyprland = Hyprland(tmp_dir)
+    cache_dir = Path.home() / ".cache" / "hypr-window-switcher"
+    cache_dir.mkdir(parents=True, exist_ok=True)
 
+    hyprland = Hyprland(tmp_dir)
+    active_workspace = hyprland.get_active_workspace()
     windows = hyprland.get_windows()
+
     if not windows:
         print("No open windows found on Hyprland.", file=sys.stderr)
         shutil.rmtree(tmp_dir)
         sys.exit(1)
 
-    thumb_paths = [hyprland.capture_window_thumbnail(w) for w in windows]
-    valid_windows = []
-    valid_thumb_paths = []
-    for w, p in zip(windows, thumb_paths):
-        if p:
-            valid_windows.append(w)
-            valid_thumb_paths.append(p)
+    thumb_paths = []
+    for window in windows:
+        if window["workspace"]["id"] == active_workspace:
+            thumb_path = hyprland.capture_window_thumbnail(window)
+            if thumb_path:
+                shutil.copy(thumb_path, cache_dir / f"{window['address']}.png")
+                thumb_paths.append(thumb_path)
+            else:
+                thumb_paths.append(None)
+        else:
+            cached_thumb = cache_dir / f"{window['address']}.png"
+            if cached_thumb.exists():
+                thumb_paths.append(str(cached_thumb))
+            else:
+                thumb_paths.append(None)
 
-    if not valid_windows:
-        print("Could not capture any window thumbnails.", file=sys.stderr)
-        shutil.rmtree(tmp_dir)
-        sys.exit(1)
-
-    app = WindowSwitcherApp(valid_windows, valid_thumb_paths, hyprland)
+    app = WindowSwitcherApp(windows, thumb_paths, hyprland)
     app.connect("shutdown", lambda app: shutil.rmtree(tmp_dir))
     app.run()
 
