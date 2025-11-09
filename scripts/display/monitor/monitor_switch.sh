@@ -21,7 +21,7 @@ switch_layout() {
     }
 
     case $CURRENT_STATE in
-        1) # Mirrored -> Extended
+        1) # Mirrored -> Extended (right)
             if is_monitor2_connected; then
                 hyprctl --batch "keyword monitor $MONITOR1,preferred,auto,1; keyword monitor $MONITOR2,preferred,auto,1"
                 echo "2" > "$STATE_FILE"
@@ -31,7 +31,7 @@ switch_layout() {
                 echo "3" > "$STATE_FILE"
             fi
             ;;
-        2) # Extended -> Main only
+        2) # Extended (right) -> Main only
             hyprctl --batch "keyword monitor $MONITOR1,preferred,auto,1; keyword monitor $MONITOR2,disable"
             echo "3" > "$STATE_FILE"
             ;;
@@ -43,13 +43,25 @@ switch_layout() {
                 notify-send "Warning" "Second monitor is not connected."
             fi
             ;;
-        4) # Second only -> Mirrored
+        4) # Second only -> Extended (left)
+            if is_monitor2_connected; then
+                # Enable both monitors and prefer MONITOR2 so it appears on the left side in many setups.
+                # Exact positioning may depend on your Hyprland version; this attempts to make MONITOR2 the primary/left one
+                hyprctl --batch "keyword monitor $MONITOR2,preferred,auto,1; keyword monitor $MONITOR1,preferred,auto,1"
+                echo "5" > "$STATE_FILE"
+            else
+                # This state should not be reachable if monitor2 is not connected.
+                # As a fallback, go to state 3.
+                notify-send "Warning" "Second monitor is not connected."
+                hyprctl --batch "keyword monitor $MONITOR1,preferred,auto,1; keyword monitor $MONITOR2,disable"
+                echo "3" > "$STATE_FILE"
+            fi
+            ;;
+        5) # Extended (left) -> Mirrored
             if is_monitor2_connected; then
                 hyprctl --batch "keyword monitor $MONITOR1,preferred,auto,1; keyword monitor $MONITOR2,preferred,auto,1,mirror,$MONITOR1"
                 echo "1" > "$STATE_FILE"
             else
-                # This state should not be reachable if monitor2 is not connected.
-                # As a fallback, go to state 3.
                 notify-send "Warning" "Second monitor is not connected."
                 hyprctl --batch "keyword monitor $MONITOR1,preferred,auto,1; keyword monitor $MONITOR2,disable"
                 echo "3" > "$STATE_FILE"
@@ -65,9 +77,10 @@ show_status() {
     CURRENT_STATE=$(cat "$STATE_FILE")
     case $CURRENT_STATE in
         1) echo '''{"text": "=|=", "tooltip": "Layout: Mirrored"}''' ;;
-        2) echo '''{"text": "→ | →", "tooltip": "Layout: Extended"}''' ;;
+        2) echo '''{"text": "→ | →", "tooltip": "Layout: Extended (right)"}''' ;;
         3) echo '''{"text": "  |0 ", "tooltip": "Layout: Main Monitor Only"}''' ;;
         4) echo '''{"text": "0|  ", "tooltip": "Layout: Second Monitor Only"}''' ;;
+        5) echo '''{"text": "← | ←", "tooltip": "Layout: Extended (left)"}''' ;;
     esac
 }
 
