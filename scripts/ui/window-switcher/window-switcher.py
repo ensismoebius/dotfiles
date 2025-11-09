@@ -24,31 +24,22 @@ def find_images_from_args(args):
             paths.append(p)
     return [str(p) for p in paths if p.is_file()]
 
-def pixbuf_to_texture(pixbuf):
-    if not pixbuf:
-        return None
-    surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, pixbuf.get_width(), pixbuf.get_height())
-    context = cairo.Context(surface)
-    Gdk.cairo_set_source_pixbuf(context, pixbuf, 0, 0)
-    context.paint()
-    return Gdk.Texture.new_for_surface(surface)
-
 def load_paintable_for_file(path, max_size=None):
     try:
-        tex = Gdk.Texture.new_from_file(path)
-        return tex
-    except Exception:
-        try:
-            pix = GdkPixbuf.Pixbuf.new_from_file(path)
-            if max_size is not None:
-                w, h = pix.get_width(), pix.get_height()
-                scale = min(1.0, max_size / max(w, h))
-                if scale < 1.0:
-                    new_w, new_h = int(w * scale), int(h * scale)
-                    pix = pix.scale_simple(new_w, new_h, GdkPixbuf.InterpType.BILINEAR)
-            return pix
-        except Exception:
+        pixbuf = GdkPixbuf.Pixbuf.new_from_file(path)
+        if max_size is not None:
+            w, h = pixbuf.get_width(), pixbuf.get_height()
+            scale = min(1.0, max_size / max(w, h))
+            if scale < 1.0:
+                new_w, new_h = int(w * scale), int(h * scale)
+                pixbuf = pixbuf.scale_simple(new_w, new_h, GdkPixbuf.InterpType.BILINEAR)
+        success, buffer = pixbuf.save_to_bufferv("png", [], [])
+        if not success:
             return None
+        bytes = GLib.Bytes.new(buffer)
+        return Gdk.Texture.new_from_bytes(bytes)
+    except Exception:
+        return None
 
 class ThumbButton(Gtk.Button):
     def __init__(self, path, size, index, on_click):
@@ -64,8 +55,6 @@ class ThumbButton(Gtk.Button):
         p = load_paintable_for_file(self.path, size)
         if p is None:
             img = Gtk.Image.new_from_icon_name("image-missing")
-        elif isinstance(p, GdkPixbuf.Pixbuf):
-            img = Gtk.Picture.new_for_pixbuf(p)
         else:
             img = Gtk.Picture.new_for_paintable(p)
         self.set_child(img)
@@ -133,11 +122,9 @@ class ImageBrowser(Gtk.ApplicationWindow):
         if not self.paths:
             return
         path = self.paths[self.index]
-        p = load_paintable_for_file(path)
-        if isinstance(p, GdkPixbuf.Pixbuf):
-            self.preview.set_pixbuf(p)
-        elif isinstance(p, Gdk.Paintable):
-            self.preview.set_paintable(p)
+        paintable = load_paintable_for_file(path)
+        if paintable is not None:
+            self.preview.set_paintable(paintable)
         self.info.set_text(f"{self.index + 1}/{len(self.paths)} — {path}")
 
         for i, b in enumerate(self.thumb_buttons):
