@@ -1,12 +1,28 @@
+@keyframes scanline {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 100%;
+    }
+}
+
 window {
     font-family: "JetBrainsMono Nerd Font";
     font-size: 13px;
     margin: 0px;
     border: 2px solid #00FF41;
     border-radius: 6px;
-    /* transparent black window background to let wallpaper show through */
-    background-color: rgba(0, 0, 0, 0.55);
-    /* subtle backdrop blur for depth (requires compositor support) */
+    background-color: rgba(10, 20, 4, 0.8);
+    background-image: repeating-linear-gradient(10deg,
+            rgba(1, 255, 65, 0.137) 0px,
+            rgba(0, 255, 65, 0.03) 1px,
+            transparent 5px,
+            transparent 7px);
+    background-size: auto 200%;
+    animation: scanline 10s linear infinite;
+    box-shadow: 0 0 10px #00FF41, 0 0 20px #008F11, 0 5px 15px #FF0000;
     backdrop-filter: blur(8px);
 }
 
