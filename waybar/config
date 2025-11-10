@@ -77,11 +77,7 @@
     },
     /* === Modules Center === */
     "hyprland/workspaces": {
-        "format": "{icon}",
-        "format-icons": {
-            "default": "",
-            "active": ""
-        },
+        "format": "{id}",
         "persistent-workspaces": {
             "*": 2
         },
