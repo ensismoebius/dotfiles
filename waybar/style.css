@@ -21,7 +21,7 @@
 /* -- Global rules -- */
 * {
     border: none;
-    font-family: "JetbrainsMono Nerd Font";
+    font-family: "JetBrains Mono", "Nerd Font";
     font-size: 12px;
     min-height: 10px;
     transition: all 0.3s ease;

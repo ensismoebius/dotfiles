@@ -101,10 +101,30 @@ class Hyprland:
         Focuses the specified window.
         """
         address = window["address"]
+        workspace_id = window["workspace"]["id"]
+        active_workspace_id = self.get_active_workspace()
+
         try:
-            subprocess.run(["hyprctl", "dispatch", "focuswindow", f"address:{address}"], check=True)
+            # Batch commands for efficiency
+            batch_commands = []
+            if workspace_id != active_workspace_id:
+                batch_commands.append(f"dispatch workspace {workspace_id}")
+            
+            batch_commands.append(f"dispatch focuswindow address:{address}")
+
+            command_string = ";".join(batch_commands)
+            subprocess.run(
+                ["hyprctl", "-b", command_string],
+                check=True,
+                capture_output=True,
+                text=True
+            )
+
+            print(f"Focused window {address} on workspace {workspace_id}", flush=True)
+            print(f"Batch command executed: hyprctl -b {command_string}", flush=True)
+
         except (subprocess.CalledProcessError, FileNotFoundError) as e:
-            print(f"Error focusing window: {e}", file=sys.stderr)
+            print(f"Error focusing window: {e.stdout} {e.stderr}", file=sys.stderr)
 
 # --- Helper Functions ---
 
@@ -338,7 +358,7 @@ class WindowSwitcherApp(Gtk.Application):
     The main GTK application class.
     """
     def __init__(self):
-        super().__init__(application_id="com.example.WindowSwitcher")
+        super().__init__(application_id="org.dedira.WindowSwitcher")
         print("Initializing WindowSwitcherApp", flush=True)
         self.hold()
         self.hyprland = Hyprland()
