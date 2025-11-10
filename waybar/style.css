@@ -29,11 +29,12 @@
 
 window#waybar {
     background: rgba(27, 51, 6, 0.8);
-    background-image: repeating-linear-gradient(0deg,
-            rgba(0, 255, 65, 0.03) 0px,
+    background-image: repeating-linear-gradient(10deg,
+            rgba(1, 255, 65, 0.137) 0px,
             rgba(0, 255, 65, 0.03) 1px,
-            transparent 1px,
-            transparent 2px);
+            transparent 5px,
+            transparent 7px);
+    background-size: auto 200%;
     animation: scanline 10s linear infinite;
     border-bottom: 2px solid #FF0000;
     box-shadow: 0 0 10px #00FF41, 0 0 20px #008F11, 0 5px 15px #FF0000;
