@@ -77,13 +77,30 @@
     },
     /* === Modules Center === */
     "hyprland/workspaces": {
-        "format": "{id}",
+        "format": "{name} {windows}",
+        "format-window-separator": " ",
+        "window-rewrite": {
+            "title<.*youtube.*>": "",
+            "class<firefox>": "",
+            "class<firefox> title<.*github.*>": "",
+            "foot": "",
+            "code": "󰨞",
+            "title<.* - (.*) - VSCodium>": "codium $1",
+            "ignore-workspaces": [
+                "(special:)?chrome-sharing-indicator"
+            ]
+        },
         "persistent-workspaces": {
-            "*": 2
+            "*": 1
         },
         "disable-scroll": true,
         "all-outputs": true,
-        "show-special": false
+        "show-special": false,
+        "workspace-taskbar": {
+            "enable": true,
+            "format": "{icon}",
+            "icon-size": 14
+        }
     },
     "custom/mpris-icon": {
         "format": "{text}",
