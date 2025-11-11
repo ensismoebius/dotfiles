@@ -75,7 +75,6 @@
             ""
         ]
     },
-    /* === Modules Center === */
     "hyprland/workspaces": {
         "format": "{name} {windows}",
         "format-window-separator": " ",
@@ -134,12 +133,14 @@
         "on-click": "swaync-client -t -sw",
         "on-click-right": "swaync-client -d -sw"
     },
-    /* === Modules Right === */
     "wlr/taskbar": {
-        "format": "{icon}",
-        "all-outputs": true,
-        "active-first": true,
-        "tooltip-format": "{name}",
+        "format": "{icon}{title}",
+        "rewrite": {
+            "(.{10}).*": "$1…"
+        },
+        "all-outputs": false,
+        "active-first": false,
+        "tooltip-format": "{name} - {title}",
         "on-click": "activate",
         "on-click-middle": "close",
         "ignore-list": [
