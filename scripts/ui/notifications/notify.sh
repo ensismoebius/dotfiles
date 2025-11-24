@@ -32,5 +32,3 @@ send_notification() {
 # Example usage:
 # ./notify.sh normal "Normal Message" "This is a normal notification"
 # ./notify.sh critical "Critical Message" "This is a critical notification"
-
-send_notification "$1" "$2" "$3"
