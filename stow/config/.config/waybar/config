@@ -100,14 +100,14 @@
     },
     "custom/mpris-icon": {
         "format": "{text}",
-        "exec": "~/.config/hypr/scripts/ui/mpris_icon.sh",
+        "exec": "~/Scripts/ui/mpris_icon.sh",
         "on-click": "playerctl play-pause",
         "return-type": "json",
         "tooltip": true
     },
     "custom/mpris-text": {
         "format": "{text}",
-        "exec": "~/.config/hypr/scripts/ui/mpris_text.sh",
+        "exec": "~/Scripts/ui/mpris_text.sh",
         "on-click": "playerctl play-pause",
         "on-scroll-up": "playerctl next",
         "on-scroll-down": "playerctl previous",
@@ -153,8 +153,8 @@
     },
     "custom/monitor-layout": {
         "format": "{}",
-        "exec": "~/.config/hypr/scripts/display/monitor/monitor_switch.sh",
-        "on-click": "~/.config/hypr/scripts/display/monitor/monitor_switch.sh --switch",
+        "exec": "~/Scripts/display/monitor/monitor_switch.sh",
+        "on-click": "~/Scripts/display/monitor/monitor_switch.sh --switch",
         "return-type": "json",
         "signal": 8
     },
@@ -230,17 +230,17 @@
         "format": "{}",
         "return-type": "json",
         "interval": 2,
-        "exec": "~/.config/hypr/scripts/system/usb/check_usb.sh",
-        "on-click": "~/.config/hypr/scripts/system/usb/open_usb_device.sh",
+        "exec": "~/Scripts/system/usb/check_usb.sh",
+        "on-click": "~/Scripts/system/usb/open_usb_device.sh",
         "tooltip": true
     },
     "custom/clipboard": {
         "format": "󰅌 ",
         "tooltip": true,
         "tooltip-format": "Clipboard Manager",
-        "on-click": "~/.config/hypr/scripts/ui/clipboard/clipboard_manager.sh show",
-        "on-click-right": "~/.config/hypr/scripts/ui/clipboard/clipboard_manager.sh delete",
-        "on-click-middle": "~/.config/hypr/scripts/ui/clipboard/clipboard_manager.sh clear"
+        "on-click": "~/Scripts/ui/clipboard/clipboard_manager.sh show",
+        "on-click-right": "~/Scripts/ui/clipboard/clipboard_manager.sh delete",
+        "on-click-middle": "~/Scripts/ui/clipboard/clipboard_manager.sh clear"
     },
     "battery": {
         "states": {
@@ -263,8 +263,8 @@
         "format": "{}",
         "return-type": "json",
         "interval": 5,
-        "exec": "~/.config/hypr/scripts/audio/bluetooth/bluetooth_status.sh",
-        "on-click": "~/.config/hypr/scripts/audio/bluetooth/toggle_bluetooth.sh",
+        "exec": "~/Scripts/audio/bluetooth/bluetooth_status.sh",
+        "on-click": "~/Scripts/audio/bluetooth/toggle_bluetooth.sh",
         "tooltip": true
     }
 }
