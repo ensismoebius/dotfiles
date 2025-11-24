@@ -6,7 +6,6 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    /* === Modules Order === */
     "modules-left": [
         "hyprland/workspaces",
         "cpu",
@@ -15,7 +14,6 @@
         "wlr/taskbar"
     ],
     "modules-center": [
-        "custom/archicon",
         "custom/mpris-icon",
         "custom/mpris-text",
         "clock",
@@ -36,7 +34,6 @@
     "tray": {
         "spacing": 10
     },
-    /* === Modules Left === */
     "custom/archicon": {
         "format": "",
         "on-click": "wofi --show drun",
@@ -136,7 +133,7 @@
     "wlr/taskbar": {
         "format": "{icon}{title}",
         "rewrite": {
-            "(.{10}).*": "$1…"
+            "(.{2}).*": "$1…"
         },
         "all-outputs": false,
         "active-first": false,

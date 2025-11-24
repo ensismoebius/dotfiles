@@ -277,7 +277,7 @@ window#waybar.hidden {
 
 #custom-mpris-text {
     background: #0D0208;
-    min-width: 150px;
+    min-width: 50px;
 }
 
 #custom-bluetooth {

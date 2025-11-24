@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # pure bash marquee for waybar (no temp files)
-MAX=${MAX:-25}    # visible chars
+MAX=${MAX:-10}    # visible chars
 SPEED=${SPEED:-3} # chars per second
 PAD="   "         # trailing padding for nicer wrap
 
