@@ -1,0 +1,678 @@
+/**
+ * GTK-4.0 Theme: Cyberpunk Neon
+ *
+ * This theme provides a dark, neon green aesthetic for GTK-4 applications.
+ * It is a skeleton theme generated from a widget dump and may require
+ * adjustments for specific applications.
+ *
+ * Location: ~/.config/hypr/gtk-4.0/gtk.css
+ */
+
+/*
+ * ===================================================================
+ * COLOR PALETTE
+ *
+ * Define the core colors used throughout the theme.
+ * ===================================================================
+ */
+
+@define-color bg_color rgba(13, 2, 8, 0.95);
+/* Dark background */
+@define-color fg_color #00FF41;
+/* Neon green foreground/text */
+
+@define-color selected_bg_color #008F11;
+/* Background for selected items */
+@define-color selected_fg_color #00FF41;
+/* Text color for selected items */
+
+@define-color borders_color #00FF41;
+/* Border color for focused elements */
+@define-color unfocused_borders_color rgba(0, 255, 65, 0.3);
+/* Border color for unfocused elements */
+
+/* Status Colors */
+@define-color warning_color #FFFF00;
+/* Yellow for warnings */
+@define-color error_color #FF0000;
+/* Red for errors */
+@define-color success_color #00FF41;
+/* Green for success indicators */
+
+/*
+ * ===================================================================
+ * GLOBAL DEFAULTS
+ * ===================================================================
+ */
+
+* {
+    color: @fg_color;
+    background-color: transparent;
+    border-radius: 2px;
+    transition: all 180ms ease;
+}
+
+/*
+ * ===================================================================
+ * WINDOW & HEADERBAR
+ * ===================================================================
+ */
+
+applicationwindow,
+window,
+.background,
+#main_window {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+headerbar,
+.titlebar,
+#GtkHeaderBar {
+    background-color: @bg_color;
+    color: @fg_color;
+    border-bottom: 1px solid @borders_color;
+}
+
+/*
+ * ===================================================================
+ * CORE WIDGETS
+ * ===================================================================
+ */
+
+/* --- Scrolled Window & Viewport --- */
+scrolledwindow,
+viewport,
+#main_scroller {
+    background-color: transparent;
+}
+
+/* --- Layout Containers --- */
+box,
+.vertical,
+.horizontal {
+    background-color: transparent;
+    color: @fg_color;
+}
+
+/* --- Labels --- */
+label,
+.title,
+#title_label,
+#info_label {
+    color: @fg_color;
+}
+
+/* --- Text Entry, Search, and Text View --- */
+entry,
+text,
+textview,
+#sample_entry,
+#sample_textview,
+searchentry,
+.search {
+    background-color: rgba(13, 2, 8, 0.86);
+    color: @fg_color;
+    border: 1px solid @borders_color;
+    padding: 6px 8px;
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.05);
+}
+
+entry:focus,
+textview:focus {
+    border-color: @selected_bg_color;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.9);
+}
+
+/* --- Unified Buttons (all button-like widgets) --- */
+/* Targets: primary buttons, text buttons, image buttons, toolbuttons, menu buttons and id-based buttons */
+/* Broad button selector coverage: include many naming variants used by GTK, libadwaita and apps */
+button,
+button.default,
+.button,
+.flatbutton,
+.flat,
+.linkbutton,
+.link-button,
+.pushbutton,
+.primary,
+.secondary,
+.accent,
+.emphasis,
+.suggested-action,
+.action-button,
+.action,
+.image-button,
+.icon-button,
+button.icon,
+button.image,
+button>.image,
+button .image,
+.toolbutton,
+.tool-button,
+.toolbutton.icon,
+.image-button,
+.text-button,
+.toggle,
+.togglebutton,
+menubutton,
+menubutton button,
+.gtk-button,
+.adw-button,
+#btn_plain,
+#btn_suggested,
+#btn_dump_json,
+#btn_open_dialog {
+    /* base look: transparent dark inset with neon-green borders */
+    background-color: rgba(13, 2, 8, 0.64);
+    color: @fg_color;
+    border: 1px solid rgba(0, 255, 65, 0.22);
+    padding: 0px;
+    min-height: 20px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 8px rgba(0, 255, 65, 0.08);
+    transition: background-color 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+/* Hover / focus */
+button:hover,
+button:focus,
+.text-button:hover,
+.text-button:focus,
+.toolbutton:hover,
+.toolbutton:focus,
+menubutton:hover,
+menubutton:focus {
+    background-color: rgba(0, 143, 17, 0.08);
+    border-color: rgba(0, 255, 65, 0.45);
+    box-shadow: 0 0 14px rgba(0, 255, 65, 0.7), inset 0 0 6px rgba(0, 255, 65, 0.06);
+}
+
+/* Active / pressed state */
+button:active,
+.toolbutton:active,
+menubutton:active {
+    background-color: rgba(0, 143, 17, 0.22);
+    box-shadow: inset 0 0 12px rgba(0, 255, 65, 0.32);
+}
+
+/* Suggested / emphasized actions */
+button.suggested-action,
+.suggested-action,
+#btn_suggested {
+    border-color: @borders_color;
+    background-color: rgba(0, 143, 17, 0.16);
+    color: @selected_fg_color;
+    text-shadow: 0 0 6px rgba(0, 255, 65, 0.18);
+}
+
+/* Disabled / insensitive */
+button:disabled,
+.insensitive,
+button:disabled * {
+    opacity: 0.45;
+    border-color: rgba(0, 255, 65, 0.06);
+    color: rgba(0, 255, 65, 0.35);
+}
+
+/* Headerbar-specific small buttons (titlebar icons) */
+headerbar button,
+.titlebar button,
+window .titlebar button {
+    background-color: transparent;
+    border: none;
+    padding: 4px 6px;
+    min-height: 20px;
+    color: @fg_color;
+    border-radius: 3px;
+}
+
+headerbar button:hover,
+.titlebar button:hover,
+window .titlebar button:hover {
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.25);
+}
+
+/* Make icon-only buttons consistent.
+   Cover multiple GTK naming variants so icon-only buttons pick up the theme:
+   - button.icon (common)
+   - button.image
+   - .image-button (custom/class-based)
+   - toolbutton.icon */
+button.icon,
+button.image,
+button>.image,
+button .image,
+.image-button,
+.toolbutton.icon {
+    padding: 6px;
+    min-width: 26px;
+    min-height: 26px;
+    background-color: rgba(13, 2, 8, 0.55);
+    border-radius: 6px;
+    border: 1px solid rgba(0, 255, 65, 0.12);
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.04);
+    color: @fg_color;
+}
+
+/* Explicitly cover image-button variants and ensure they match the unified button style
+   Some applications use the class name .image-button or widget names like ImageButton */
+.image-button,
+button.image-button,
+button .image-button,
+button>.image-button,
+.icon-button,
+.imagebutton {
+    padding: 6px;
+    min-width: 26px;
+    min-height: 26px;
+    background-color: rgba(13, 2, 8, 0.55);
+    border-radius: 6px;
+    border: 1px solid rgba(0, 255, 65, 0.12);
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.04);
+    color: @fg_color;
+}
+
+/* Toggle-like widgets (toggle buttons, switch-like classes) should match button visuals when appropriate
+   and expose a clear checked/active state with neon accent */
+.toggle,
+.togglebutton,
+togglebutton.toggle,
+button.toggle,
+.switch-toggle,
+button.togglebutton {
+    background-color: rgba(13, 2, 8, 0.64);
+    color: @fg_color;
+    border: 1px solid rgba(0, 255, 65, 0.12);
+    padding: 6px 8px;
+    border-radius: 6px;
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.04);
+}
+
+/* Checked/active state for toggles */
+.toggle:checked,
+togglebutton:checked,
+.toggle.active,
+.togglebutton.active,
+button.toggle:checked {
+    background-color: rgba(0, 143, 17, 0.18);
+    border-color: rgba(0, 255, 65, 0.45);
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.6), inset 0 0 8px rgba(0, 255, 65, 0.12);
+    color: @selected_fg_color;
+}
+
+/* Nautilus-specific: ensure headerbar toggle/image buttons use compact unified style */
+window.background.nautilus-window headerbar .image-button,
+window.background.nautilus-window headerbar button.image-button,
+window.background.nautilus-window headerbar .toggle,
+window.background.nautilus-window headerbar button.toggle {
+    padding: 2px 4px;
+    min-height: 20px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Keep headerbar/titlebar icon buttons visually minimal (they live in the titlebar) */
+headerbar button.icon,
+.titlebar button.icon,
+window .titlebar button.icon {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Aggressive fallback: style any button that doesn't opt-out via .no-theme or -no-style */
+button:not(.no-theme):not([class*="-no-style"]) {
+    background-color: rgba(13, 2, 8, 0.64);
+    color: @fg_color;
+    border: 1px solid rgba(0, 255, 65, 0.18);
+    padding: 6px 10px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.05);
+}
+
+/* --- Toggles, Switches, Checks, and Radios --- */
+togglebutton,
+.toggle,
+#btn_toggle,
+switch,
+checkbutton {
+    color: @fg_color;
+    background-color: rgba(13, 2, 8, 0.86);
+    border: 1px solid rgba(0, 255, 65, 0.04);
+}
+
+/* Radio button fallback (often implemented with ToggleButton) */
+#rb1,
+#rb2,
+.radio-fallback {
+    background-color: rgba(13, 2, 8, 0.86);
+    border: 1px solid rgba(0, 255, 65, 0.04);
+}
+
+/*
+ * ===================================================================
+ * MENUS & POPOVERS
+ * ===================================================================
+ */
+
+menubutton,
+.popup,
+#menu_button_example {
+    background-color: transparent;
+    border: 1px solid rgba(0, 255, 65, 0.04);
+}
+
+popover,
+.background,
+.menu {
+    background-color: @bg_color;
+    color: @fg_color;
+    border: 1px solid rgba(0, 255, 65, 0.06);
+    box-shadow: 0 6px 18px rgba(0, 255, 65, 0.06);
+}
+
+menubutton popup button,
+popover button {
+    color: @fg_color;
+}
+
+/* --- Combo Box --- */
+combobox,
+comboboxtext,
+#sample_combobox,
+.combo {
+    background-color: rgba(13, 2, 8, 0.88);
+    border: 1px solid rgba(0, 255, 65, 0.05);
+}
+
+/*
+ * ===================================================================
+ * LISTS & SELECTION
+ * ===================================================================
+ */
+
+/* --- ListBox --- */
+listbox,
+listboxrow,
+.activatable {
+    background-color: transparent;
+    color: @fg_color;
+}
+
+listbox row:selected,
+listboxrow:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.85);
+    border-radius: 4px;
+}
+
+/* --- File Manager Selection (Tree, Icon, Flow) --- */
+treeview row:selected,
+iconview item:selected,
+flowbox child:selected,
+.view row:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    box-shadow: 0 0 18px rgba(0, 255, 65, 0.9);
+    border-radius: 6px;
+}
+
+treeview row:selected:focus,
+iconview item:selected:focus {
+    box-shadow: 0 0 22px rgba(0, 255, 65, 0.95);
+    border: 1px solid rgba(0, 255, 65, 0.25);
+}
+
+/* --- Text Selection --- */
+textview selection,
+textview:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
+}
+
+entry selection,
+entry:selected,
+entry text:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.85);
+    border-radius: 3px;
+}
+
+/*
+ * ===================================================================
+ * MISCELLANEOUS WIDGETS
+ * ===================================================================
+ */
+
+/* --- Tree/List Internals --- */
+cellview,
+.view,
+.flat {
+    background-color: transparent;
+    color: @fg_color;
+}
+
+/* --- Built-in Icons (e.g., arrows in trees) --- */
+GtkBuiltinIcon,
+.down,
+.right {
+    color: @fg_color;
+    opacity: 0.95;
+}
+
+/* --- Scale, Progressbar, Scrollbar --- */
+scale,
+range,
+progressbar,
+scrollbar {
+    background-color: rgba(13, 2, 8, 0.8);
+    color: @fg_color;
+    border: 1px solid rgba(0, 255, 65, 0.04);
+}
+
+progressbar.horizontal {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+scrollbar.overlay-indicator {
+    background-color: rgba(13, 2, 8, 0.6);
+}
+
+/* --- Tooltips --- */
+tooltip,
+GtkTooltipWindow {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: @fg_color;
+    border: 1px solid rgba(0, 255, 65, 0.08);
+}
+
+/*
+ * ===================================================================
+ * WIDGET STATES
+ * ===================================================================
+ */
+
+:disabled,
+.insensitive {
+    opacity: 0.5;
+    border-color: @unfocused_borders_color;
+}
+
+.warning {
+    background-color: rgba(255, 255, 0, 0.06);
+    color: @warning_color;
+    border: 1px solid rgba(255, 255, 0, 0.18);
+}
+
+.error {
+    background-color: rgba(255, 0, 0, 0.06);
+    color: @error_color;
+    border: 1px solid rgba(255, 0, 0, 0.18);
+}
+
+.success {
+    background-color: rgba(0, 255, 65, 0.06);
+    color: @success_color;
+    border: 1px solid rgba(0, 255, 65, 0.18);
+}
+
+/*
+ * ===================================================================
+ * APPLICATION-SPECIFIC STYLES
+ * ===================================================================
+ */
+
+/* --- High-priority IDs from GTK Inspector --- */
+#main_window {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+#main_scroller {
+    background-color: transparent;
+}
+
+#btn_dump_json {
+    border: 1px solid @borders_color;
+}
+
+/* --- Nautilus (File Manager) Compact Layout --- */
+window.background.nautilus-window headerbar,
+window.background.nautilus-window .path-bar-box,
+window.background.nautilus-window .path-bar {
+    min-height: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+window.background.nautilus-window placessidebar row {
+    min-height: 28px;
+    padding: 2px 4px;
+}
+
+window.background.nautilus-window .path-bar-box entry,
+window.background.nautilus-window .path-bar-box button {
+    min-height: 22px;
+    margin: 1px 0;
+    padding: 0 4px;
+}
+
+window.background.nautilus-window headerbar button.toggle {
+    min-height: 28px;
+    margin: 1px 2px;
+    padding: 0 4px;
+}
+
+/* Ultra-compact Nautilus styles */
+window.background.nautilus-window .headerbar,
+window.background.nautilus-window .titlebar {
+    min-height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+window.background.nautilus-window .headerbar button,
+window.background.nautilus-window .titlebar button {
+    padding: 1px;
+    margin: 0;
+    min-height: 20px;
+}
+
+/* Make Nautilus view and sidebar semi-transparent black and keep blur */
+window.background.nautilus-window .view,
+window.background.nautilus-window placessidebar {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*
+ * ===================================================================
+ * NAUTILUS BUTTON ENHANCEMENTS
+ * ===================================================================
+ */
+
+/* Ensure Nautilus image buttons get the neon treatment without changing layout */
+window.background.nautilus-window button.image-button,
+.nautilus-window button.image-button {
+    background-color: rgba(13, 2, 8, 0.55);
+    border: 1px solid rgba(0, 255, 65, 0.12);
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.04);
+}
+
+/* Nautilus toggle buttons - subtle neon enhancement */
+window.background.nautilus-window button.toggle,
+.nautilus-window button.toggle {
+    background-color: rgba(13, 2, 8, 0.55);
+    border: 1px solid rgba(0, 255, 65, 0.12);
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.04);
+}
+
+/* Keep the compact headerbar layout but add neon accents on interaction */
+window.background.nautilus-window headerbar button.image-button:hover,
+window.background.nautilus-window headerbar button.toggle:hover {
+    border-color: rgba(0, 255, 65, 0.3);
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.15);
+}
+
+/* Active toggle state in Nautilus */
+window.background.nautilus-window button.toggle:checked,
+.nautilus-window button.toggle:checked {
+    background-color: rgba(0, 143, 17, 0.15);
+    border-color: rgba(0, 255, 65, 0.4);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3), inset 0 0 6px rgba(0, 255, 65, 0.08);
+}
+
+/* Path bar buttons - minimal enhancement */
+window.background.nautilus-window .path-bar button {
+    background-color: rgba(13, 2, 8, 0.6);
+    border: 1px solid rgba(0, 255, 65, 0.1);
+    box-shadow: inset 0 0 4px rgba(0, 255, 65, 0.03);
+}
+
+/* Ensure Nautilus maintains its compact spacing */
+window.background.nautilus-window headerbar button {
+    margin: 0 1px;
+    padding: 2px 4px;
+}
+
+/*
+ * ===================================================================
+ * GENERIC FALLBACKS
+ * ===================================================================
+ */
+
+.background,
+.popup,
+.menu,
+.view {
+    color: @fg_color;
+}
+
+/*
+ * ===================================================================
+ * FORCE ALWAYS SEMI-TRANSPARENT NAUTILUS (compositor handles blur)
+ * ===================================================================
+ */
+
+/* Use window:backdrop syntax where appropriate so GTK parser accepts the selectors */
+window.background.nautilus-window headerbar,
+window.background.nautilus-window:backdrop headerbar,
+window.background.nautilus-window .view,
+window.background.nautilus-window:backdrop .view,
+window.background.nautilus-window placessidebar,
+window.background.nautilus-window:backdrop placessidebar {
+    background-color: rgba(0, 0, 0, 0.70);
+    background-image: none;
+    /* Blur is provided by the compositor (Hyprland); GTK flags backdrop-filter properties as unknown
+       so we avoid them here to keep theme parser quiet. */
+}
+
+/*
+ * ===================================================================
+ * END OF THEME
+ * ===================================================================
+ */

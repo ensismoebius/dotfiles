@@ -6,7 +6,6 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    /* === Modules Order === */
     "modules-left": [
         "hyprland/workspaces",
         "cpu",
@@ -15,8 +14,8 @@
         "wlr/taskbar"
     ],
     "modules-center": [
-        "custom/archicon",
-        "mpris",
+        "custom/mpris-icon",
+        "custom/mpris-text",
         "clock",
         "idle_inhibitor",
         "battery"
@@ -35,7 +34,6 @@
     "tray": {
         "spacing": 10
     },
-    /* === Modules Left === */
     "custom/archicon": {
         "format": "",
         "on-click": "wofi --show drun",
@@ -52,48 +50,94 @@
     "cpu": {
         "format": "{usage}% ",
         "tooltip": true,
-        "tooltip-format": "Uso de CPU: {usage}%\nNúcleos: {cores}",
+        "tooltip-format": "Uso de CPU: {usage}% Núcleos: {cores}",
         "interval": 1
     },
     "memory": {
         "format": "{}% 󰍛",
         "tooltip": true,
-        "tooltip-format": "RAM en uso: {used} / {total} ({percentage}%)"
+        "tooltip-format": "RAM em uso: {used} / {total} ({percentage}%)"
     },
     "disk": {
         "format": "{percentage_free}% ",
         "tooltip": true,
-        "tooltip-format": "Espacio libre: {free} / {total} ({percentage_free}%)"
+        "tooltip-format": "Espaço livre: {free} / {total} ({percentage_free}%)"
     },
     "temperature": {
         "thermal-zone": 0,
         "format": "{temperatureC}°C {icon}",
         "tooltip": true,
-        "tooltip-format": "Temperatura actual: {temperatureC}°C\nCrítico si > 80°C",
+        "tooltip-format": "Temperatura atual: {temperatureC}",
         "format-icons": [
             ""
         ]
     },
-    /* === Modules Center === */
     "hyprland/workspaces": {
-        "format": "{icon}",
-        "format-icons": {
-            "default": "",
-            "active": ""
+        "format": "{name} {windows}",
+        "format-window-separator": " ",
+        "window-rewrite": {
+            "title<.*youtube.*>": "",
+            "class<firefox>": "",
+            "class<firefox> title<.*github.*>": "",
+            "foot": "",
+            "code": "󰨞",
+            "title<.* - (.*) - VSCodium>": "codium $1",
+            "ignore-workspaces": [
+                "(special:)?chrome-sharing-indicator"
+            ]
         },
         "persistent-workspaces": {
-            "*": 2
+            "*": 1
         },
         "disable-scroll": true,
         "all-outputs": true,
-        "show-special": false
+        "show-special": false,
+        "workspace-taskbar": {
+            "enable": true,
+            "format": "{icon}",
+            "icon-size": 14
+        }
     },
-    /* === Modules Right === */
-    "wlr/taskbar": {
+    "custom/mpris-icon": {
+        "format": "{text}",
+        "exec": "~/.config/hypr/scripts/ui/mpris_icon.sh",
+        "on-click": "playerctl play-pause",
+        "return-type": "json",
+        "tooltip": true
+    },
+    "custom/mpris-text": {
+        "format": "{text}",
+        "exec": "~/.config/hypr/scripts/ui/mpris_text.sh",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "return-type": "json",
+        "tooltip": true,
+        "interval": 1
+    },
+    "custom/notification": {
+        "tooltip": true,
         "format": "{icon}",
-        "all-outputs": true,
-        "active-first": true,
-        "tooltip-format": "{name}",
+        "format-icons": {
+            "notification": "",
+            "none": "",
+            "dnd-notification": "",
+            "dnd-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw"
+    },
+    "wlr/taskbar": {
+        "format": "{icon}{title}",
+        "rewrite": {
+            "(.{2}).*": "$1…"
+        },
+        "all-outputs": false,
+        "active-first": false,
+        "tooltip-format": "{name} - {title}",
         "on-click": "activate",
         "on-click-middle": "close",
         "ignore-list": [
@@ -127,16 +171,16 @@
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "format-muted": "� Muted",
+        "format-muted": " Muted",
         "format-icons": {
             "default": [
                 "󰕿",
                 "󰖀",
                 "󰕾"
             ],
-            "headphone": "󰋋",
-            "headset": "󰋎",
-            "bluetooth": "󰂯"
+            "headphone": " 󰋋 ",
+            "headset": " 󰋎 ",
+            "bluetooth": " 󰂯 "
         },
         "scroll-step": 5,
         "on-click": "pamixer -t",
@@ -179,20 +223,8 @@
         "format": "{} ",
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
         "format-es": "ESP",
-        "format-en": "ENG"
-    },
-    "mpris": {
-        "format": "{player_icon} {title}",
-        "format-stopped": "",
-        "player-icons": {
-            "default": "▶",
-            "mpv": "🎵"
-        },
-        "status-icons": {
-            "playing": "▶",
-            "paused": "⏸"
-        },
-        "max-length": 20
+        "format-en": "ENG",
+        "format-br": "BR"
     },
     "custom/usb": {
         "format": "{}",
@@ -201,12 +233,6 @@
         "exec": "~/.config/hypr/scripts/system/usb/check_usb.sh",
         "on-click": "~/.config/hypr/scripts/system/usb/open_usb_device.sh",
         "tooltip": true
-    },
-    "custom/notification": {
-        "format": "",
-        "tooltip": false,
-        "on-click": "swaync-client -t -sw",
-        "on-click-right": "swaync-client -d -sw"
     },
     "custom/clipboard": {
         "format": "󰅌 ",

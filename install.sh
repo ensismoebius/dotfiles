@@ -13,9 +13,11 @@ wofi: Used for emoji picker
 kitty: Terminal emulator
 nautilus: File manager
 wlogout: Logout menu
+swaylock: Screen locker
 
 --- System & Theming ---
 swww: Wallpaper daemon
+waypaper: Wallpaper selector GUI
 polkit-kde-agent: PolicyKit authentication agent
 qt5ct qt6ct kvantum: For Qt theming
 papirus-icon-theme: Icon theme
@@ -30,6 +32,7 @@ bluez-utils: For Bluetooth
 udiskie: Automounter for removable media
 pipewire-pulse: For audio control (pactl)
 pavucontrol: Volume control panel
+playerctl: For media player control
 grim slurp grimblast (AUR): Screenshot tools
 wl-clipboard: Clipboard utilities
 jq: JSON processor for scripts
@@ -56,7 +59,40 @@ if ! command -v yay &> /dev/null; then
 fi
 
 # Install all packages with yay
-yay -S --needed hyprland waybar wofi rofi kitty nautilus firefox dunst swww polkit-kde-agent qt5ct qt6ct kvantum papirus-icon-theme ttf-jetbrains-mono noto-fonts ttf-font-awesome network-manager-applet bluez-utils udiskie pipewire-pulse pavucontrol grim slurp wl-clipboard jq zsh hyprcursor wlogout xdg-utils grimblast swaync waypaper catppuccin-cursors-mocha vim neovim ccls
+yay -S --needed hyprland waybar wofi kitty nautilus firefox swww polkit-kde-agent qt5ct qt6ct kvantum papirus-icon-theme ttf-jetbrains-mono noto-fonts ttf-font-awesome network-manager-applet bluez-utils udiskie pipewire-pulse pavucontrol grim slurp wl-clipboard jq zsh hyprcursor wlogout xdg-utils grimblast swaync waypaper catppuccin-cursors-mocha vim neovim ccls swaylock playerctl
+
+# Function: ensure murrine engine is installed for GTK2 visual improvements
+install_murrine_if_missing() {
+    if pkg-config --exists murrine-gtk-theme 2>/dev/null || [ -f /usr/lib/gtk-2.0/2.10.0/engines/libmurrine.so ] || [ -f /usr/lib64/gtk-2.0/2.10.0/engines/libmurrine.so ]; then
+        echo "Murrine engine already installed."
+        return 0
+    fi
+
+    echo "Murrine GTK2 engine (gtk-engines-murrine) not found. Attempting to install..."
+
+    # Detect package manager and try to install
+    if command -v pacman &>/dev/null; then
+        echo "Detected pacman. Installing gtk-engine-murrine via pacman/yay..."
+        # Try official first, then AUR via yay
+        sudo pacman -S --needed --noconfirm gtk-engine-murrine || yay -S --needed --noconfirm gtk-engine-murrine
+        return $?
+    elif command -v apt &>/dev/null; then
+        echo "Detected apt. Installing libmurrine-gtk-theme (Debian/Ubuntu naming may vary)..."
+        sudo apt update && sudo apt install -y gtk2-engines-murrine || sudo apt install -y libmurrine-gtk-theme || true
+        return $?
+    elif command -v dnf &>/dev/null; then
+        echo "Detected dnf. Installing gtk-murrine engine..."
+        sudo dnf install -y gtk-murrine-engine || true
+        return $?
+    else
+        echo "Could not detect package manager. Please install the Murrine GTK2 engine manually."
+        echo "Common package names: gtk-engines-murrine, gtk2-engines-murrine, libmurrine-gtk-theme"
+        return 1
+    fi
+}
+
+# Try to install murrine now (non-fatal if it fails)
+install_murrine_if_missing || echo "Continuing without Murrine engine. See README for manual install instructions."
 
 # Install vim-plug for plugin management
 echo "Installing vim-plug..."
@@ -76,10 +112,8 @@ FILES_TO_LINK=(
     ".bash_profile"
     ".vim"
     ".zshrc"
-    ".vimrc"
     ".oh-my-zsh"
     ".p10k.zsh"
-    ".gtkrc-2.0"
     ".Xresources"
 )
 
@@ -99,14 +133,13 @@ echo "After plugins are installed, run ':CocInstall coc-clangd' for C/C++ suppor
 
 # XDG config directories to link to ~/.config
 XDG_CONFIG_DIRS_TO_LINK=(
-    "dunst"
     "gtk-3.0"
     "gtk-4.0"
+    "gtk-2.0"
     "icons"
     "kitty"
     "qt5ct"
     "qt6ct"
-    "rofi"
     "swaync"
     "udiskie"
     "waybar"
@@ -144,6 +177,33 @@ for dir in "${XDG_CONFIG_DIRS_TO_LINK[@]}"; do
         echo "Warning: Source directory $source_dir does not exist. Skipping."
     fi
 done
+
+# Set up GIMP theme
+echo "Setting up GIMP theme..."
+GIMP3_THEME_DIR="$HOME/.config/GIMP/3.0/themes"
+
+mkdir -p "$GIMP3_THEME_DIR"
+if [ -e "$GIMP3_THEME_DIR/Cyberpunk-Neon" ]; then
+    rm -rf "$GIMP3_THEME_DIR/Cyberpunk-Neon"
+fi
+ln -s "$CONFIG_DIR/gimp/themes/Cyberpunk-Neon" "$GIMP3_THEME_DIR/"
+echo "GIMP 3.0 theme setup completed."
+
+
+
+# If we linked a gtk-2.0 directory, ensure GTK2 apps read the theme by creating
+# a per-user ~/.gtkrc-2.0 that includes the gtk-2.0/gtkrc in ~/.config.
+if [ -d "$HOME/.config/gtk-2.0" ]; then
+    GTKRC_PATH="$HOME/.config/gtk-2.0/gtkrc"
+    if [ -f "$GTKRC_PATH" ]; then
+        echo "Creating ~/.gtkrc-2.0 include to point to ~/.config/gtk-2.0/gtkrc"
+        cat > ~/.gtkrc-2.0 <<EOF
+include "$GTKRC_PATH"
+EOF
+    else
+        echo "Note: ~/.config/gtk-2.0 exists but no gtkrc file found at $GTKRC_PATH"
+    fi
+fi
 
 
 # Set up XDG MIME handling for Nautilus

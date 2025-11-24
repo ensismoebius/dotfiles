@@ -21,19 +21,20 @@
 /* -- Global rules -- */
 * {
     border: none;
-    font-family: "JetbrainsMono Nerd Font";
+    font-family: "JetBrains Mono", "Nerd Font";
     font-size: 12px;
     min-height: 10px;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 }
 
 window#waybar {
-    background: rgba(13, 2, 8, 0.85);
-    background-image: repeating-linear-gradient(0deg,
-            rgba(0, 255, 65, 0.03) 0px,
+    background: rgba(27, 51, 6, 0.8);
+    background-image: repeating-linear-gradient(10deg,
+            rgba(1, 255, 65, 0.137) 0px,
             rgba(0, 255, 65, 0.03) 1px,
-            transparent 1px,
-            transparent 2px);
+            transparent 5px,
+            transparent 7px);
+    background-size: auto 200%;
     animation: scanline 10s linear infinite;
     border-bottom: 2px solid #FF0000;
     box-shadow: 0 0 10px #00FF41, 0 0 20px #008F11, 0 5px 15px #FF0000;
@@ -57,7 +58,9 @@ window#waybar.hidden {
 #dunst,
 #custom-usb,
 #battery,
-#language {
+#language,
+#custom-mpris-icon,
+#custom-mpris-text {
     color: #00FF41;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -121,6 +124,7 @@ window#waybar.hidden {
 
 #cpu {
     background: #0D0208;
+    min-width: 50px;
 }
 
 #memory {
@@ -138,16 +142,20 @@ window#waybar.hidden {
 /* Modules center */
 #workspaces {
     background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 6px 5px;
-    padding: 0px 6px;
+    padding: 0px 0px;
 }
 
 #workspaces button {
     color: #008F11;
     background: transparent;
     padding: 4px 4px;
-    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+    transition: all 0.1s ease;
+    border: 0px;
+    border-right: 1px solid rgba(0, 255, 64, 0.384);
+    border-radius: 5px;
+    margin: 0 3px;
 }
 
 #workspaces button.occupied {
@@ -157,10 +165,12 @@ window#waybar.hidden {
 #workspaces button.active {
     color: #00FF41;
     text-shadow: 0 0 4px #00FF41;
+    border-color: #00FF41;
 }
 
 #workspaces button:hover {
     color: #00FF41;
+    border-color: #00FF41;
 }
 
 /* Modules right */
@@ -181,7 +191,7 @@ window#waybar.hidden {
     padding: 0px 5px;
     margin: 0px 3px;
     border-radius: 6px;
-    transition: background 0.3s ease;
+    transition: background 0.1s ease;
 }
 
 #taskbar button.active {
@@ -260,6 +270,16 @@ window#waybar.hidden {
     padding-right: 15px;
 }
 
+#custom-mpris-icon {
+    background: #008F11;
+    padding-right: 0px;
+}
+
+#custom-mpris-text {
+    background: #0D0208;
+    min-width: 50px;
+}
+
 #custom-bluetooth {
     background: #008F11;
     padding-right: 13px;
@@ -282,20 +302,20 @@ window#waybar.hidden {
     padding: 0 5px 0 10px;
     margin: 6px 0 6px 5px;
     border-radius: 10px;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 }
 
 #custom-clipboard:hover {
     background: #008F11;
     color: #00FF41;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 }
 
 #tray {
     background: #0D0208;
     margin: 6px 5px;
-    padding: 0 10px;
-    border-radius: 10px;
+    padding: 0px;
+    border-radius: 5px;
 }
 
 #tray menu {
@@ -341,7 +361,7 @@ window#waybar.hidden {
 
 #custom-notification {
     color: #00FF41;
-    background: #000000;
+    background: transparent;
     padding-left: 10px;
     padding-right: 13px;
     margin-top: 6px;

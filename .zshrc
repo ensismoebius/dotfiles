@@ -112,3 +112,10 @@ export MANPATH="/usr/local/man:$MANPATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+for f in ~/.config/bashrc/*; do 
+    if [ ! -d $f ]; then
+        c=`echo $f | sed -e "s=.config/bashrc=.config/bashrc/custom="`
+        [[ -f $c ]] && source $c || source $f
+    fi
+done

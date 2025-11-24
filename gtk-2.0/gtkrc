@@ -1,0 +1,123 @@
+# GTK2 theme: Cyberpunk Neon (gtk-2.0/gtkrc)
+# Mirrors the look-and-feel from the GTK3/GTK4 css files in this repo.
+# Place this file in ~/.config/gtk-2.0/gtkrc or source it from ~/.gtkrc-2.0
+
+# Color scheme (convenience mapping used by some engines)
+gtk-color-scheme = "
+  fg_color:#00FF41
+  bg_color:#000000
+  base_color:#0D0208
+  text_color:#00FF41
+  selected_bg_color:#008F11
+  selected_fg_color:#00FF41
+  tooltip_bg_color:#000000
+  tooltip_fg_color:#00FF41
+"
+
+# A default style used for many widgets
+style "cyberpunk-default" {
+    fg[NORMAL] = { 0, 1, 0.255 }    # #00FF41
+    fg[ACTIVE] = { 0, 1, 0.255 }
+    bg[NORMAL] = { 0.05, 0.01, 0.03 } # approx #0D0208
+    bg[ACTIVE] = { 0.035, 0.56, 0.067 } # approx selected #008F11
+    base[NORMAL] = { 0.05, 0.01, 0.03 }
+    text[NORMAL] = { 0, 1, 0.255 }
+    # Prefer the Murrine engine if available for nicer rounded corners and
+    # smoother gradients; fall back to pixmap if not present.
+    engine "murrine" { } 
+    engine "pixmap" { }
+    xthickness = 2
+    ythickness = 2
+}
+
+widget_class "GtkWidget" style "cyberpunk-default"
+
+# Buttons
+style "cyberpunk-button" = "cyberpunk-default" {
+    xthickness = 2
+    ythickness = 2
+    bg[NORMAL] = { 0.05, 0.01, 0.03 }
+    bg[PRELIGHT] = { 0.035, 0.56, 0.067 }
+    bg[ACTIVE] = { 0.035, 0.56, 0.067 }
+    fg[NORMAL] = { 0, 1, 0.255 }
+}
+
+class "GtkButton" style "cyberpunk-button"
+class "GtkCheckButton" style "cyberpunk-button"
+class "GtkRadioButton" style "cyberpunk-button"
+
+# Entries / text fields
+style "cyberpunk-entry" = "cyberpunk-default" {
+    bg[NORMAL] = { 0.07, 0.02, 0.04 }
+    bg[ACTIVE] = { 0.07, 0.02, 0.04 }
+    base[NORMAL] = { 0.07, 0.02, 0.04 }
+    text[NORMAL] = { 0, 1, 0.255 }
+    fg[NORMAL] = { 0, 1, 0.255 }
+    shadow_type = GTK_SHADOW_IN
+}
+
+class "GtkEntry" style "cyberpunk-entry"
+class "GtkTextView" style "cyberpunk-entry"
+
+# Tooltips
+style "cyberpunk-tooltip" = "cyberpunk-default" {
+    bg[NORMAL] = { 0, 0, 0 }
+    fg[NORMAL] = { 0, 1, 0.255 }
+    xthickness = 1
+    ythickness = 1
+}
+class "GtkTooltip" style "cyberpunk-tooltip"
+
+# Menus and menubars
+style "cyberpunk-menu" = "cyberpunk-default" {
+    bg[NORMAL] = { 0.05, 0.01, 0.03 }
+    bg[PRELIGHT] = { 0.035, 0.56, 0.067 }
+    fg[NORMAL] = { 0, 1, 0.255 }
+}
+class "GtkMenu" style "cyberpunk-menu"
+class "GtkMenuItem" style "cyberpunk-menu"
+class "GtkMenuBar" style "cyberpunk-menu"
+
+# TreeView (lists/files)
+style "cyberpunk-treeview" = "cyberpunk-default" {
+    bg[NORMAL] = { 0.05, 0.01, 0.03 }
+    text[NORMAL] = { 0, 1, 0.255 }
+    base[NORMAL] = { 0.05, 0.01, 0.03 }
+    fg[SELECTED] = { 0, 1, 0.255 }
+    bg[SELECTED] = { 0.008, 0.56, 0.067 } # approx #008F11
+}
+class "GtkTreeView" style "cyberpunk-treeview"
+
+# Notebook tabs (tabs)
+style "cyberpunk-notebook" = "cyberpunk-default" {
+    fg[NORMAL] = { 0, 1, 0.255 }
+    bg[NORMAL] = { 0.05, 0.01, 0.03 }
+    bg[SELECTED] = { 0.035, 0.56, 0.067 }
+}
+class "GtkNotebook" style "cyberpunk-notebook"
+
+# Apply the default style to windows
+style "cyberpunk-window" = "cyberpunk-default" {
+    bg[NORMAL] = { 0.05, 0.01, 0.03 }
+    fg[NORMAL] = { 0, 1, 0.255 }
+}
+class "GtkWindow" style "cyberpunk-window"
+
+# End of gtkrc
+
+# Application-specific tweaks
+# GIMP (gtk2 builds or GTK2-based toolkits) — increase padding on toolboxes
+# and give frames a slightly lighter border so the UI feels less cramped.
+style "cyberpunk-gimp" = "cyberpunk-default" {
+    bg[NORMAL] = { 0.04, 0.01, 0.025 }
+    fg[NORMAL] = { 0, 1, 0.255 }
+    xthickness = 3
+    ythickness = 3
+    shadow_type = GTK_SHADOW_ETCHED_IN
+}
+
+widget_class "GtkDock" style "cyberpunk-gimp"
+widget_class "GtkToolbox" style "cyberpunk-gimp"
+widget_class "GtkToolItem" style "cyberpunk-gimp"
+widget_class "GtkStatusbar" style "cyberpunk-gimp"
+
