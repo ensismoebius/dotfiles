@@ -1,0 +1,7 @@
+[Default Applications]
+inode/directory=nautilus-folder-handler.desktop
+x-scheme-handler/file=nautilus-folder-handler.desktop
+
+[Added Associations]
+inode/directory=nautilus-folder-handler.desktop;
+x-scheme-handler/file=nautilus-folder-handler.desktop;
