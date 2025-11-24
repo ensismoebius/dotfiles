@@ -2,9 +2,9 @@
 
 ![Hyprland Logo](https://hyprland.org/img/logo.png)
 
-A modern, cyberpunk-themed Hyprland configuration featuring dynamic workspaces, intelligent app launching, and seamless integration with Waybar.
+A modern, cyberpunk-themed Hyprland configuration, now managed with a clean, modular structure using GNU Stow. Features dynamic workspaces, intelligent app launching, and seamless integration with Waybar.
 
-[Features](#features) • [Installation](#installation) • [Keybindings](#keybindings) • [Customization](#customization) • [Scripts](#scripts)
+[Features](#features) • [Installation](#installation) • [How It Works](#how-it-works) • [Directory Structure](#directory-structure) • [Keybindings](#keybindings) • [Customization](#customization) • [Scripts](#scripts)
 
 ## Features
 
@@ -12,9 +12,9 @@ A modern, cyberpunk-themed Hyprland configuration featuring dynamic workspaces, 
 
 - 🖥️ **Hyprland** - A dynamic tiling Wayland compositor
 - 🎨 **Custom Cyberpunk Theme** - Neon-inspired color scheme with custom icons
-- 🎯 **Smart App Launcher** - Wofi-based launcher with most used apps prioritization
+- 🎯 **Smart App Launcher** - Wofi-based launcher
 - 📊 **Enhanced Waybar** - Custom modules for system monitoring
-- 🔔 **Modern Notifications** - Using Mako with stylish appearance
+- 🔔 **Modern Notifications** - Using SwayNC and Mako with a stylish appearance
 
 ### Advanced Features
 
@@ -26,42 +26,79 @@ A modern, cyberpunk-themed Hyprland configuration featuring dynamic workspaces, 
 
 ## Installation
 
-### Prerequisites
+The `install.sh` script automates the entire setup process. It installs all required packages and then uses GNU Stow to correctly place configuration files.
 
-```bash
-# Install required packages
-yay -S hyprland waybar wofi kitty nautilus firefox dunst
+1.  **Clone the repository:**
+    ```bash
+    git clone "https://github.com/ensismoebius/dotfiles.git"
+    cd dotfiles
+    ```
+
+2.  **Run the installer:**
+    The script will list all packages to be installed and ask for confirmation before proceeding.
+    ```bash
+    ./install.sh
+    ```
+
+## How It Works
+
+This repository uses **GNU Stow** to manage dotfiles. All configurations are organized into modular "packages" inside the `stow/` directory.
+
+The `install.sh` script does two main things:
+1.  **Installs Dependencies**: It uses `yay` to ensure all necessary applications (like Hyprland, Waybar, etc.) and tools (including `stow` itself) are installed on your system.
+2.  **Stows Configurations**: It automatically runs `stow` on every package in the `stow/` directory. Stow then creates symbolic links from this repository to the correct locations in your home directory (e.g., linking `stow/shell/.zshrc` to `~/.zshrc`).
+
+This approach keeps the repository clean and makes managing configurations much easier. Adding a new configuration is as simple as creating a new folder in `stow/` with the correct internal structure.
+
+## Directory Structure
+
+All configurations are located within the `stow/` directory, organized by package. The structure inside each package mirrors the structure of your home directory (`$HOME`).
+
 ```
-
-### Quick Start
-
-1. Clone this repository:
-
-   ```bash
-   git clone "https://github.com/ensismoebius/dotfiles.git"
-   cd dotfiles
-   ```
-
-2. Run the installer:
-   \`\`\`bash
-   ./install.sh
-   \`\`\`
+.
+├── install.sh
+├── README.md
+└── stow/
+    ├── shell/
+    │   ├── .bashrc
+    │   ├── .zshrc
+    │   └── .oh-my-zsh/
+    │
+    ├── config/
+    │   └── .config/
+    │       ├── kitty/
+    │       ├── waybar/
+    │       ├── mako/
+    │       └── ...
+    │
+    ├── hypr/
+    │   └── .config/
+    │       └── hypr/
+    │           ├── hyprland.conf
+    │           └── hyprland.conf.d/
+    │
+    ├── vim/
+    │   ├── .vim/
+    │   └── .vimrc
+    │
+    └── ... (other packages for gimp, icons, scripts, etc.)
+```
 
 ## Keybindings
 
 ### Essential Controls
 
-- \`Super + D\` - App launcher (with smart ordering)
-- \`Super + Return\` - Launch terminal
-- \`Super + Q\` - Close active window
-- \`Super + M\` - Toggle fullscreen
-- \`Super + T\` - Toggle floating window
+- `Super + D` - App launcher (with smart ordering)
+- `Super + Return` - Launch terminal
+- `Super + Q` - Close active window
+- `Super + M` - Toggle fullscreen
+- `Super + T` - Toggle floating window
 
 ### Workspace Navigation
 
-- \`Super + [1-0]\` - Switch to workspace 1-10
-- \`Super + Shift + [1-0]\` - Move window to workspace 1-10
-- \`Super + Mouse Scroll\` - Cycle through workspaces
+- `Super + [1-0]` - Switch to workspace 1-10
+- `Super + Shift + [1-0]` - Move window to workspace 1-10
+- `Super + Mouse Scroll` - Cycle through workspaces
 
 ### Media & Volume
 
@@ -71,13 +108,11 @@ yay -S hyprland waybar wofi kitty nautilus firefox dunst
 
 ### Special Features
 
-- \`Super + .\` - Emoji picker
-- \`Super + V\` - Clipboard history
-- \`Super + =\` - Toggle zoom
+- `Super + .` - Emoji picker
+- `Super + V` - Clipboard history
+- `Super + =` - Toggle zoom
 
 ## Customization
-
-### Theme Configuration
 
 The setup includes a cyberpunk-inspired theme with:
 
@@ -85,109 +120,11 @@ The setup includes a cyberpunk-inspired theme with:
 - Dynamic color schemes
 - Customizable Waybar modules
 
-### Directory Structure
-
-<pre>
-~/.config/hypr/
-│
-├── hyprland.conf.d/        # Modular Hyprland configuration
-│   ├── 01-monitors.conf    # Monitor configuration
-│   ├── 02-env.conf        # Environment variables
-│   ├── 03-autostart.conf  # Autostart applications
-│   ├── 04-input.conf      # Input device settings
-│   └── ...                # Other configurations
-│
-├── waybar/                 # Waybar configuration and styling
-│   ├── config             # Main configuration
-│   └── style.css          # Waybar styling
-│
-├── scripts/               # Utility scripts organized by category
-│   ├── ui/               # User interface scripts
-│   │   ├── app-menu/     # Application launcher scripts
-│   │   ├── clipboard/    # Clipboard management
-│   │   └── window/       # Window management
-│   │
-│   ├── system/           # System management scripts
-│   │   ├── power/       # Power management
-│   │   └── updates/     # System updates
-│   │
-│   ├── audio/           # Audio control scripts
-│   │   └── bluetooth/   # Bluetooth audio
-│   │
-│   └── display/         # Display management scripts
-│       └── monitor/     # Monitor configuration
-│
-└── themes/                # Theme-related configurations
-    ├── movie.conf        # Main theme configuration
-    └── movie-gtk-theme/  # GTK theme files
-</pre>
-
-### Installation Details
-
-The `install.sh` script automates the entire setup process:
-
-#### Script Features
-
-- 📦 Installs all required packages using yay
-- 🔗 Creates symbolic links for configuration files
-- 🎨 Sets up themes and icons
-- 🛠️ Configures system components:
-  - GTK/Qt themes
-  - Icon themes
-  - Font configuration
-  - MIME types
-  - Terminal configuration
-  - Scripts and utilities
-
-#### What it Sets Up
-
-1. **Core Components**
-   - Hyprland and related utilities
-   - Waybar status bar
-   - Terminal emulator (Kitty)
-   - Application launcher (Wofi)
-   - File manager (Nautilus)
-
-2. **System Integration**
-   - Notification system (Dunst)
-   - Bluetooth support
-   - Network management
-   - Audio controls
-   - USB device handling
-
-3. **Development Tools**
-   - Vim/Neovim configuration
-   - Development utilities
-   - Personal scripts (symlinked to ~/Scripts)
-
-4. **Theming**
-   - GTK/Qt themes
-   - Movie theme configuration
-   - Custom styling
-   - Font configuration
-
-#### Usage
-
-```bash
-$ chmod +x install.sh  # Make the script executable
-$ ./install.sh        # Run the installer
-```
+To customize a component, simply edit the corresponding files within the `stow/` directory. For example, to change your Kitty terminal settings, you would edit `stow/config/.config/kitty/kitty.conf`. After saving the change, the symlink in your home directory will automatically reflect the new configuration.
 
 ## 🛠️ Scripts
 
-### Utility Scripts
-Located in \`~/Scripts\` (symlinked from \`~/.config/hypr/scripts/utils\`):
-- System configuration utilities
-- Hardware management tools
-- Network configuration helpers
-- Audio/Video utilities
-
-### Core Scripts
-
-- **App Menu**: Smart application launcher with usage tracking
-- **Workspace Management**: Dynamic workspace handling
-- **System Controls**: Volume, brightness, and power management
-- **UI Utilities**: Screenshot, clipboard, and notification tools
+Utility scripts are located in the `stow/scripts/` package, which links them to `~/Scripts/`. These include tools for system configuration, hardware management, and more.
 
 ## Contributing
 
