@@ -113,6 +113,25 @@ if [ ! -d "$P10K_DIR" ]; then
 else
     echo "Powerlevel10k theme is already installed."
 fi
+
+# --- Zsh Plugins Installation ---
+# zsh-autosuggestions
+AS_DIR="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
+if [ ! -d "$AS_DIR" ]; then
+    echo "Installing zsh-autosuggestions plugin..."
+    git clone https://github.com/zsh-users/zsh-autosuggestions "$AS_DIR"
+else
+    echo "zsh-autosuggestions plugin is already installed."
+fi
+
+# zsh-syntax-highlighting
+SH_DIR="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
+if [ ! -d "$SH_DIR" ]; then
+    echo "Installing zsh-syntax-highlighting plugin..."
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting "$SH_DIR"
+else
+    echo "zsh-syntax-highlighting plugin is already installed."
+fi
 echo ""
 
 # --- Configuration Symlinking ---
@@ -144,7 +163,6 @@ backup_conflicting_files() {
         "system"
         "ui"
         "utils"
-        "zsh-plugins"
     )
 
     for target in "${CONFLICTING_TARGETS[@]}"; do
@@ -174,8 +192,17 @@ for pkg in $(ls "$STOW_DIR"); do
 done
 
 # Stow all packages.
+echo "Creating ~/Scripts directory if it doesn't exist..."
+mkdir -p "$HOME/Scripts"
+
 for pkg in $(ls "$STOW_DIR"); do
-    stow --restow -v -d "$STOW_DIR" -t "$HOME" "$pkg"
+    if [ "$pkg" == "Scripts" ]; then
+        echo "Stowing Scripts to ~/Scripts..."
+        stow --restow -v -d "$STOW_DIR" -t "$HOME/Scripts" "$pkg"
+    else
+        echo "Stowing $pkg to ~..."
+        stow --restow -v -d "$STOW_DIR" -t "$HOME" "$pkg"
+    fi
 done
 
 echo "Stowing complete."
