@@ -42,11 +42,11 @@ xdg-utils: For opening files and URLs
 git base-devel: For installing AUR packages
 
 "
-read -p "Do you want to proceed with the installation? (y/N) " choice
-case "$choice" in
-  y|Y ) echo "Starting installation...";;
-  * ) echo "Installation aborted." && exit 0;;
-esac
+# read -p "Do you want to proceed with the installation? (y/N) " choice
+# case "$choice" in
+#   y|Y ) echo "Starting installation...";;
+#   * ) echo "Installation aborted." && exit 0;;
+# esac
 
 # Check if yay is installed, if not, install it
 if ! command -v yay &> /dev/null; then
@@ -93,20 +93,80 @@ install_murrine_if_missing() {
 # Try to install murrine now (non-fatal if it fails)
 install_murrine_if_missing || echo "Continuing without Murrine engine. See README for manual install instructions."
 
-# Install vim-plug for plugin management
-echo "Installing vim-plug..."
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-echo "All dependencies installed successfully."
+echo ""
+
+# --- Oh My Zsh Installation ---
+OH_MY_ZSH_DIR="$HOME/.oh-my-zsh"
+if [ ! -d "$OH_MY_ZSH_DIR" ]; then
+    echo "Installing Oh My Zsh..."
+    git clone https://github.com/ohmyzsh/ohmyzsh.git "$OH_MY_ZSH_DIR"
+else
+    echo "Oh My Zsh is already installed."
+fi
+
+# --- Powerlevel10k Theme Installation ---
+P10K_DIR="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
+if [ ! -d "$P10K_DIR" ]; then
+    echo "Installing Powerlevel10k theme..."
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$P10K_DIR"
+else
+    echo "Powerlevel10k theme is already installed."
+fi
 echo ""
 
 # --- Configuration Symlinking ---
 echo "Stowing configuration files into home directory..."
 
+# Function to backup existing conflicting files
+backup_conflicting_files() {
+    BACKUP_DIR="$HOME/dotfiles_backup_$(date +%Y%m%d%H%M%S)"
+    mkdir -p "$BACKUP_DIR"
+    echo "Backing up conflicting files to $BACKUP_DIR..."
+
+    # List of common dotfiles/directories stow might target
+    CONFLICTING_TARGETS=(
+        ".config"
+        ".local/share/icons"
+        ".local/bin"
+        ".bash_profile"
+        ".bashrc"
+        ".gtkrc-2.0"
+        ".p10k.zsh"
+        ".zshrc"
+        ".vim"
+        ".vimrc"
+        ".Xresources"
+        ".themes"
+        "audio"
+        "display"
+        "network"
+        "system"
+        "ui"
+        "utils"
+        "zsh-plugins"
+    )
+
+    for target in "${CONFLICTING_TARGETS[@]}"; do
+        FULL_PATH="$HOME/$target"
+        if [ -e "$FULL_PATH" ] || [ -L "$FULL_PATH" ]; then # Check if it exists, including as a symlink
+            echo "  Moving $FULL_PATH to $BACKUP_DIR/"
+            mv "$FULL_PATH" "$BACKUP_DIR/"
+        fi
+    done
+    echo "Backup complete."
+}
+
+# Call the backup function before stowing
+backup_conflicting_files
+
 # The directory where this script is located, which is the root of our dotfiles repo
 CONFIG_DIR=$(cd "$(dirname "$0")" && pwd)
 STOW_DIR="$CONFIG_DIR/stow"
+
+# Remove the problematic empty .oh-my-zsh directory from the stow package
+echo "Removing problematic stow/shell/.oh-my-zsh directory..."
+rm -rf "$STOW_DIR/shell/.oh-my-zsh"
 
 # Unstow any packages first to avoid conflicts
 for pkg in $(ls "$STOW_DIR"); do
@@ -115,7 +175,7 @@ done
 
 # Stow all packages.
 for pkg in $(ls "$STOW_DIR"); do
-    stow -v -d "$STOW_DIR" -t "$HOME" "$pkg"
+    stow --restow -v -d "$STOW_DIR" -t "$HOME" "$pkg"
 done
 
 echo "Stowing complete."
@@ -140,6 +200,13 @@ if [ -d "$HOME/.local/share/icons/Cyberpunk-Neon" ]; then
     echo "Updating icon cache..."
     gtk-update-icon-cache -f -t "$HOME/.local/share/icons/Cyberpunk-Neon"
 fi
+
+# Install vim-plug for plugin management
+echo "Installing vim-plug..."
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+echo "All dependencies installed successfully."
 
 # Update desktop database
 if [ -d "$HOME/.local/share/applications" ]; then
