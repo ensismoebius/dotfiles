@@ -16,7 +16,7 @@
     (monitor 0)
     (open-on-exit)
     (aux-info
-        (left-docks-width "395")
+        (left-docks-width "302")
         (right-docks-width "369")
         (maximized "yes"))
     (gimp-toolbox
@@ -42,7 +42,7 @@
     (gimp-dock
         (side right)
         (book
-            (current-page 3)
+            (current-page 0)
             (dockable "gimp-brush-grid"
                 (tab-style icon)
                 (aux-info
