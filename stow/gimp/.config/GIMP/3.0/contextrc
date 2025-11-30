@@ -1,0 +1,15 @@
+# GIMP user context
+
+(tool "gimp-curves-tool")
+(paint-info "gimp-paintbrush")
+(paint-mode lighten-only)
+(brush "2. Hardness 050")
+(dynamics "Pressure Size")
+(mybrush "100% Opaque")
+(pattern "Pine")
+(gradient "Personalizado")
+(palette "Histórico de cores")
+(font "Sans-serif")
+(tool-preset "Core Pointer")
+
+# end of user context

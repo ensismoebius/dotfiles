@@ -1,0 +1,9 @@
+# GIMP gimp-gradient-tool options
+
+(paint-mode lighten-only)
+(gradient "Personalizado")
+(brush-size 51)
+(brush-hardness 0.5)
+(supersample yes)
+
+# end of gimp-gradient-tool options
