@@ -1,0 +1,35 @@
+/* Nautilus GTK4 overrides for Cyberpunk-Neon theme */
+
+/* Define colors explicitly to ensure they are available in this override file */
+@define-color bg_color rgba(13, 2, 8, 0.95);
+@define-color fg_color #00FF41;
+@define-color selected_bg_color #008F11;
+@define-color borders_color #00FF41;
+@define-color unfocused_borders_color rgba(0, 255, 65, 0.3);
+
+
+/* File-view area (make it consistently darker) */
+window.background.nautilus-window .view {
+    background-color: rgba(13, 2, 8, 1); /* Fully opaque dark background */
+}
+
+/* Address bar styling */
+window.background.nautilus-window .path-bar-box entry {
+    background-color: rgba(13, 2, 8, 0.86); /* Existing entry background */
+    color: @fg_color;
+    border: 1px solid transparent; /* Start with transparent border */
+    padding: 6px 8px;
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.05);
+    border-radius: 4px;
+}
+
+window.background.nautilus-window .path-bar-box entry:focus {
+    border-color: @borders_color; /* Neon border on focus */
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.9), inset 0 0 6px rgba(0, 255, 65, 0.05); /* Neon glow on focus */
+}
+
+/* Sidebar styling (reduce opacity or adjust background) */
+window.background.nautilus-window placessidebar {
+    background-color: rgba(13, 2, 8, 0.95); /* Dark background, matching @bg_color, but fully opaque */
+    border-right: 1px solid rgba(0, 255, 65, 0.2); /* Subtle neon right border */
+}

@@ -1,0 +1,55 @@
+/* Nautilus GTK3 overrides for Cyberpunk-Neon theme */
+
+/* Define colors explicitly to ensure they are available in this override file */
+@define-color bg_color rgba(13, 2, 8, 0.95);
+@define-color fg_color #00FF41;
+@define-color selected_bg_color #008F11;
+@define-color borders_color #00FF41;
+@define-color unfocused_borders_color rgba(0, 255, 65, 0.95);
+
+
+/* Ensure the file-view area is consistently dark */
+.nautilus-window .view,
+.nautilus-window GtkIconView,
+.nautilus-window GtkTreeView {
+    background-color: rgba(13, 2, 8, 1); /* Fully opaque dark background */
+}
+
+/* Address bar styling */
+.nautilus-window .pathbar,
+.nautilus-window .path-bar {
+    background-color: rgba(13, 2, 8, 0.9); /* Slightly darker background for the bar itself */
+    border-bottom: 1px solid @borders_color; /* Neon border at the bottom */
+}
+
+.nautilus-window .pathbar GtkEntry,
+.nautilus-window .path-bar GtkEntry {
+    background-color: rgba(13, 2, 8, 0.86); /* Existing entry background */
+    color: @fg_color;
+    border: 1px solid transparent; /* Start with transparent border */
+    padding: 6px 8px;
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.05);
+    border-radius: 4px;
+}
+
+.nautilus-window .pathbar GtkEntry:focus,
+.nautilus-window .path-bar GtkEntry:focus {
+    border-color: @borders_color; /* Neon border on focus */
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.9), inset 0 0 6px rgba(0, 255, 65, 0.05); /* Neon glow on focus */
+}
+
+/* Sidebar styling */
+.nautilus-window .sidebar,
+.nautilus-window .sidebar GtkListBox,
+.nautilus-window .sidebar GtkTreeView {
+    background-color: rgba(13, 2, 8, 0.85); /* Dark background, slightly transparent */
+    border-right: 1px solid rgba(0, 255, 65, 0.2); /* Subtle neon right border */
+}
+
+.nautilus-window .sidebar GtkListBox row:selected,
+.nautilus-window .sidebar GtkTreeView row:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.7);
+    text-shadow: 0 0 4px rgba(0, 255, 65, 0.5);
+}
