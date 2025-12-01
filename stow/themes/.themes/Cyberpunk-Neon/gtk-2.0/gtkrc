@@ -120,4 +120,3 @@ widget_class "GtkDock" style "cyberpunk-gimp"
 widget_class "GtkToolbox" style "cyberpunk-gimp"
 widget_class "GtkToolItem" style "cyberpunk-gimp"
 widget_class "GtkStatusbar" style "cyberpunk-gimp"
-

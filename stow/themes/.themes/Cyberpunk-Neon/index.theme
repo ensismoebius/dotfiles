@@ -1,10 +1,10 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Movie Theme
+Name=Cyberpunk-Neon
 Comment=A dark theme with green accents
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=movie-gtk-theme
+GtkTheme=Cyberpunk-Neon
 IconTheme=Papirus-Dark
 CursorTheme=catppuccin-mocha-mauve

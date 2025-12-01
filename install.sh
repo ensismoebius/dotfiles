@@ -201,21 +201,6 @@ done
 
 echo "Stowing complete."
 
-# --- Post-Stow Setup ---
-echo "Running post-setup tasks..."
-
-# If we linked a gtk-2.0 directory, ensure GTK2 apps read the theme.
-if [ -d "$HOME/.config/gtk-2.0" ]; then
-    GTKRC_PATH="$HOME/.config/gtk-2.0/gtkrc"
-    if [ -f "$GTKRC_PATH" ] && ! grep -q "include \"$GTKRC_PATH\"" ~/.gtkrc-2.0 2>/dev/null; then
-        echo "Creating ~/.gtkrc-2.0 include to point to ~/.config/gtk-2.0/gtkrc"
-        # Ensure the .gtkrc-2.0 file exists before appending
-        touch ~/.gtkrc-2.0
-        # Add include if it's not already there
-        echo "include \"$GTKRC_PATH\"" >> ~/.gtkrc-2.0
-    fi
-fi
-
 # Update icon cache
 if [ -d "$HOME/.local/share/icons/Cyberpunk-Neon" ]; then
     echo "Updating icon cache..."
