@@ -59,7 +59,14 @@
  */
 
 applicationwindow,
-window,
+window {
+    background-color: @bg_color;
+    color: @fg_color;
+    border: 1px solid @borders_color;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+    border-radius: 6px;
+}
+
 .background,
 #main_window {
     background-color: @bg_color;
@@ -69,9 +76,10 @@ window,
 headerbar,
 .titlebar,
 #GtkHeaderBar {
-    background-color: @bg_color;
+    background-color: rgba(13, 2, 8, 0.9);
     color: @fg_color;
     border-bottom: 1px solid @borders_color;
+    box-shadow: 0 2px 10px rgba(0, 255, 65, 0.15);
 }
 
 /*
@@ -116,6 +124,7 @@ searchentry,
     border: 1px solid @borders_color;
     padding: 6px 8px;
     box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.05);
+    transition: all 160ms ease;
 }
 
 entry:focus,
@@ -171,7 +180,7 @@ menubutton button,
     min-height: 20px;
     border-radius: 5px;
     box-shadow: inset 0 0 8px rgba(0, 255, 65, 0.08);
-    transition: background-color 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+    transition: background-color 160ms ease, box-shadow 160ms ease, border-color 160ms ease, text-shadow 160ms ease;
 }
 
 /* Hover / focus */
@@ -183,9 +192,10 @@ button:focus,
 .toolbutton:focus,
 menubutton:hover,
 menubutton:focus {
-    background-color: rgba(0, 143, 17, 0.08);
-    border-color: rgba(0, 255, 65, 0.45);
-    box-shadow: 0 0 14px rgba(0, 255, 65, 0.7), inset 0 0 6px rgba(0, 255, 65, 0.06);
+    background-color: rgba(0, 143, 17, 0.12);
+    border-color: rgba(0, 255, 65, 0.6);
+    box-shadow: 0 0 16px rgba(0, 255, 65, 0.8), inset 0 0 8px rgba(0, 255, 65, 0.1);
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.7);
 }
 
 /* Active / pressed state */
@@ -194,6 +204,7 @@ button:active,
 menubutton:active {
     background-color: rgba(0, 143, 17, 0.22);
     box-shadow: inset 0 0 12px rgba(0, 255, 65, 0.32);
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.5);
 }
 
 /* Suggested / emphasized actions */
@@ -225,12 +236,22 @@ window .titlebar button {
     min-height: 20px;
     color: @fg_color;
     border-radius: 3px;
+    transition: all 160ms ease;
 }
 
 headerbar button:hover,
 .titlebar button:hover,
 window .titlebar button:hover {
-    box-shadow: 0 0 8px rgba(0, 255, 65, 0.25);
+    background-color: rgba(0, 143, 17, 0.1);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+
+headerbar button:active,
+.titlebar button:active,
+window .titlebar button:active {
+    background-color: rgba(0, 143, 17, 0.2);
+    box-shadow: inset 0 0 8px rgba(0, 255, 65, 0.3);
 }
 
 /* Make icon-only buttons consistent.
@@ -333,22 +354,83 @@ button:not(.no-theme):not([class*="-no-style"]) {
 }
 
 /* --- Toggles, Switches, Checks, and Radios --- */
-togglebutton,
-.toggle,
-#btn_toggle,
-switch,
 checkbutton {
-    color: @fg_color;
-    background-color: rgba(13, 2, 8, 0.86);
-    border: 1px solid rgba(0, 255, 65, 0.04);
+    background-color: transparent;
+    border: 1px solid @unfocused_borders_color;
+    border-radius: 3px;
+    color: transparent; /* Hide the checkmark when unchecked */
+    transition: all 160ms ease;
 }
 
-/* Radio button fallback (often implemented with ToggleButton) */
-#rb1,
-#rb2,
-.radio-fallback {
-    background-color: rgba(13, 2, 8, 0.86);
-    border: 1px solid rgba(0, 255, 65, 0.04);
+checkbutton:hover {
+    border-color: @borders_color;
+}
+
+checkbutton:checked {
+    background-color: rgba(0, 143, 17, 0.1);
+    border-color: @borders_color;
+    color: @fg_color;
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.9);
+}
+
+togglebutton,
+.toggle,
+#btn_toggle {
+    background-color: rgba(13, 2, 8, 0.64);
+    color: @fg_color;
+    border: 1px solid rgba(0, 255, 65, 0.12);
+    padding: 6px 8px;
+    border-radius: 6px;
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.04);
+    transition: all 160ms ease;
+}
+
+togglebutton:hover,
+.toggle:hover {
+    border-color: rgba(0, 255, 65, 0.45);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.5), inset 0 0 8px rgba(0, 255, 65, 0.06);
+}
+
+togglebutton:checked,
+.toggle:checked {
+    background-color: rgba(0, 143, 17, 0.18);
+    border-color: rgba(0, 255, 65, 0.45);
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.6), inset 0 0 8px rgba(0, 255, 65, 0.12);
+    color: @selected_fg_color;
+    text-shadow: 0 0 6px rgba(0, 255, 65, 0.7);
+}
+
+switch {
+    min-height: 20px;
+    min-width: 40px;
+    background-color: rgba(13, 2, 8, 0.7);
+    border: 1px solid @unfocused_borders_color;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+    transition: all 160ms ease;
+}
+
+switch:checked {
+    background-color: rgba(0, 143, 17, 0.4);
+    border-color: @borders_color;
+    box-shadow: inset 0 0 8px rgba(0, 255, 65, 0.5);
+}
+
+switch slider {
+    background-color: @fg_color;
+    border: 1px solid @fg_color;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
+    transition: all 160ms ease;
+}
+
+switch:checked slider {
+    background-color: @selected_fg_color;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 1);
+}
+
+switch:hover slider {
+    box-shadow: 0 0 20px rgba(0, 255, 65, 1.2);
 }
 
 /*
@@ -369,13 +451,36 @@ popover,
 .menu {
     background-color: @bg_color;
     color: @fg_color;
-    border: 1px solid rgba(0, 255, 65, 0.06);
-    box-shadow: 0 6px 18px rgba(0, 255, 65, 0.06);
+    border: 1px solid @borders_color;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.4);
+    padding: 4px;
 }
 
-menubutton popup button,
-popover button {
+menuitem {
+    padding: 6px 10px;
+    border-radius: 3px;
     color: @fg_color;
+    transition: all 160ms ease;
+}
+
+menuitem:hover {
+    background-color: rgba(0, 143, 17, 0.2);
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
+    color: @selected_fg_color;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.6);
+}
+
+menuitem:selected {
+    background-color: @selected_bg_color;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.9);
+    color: @selected_fg_color;
+    text-shadow: 0 0 6px rgba(0, 255, 65, 0.7);
+}
+
+menuitem:disabled {
+    opacity: 0.5;
+    text-shadow: none;
 }
 
 /* --- Combo Box --- */
@@ -383,8 +488,39 @@ combobox,
 comboboxtext,
 #sample_combobox,
 .combo {
-    background-color: rgba(13, 2, 8, 0.88);
-    border: 1px solid rgba(0, 255, 65, 0.05);
+    background-color: rgba(13, 2, 8, 0.86);
+    color: @fg_color;
+    border: 1px solid @borders_color;
+    padding: 2px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.05); /* Subtle inner shadow */
+    transition: all 160ms ease;
+}
+
+combobox:hover {
+    border-color: rgba(0, 255, 65, 0.45);
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.4), inset 0 0 6px rgba(0, 255, 65, 0.06);
+}
+
+combobox:focus,
+combobox:active { /* :active when dropdown is open */
+    border-color: @selected_bg_color;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.9); /* Strong glow on focus/open */
+}
+
+/* Style the entry part of editable comboboxes if it exists */
+combobox entry {
+    background-color: transparent; /* Inherit from combobox */
+    border: none;
+    padding: 4px 6px;
+    box-shadow: none;
+}
+
+/* Style the selected item in the non-editable combobox */
+combobox cellview {
+    background-color: transparent;
+    color: @fg_color;
+    padding: 4px 6px;
 }
 
 /*
@@ -395,35 +531,55 @@ comboboxtext,
 
 /* --- ListBox --- */
 listbox,
+treeview,
+iconview {
+    background-color: rgba(13, 2, 8, 0.9); /* Slightly more opaque background */
+    color: @fg_color;
+    border: 1px solid @unfocused_borders_color; /* Subtle border */
+    border-radius: 4px;
+    padding: 2px;
+}
+
 listboxrow,
+treeview row,
+iconview item,
+flowbox child,
 .activatable {
     background-color: transparent;
     color: @fg_color;
+    border-radius: 2px;
+    padding: 4px;
+    transition: all 120ms ease;
+}
+
+listboxrow:hover,
+treeview row:hover,
+iconview item:hover,
+flowbox child:hover {
+    background-color: rgba(0, 143, 17, 0.1);
+    box-shadow: inset 0 0 5px rgba(0, 255, 65, 0.2); /* Subtle inner glow on hover */
 }
 
 listbox row:selected,
-listboxrow:selected {
-    background-color: @selected_bg_color;
-    color: @selected_fg_color;
-    box-shadow: 0 0 12px rgba(0, 255, 65, 0.85);
-    border-radius: 4px;
-}
-
-/* --- File Manager Selection (Tree, Icon, Flow) --- */
+listboxrow:selected,
 treeview row:selected,
 iconview item:selected,
 flowbox child:selected,
 .view row:selected {
     background-color: @selected_bg_color;
     color: @selected_fg_color;
-    box-shadow: 0 0 18px rgba(0, 255, 65, 0.9);
-    border-radius: 6px;
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.85); /* Strong neon glow on selection */
+    text-shadow: 0 0 6px rgba(0, 255, 65, 0.7);
+    border-radius: 4px;
 }
 
+listbox row:selected:focus,
+listboxrow:selected:focus,
 treeview row:selected:focus,
-iconview item:selected:focus {
-    box-shadow: 0 0 22px rgba(0, 255, 65, 0.95);
-    border: 1px solid rgba(0, 255, 65, 0.25);
+iconview item:selected:focus,
+flowbox child:selected:focus {
+    box-shadow: 0 0 16px rgba(0, 255, 65, 0.95);
+    border: 1px solid @borders_color;
 }
 
 /* --- Text Selection --- */
@@ -466,29 +622,100 @@ GtkBuiltinIcon,
 }
 
 /* --- Scale, Progressbar, Scrollbar --- */
-scale,
-range,
-progressbar,
-scrollbar {
+/* Scale (Slider) */
+scale trough {
+    min-height: 8px;
     background-color: rgba(13, 2, 8, 0.8);
-    color: @fg_color;
-    border: 1px solid rgba(0, 255, 65, 0.04);
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+    border: 1px solid rgba(0,0,0,0.2);
 }
 
-progressbar.horizontal {
-    background-color: rgba(0, 0, 0, 0.12);
+scale progress {
+    min-height: 8px;
+    background-image: linear-gradient(to right, @selected_bg_color, @fg_color);
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.7);
 }
 
-scrollbar.overlay-indicator {
+scale slider {
+    min-width: 18px;
+    min-height: 18px;
+    border-radius: 9px;
+    background-color: @bg_color;
+    border: 2px solid @fg_color;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
+    transition: all 160ms ease;
+}
+
+scale slider:hover {
+    box-shadow: 0 0 16px rgba(0, 255, 65, 1);
+    background-color: @fg_color;
+}
+
+/* Progressbar */
+progressbar {
+    min-height: 10px;
+    background-color: rgba(13, 2, 8, 0.7);
+    border: 1px solid @unfocused_borders_color;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+progressbar progress {
+    background-image: linear-gradient(to right, @selected_bg_color, @fg_color);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
+    transition: all 160ms ease;
+}
+
+/* Scrollbar */
+scrollbar {
+    min-width: 12px;
+    min-height: 12px;
     background-color: rgba(13, 2, 8, 0.6);
+    border: 1px solid rgba(0, 255, 65, 0.08);
+    border-radius: 6px;
+    transition: all 160ms ease;
+}
+
+scrollbar slider {
+    background-color: @selected_bg_color;
+    border: 1px solid @fg_color;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.7);
+    transition: all 160ms ease;
+}
+
+scrollbar slider:hover {
+    background-color: @fg_color;
+    box-shadow: 0 0 12px rgba(0, 255, 65, 1);
 }
 
 /* --- Tooltips --- */
 tooltip,
 GtkTooltipWindow {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.9);
     color: @fg_color;
-    border: 1px solid rgba(0, 255, 65, 0.08);
+    border: 1px solid @borders_color;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+}
+
+frame {
+    border: 1px solid @borders_color;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.3);
+}
+
+frame label {
+    color: @fg_color;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+    margin-bottom: 5px;
 }
 
 /*

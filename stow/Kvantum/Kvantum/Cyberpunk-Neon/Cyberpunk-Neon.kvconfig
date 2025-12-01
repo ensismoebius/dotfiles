@@ -1,0 +1,59 @@
+[General]
+name=Cyberpunk-Neon
+version=0.1
+author=Gemini CLI
+description=A Cyberpunk-Neon theme for Kvantum, inspired by the GTK theme.
+
+; Inherit from a dark base for consistency if available
+; based_on=KvFlatDark
+
+; Enable translucency (Kvantum will handle this for the theme if enabled)
+translucent=true
+
+; --- Color Mapping (based on GTK @define-colors) ---
+
+; General Background/Foreground
+Background=rgba(13, 2, 8, 0.95)
+Foreground=#00FF41
+; Text
+Text=#00FF41
+; Selection
+SelectionBackground=#008F11
+SelectionForeground=#00FF41
+; Highlight
+Highlight=#008F11
+HighlightedText=#00FF41
+; Button
+ButtonBackground=rgba(13, 2, 8, 0.95)
+ButtonText=#00FF41
+
+; Window Colors
+Window=rgba(13, 2, 8, 0.95)
+WindowText=#00FF41
+
+; Accent Colors (using borders_color as primary accent)
+Accent=#00FF41
+AccentText=#00FF41
+
+; Border Colors
+Border=#00FF41
+UnfocusedBorder=rgba(0, 255, 65, 0.3)
+
+; Tooltip
+TooltipBackground=rgba(0, 0, 0, 0.9)
+TooltipForeground=#00FF41
+
+; --- Basic Opacity Settings ---
+alpha_val=220 ; General transparency for non-focused elements
+alpha_val_inactive=180
+alpha_val_dialog=240
+
+; --- Blur (assuming compositor handles it) ---
+blur=false
+blur_strength=5
+
+; --- SVG Assets ---
+; Kvantum themes typically use SVG assets for drawing widgets.
+; These need to be created manually or copied from a base theme.
+; For now, we'll rely on Kvantum's default drawing where SVGs are not specified.
+; Further customization would involve creating these SVG files (e.g., checkmark, radio, handles).

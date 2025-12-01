@@ -9,13 +9,14 @@ height=100
 margin=10,50,0,0
 padding=15
 border-size=2
-border-radius=0
+border-radius=6
 progress-color=over #00FF41
 outer-margin=2
 markup=1
 layer=overlay
 border-color=#00FF41
-background-color=#0D0208AA
+background-color=rgba(13, 2, 8, 0.7)
+box-shadow=0 0 10px rgba(0, 255, 65, 0.4)
 text-color=#00FF41
 default-timeout=5000
 icon-path=/usr/share/icons/Papirus-Dark/32x32/apps/:/usr/share/icons/Papirus-Dark/32x32/devices/:/usr/share/icons/Papirus-Dark/32x32/status/
@@ -35,23 +36,26 @@ on-button-right=invoke-default-action
 
 # Urgency-specific configurations
 [urgency=low]
-background-color=#0D0208DD
+background-color=rgba(13, 2, 8, 0.86)
 text-color=#00FF41
 border-color=#008F11
+box-shadow=0 0 12px #008F11, inset 0 0 5px #008F11
 format=<span foreground='#00FF41' weight='bold' size='large' letter_spacing='100'>%s</span>\n<span foreground='#00FF41' weight='normal'>%b</span>
 default-timeout=5000
 
 [urgency=normal]
-background-color=#0D0208DD
+background-color=rgba(13, 2, 8, 0.86)
 text-color=#00FF41
 border-color=#00FF41
+box-shadow=0 0 15px #00FF41, inset 0 0 7px #00FF41
 format=<span foreground='#00FF41' weight='bold' size='large' letter_spacing='100'>%s</span>\n<span foreground='#00FF41' weight='normal'>%b</span>
 default-timeout=10000
 
 [urgency=critical]
-background-color=#0D0208DD
+background-color=rgba(13, 2, 8, 0.86)
 text-color=#FF0000
 border-color=#FF0000
+box-shadow=0 0 20px #FF0000, inset 0 0 10px #FF0000
 format=<span foreground='#FF0000' weight='bold' size='large' letter_spacing='100'>%s</span>\n<span foreground='#FF0000' weight='normal'>%b</span>
 default-timeout=0
 

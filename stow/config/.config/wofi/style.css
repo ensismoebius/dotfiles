@@ -12,27 +12,27 @@ window {
     font-family: "JetBrainsMono Nerd Font";
     font-size: 13px;
     margin: 0px;
-    border: 2px solid #00FF41;
+    border: 2px solid #00FF41; /* borders_color */
     border-radius: 6px;
-    background-color: rgba(10, 20, 4, 0.8);
+    background-color: rgba(13, 2, 8, 0.9); /* bg_color with transparency */
     background-image: repeating-linear-gradient(10deg,
-            rgba(1, 255, 65, 0.137) 0px,
+            rgba(0, 255, 65, 0.137) 0px, /* fg_color equivalent */
             rgba(0, 255, 65, 0.03) 1px,
             transparent 5px,
             transparent 7px);
     background-size: auto 200%;
     animation: scanline 10s linear infinite;
-    box-shadow: 0 0 10px #00FF41, 0 0 20px #008F11, 0 5px 15px #FF0000;
+    box-shadow: 0 0 10px #00FF41, 0 0 20px #008F11, 0 5px 15px rgba(0, 255, 65, 0.3); /* borders_color, selected_bg_color, unfocused_borders_color equivalent */
     backdrop-filter: blur(8px);
 }
 
 #input {
     margin: 6px;
-    border: 1px solid #00FF41;
+    border: 1px solid #00FF41; /* borders_color */
     border-radius: 4px;
-    color: #00FF41;
+    color: #00FF41; /* fg_color */
     /* slightly more opaque than window so the input is readable */
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(13, 2, 8, 0.86); /* bg_color equivalent with transparency */
     box-shadow: 0 0 8px rgba(0, 255, 65, 0.12), 0 0 20px rgba(0, 255, 65, 0.06);
 }
 

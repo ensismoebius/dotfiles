@@ -28,16 +28,16 @@
 }
 
 window#waybar {
-    background: rgba(27, 51, 6, 0.8);
+    background: rgba(13, 2, 8, 0.95); /* Using bg_color */
     background-image: repeating-linear-gradient(10deg,
-            rgba(1, 255, 65, 0.137) 0px,
+            rgba(0, 255, 65, 0.137) 0px, /* Using fg_color equivalent */
             rgba(0, 255, 65, 0.03) 1px,
             transparent 5px,
             transparent 7px);
     background-size: auto 200%;
     animation: scanline 10s linear infinite;
-    border-bottom: 2px solid #FF0000;
-    box-shadow: 0 0 10px #00FF41, 0 0 20px #008F11, 0 5px 15px #FF0000;
+    border-bottom: 2px solid #00FF41; /* Using borders_color */
+    box-shadow: 0 0 10px #00FF41, 0 0 20px #008F11, 0 5px 15px rgba(0, 255, 65, 0.3); /* Using borders_color, selected_bg_color, unfocused_borders_color equivalent */
 }
 
 window#waybar.hidden {
@@ -66,7 +66,32 @@ window#waybar.hidden {
     margin-bottom: 6px;
     padding-left: 10px;
     padding-right: 10px;
-    transition: none;
+    transition: all 0.3s ease; /* Changed to allow animations */
+}
+
+/* --- Hover Effects for Modules --- */
+#custom-archicon:hover,
+#cpu:hover,
+#memory:hover,
+#disk:hover,
+#temperature:hover,
+#idle_inhibitor:hover,
+#pulseaudio:hover,
+#pulseaudio#microphone:hover,
+#network:hover,
+#custom-usb:hover,
+#battery:hover,
+#language:hover,
+#custom-mpris-icon:hover,
+#custom-mpris-text:hover,
+#custom-notification:hover {
+    background-color: rgba(0, 143, 17, 0.2);
+    box-shadow: 0 0 10px #00FF41, 0 0 15px #008F11;
+}
+
+#clock:hover {
+    background-color: rgba(0, 143, 17, 0.2);
+    box-shadow: 0 0 10px #00FF41, 0 0 15px #008F11;
 }
 
 /* Separation to the left */
@@ -98,8 +123,8 @@ window#waybar.hidden {
 /* Modules left */
 #custom-archicon {
     font-size: 12px;
-    color: #00FF41;
-    background: #0D0208;
+    color: #00FF41; /* fg_color */
+    background: rgba(13, 2, 8, 0.95); /* bg_color */
     padding-right: 17px;
 }
 
@@ -141,7 +166,7 @@ window#waybar.hidden {
 
 /* Modules center */
 #workspaces {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(13, 2, 8, 0.8); /* bg_color with transparency */
     border-radius: 5px;
     margin: 6px 5px;
     padding: 0px 0px;
@@ -196,10 +221,12 @@ window#waybar.hidden {
 
 #taskbar button.active {
     background: rgba(13, 2, 8, 0.5);
+    box-shadow: 0 0 8px #00FF41, inset 0 0 4px #00FF41;
 }
 
 #taskbar button:hover {
     background: rgba(13, 2, 8, 0.5);
+    box-shadow: 0 0 8px #00FF41, inset 0 0 4px #00FF41;
 }
 
 #idle_inhibitor {
@@ -286,14 +313,14 @@ window#waybar.hidden {
 }
 
 #notification {
-    background: #000000;
+    background: rgba(13, 2, 8, 0.95); /* bg_color */
 }
 
 #custom-usb {
-    color: #f9e2af;
+    color: #00FF41; /* fg_color */
     padding: 0 15px;
     margin: 6px 0;
-    background: #000000;
+    background: rgba(13, 2, 8, 0.95); /* bg_color */
 }
 
 #custom-clipboard {
@@ -306,9 +333,10 @@ window#waybar.hidden {
 }
 
 #custom-clipboard:hover {
-    background: #008F11;
-    color: #00FF41;
+    background: #008F11; /* selected_bg_color */
+    color: #00FF41; /* fg_color */
     transition: all 0.1s ease;
+    box-shadow: 0 0 10px #00FF41, inset 0 0 5px #00FF41;
 }
 
 #tray {
@@ -339,9 +367,9 @@ window#waybar.hidden {
 }
 
 #tray *:hover {
-    background: #008F11;
-    box-shadow: 0 0 2px #00FF41;
-    color: #0D0208;
+    background: #008F11; /* selected_bg_color */
+    box-shadow: 0 0 10px #00FF41, inset 0 0 5px #00FF41; /* Enhanced glow */
+    color: #0D0208; /* bg_color */
 }
 
 /* === Optional animation === */
