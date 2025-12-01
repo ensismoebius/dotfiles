@@ -1,0 +1,12 @@
+[Icon Theme]
+Name=Cyberpunk-Neon-Cursors
+Comment=A neon-green cursor theme for a cyberpunk aesthetic.
+Inherits=Adwaita,default
+Theme=Cyberpunk-Neon-Cursors
+
+[Cyberpunk-Neon-Cursors]
+Size=24
+MaxSize=48
+MinSize=12
+HotspotX=8
+HotspotY=8

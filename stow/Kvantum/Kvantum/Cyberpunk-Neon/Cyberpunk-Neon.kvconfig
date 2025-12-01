@@ -38,6 +38,7 @@ AccentText=#00FF41
 ; Border Colors
 Border=#00FF41
 UnfocusedBorder=rgba(0, 255, 65, 0.3)
+borders_color_active=#00FF41
 
 ; Tooltip
 TooltipBackground=rgba(0, 0, 0, 0.9)
@@ -45,7 +46,7 @@ TooltipForeground=#00FF41
 
 ; --- Basic Opacity Settings ---
 alpha_val=220 ; General transparency for non-focused elements
-alpha_val_inactive=180
+alpha_val_inactive=200 ; Slightly less opaque for inactive elements
 alpha_val_dialog=240
 
 ; --- Blur (assuming compositor handles it) ---
@@ -57,3 +58,25 @@ blur_strength=5
 ; These need to be created manually or copied from a base theme.
 ; For now, we'll rely on Kvantum's default drawing where SVGs are not specified.
 ; Further customization would involve creating these SVG files (e.g., checkmark, radio, handles).
+
+[SVG]
+; This section is for referencing custom SVG assets for various widget elements.
+; These assets would typically be located in subdirectories within the theme's root,
+; e.g., "Kvantum/Cyberpunk-Neon/svg/buttons.svg" or "Kvantum/Cyberpunk-Neon/svg/checkboxes.svg".
+; Each SVG element can define different states (normal, hovered, pressed, disabled, checked, etc.)
+; within a single SVG file using named IDs.
+
+; Example entries (these are placeholders and would need actual SVG files):
+; button=svg/buttons.svg
+; checkbox=svg/checkboxes.svg
+; radiobutton=svg/radiobuttons.svg
+; scrollbar=svg/scrollbars.svg
+; slider=svg/sliders.svg
+; tab=svg/tabs.svg
+; progressbar=svg/progressbars.svg
+; combobox=svg/comboboxes.svg
+; spinbox=svg/spinboxes.svg
+; menu=svg/menus.svg
+; tooltip=svg/tooltips.svg
+; header=svg/headers.svg
+
