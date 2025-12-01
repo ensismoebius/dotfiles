@@ -124,5 +124,4 @@ for f in ~/.config/bashrc/*(N); do
     fi
 done
 
-# Set GTK_THEME for applications launched from this shell (including Wofi)
-export GTK_THEME="Cyberpunk-Neon"
+
