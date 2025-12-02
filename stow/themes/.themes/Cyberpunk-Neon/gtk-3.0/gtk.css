@@ -135,6 +135,17 @@ GtkTextView:focus {
     box-shadow: 0 0 10px rgba(0, 255, 65, 0.9);
 }
 
+/* Style for selected text within GtkEntry and GtkTextView */
+GtkEntry selection,
+GtkEntry text:selected,
+GtkTextView selection,
+GtkTextView text:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.85);
+    border-radius: 3px;
+}
+
 GtkButton,
 .button {
     background-color: rgba(13, 2, 8, 0.64);

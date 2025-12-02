@@ -34,8 +34,9 @@
 
 .nautilus-window .pathbar GtkEntry:focus,
 .nautilus-window .path-bar GtkEntry:focus {
-    border-color: @borders_color; /* Neon border on focus */
-    box-shadow: 0 0 10px rgba(0, 255, 65, 0.9), inset 0 0 6px rgba(0, 255, 65, 0.05); /* Neon glow on focus */
+    background-color: rgba(13, 2, 8, 0.95); /* Slightly darker background when focused */
+    border-color: @borders_color; /* Keep neon border */
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.6), inset 0 0 4px rgba(0, 255, 65, 0.08); /* More subtle glow */
 }
 
 /* Sidebar styling */
