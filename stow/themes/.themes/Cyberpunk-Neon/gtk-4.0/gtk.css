@@ -23,7 +23,7 @@
 
 @define-color selected_bg_color #008F11;
 /* Background for selected items */
-@define-color selected_fg_color #00FF41;
+@define-color selected_fg_color #FFFFFF;
 /* Text color for selected items */
 
 @define-color borders_color #00FF41;
