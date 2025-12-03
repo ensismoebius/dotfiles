@@ -929,35 +929,37 @@ tabbox {
 }
 
 tabbox separator {
-    border-left: 1px solid rgba(0, 255, 65, 0.05); /* Very subtle neon separator */
+    border-left: 0px solid rgba(0, 255, 65, 0.1); /* More visible neon separator */
     margin: 0 2px; /* Small space around separator */
 }
 
 tabboxchild {
     background-color: transparent; /* Default transparent or slight background */
     color: @fg_color;
-    padding: 4px 12px; /* Reduced vertical padding for less tall tabs */
+    padding: 2px 5px; /* Reduced vertical padding for less tall tabs */
+    min-height: 15px; /* Explicit minimum height for compact tabs */
     border: 1px solid transparent; /* default border */
     border-bottom: none; /* No bottom border for unselected */
     border-radius: 4px 4px 0 0; /* Rounded top corners */
     margin-right: 2px;
     transition: all 160ms ease;
+    box-shadow: inset 0 0 2px rgba(0, 255, 65, 0.2); /* Inner glow on hover */
 }
 
 tabboxchild:hover {
     background-color: rgba(0, 143, 17, 0.1); /* Subtle hover background */
-    box-shadow: inset 0 0 5px rgba(0, 255, 65, 0.2); /* Inner glow on hover */
+    box-shadow: inset 0 0 10px rgba(0, 255, 65, 0.2); /* Inner glow on hover */
 }
 
 tabboxchild:checked,
 tabboxchild:active,
 tabboxchild:selected,
 tab { /* For the selected tab, also include generic 'tab' selector */
-    background-color: rgba(0, 143, 17, 0.25); /* More prominent selected background */
+    background-color: rgba(3, 255, 32, 0.25); /* More prominent selected background */
     color: @selected_fg_color;
     border-color: @borders_color; /* Neon border for selected tab */
     border-bottom: none; /* Make active tab connect to content area */
-    box-shadow: 0 0 12px rgba(0, 255, 65, 0.9), inset 0 0 10px rgba(0, 255, 65, 0.6); /* Even stronger neon glow */
+    box-shadow: 0 0 12px rgba(0, 255, 200, 0.9), inset 0 0 10px rgba(0, 255, 65, 0.6); /* Even stronger neon glow */
     text-shadow: 0 0 8px rgba(0, 255, 65, 0.8);
 }
 
