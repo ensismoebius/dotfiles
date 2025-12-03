@@ -1,6 +1,6 @@
 #!/bin/bash
 
-AUDIO_DIR="/home/ensismoebius/dotfiles/stow/Audios"
+AUDIO_DIR="$HOME/dotfiles/stow/Audios"
 
 # Function to generate menu entries for wofi
 generate_wofi_menu() {
