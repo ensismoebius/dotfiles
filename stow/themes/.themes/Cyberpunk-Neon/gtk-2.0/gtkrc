@@ -26,16 +26,16 @@ style "cyberpunk-default" {
     # smoother gradients; fall back to pixmap if not present.
     engine "murrine" { } 
     engine "pixmap" { }
-    xthickness = 2
-    ythickness = 2
+    xthickness = 3
+    ythickness = 3
 }
 
 widget_class "GtkWidget" style "cyberpunk-default"
 
 # Buttons
 style "cyberpunk-button" = "cyberpunk-default" {
-    xthickness = 2
-    ythickness = 2
+    xthickness = 3
+    ythickness = 3
     bg[NORMAL] = { 0.05, 0.01, 0.03 }
     bg[PRELIGHT] = { 0.035, 0.56, 0.067 }
     bg[ACTIVE] = { 0.035, 0.56, 0.067 }
@@ -70,6 +70,8 @@ class "GtkTooltip" style "cyberpunk-tooltip"
 
 # Menus and menubars
 style "cyberpunk-menu" = "cyberpunk-default" {
+    xthickness = 5
+    ythickness = 3
     bg[NORMAL] = { 0.05, 0.01, 0.03 }
     bg[PRELIGHT] = { 0.035, 0.56, 0.067 }
     fg[NORMAL] = { 0, 1, 0.255 }

@@ -64,7 +64,11 @@ GtkWindow {
     border: 1px solid @borders_color;
     box-shadow: 0 0 20px rgba(0, 255, 65, 0.35);
     border-radius: 6px;
-    padding: 3px; /* Added margin for windows and dialogs */
+    padding: 3px; /* Ensure 3px margin for windows and dialogs */
+}
+
+GtkMenuBar GtkMenuItem {
+    padding: 0 5px; /* Add 5px horizontal padding to top-level menu items */
 }
 
 .background {

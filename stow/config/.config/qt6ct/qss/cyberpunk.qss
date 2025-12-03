@@ -108,9 +108,10 @@ QToolTip {
 
 QComboBox {
     background-color: rgba(13, 2, 8, 0.95);
-    border: 1px solid #00FF41;
+    border: 2px solid #00FF41; /* Increased border */
     border-radius: 2px;
     padding: 5px;
+    padding-right: 25px; /* Make space for the arrow */
     color: #00FF41;
     selection-background-color: #008F11;
     selection-color: #00FF41;
@@ -130,6 +131,7 @@ QComboBox::drop-down {
     border-left-style: solid;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
+    background-color: rgba(0, 143, 17, 0.3); /* Added background for visibility */
 }
 
 QComboBox::down-arrow {
