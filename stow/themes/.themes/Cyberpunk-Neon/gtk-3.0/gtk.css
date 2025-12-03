@@ -509,7 +509,7 @@ GtkNotebook tab {
     background-color: transparent;
     color: @fg_color;
     border: 1px solid transparent; /* default border */
-    border-left: 1px solid rgba(0, 255, 65, 0.2); /* Thin, subtle neon separator */
+    border-left: 1px solid rgba(0, 255, 65, 0.05); /* Very subtle neon separator for unselected tabs */
     border-bottom: none; /* No bottom border for unselected */
     padding: 4px 12px; /* Reduced vertical padding for less tall tabs */
     border-top-left-radius: 4px;
@@ -527,9 +527,9 @@ GtkNotebook tab:checked {
     background-color: rgba(0, 143, 17, 0.25); /* More prominent selected background */
     color: @selected_fg_color;
     border-color: @borders_color; /* Neon border for selected tab */
-    border-bottom: none; /* No bottom border for active tab */
-    box-shadow: 0 0 10px rgba(0, 255, 65, 0.7), inset 0 0 8px rgba(0, 255, 65, 0.4); /* Strong neon glow */
-    text-shadow: 0 0 6px rgba(0, 255, 65, 0.7);
+    border-bottom: none; /* Make active tab connect to content area */
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.9), inset 0 0 10px rgba(0, 255, 65, 0.6); /* Even stronger neon glow */
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.8);
 }
 
 GtkProgressBar {

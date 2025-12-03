@@ -929,7 +929,7 @@ tabbox {
 }
 
 tabbox separator {
-    border-left: 1px solid rgba(0, 255, 65, 0.2); /* Thin, subtle neon separator */
+    border-left: 1px solid rgba(0, 255, 65, 0.05); /* Very subtle neon separator */
     margin: 0 2px; /* Small space around separator */
 }
 
@@ -951,13 +951,14 @@ tabboxchild:hover {
 
 tabboxchild:checked,
 tabboxchild:active,
-tabboxchild:selected { /* For the selected tab */
+tabboxchild:selected,
+tab { /* For the selected tab, also include generic 'tab' selector */
     background-color: rgba(0, 143, 17, 0.25); /* More prominent selected background */
     color: @selected_fg_color;
     border-color: @borders_color; /* Neon border for selected tab */
-    border-bottom: 1px solid @selected_bg_color; /* Emphasize bottom for active tab */
-    box-shadow: 0 0 10px rgba(0, 255, 65, 0.7), inset 0 0 8px rgba(0, 255, 65, 0.4); /* Strong neon glow */
-    text-shadow: 0 0 6px rgba(0, 255, 65, 0.7);
+    border-bottom: none; /* Make active tab connect to content area */
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.9), inset 0 0 10px rgba(0, 255, 65, 0.6); /* Even stronger neon glow */
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.8);
 }
 
 tabboxchild:disabled {
