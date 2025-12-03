@@ -2,32 +2,30 @@
 
 AUDIO_DIR="$HOME/dotfiles/stow/Audios"
 
-# Function to generate menu entries for wofi
-generate_wofi_menu() {
-    # Find all .mp3 files and loop through them
-    find "$AUDIO_DIR" -type f -name "*.mp3" | while read -r file; do
-        filename=$(basename "$file")
-        # Generate a user-friendly description:
-        # 1. Remove the .mp3 extension
-        # 2. Replace hyphens with spaces
-        # 3. Replace underscores with spaces
-        # 4. Capitalize the first letter of each word (simple approach)
-        description=$(echo "$filename" | sed 's/\.mp3$//' | sed 's/-/ /g' | sed 's/_/ /g' | awk '{for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1))tolower(substr($i,2));}1')
+# Declare an associative array to map descriptions to filenames
+declare -A audio_map
+# Declare an array to hold menu descriptions for wofi
+declare -a menu_descriptions
 
-        echo "$filename - $description"
-    done
-}
+# Populate the map and description array
+while read -r file; do
+    filename=$(basename "$file")
+    description=$(echo "$filename" | sed 's/\.mp3$//' | sed 's/-/ /g' | sed 's/_/ /g' | awk '{for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1))tolower(substr($i,2));}1')
+
+    audio_map["$description"]="$filename"
+    menu_descriptions+=("$description")
+done < <(find "$AUDIO_DIR" -type f -name "*.mp3") # Use process substitution to keep 'audio_map' in current shell
+
+# Convert the array of descriptions into a newline-separated string for wofi
+wofi_input=$(printf "%s\n" "${menu_descriptions[@]}")
 
 # Display wofi menu and get user selection
-# --show dmenu: use dmenu mode (text input)
-# --prompt: set the prompt text
-chosen_entry=$(generate_wofi_menu | wofi --show dmenu --prompt "Choose an audio file:")
+chosen_entry=$(echo "$wofi_input" | wofi --show dmenu --prompt "Choose an audio file:")
 
 # Check if a file was chosen (wofi returns empty if canceled)
 if [ -n "$chosen_entry" ]; then
-    # Extract just the original filename from the chosen string
-    # Assuming format "filename.mp3 - Description"
-    filename_only=$(echo "$chosen_entry" | awk -F ' - ' '{print $1}')
+    # Retrieve the original filename using the chosen description
+    filename_only="${audio_map["$chosen_entry"]}"
     audio_path="$AUDIO_DIR/$filename_only"
 
     # Check if the file exists before attempting to play
