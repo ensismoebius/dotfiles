@@ -105,3 +105,43 @@ QToolTip {
     color: #00FF41;
     padding: 5px;
 }
+
+QComboBox {
+    background-color: rgba(13, 2, 8, 0.95);
+    border: 1px solid #00FF41;
+    border-radius: 2px;
+    padding: 5px;
+    color: #00FF41;
+    selection-background-color: #008F11;
+    selection-color: #00FF41;
+}
+
+QComboBox:focus {
+    border: 2px solid #00FF41;
+    box-shadow: 0 0 10px #00FF41;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left-width: 1px;
+    border-left-color: #00FF41;
+    border-left-style: solid;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+QComboBox::down-arrow {
+    /* No image specified, Qt will use its default down arrow */
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px; /* Adjust as needed */
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #00FF41;
+    background-color: rgba(13, 2, 8, 0.95);
+    selection-background-color: #008F11;
+    color: #00FF41;
+}
