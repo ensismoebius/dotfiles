@@ -70,3 +70,28 @@ menubar menuitem {
     box-shadow: 0 0 8px rgba(0, 255, 65, 0.7);
     text-shadow: 0 0 4px rgba(0, 255, 65, 0.5);
 }
+
+/* GtkNotebook tab styling for separators */
+GtkNotebook tab {
+    border-right: 1px solid @borders_color !important; /* Neon separator line to the right of each tab */
+    margin-right: -1px !important; /* Overlap borders to prevent double thickness */
+    padding-right: 8px !important; /* Space between tab content and the separator */
+    padding-left: 8px !important;
+    background-color: @bg_color !important; /* Ensure tab background matches theme */
+}
+
+GtkNotebook tab:last-child {
+    border-right: none !important;
+    margin-right: 0 !important;
+}
+
+GtkNotebook > header {
+    border-bottom: 1px solid @borders_color !important; /* Neon line under all tabs */
+}
+
+GtkNotebook tab:checked {
+    border-right: 1px solid transparent !important; /* Remove separator on active tab */
+    border-bottom: 2px solid @borders_color !important; /* Highlight active tab with a neon border */
+    margin-bottom: -1px !important; /* Overlap with header's bottom border */
+    background-color: shade(@bg_color, 0.9) !important; /* Slightly lighter background for active tab */
+}

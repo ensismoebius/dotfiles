@@ -108,44 +108,40 @@ QToolTip {
 
 QComboBox {
     background-color: rgba(13, 2, 8, 0.95);
-    border: 2px solid #00FF41; /* Increased border */
-    border-radius: 2px;
-    padding: 3px 25px 3px 5px; /* Top/Bottom 3px, Right 25px (for arrow), Left 5px */
+    border: 1px solid #00FF41; /* Subtle border */
+    border-radius: 4px;
+    padding: 3px 25px 3px 5px;
     color: #00FF41;
     selection-background-color: #008F11;
     selection-color: #00FF41;
-    min-width: 80px; /* Ensure a minimum width */
+    min-width: 80px;
+    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.05); /* Subtle inner shadow */
+    transition: all 160ms ease;
 }
 
-QComboBox:on { /* when the QComboBox is activated */
-    border: 2px solid #00FF41;
-    background-color: rgba(0, 143, 17, 0.3);
+QComboBox:hover {
+    border-color: rgba(0, 255, 65, 0.45);
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.4), inset 0 0 6px rgba(0, 255, 65, 0.06);
+}
+
+QComboBox:focus,
+QComboBox:on { /* when the QComboBox is activated or focused */
+    border-color: #008F11;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.9); /* Strong glow on focus/open */
 }
 
 QComboBox::drop-down {
     subcontrol-origin: padding;
     subcontrol-position: top right;
     width: 20px;
-    border-left-width: 1px;
-    border-left-color: #00FF41;
-    border-left-style: solid;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    background-color: rgba(0, 143, 17, 0.3); /* Added background for visibility */
-}
-
-QComboBox::drop-down {
-    subcontrol-origin: padding;
-    subcontrol-position: top right;
-    width: 20px; /* Width of the drop-down button */
-    border-left: 1px solid #00FF41; /* Separator line */
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    background-color: rgba(0, 143, 17, 0.3); /* Background for the arrow area */
+    border-left: 1px solid rgba(0, 255, 65, 0.2); /* Thin, subtle neon separator */
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: transparent; /* Transparent background for arrow area */
 }
 
 QComboBox::down-arrow {
-    image: none; /* Hide default arrow image if any */
+    image: none;
     border-style: solid;
     border-width: 0px;
     border-top: 6px solid #00FF41; /* Arrow pointing down */
@@ -153,7 +149,7 @@ QComboBox::down-arrow {
     border-right: 6px solid transparent;
     width: 0px;
     height: 0px;
-    margin-left: 4px; /* Center the arrow */
+    margin-left: 4px;
     margin-top: 4px;
 }
 
@@ -165,5 +161,12 @@ QComboBox QAbstractItemView {
 }
 
 QDialog {
-    margin: 3px;
+    padding: 3px;
+    border: 1px solid #00FF41; /* Add border to dialogs for consistency */
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.35);
+}
+
+QMainWindow {
+    padding: 3px;
 }
