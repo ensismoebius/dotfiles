@@ -1,5 +1,21 @@
 /* Nautilus GTK3 overrides for Cyberpunk-Neon theme */
 
+/* General window margins */
+window {
+    margin: 3px;
+}
+
+/* General menu item styling */
+menuitem {
+    padding: 3px 5px; /* Adjust padding within items */
+    margin: 2px 0;   /* Adjust vertical margin between items */
+}
+
+/* Specific styling for menubar items */
+menubar menuitem {
+    margin-right: 5px; /* Ensure horizontal spacing between items */
+}
+
 /* Define colors explicitly to ensure they are available in this override file */
 @define-color bg_color rgba(13, 2, 8, 0.95);
 @define-color fg_color #00FF41;
