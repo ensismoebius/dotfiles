@@ -1,0 +1,5 @@
+script import sys, os, importlib
+script sys.path.insert(0, '/home/ensismoebius/.debug_pretty_printers/lldb')
+script import eigenlldb
+script importlib.reload(eigenlldb)
+script eigenlldb.__lldb_init_module(lldb.debugger, None)
