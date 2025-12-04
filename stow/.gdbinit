@@ -1,1 +1,0 @@
-debug/c_and_cpp/.gdbinit
