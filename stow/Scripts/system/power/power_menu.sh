@@ -1,38 +1,37 @@
 #!/bin/bash
 
-# Define the options with icons
-options="󰤄 Suspend\n⭮ Reboot\n⏻ Shutdown\n⚡️ Power Save - Soft\n⚡️ Power Save - Aggressive\n⚡️ Power Save - Ultimate"
+# Define the options with icons and Pango markup for colors
+options="<span foreground='#33ff33'>󰤄 Suspend</span>\n<span foreground='#ff3333'>⭮ Reboot</span>\n<span foreground='#ff3333'>⏻ Shutdown</span>\n<span foreground='#ffff33'>⚡️ Power Save - Soft</span>\n<span foreground='#ffff33'>⚡️ Power Save - Aggressive</span>\n<span foreground='#ffff33'>⚡️ Power Save - Ultimate</span>"
 
 # Show wofi menu with power options
 selected=$(echo -e "$options" | wofi --dmenu \
     --cache-file /dev/null \
-    --style ~/.config/hypr/wofi/style.css \
+    --style ~/.config/wofi/style.css \
     --prompt "Power" \
-    --width 120 \
-    --height 200 \
+    --width 1093 \
+    --height 614 \
     --location center \
-    --lines 6 \
     --hide-scroll \
-    --columns 1)
+    --allow-markup)
 
 # Handle the selection
 case "$selected" in
-    "󰤄 Suspend")
+    "<span foreground='#33ff33'>󰤄 Suspend</span>")
         systemctl suspend
         ;;
-    "⭮ Reboot")
+    "<span foreground='#ff3333'>⭮ Reboot</span>")
         systemctl reboot
         ;;
-    "⏻ Shutdown")
+    "<span foreground='#ff3333'>⏻ Shutdown</span>")
         systemctl poweroff
         ;;
-    "⚡️ Power Save - Soft")
+    "<span foreground='#ffff33'>⚡️ Power Save - Soft</span>")
         /home/ensismoebius/dotfiles/stow/Scripts/system/power/power_save_soft.sh
         ;;
-    "⚡️ Power Save - Aggressive")
+    "<span foreground='#ffff33'>⚡️ Power Save - Aggressive</span>")
         /home/ensismoebius/dotfiles/stow/Scripts/system/power/power_save_aggressive.sh
         ;;
-    "⚡️ Power Save - Ultimate")
+    "<span foreground='#ffff33'>⚡️ Power Save - Ultimate</span>")
         /home/ensismoebius/dotfiles/stow/Scripts/system/power/power_save_ultimate.sh
         ;;
 esac
