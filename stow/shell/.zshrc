@@ -15,7 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="terminalparty" # set by `omz`
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -87,6 +87,10 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# Improve visibility of zsh-autosuggestions on dark, semi-transparent terminals
+# Recommended for dark themes (alpha=0.8): bright, bold suggestion color
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white,bold'
+
 export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -126,4 +130,15 @@ done
 
 # Add to ~/.zshrc (if using zsh) or ~/.bashrc (if using bash)
 export TERM="foot"
-export TERM_PROGRAM="WezTerm"
+export TERM_PROGRAM="foot"
+
+function zshtheme() {
+  if [ -z "$1" ]; then
+    echo "Available themes:"
+    ls ~/.oh-my-zsh/themes/ | sed 's/.zsh-theme//g'
+  else
+    sed -i.bak "s/^ZSH_THEME=.*/ZSH_THEME=\"$1\"/" ~/.zshrc
+    source ~/.zshrc
+    echo "Changed to theme: $1"
+  fi
+}

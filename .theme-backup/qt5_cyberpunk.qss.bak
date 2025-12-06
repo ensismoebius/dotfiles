@@ -6,7 +6,7 @@ QWidget {
 }
 
 QWidget::item:selected {
-    background-color: #00FF41;
+    background-color: #008F11;
 }
 
 QMenuBar {
@@ -46,9 +46,8 @@ QLineEdit {
     border-radius: 2px;
     padding: 5px;
     color: #00FF41;
-    /* Use bright neon selection background and black text for readability */
-    selection-background-color: #00FF41;
-    selection-color: #000000;
+    selection-background-color: #008F11;
+    selection-color: #00FF41;
 }
 
 QLineEdit:focus {
@@ -182,8 +181,8 @@ QTabBar::tab {
 }
 
 QTabBar::tab:selected {
-    background-color: #00FF41; /* Selected background color */
-    color: #000000; /* Selected foreground color */
+    background-color: #008F11; /* Selected background color */
+    color: #FFFFFF; /* Selected foreground color */
     border: 1px solid #00FF41; /* Neon border for selected tab */
     border-bottom: none; /* No bottom border to connect to pane */
     box-shadow: 0 0 8px rgba(0, 255, 65, 0.7); /* Neon glow */

@@ -18,8 +18,8 @@ Foreground=#00FF41
 ; Text
 Text=#00FF41
 ; Selection
-SelectionBackground=#00FF41
-SelectionForeground=#000000
+SelectionBackground=#008F11
+SelectionForeground=#00FF41
 ; Highlight
 Highlight=#008F11
 HighlightedText=#00FF41
