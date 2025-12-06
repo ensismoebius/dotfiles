@@ -9,7 +9,7 @@ hyprland: The Wayland compositor
 waybar: Status bar
 wofi: Application launcher
 wofi: Used for emoji picker
-kitty: Terminal emulator
+foot: Terminal emulator
 nautilus: File manager
 wlogout: Logout menu
 swaylock: Screen locker
@@ -58,7 +58,7 @@ if ! command -v yay &> /dev/null; then
 fi
 
 # Install all packages with yay
-yay -S --needed hyprland waybar wofi kitty nautilus firefox swww polkit-kde-agent qt5ct qt6ct kvantum papirus-icon-theme ttf-jetbrains-mono noto-fonts ttf-font-awesome network-manager-applet bluez-utils udiskie pipewire-pulse pavucontrol grim slurp wl-clipboard jq zsh hyprcursor wlogout xdg-utils grimblast swaync waypaper catppuccin-cursors-mocha vim ccls swaylock playerctl stow gimp mako
+yay -S --needed hyprland waybar wofi foot nautilus firefox swww polkit-kde-agent qt5ct qt6ct kvantum papirus-icon-theme ttf-jetbrains-mono noto-fonts ttf-font-awesome network-manager-applet bluez-utils udiskie pipewire-pulse pavucontrol grim slurp wl-clipboard jq zsh hyprcursor wlogout xdg-utils grimblast swaync waypaper catppuccin-cursors-mocha vim ccls swaylock playerctl stow gimp mako
 
 # Function: ensure murrine engine is installed for GTK2 visual improvements
 install_murrine_if_missing() {

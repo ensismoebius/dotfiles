@@ -66,7 +66,7 @@ All configurations are located within the `stow/` directory, organized by packag
     │
     ├── config/
     │   └── .config/
-    │       ├── kitty/
+    foot/
     │       ├── waybar/
     │       ├── mako/
     │       └── ...
@@ -120,7 +120,7 @@ The setup includes a cyberpunk-inspired theme with:
 - Dynamic color schemes
 - Customizable Waybar modules
 
-To customize a component, simply edit the corresponding files within the `stow/` directory. For example, to change your Kitty terminal settings, you would edit `stow/config/.config/kitty/kitty.conf`. After saving the change, the symlink in your home directory will automatically reflect the new configuration.
+To customize a component, simply edit the corresponding files within the `stow/` directory. For example, to change your foot terminal settings, you would edit `stow/config/.config/foot/foot.ini`. After saving the change, the symlink in your home directory will automatically reflect the new configuration.
 
 ## 🛠️ Scripts
 

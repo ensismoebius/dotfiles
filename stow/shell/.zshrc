@@ -124,4 +124,6 @@ for f in ~/.config/bashrc/*(N); do
     fi
 done
 
-
+# Add to ~/.zshrc (if using zsh) or ~/.bashrc (if using bash)
+export TERM="foot"
+export TERM_PROGRAM="WezTerm"
