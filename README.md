@@ -122,6 +122,31 @@ The setup includes a cyberpunk-inspired theme with:
 
 To customize a component, simply edit the corresponding files within the `stow/` directory. For example, to change your foot terminal settings, you would edit `stow/config/.config/foot/foot.ini`. After saving the change, the symlink in your home directory will automatically reflect the new configuration.
 
+## Troubleshooting
+
+### Cannot type 'ã' (or other composed characters) in GNOME Text Editor
+
+If you're experiencing issues typing composed characters like 'ã' in GNOME Text Editor (or similar GTK applications), it might be due to the input method module. To fix this, ensure the `GTK_IM_MODULE` environment variable is correctly set.
+
+1.  **Verify the fix:**
+    First, test if setting the `GTK_IM_MODULE` works by running GNOME Text Editor from your terminal with the following command:
+    ```bash
+    GTK_IM_MODULE=gtk-im-context-simple gnome-text-editor
+    ```
+    If you can now type 'ã' correctly, proceed to the next step to make the change permanent.
+
+2.  **Make the fix permanent:**
+    This configuration is managed within your `dotfiles` in the `stow/config/.config/environment.d/` directory. The solution involves creating or modifying a file to set the `GTK_IM_MODULE` environment variable.
+
+    Ensure you have a file named `99-gtk-input.conf` (or similar) in `stow/config/.config/environment.d/` with the following content:
+    ```
+    GTK_IM_MODULE=gtk-im-context-simple
+    ```
+    This file is automatically symlinked to `~/.config/environment.d/99-gtk-input.conf` by GNU Stow.
+
+3.  **Apply the changes:**
+    For the environment variable to take effect, you need to either log out and log back in, or restart your user session.
+
 ## 🛠️ Scripts
 
 Utility scripts are located in the `stow/scripts/` package, which links them to `~/Scripts/`. These include tools for system configuration, hardware management, and more.
