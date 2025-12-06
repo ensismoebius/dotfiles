@@ -11,7 +11,7 @@
 #PopupAutoCompleteRichResult,
 .autocomplete-richlistbox,
 .urlbarView {
-  background-color: rgba(0,0,0,0.6) !important; /* semi-opaque black */
+  background-color: rgba(0,0,0,0.75) !important; /* semi-opaque black */
   color: #00FF41 !important; /* neon green text */
   background-clip: padding-box !important;
   box-shadow: none !important;
@@ -30,7 +30,7 @@
 .richlistitem[selected],
 .autocomplete-richlistbox > .autocomplete-richitem[selected],
 .urlbarView .urlbarView-row[selected] {
-  background-color: rgba(0,0,0,0.6) !important;
+  background-color: rgba(0,0,0,0.9) !important;
   color: #00FF41 !important;
 }
 
@@ -49,11 +49,4 @@
 #urlbar-text {
   background-color: rgba(0,0,0,0.6) !important;
   color: #00FF41 !important;
-}
-
-/* Visible selection in URL bar */
-#urlbar-input::selection,
-#urlbar-input::-moz-selection {
-  background-color: rgb(0, 120, 215) !important; /* A standard blue */
-  color: white !important;
 }
