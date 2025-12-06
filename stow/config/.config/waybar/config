@@ -98,6 +98,19 @@
             "icon-size": 14
         }
     },
+
+    "hyprland/workspaces#taskbar": {
+        "format": "", // Empty format to hide workspace numbers
+        "show-special": false,
+        "all-outputs": true,
+        "workspace-taskbar": {
+            "enable": true,
+            "format": "{icon} {title}", // Display icon and title for windows
+            "icon-size": 14,
+            "spacing": 5,
+            "active-only": false // Show all windows, not just active
+        }
+    },
     "custom/mpris-icon": {
         "format": "{text}",
         "exec": "~/Scripts/ui/mpris_icon.sh",
@@ -141,7 +154,10 @@
         "on-click": "activate",
         "on-click-middle": "close",
         "ignore-list": [
-            "floating-terminal"
+            "floating-terminal",
+            "foot",
+            "org.gnome.TextEditor",
+            "org.gnome.Nautilus"
         ]
     },
     "idle_inhibitor": {
