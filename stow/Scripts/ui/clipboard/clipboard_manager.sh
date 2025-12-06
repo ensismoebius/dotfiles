@@ -1,9 +1,6 @@
 #!/bin/bash
 
 # Configuration
-#!/bin/bash
-
-# Configuration
 WOFI_CONFIG="$HOME/.config/hypr/wofi/clipboard.css"
 
 # Create config directory if it doesn't exist
