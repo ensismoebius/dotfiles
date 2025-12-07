@@ -18,6 +18,15 @@
     }
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* -- Global rules -- */
 * {
     border: none;
@@ -184,11 +193,12 @@ window#waybar.hidden {
     color: #008F11;
     background: transparent;
     padding: 4px 4px;
-    transition: all 0.1s ease;
+    transition: all 0.3s ease;
     border: 0px;
     border-right: 1px solid rgba(0, 255, 64, 0.384);
     border-radius: 5px;
     margin: 0 3px;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 #workspaces button.occupied {
