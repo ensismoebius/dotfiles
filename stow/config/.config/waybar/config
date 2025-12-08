@@ -99,15 +99,15 @@
     },
 
     "hyprland/workspaces#taskbar": {
-        "format": "", // Empty format to hide workspace numbers
+        "format": "",
         "show-special": false,
         "all-outputs": true,
         "workspace-taskbar": {
             "enable": true,
-            "format": "{icon} {title}", // Display icon and title for windows
+            "format": "{icon} {title}",
             "icon-size": 14,
             "spacing": 5,
-            "active-only": false // Show all windows, not just active
+            "active-only": false
         }
     },
     "custom/mpris-icon": {

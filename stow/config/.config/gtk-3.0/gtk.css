@@ -20,8 +20,16 @@ menubar menuitem {
 @define-color bg_color rgba(13, 2, 8, 0.95);
 @define-color fg_color #00FF41;
 @define-color selected_bg_color #008F11;
+@define-color selected_fg_color #E0FFE0;
 @define-color borders_color #00FF41;
 @define-color unfocused_borders_color rgba(0, 255, 65, 0.95);
+
+
+/* General selection styling for all GTK3 applications */
+*:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
 
 
 /* Ensure the file-view area is consistently dark */
