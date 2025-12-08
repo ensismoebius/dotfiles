@@ -7,11 +7,10 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "modules-left": [
-        "hyprland/workspaces",
         "cpu",
         "memory",
         "disk",
-        "wlr/taskbar"
+        "hyprland/workspaces"
     ],
     "modules-center": [
         "custom/mpris-icon",
