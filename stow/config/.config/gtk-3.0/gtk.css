@@ -1,105 +1,120 @@
-/* Nautilus GTK3 overrides for Cyberpunk-Neon theme */
+/* Hardened GTK3 overrides to ensure visible borders for buttons, checkbuttons, radios */
+/* These use strong selectors and !important to override theme rules */
 
-/* General window margins */
-window {
-    margin: 3px;
+/* Buttons */
+GtkButton, .button, button, GtkHeaderBar GtkButton, .titlebar GtkButton {
+  border: 1px solid rgba(255,255,255,0.10) !important;
+  border-radius: 6px !important;
+  background-clip: padding-box !important;
+  box-shadow: none !important;
 }
 
-/* General menu item styling */
-menuitem {
-    padding: 3px 5px; /* Adjust padding within items */
-    margin: 2px 0;   /* Adjust vertical margin between items */
+/* Checkboxes / radios (GTK3 selectors) */
+GtkCheckButton > GtkBox > GtkCheck,
+GtkCheckButton > GtkCheck,
+GtkRadioButton > GtkBox > GtkRadio,
+GtkRadioButton > GtkRadio,
+.check,
+.radio,
+GtkToggleButton > GtkToggle,
+GtkCheck,
+GtkRadio {
+  border: 1px solid rgba(255,255,255,0.20) !important;
+  background-color: transparent !important;
+  color: transparent !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
 }
 
-/* Specific styling for menubar items */
-menubar menuitem {
-    margin-right: 5px; /* Ensure horizontal spacing between items */
+/* Checked state: show mark/dot */
+GtkCheckButton:checked > GtkBox > GtkCheck,
+GtkCheckButton:checked > GtkCheck {
+  /* Checkmark/dot color */
+  color: white !important;
+  /* Blue accent background */
+  background-color: rgba(0,120,215,0.3) !important;
+  /* Darker blue border */
+  border-color: rgba(0,120,215,0.5) !important;
 }
 
-/* Define colors explicitly to ensure they are available in this override file */
-@define-color bg_color rgba(13, 2, 8, 0.95);
-@define-color fg_color #00FF41;
-@define-color selected_bg_color #008F11;
-@define-color selected_fg_color #E0FFE0;
-@define-color borders_color #00FF41;
-@define-color unfocused_borders_color rgba(0, 255, 65, 0.95);
-
-
-/* General selection styling for all GTK3 applications */
-*:selected {
-    background-color: @selected_bg_color;
-    color: @selected_fg_color;
+GtkRadioButton:checked > GtkBox > GtkRadio,
+GtkRadioButton:checked > GtkRadio {
+  /* Checkmark/dot color */
+  color: white !important;
+  /* Blue accent background */
+  background-color: rgba(0,120,215,0.3) !important;
+  /* Darker blue border */
+  border-color: rgba(0,120,215,0.5) !important;
+  border-radius: 50% !important;
 }
 
-
-/* Ensure the file-view area is consistently dark */
-.nautilus-window .view,
-.nautilus-window GtkIconView,
-.nautilus-window GtkTreeView {
-    background-color: rgba(13, 2, 8, 1); /* Fully opaque dark background */
+/* Hover state for checkboxes/radios */
+GtkCheckButton:hover > GtkBox > GtkCheck,
+GtkCheckButton:hover > GtkCheck,
+GtkRadioButton:hover > GtkBox > GtkRadio,
+GtkRadioButton:hover > GtkRadio,
+.check:hover,
+.radio:hover {
+  background-color: rgba(255,255,255,0.06) !important;
 }
 
-/* Address bar styling */
-.nautilus-window .pathbar,
-.nautilus-window .path-bar {
-    background-color: rgba(13, 2, 8, 0.9); /* Slightly darker background for the bar itself */
-    border-bottom: 1px solid @borders_color; /* Neon border at the bottom */
+/* Focus outline for keyboard navigation */
+*:focus {
+  outline: 2px solid rgba(0,120,215,0.18) !important;
+  outline-offset: 2px !important;
 }
 
-.nautilus-window .pathbar GtkEntry,
-.nautilus-window .path-bar GtkEntry {
-    background-color: rgba(13, 2, 8, 0.86); /* Existing entry background */
-    color: @fg_color;
-    border: 1px solid transparent; /* Start with transparent border */
-    padding: 6px 8px;
-    box-shadow: inset 0 0 6px rgba(0, 255, 65, 0.05);
-    border-radius: 4px;
+/* Keep headerbar buttons slightly subtler but visible */
+GtkHeaderBar GtkButton, .titlebar GtkButton {
+  border: 1px solid rgba(255,255,255,0.06) !important;
 }
 
-.nautilus-window .pathbar GtkEntry:focus,
-.nautilus-window .path-bar GtkEntry:focus {
-    background-color: rgba(13, 2, 8, 0.95); /* Slightly darker background when focused */
-    border-color: @borders_color; /* Keep neon border */
-    box-shadow: 0 0 8px rgba(0, 255, 65, 0.6), inset 0 0 4px rgba(0, 255, 65, 0.08); /* More subtle glow */
+/* Text inputs */
+GtkEntry, .entry {
+  border: 1px solid rgba(255,255,255,0.15) !important;
+  background-color: rgba(0,0,0,0.2) !important;
+  border-radius: 6px !important;
+  /* Ensure text color is white */
+  color: white !important;
 }
 
-/* Sidebar styling */
-.nautilus-window .sidebar,
-.nautilus-window .sidebar GtkListBox,
-.nautilus-window .sidebar GtkTreeView {
-    background-color: rgba(13, 2, 8, 0.85); /* Dark background, slightly transparent */
-    border-right: 1px solid rgba(0, 255, 65, 0.2); /* Subtle neon right border */
+GtkEntry:focus, .entry:focus {
+  /* Blue accent border on focus */
+  border-color: rgba(0,120,215,0.5) !important;
 }
 
-.nautilus-window .sidebar GtkListBox row:selected,
-.nautilus-window .sidebar GtkTreeView row:selected {
-    background-color: @selected_bg_color;
-    color: @selected_fg_color;
-    box-shadow: 0 0 8px rgba(0, 255, 65, 0.7);
-    text-shadow: 0 0 4px rgba(0, 255, 65, 0.5);
+GtkEntry::placeholder, .entry::placeholder {
+  /* Light gray for placeholder text */
+  color: rgba(255,255,255,0.4) !important;
 }
 
-/* GtkNotebook tab styling for separators */
-GtkNotebook tab {
-    border-right: 1px solid @borders_color !important; /* Neon separator line to the right of each tab */
-    margin-right: -1px !important; /* Overlap borders to prevent double thickness */
-    padding-right: 8px !important; /* Space between tab content and the separator */
-    padding-left: 8px !important;
-    background-color: @bg_color !important; /* Ensure tab background matches theme */
+/* Tabs */
+.notebook tab {
+  border: 1px solid transparent !important;
+  border-bottom: none !important;
+  padding: 8px 12px !important;
+  /* Inactive tab text color */
+  color: rgba(255,255,255,0.7) !important;
 }
 
-GtkNotebook tab:last-child {
-    border-right: none !important;
-    margin-right: 0 !important;
+.notebook tab:hover:not(:checked) {
+  /* Subtle hover for inactive tabs */
+  background-color: rgba(255,255,255,0.03) !important;
 }
 
-GtkNotebook > header {
-    border-bottom: 1px solid @borders_color !important; /* Neon line under all tabs */
+.notebook tab:checked {
+  border-color: rgba(255,255,255,0.15) !important;
+  /* More prominent active tab background */
+  background-color: rgba(255,255,255,0.08) !important;
+  border-radius: 6px 6px 0 0 !important;
+  /* Active tab text color */
+  color: white !important;
 }
 
-GtkNotebook tab:checked {
-    border-right: 1px solid transparent !important; /* Remove separator on active tab */
-    border-bottom: 2px solid @borders_color !important; /* Highlight active tab with a neon border */
-    margin-bottom: -1px !important; /* Overlap with header's bottom border */
-    background-color: shade(@bg_color, 0.9) !important; /* Slightly lighter background for active tab */
+/* Selected items in lists/views */
+*:selected, * .list-row:selected {
+  background-color: rgba(0, 120, 215, 0.25) !important;
+  color: white !important;
 }
