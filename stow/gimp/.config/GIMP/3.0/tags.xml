@@ -1171,124 +1171,124 @@
   <resource identifier="internal:gimp-palette-color-history//Histórico de cores" checksum="(null)">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Bears.gpl//Bears" checksum="96abba072a2eaf27d635d60d241be7b8">
+  <resource identifier="external:${gimp_data_dir}/palettes/Bears.gpl//Bears" checksum="3ed389c359ba56be2e73587ffb7bd722">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Bgold.gpl//Bgold" checksum="9d5d4e99d163ef17351c9e977f57a81a">
+  <resource identifier="external:${gimp_data_dir}/palettes/Bgold.gpl//Bgold" checksum="7e7cda3b09545b06d76337e19864f7f6">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Blues.gpl//Blues" checksum="0ff3772fa4aae56f471989714ef21b7a">
+  <resource identifier="external:${gimp_data_dir}/palettes/Blues.gpl//Blues" checksum="f0119c04b639af8e5dda5715562b75cd">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Borders.gpl//Borders" checksum="637161a070a51e6715f7774f972d4b4d">
+  <resource identifier="external:${gimp_data_dir}/palettes/Borders.gpl//Borders" checksum="9e29887a172e347c0d2b3529af71f073">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Browns_And_Yellows.gpl//Browns And Yellows" checksum="f9abc124aa941717ede6a2f65309aa78">
+  <resource identifier="external:${gimp_data_dir}/palettes/Browns_And_Yellows.gpl//Browns And Yellows" checksum="19d64d023ddaa35e8c56d510ec5d2df8">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Caramel.gpl//Caramel" checksum="a9913ff1e5cb6beb9774c8c0683f8286">
+  <resource identifier="external:${gimp_data_dir}/palettes/Caramel.gpl//Caramel" checksum="a601e78da40f56db2a130f378cace909">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Cascade.gpl//Cascade" checksum="5ae09d078afbf3b7572609a7e704ea38">
+  <resource identifier="external:${gimp_data_dir}/palettes/Cascade.gpl//Cascade" checksum="70b59f639df92af717e10a77e94fdcce">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/China.gpl//China" checksum="046572ad1fac2b7a9d54048db1c1aa02">
+  <resource identifier="external:${gimp_data_dir}/palettes/China.gpl//China" checksum="5a866f5440ce9a74e7ec81225d1c6c43">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Coldfire.gpl//Coldfire" checksum="5b65fc5c93f6b72c246200bfa61bddfe">
+  <resource identifier="external:${gimp_data_dir}/palettes/Coldfire.gpl//Coldfire" checksum="bf31526994e072c2c9af82fa4e1aa96d">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Cool_Colors.gpl//Cool Colors" checksum="dce01fdce289f4b32d68503c474eee39">
+  <resource identifier="external:${gimp_data_dir}/palettes/Cool_Colors.gpl//Cool Colors" checksum="e3ea26473b2b64c80cf6e9ee3ce80475">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Cranes.gpl//Cranes" checksum="6b635df34fe31a301a9ac63c119e131b">
+  <resource identifier="external:${gimp_data_dir}/palettes/Cranes.gpl//Cranes" checksum="711528e1f501c2e37998ac25705254a9">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Dark_pastels.gpl//Dark pastels" checksum="d441ca563e84c056eef153b654af6046">
+  <resource identifier="external:${gimp_data_dir}/palettes/Dark_pastels.gpl//Dark pastels" checksum="974bd577346b9b7ca4adcd953fb7363a">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Default.gpl//Default" checksum="f3965aab8cb19ad13e254fb109166a2d">
+  <resource identifier="external:${gimp_data_dir}/palettes/Default.gpl//Default" checksum="72b42dbc0f7482ddd503714f7620088e">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Ega.gpl//Ega" checksum="0e39f395e4510666f0c49c3405800d9d">
+  <resource identifier="external:${gimp_data_dir}/palettes/Ega.gpl//Ega" checksum="1495613c0dd82fc0445dc6ea9951292b">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Firecode.gpl//Firecode" checksum="78c0f808042ae1f5576225038ed94158">
+  <resource identifier="external:${gimp_data_dir}/palettes/Firecode.gpl//Firecode" checksum="722399e8ed34f21f94c16497423860aa">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Gold.gpl//Gold" checksum="176a57dd2ad20b32986b072b931ae48a">
+  <resource identifier="external:${gimp_data_dir}/palettes/Gold.gpl//Gold" checksum="48921c1927d61dd9b6c5bf1c39ff60c7">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Grayblue.gpl//Grayblue" checksum="0ddce2716e426fb95215dfc1a544d250">
+  <resource identifier="external:${gimp_data_dir}/palettes/Grayblue.gpl//Grayblue" checksum="c9dcfdfc5ee317fc5b89d94f28b1cc07">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Grays.gpl//Grays" checksum="428f98d50b2878c437d1702dd3fb4769">
+  <resource identifier="external:${gimp_data_dir}/palettes/Grays.gpl//Grays" checksum="2ecf6abd72a8052aa3fffa31f35d1820">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/GrayViolet.gpl//GrayViolet" checksum="a7c5ee5cd38ebd8aa4b07f1d44808cc0">
+  <resource identifier="external:${gimp_data_dir}/palettes/GrayViolet.gpl//GrayViolet" checksum="a56c07568df1dc8b942225a6611e0e10">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Greens.gpl//Greens" checksum="e3e637bf1f4814bcad0a3756b93842de">
+  <resource identifier="external:${gimp_data_dir}/palettes/Greens.gpl//Greens" checksum="db4eb6a0e4d99fabb7dd20023c65b652">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Hilite.gpl//Hilite" checksum="89c16e4dc6efeafffc3b9ef8895a63fe">
+  <resource identifier="external:${gimp_data_dir}/palettes/Hilite.gpl//Hilite" checksum="5f06b9847f78497d6e59beadf3be5cb1">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Khaki.gpl//Khaki" checksum="b615b0520d35f8a3d051e93cb12e57f8">
+  <resource identifier="external:${gimp_data_dir}/palettes/Khaki.gpl//Khaki" checksum="be1e638d3d60735f04efad8fe775ff7b">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Lights.gpl//Lights" checksum="6108b3bcead9fe66761baea70e539b1e">
+  <resource identifier="external:${gimp_data_dir}/palettes/Lights.gpl//Lights" checksum="09908ab7e723da6ca48bf1f822e4460b">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Muted.gpl//Muted" checksum="303cf29d9c2795a0eb32e4f77c0038c1">
+  <resource identifier="external:${gimp_data_dir}/palettes/Muted.gpl//Muted" checksum="c6444585df853ad8e70ecdc2a717330a">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Named_Colors.gpl//Named Colors" checksum="51765940827da2aa6dd24c5d3df68e16">
+  <resource identifier="external:${gimp_data_dir}/palettes/Named_Colors.gpl//Named Colors" checksum="ef1a7f2c081d3f4c95d20f46be662391">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/News3.gpl//News3" checksum="90be16ed74145f46ebf14bcacb5cd173">
+  <resource identifier="external:${gimp_data_dir}/palettes/News3.gpl//News3" checksum="7e4fcb11a55eacbbeb5b7c30567da424">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Op2.gpl//Op2" checksum="90da091272302eb50c35b68dad102729">
+  <resource identifier="external:${gimp_data_dir}/palettes/Op2.gpl//Op2" checksum="90ff06456aa91aa18ab7e6376b64ccd0">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Paintjet.gpl//Paintjet" checksum="8e491ed5b2bbcf03203d8ff14f7dc612">
+  <resource identifier="external:${gimp_data_dir}/palettes/Paintjet.gpl//Paintjet" checksum="ca269c8a6e950897abf7316219803836">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Pastels.gpl//Pastels" checksum="7ee79fcf6d70a65dcf35dc690e49e5af">
+  <resource identifier="external:${gimp_data_dir}/palettes/Pastels.gpl//Pastels" checksum="28ac567ef5dcbdc4381fab90fd477fbd">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Plasma.gpl//Plasma" checksum="ee822626fec23db8a2d8fb1c54f82185">
+  <resource identifier="external:${gimp_data_dir}/palettes/Plasma.gpl//Plasma" checksum="37a3cb6a8a9e88b2e50e67644f9628b7">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Reds.gpl//Reds" checksum="1bb82463c9e426bb74428e50eae629e7">
+  <resource identifier="external:${gimp_data_dir}/palettes/Reds.gpl//Reds" checksum="076cdcbf49ec1a7e252b1bd9540b0de6">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Reds_And_Purples.gpl//Reds And Purples" checksum="aa2bf26def06af2d9f811b1699700b0a">
+  <resource identifier="external:${gimp_data_dir}/palettes/Reds_And_Purples.gpl//Reds And Purples" checksum="934f8c543b4cd7264396a8428d5742b3">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Royal.gpl//Royal" checksum="28d279474031a2d2e83070570d02e630">
+  <resource identifier="external:${gimp_data_dir}/palettes/Royal.gpl//Royal" checksum="a0d9871e59077f769385ee2cbb590e04">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Tango.gpl//Tango Icon Theme" checksum="1e18cb7b33a8cba3bffa989d67327234">
+  <resource identifier="external:${gimp_data_dir}/palettes/Tango.gpl//Tango Icon Theme" checksum="66b16825748ad747be6c921aec651cf9">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Topographic.gpl//Topographic" checksum="eb2fe1d83ffbd162e4d761af9a058d79">
+  <resource identifier="external:${gimp_data_dir}/palettes/Topographic.gpl//Topographic" checksum="d2eacb0702be781978237967aff51691">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Visibone.gpl//Visibone" checksum="ca280de8c4d209b54cecf5b8e05632ae">
+  <resource identifier="external:${gimp_data_dir}/palettes/Visibone.gpl//Visibone" checksum="1a8158560e21eeb08d30f8ed01b52ddf">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Visibone_2.gpl//Visibone 2" checksum="500bea296508ce17a1f2b604b862e218">
+  <resource identifier="external:${gimp_data_dir}/palettes/Visibone_2.gpl//Visibone 2" checksum="32b9c16cb0d60a6082a62565eac06a7d">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Volcano.gpl//Volcano" checksum="43816ee14860afa752b4a36b12dd866f">
+  <resource identifier="external:${gimp_data_dir}/palettes/Volcano.gpl//Volcano" checksum="e297bf6851e3105841fe96ee7181cd27">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Warm_Colors.gpl//Warm Colors" checksum="c868792b68248b4f8a97b8ebcd8c708b">
+  <resource identifier="external:${gimp_data_dir}/palettes/Warm_Colors.gpl//Warm Colors" checksum="8d23eaac9424c91e688f64ac6d903218">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Web.gpl//Web" checksum="311414549573462fc3fab6b06e948373">
+  <resource identifier="external:${gimp_data_dir}/palettes/Web.gpl//Web" checksum="552a12f86e9699fa494b3735d5ad5ffa">
   </resource>
 
   <resource identifier="internal:gimp-font-standard-alias: Monospace//Monospace" checksum="(null)">
@@ -2401,76 +2401,19 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoColorEmoji.ttf//Noto Color Emoji Regular" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoFangsongKSSRotated-Regular.ttf//Noto Fangsong KSS Rotated Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoFangsongKSSVertical-Regular.ttf//Noto Fangsong KSS Vertical Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-Black.ttf//Noto Kufi Arabic Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-Bold.ttf//Noto Kufi Arabic Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-ExtraBold.ttf//Noto Kufi Arabic ExtraBold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-ExtraLight.ttf//Noto Kufi Arabic ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-Light.ttf//Noto Kufi Arabic Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-Medium.ttf//Noto Kufi Arabic Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-Regular.ttf//Noto Kufi Arabic Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-SemiBold.ttf//Noto Kufi Arabic SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-Thin.ttf//Noto Kufi Arabic Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoMusic-Regular.ttf//Noto Music Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoNaskhArabic-Bold.ttf//Noto Naskh Arabic Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoNaskhArabic-Medium.ttf//Noto Naskh Arabic Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoNaskhArabic-Regular.ttf//Noto Naskh Arabic Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoNaskhArabic-SemiBold.ttf//Noto Naskh Arabic SemiBold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoNaskhArabicUI-Bold.ttf//Noto Naskh Arabic UI Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoNaskhArabicUI-Medium.ttf//Noto Naskh Arabic UI Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoNaskhArabicUI-Regular.ttf//Noto Naskh Arabic UI Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoNaskhArabicUI-SemiBold.ttf//Noto Naskh Arabic UI Semi Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoNastaliqUrdu-Bold.ttf//Noto Nastaliq Urdu Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoNastaliqUrdu-Regular.ttf//Noto Nastaliq Urdu Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoRashiHebrew-Black.ttf//Noto Rashi Hebrew Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoRashiHebrew-Bold.ttf//Noto Rashi Hebrew Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoRashiHebrew-ExtraBold.ttf//Noto Rashi Hebrew ExtraBold" checksum="(null)">
@@ -2479,40 +2422,7 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoRashiHebrew-ExtraLight.ttf//Noto Rashi Hebrew ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoRashiHebrew-Light.ttf//Noto Rashi Hebrew Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoRashiHebrew-Medium.ttf//Noto Rashi Hebrew Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoRashiHebrew-Regular.ttf//Noto Rashi Hebrew Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoRashiHebrew-SemiBold.ttf//Noto Rashi Hebrew SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoRashiHebrew-Thin.ttf//Noto Rashi Hebrew Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansAdlam-Bold.ttf//Noto Sans Adlam Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansAdlam-Regular.ttf//Noto Sans Adlam Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansAdlamUnjoined-Bold.ttf//Noto Sans Adlam Unjoined Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansAdlamUnjoined-Regular.ttf//Noto Sans Adlam Unjoined Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansAnatolianHieroglyphs-Regular.ttf//Noto Sans Anatolian Hieroglyphs Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArabic-Black.ttf//Noto Sans Arabic Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArabic-Bold.ttf//Noto Sans Arabic Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansArabic-Condensed.ttf//Noto Sans Arabic Condensed" checksum="(null)">
@@ -2575,15 +2485,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansArabic-ExtraLight.ttf//Noto Sans Arabic ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArabic-Light.ttf//Noto Sans Arabic Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArabic-Medium.ttf//Noto Sans Arabic Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArabic-Regular.ttf//Noto Sans Arabic Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansArabic-SemiBold.ttf//Noto Sans Arabic SemiBold" checksum="(null)">
   </resource>
 
@@ -2612,15 +2513,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansArabic-SemiCondensedThin.ttf//Noto Sans Arabic SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArabic-Thin.ttf//Noto Sans Arabic Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArabicUI-Black.ttf//Noto Sans Arabic UI Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArabicUI-Bold.ttf//Noto Sans Arabic UI Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansArabicUI-Condensed.ttf//Noto Sans Arabic UI Condensed" checksum="(null)">
@@ -2683,15 +2575,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansArabicUI-ExtraLight.ttf//Noto Sans Arabic UI ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArabicUI-Light.ttf//Noto Sans Arabic UI Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArabicUI-Medium.ttf//Noto Sans Arabic UI Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArabicUI-Regular.ttf//Noto Sans Arabic UI Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansArabicUI-SemiBold.ttf//Noto Sans Arabic UI SemiBold" checksum="(null)">
   </resource>
 
@@ -2720,15 +2603,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansArabicUI-SemiCondensedThin.ttf//Noto Sans Arabic UI SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArabicUI-Thin.ttf//Noto Sans Arabic UI Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArmenian-Black.ttf//Noto Sans Armenian Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArmenian-Bold.ttf//Noto Sans Armenian Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansArmenian-Condensed.ttf//Noto Sans Armenian Condensed" checksum="(null)">
@@ -2791,15 +2665,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansArmenian-ExtraLight.ttf//Noto Sans Armenian ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArmenian-Light.ttf//Noto Sans Armenian Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArmenian-Medium.ttf//Noto Sans Armenian Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArmenian-Regular.ttf//Noto Sans Armenian Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansArmenian-SemiBold.ttf//Noto Sans Armenian SemiBold" checksum="(null)">
   </resource>
 
@@ -2830,55 +2695,13 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansArmenian-SemiCondensedThin.ttf//Noto Sans Armenian SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansArmenian-Thin.ttf//Noto Sans Armenian Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansAvestan-Regular.ttf//Noto Sans Avestan Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBalinese-Bold.ttf//Noto Sans Balinese Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBalinese-Medium.ttf//Noto Sans Balinese Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBalinese-Regular.ttf//Noto Sans Balinese Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBalinese-SemiBold.ttf//Noto Sans Balinese SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBamum-Bold.ttf//Noto Sans Bamum Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBamum-Medium.ttf//Noto Sans Bamum Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBamum-Regular.ttf//Noto Sans Bamum Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBamum-SemiBold.ttf//Noto Sans Bamum SemiBold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBassaVah-Bold.ttf//Noto Sans Bassa Vah Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBassaVah-Medium.ttf//Noto Sans Bassa Vah Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBassaVah-Regular.ttf//Noto Sans Bassa Vah Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBassaVah-SemiBold.ttf//Noto Sans Bassa Vah SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBatak-Regular.ttf//Noto Sans Batak Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-Black.ttf//Noto Sans Bengali Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-Bold.ttf//Noto Sans Bengali Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-Condensed.ttf//Noto Sans Bengali Condensed" checksum="(null)">
@@ -2941,15 +2764,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-ExtraLight.ttf//Noto Sans Bengali ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-Light.ttf//Noto Sans Bengali Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-Medium.ttf//Noto Sans Bengali Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-Regular.ttf//Noto Sans Bengali Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-SemiBold.ttf//Noto Sans Bengali SemiBold" checksum="(null)">
   </resource>
 
@@ -2980,15 +2794,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-SemiCondensedThin.ttf//Noto Sans Bengali SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-Thin.ttf//Noto Sans Bengali Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengaliUI-Black.ttf//Noto Sans Bengali UI Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengaliUI-Bold.ttf//Noto Sans Bengali UI Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBengaliUI-Condensed.ttf//Noto Sans Bengali UI Condensed Regular" checksum="(null)">
   </resource>
 
@@ -3001,25 +2806,10 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBengaliUI-ExtraLight.ttf//Noto Sans Bengali UI ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengaliUI-Light.ttf//Noto Sans Bengali UI Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengaliUI-Medium.ttf//Noto Sans Bengali UI Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengaliUI-Regular.ttf//Noto Sans Bengali UI Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBengaliUI-SemiBold.ttf//Noto Sans Bengali UI SemiBold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBengaliUI-SemiCondensed.ttf//Noto Sans Bengali UI SemiCondensed Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengaliUI-Thin.ttf//Noto Sans Bengali UI Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBhaiksuki-Regular.ttf//Noto Sans Bhaiksuki Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSans-Black.ttf//Noto Sans Black" checksum="(null)">
@@ -3034,55 +2824,13 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSans-BoldItalic.ttf//Noto Sans Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBrahmi-Regular.ttf//Noto Sans Brahmi Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBuginese-Regular.ttf//Noto Sans Buginese Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBuhid-Regular.ttf//Noto Sans Buhid Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCanadianAboriginal-Black.ttf//Noto Sans Canadian Aboriginal Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCanadianAboriginal-Bold.ttf//Noto Sans Canadian Aboriginal Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansCanadianAboriginal-ExtraBold.ttf//Noto Sans Canadian Aboriginal ExtraBold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansCanadianAboriginal-ExtraLight.ttf//Noto Sans Canadian Aboriginal ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCanadianAboriginal-Light.ttf//Noto Sans Canadian Aboriginal Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCanadianAboriginal-Medium.ttf//Noto Sans Canadian Aboriginal Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCanadianAboriginal-Regular.ttf//Noto Sans Canadian Aboriginal Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansCanadianAboriginal-SemiBold.ttf//Noto Sans Canadian Aboriginal SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCanadianAboriginal-Thin.ttf//Noto Sans Canadian Aboriginal Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCarian-Regular.ttf//Noto Sans Carian Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCaucasianAlbanian-Regular.ttf//Noto Sans Caucasian Albanian Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansChakma-Regular.ttf//Noto Sans Chakma Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCham-Black.ttf//Noto Sans Cham Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCham-Bold.ttf//Noto Sans Cham Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansCham-ExtraBold.ttf//Noto Sans Cham ExtraBold" checksum="(null)">
@@ -3091,25 +2839,7 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansCham-ExtraLight.ttf//Noto Sans Cham ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCham-Light.ttf//Noto Sans Cham Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCham-Medium.ttf//Noto Sans Cham Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCham-Regular.ttf//Noto Sans Cham Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansCham-SemiBold.ttf//Noto Sans Cham SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCham-Thin.ttf//Noto Sans Cham Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCherokee-Black.ttf//Noto Sans Cherokee Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCherokee-Bold.ttf//Noto Sans Cherokee Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansCherokee-ExtraBold.ttf//Noto Sans Cherokee ExtraBold" checksum="(null)">
@@ -3118,22 +2848,7 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansCherokee-ExtraLight.ttf//Noto Sans Cherokee ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCherokee-Light.ttf//Noto Sans Cherokee Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCherokee-Medium.ttf//Noto Sans Cherokee Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCherokee-Regular.ttf//Noto Sans Cherokee Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansCherokee-SemiBold.ttf//Noto Sans Cherokee SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCherokee-Thin.ttf//Noto Sans Cherokee Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansChorasmian-Regular.ttf//Noto Sans Chorasmian Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto-cjk/NotoSansCJK-Black.ttc//Noto Sans CJK HK Black" checksum="(null)">
@@ -3310,27 +3025,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSans-CondensedThinItalic.ttf//Noto Sans Condensed Thin Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCoptic-Regular.ttf//Noto Sans Coptic Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCuneiform-Regular.ttf//Noto Sans Cuneiform Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCypriot-Regular.ttf//Noto Sans Cypriot Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansCyproMinoan-Regular.ttf//Noto Sans Cypro Minoan Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansDeseret-Regular.ttf//Noto Sans Deseret Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagari-Black.ttf//Noto Sans Devanagari Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagari-Bold.ttf//Noto Sans Devanagari Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagari-Condensed.ttf//Noto Sans Devanagari Condensed" checksum="(null)">
   </resource>
 
@@ -3391,15 +3085,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagari-ExtraLight.ttf//Noto Sans Devanagari ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagari-Light.ttf//Noto Sans Devanagari Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagari-Medium.ttf//Noto Sans Devanagari Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagari-Regular.ttf//Noto Sans Devanagari Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagari-SemiBold.ttf//Noto Sans Devanagari SemiBold" checksum="(null)">
   </resource>
 
@@ -3428,15 +3113,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagari-SemiCondensedThin.ttf//Noto Sans Devanagari SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagari-Thin.ttf//Noto Sans Devanagari Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagariUI-Black.ttf//Noto Sans Devanagari UI Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagariUI-Bold.ttf//Noto Sans Devanagari UI Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagariUI-CondensedBlack.ttf//Noto Sans Devanagari UI Condensed Black" checksum="(null)">
@@ -3499,15 +3175,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagariUI-ExtraLight.ttf//Noto Sans Devanagari UI ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagariUI-Light.ttf//Noto Sans Devanagari UI Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagariUI-Medium.ttf//Noto Sans Devanagari UI Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagariUI-Regular.ttf//Noto Sans Devanagari UI Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagariUI-SemiBold.ttf//Noto Sans Devanagari UI SemiBold" checksum="(null)">
   </resource>
 
@@ -3536,30 +3203,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagariUI-SemiCondensedThin.ttf//Noto Sans Devanagari UI SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansDevanagariUI-Thin.ttf//Noto Sans Devanagari UI Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansDuployan-Bold.ttf//Noto Sans Duployan Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansDuployan-Regular.ttf//Noto Sans Duployan Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansEgyptianHieroglyphs-Regular.ttf//Noto Sans Egyptian Hieroglyphs Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansElbasan-Regular.ttf//Noto Sans Elbasan Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansElymaic-Regular.ttf//Noto Sans Elymaic Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansEthiopic-Black.ttf//Noto Sans Ethiopic Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansEthiopic-Bold.ttf//Noto Sans Ethiopic Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansEthiopic-CondensedBlack.ttf//Noto Sans Ethiopic Condensed Black" checksum="(null)">
@@ -3622,15 +3265,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansEthiopic-ExtraLight.ttf//Noto Sans Ethiopic ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansEthiopic-Light.ttf//Noto Sans Ethiopic Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansEthiopic-Medium.ttf//Noto Sans Ethiopic Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansEthiopic-Regular.ttf//Noto Sans Ethiopic Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansEthiopic-SemiBold.ttf//Noto Sans Ethiopic SemiBold" checksum="(null)">
   </resource>
 
@@ -3659,9 +3293,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansEthiopic-SemiCondensedThin.ttf//Noto Sans Ethiopic SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansEthiopic-Thin.ttf//Noto Sans Ethiopic Thin" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSans-ExtraBold.ttf//Noto Sans ExtraBold" checksum="(null)">
@@ -3730,12 +3361,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSans-ExtraLightItalic.ttf//Noto Sans ExtraLight Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGeorgian-Black.ttf//Noto Sans Georgian Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGeorgian-Bold.ttf//Noto Sans Georgian Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGeorgian-Condensed.ttf//Noto Sans Georgian Condensed" checksum="(null)">
   </resource>
 
@@ -3796,15 +3421,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGeorgian-ExtraLight.ttf//Noto Sans Georgian ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGeorgian-Light.ttf//Noto Sans Georgian Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGeorgian-Medium.ttf//Noto Sans Georgian Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGeorgian-Regular.ttf//Noto Sans Georgian Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGeorgian-SemiBold.ttf//Noto Sans Georgian SemiBold" checksum="(null)">
   </resource>
 
@@ -3833,24 +3449,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGeorgian-SemiCondensedThin.ttf//Noto Sans Georgian SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGeorgian-Thin.ttf//Noto Sans Georgian Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGlagolitic-Regular.ttf//Noto Sans Glagolitic Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGothic-Regular.ttf//Noto Sans Gothic Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGrantha-Regular.ttf//Noto Sans Grantha Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGujarati-Black.ttf//Noto Sans Gujarati Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGujarati-Bold.ttf//Noto Sans Gujarati Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGujarati-Condensed.ttf//Noto Sans Gujarati Condensed" checksum="(null)">
@@ -3913,15 +3511,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGujarati-ExtraLight.ttf//Noto Sans Gujarati ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGujarati-Light.ttf//Noto Sans Gujarati Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGujarati-Medium.ttf//Noto Sans Gujarati Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGujarati-Regular.ttf//Noto Sans Gujarati Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGujarati-SemiBold.ttf//Noto Sans Gujarati SemiBold" checksum="(null)">
   </resource>
 
@@ -3950,15 +3539,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGujarati-SemiCondensedThin.ttf//Noto Sans Gujarati SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGujarati-Thin.ttf//Noto Sans Gujarati Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGujaratiUI-Black.ttf//Noto Sans Gujarati UI Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGujaratiUI-Bold.ttf//Noto Sans Gujarati UI Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGujaratiUI-Condensed.ttf//Noto Sans Gujarati UI Condensed" checksum="(null)">
@@ -4021,15 +3601,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGujaratiUI-ExtraLight.ttf//Noto Sans Gujarati UI ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGujaratiUI-Light.ttf//Noto Sans Gujarati UI Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGujaratiUI-Medium.ttf//Noto Sans Gujarati UI Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGujaratiUI-Regular.ttf//Noto Sans Gujarati UI Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGujaratiUI-SemiBold.ttf//Noto Sans Gujarati UI SemiBold" checksum="(null)">
   </resource>
 
@@ -4060,25 +3631,7 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGujaratiUI-SemiCondensedThin.ttf//Noto Sans Gujarati UI SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGujaratiUI-Thin.ttf//Noto Sans Gujarati UI Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGunjalaGondi-Bold.ttf//Noto Sans Gunjala Gondi Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGunjalaGondi-Medium.ttf//Noto Sans Gunjala Gondi Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGunjalaGondi-Regular.ttf//Noto Sans Gunjala Gondi Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGunjalaGondi-Semibold.ttf//Noto Sans Gunjala Gondi Semibold Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhi-Black.ttf//Noto Sans Gurmukhi Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhi-Bold.ttf//Noto Sans Gurmukhi Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhi-CondensedBlack.ttf//Noto Sans Gurmukhi Condensed Black" checksum="(null)">
@@ -4141,15 +3694,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhi-ExtraLight.ttf//Noto Sans Gurmukhi ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhi-Light.ttf//Noto Sans Gurmukhi Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhi-Medium.ttf//Noto Sans Gurmukhi Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhi-Regular.ttf//Noto Sans Gurmukhi Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhi-SemiBold.ttf//Noto Sans Gurmukhi SemiBold" checksum="(null)">
   </resource>
 
@@ -4178,15 +3722,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhi-SemiCondensedThin.ttf//Noto Sans Gurmukhi SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhi-Thin.ttf//Noto Sans Gurmukhi Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhiUI-Black.ttf//Noto Sans Gurmukhi UI Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhiUI-Bold.ttf//Noto Sans Gurmukhi UI Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhiUI-CondensedBlack.ttf//Noto Sans Gurmukhi UI Condensed Black" checksum="(null)">
@@ -4249,15 +3784,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhiUI-ExtraLight.ttf//Noto Sans Gurmukhi UI ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhiUI-Light.ttf//Noto Sans Gurmukhi UI Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhiUI-Medium.ttf//Noto Sans Gurmukhi UI Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhiUI-Regular.ttf//Noto Sans Gurmukhi UI Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhiUI-SemiBold.ttf//Noto Sans Gurmukhi UI SemiBold" checksum="(null)">
   </resource>
 
@@ -4288,31 +3814,7 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhiUI-SemiCondensedThin.ttf//Noto Sans Gurmukhi UI SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansGurmukhiUI-Thin.ttf//Noto Sans Gurmukhi UI Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansHanifiRohingya-Bold.ttf//Noto Sans Hanifi Rohingya Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansHanifiRohingya-Medium.ttf//Noto Sans Hanifi Rohingya Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansHanifiRohingya-Regular.ttf//Noto Sans Hanifi Rohingya Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansHanifiRohingya-SemiBold.ttf//Noto Sans Hanifi Rohingya SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansHanunoo-Regular.ttf//Noto Sans Hanunoo Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansHatran-Regular.ttf//Noto Sans Hatran Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansHebrew-Black.ttf//Noto Sans Hebrew Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansHebrew-Bold.ttf//Noto Sans Hebrew Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansHebrew-Condensed.ttf//Noto Sans Hebrew Condensed" checksum="(null)">
@@ -4375,15 +3877,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansHebrew-ExtraLight.ttf//Noto Sans Hebrew ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansHebrew-Light.ttf//Noto Sans Hebrew Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansHebrew-Medium.ttf//Noto Sans Hebrew Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansHebrew-Regular.ttf//Noto Sans Hebrew Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansHebrew-SemiBold.ttf//Noto Sans Hebrew SemiBold" checksum="(null)">
   </resource>
 
@@ -4414,37 +3907,7 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansHebrew-SemiCondensedThin.ttf//Noto Sans Hebrew SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansHebrew-Thin.ttf//Noto Sans Hebrew Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansImperialAramaic-Regular.ttf//Noto Sans Imperial Aramaic Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansIndicSiyaqNumbers-Regular.ttf//Noto Sans Indic Siyaq Numbers Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansInscriptionalPahlavi-Regular.ttf//Noto Sans Inscriptional Pahlavi Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansInscriptionalParthian-Regular.ttf//Noto Sans Inscriptional Parthian Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSans-Italic.ttf//Noto Sans Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansJavanese-Bold.ttf//Noto Sans Javanese Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansJavanese-Regular.ttf//Noto Sans Javanese Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKaithi-Regular.ttf//Noto Sans Kaithi Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKannada-Black.ttf//Noto Sans Kannada Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKannada-Bold.ttf//Noto Sans Kannada Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansKannada-Condensed.ttf//Noto Sans Kannada Condensed" checksum="(null)">
@@ -4507,15 +3970,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansKannada-ExtraLight.ttf//Noto Sans Kannada ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKannada-Light.ttf//Noto Sans Kannada Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKannada-Medium.ttf//Noto Sans Kannada Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKannada-Regular.ttf//Noto Sans Kannada Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansKannada-SemiBold.ttf//Noto Sans Kannada SemiBold" checksum="(null)">
   </resource>
 
@@ -4544,15 +3998,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansKannada-SemiCondensedThin.ttf//Noto Sans Kannada SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKannada-Thin.ttf//Noto Sans Kannada Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKannadaUI-Black.ttf//Noto Sans Kannada UI Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKannadaUI-Bold.ttf//Noto Sans Kannada UI Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansKannadaUI-Condensed.ttf//Noto Sans Kannada UI Condensed" checksum="(null)">
@@ -4615,15 +4060,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansKannadaUI-ExtraLight.ttf//Noto Sans Kannada UI ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKannadaUI-Light.ttf//Noto Sans Kannada UI Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKannadaUI-Medium.ttf//Noto Sans Kannada UI Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKannadaUI-Regular.ttf//Noto Sans Kannada UI Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansKannadaUI-SemiBold.ttf//Noto Sans Kannada UI SemiBold" checksum="(null)">
   </resource>
 
@@ -4654,34 +4090,7 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansKannadaUI-SemiCondensedThin.ttf//Noto Sans Kannada UI SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKannadaUI-Thin.ttf//Noto Sans Kannada UI Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKawi-Bold.ttf//Noto Sans Kawi Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKawi-Regular.ttf//Noto Sans Kawi Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKayahLi-Bold.ttf//Noto Sans Kayah Li Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKayahLi-Medium.ttf//Noto Sans Kayah Li Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKayahLi-Regular.ttf//Noto Sans Kayah Li Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansKayahLi-SemiBold.ttf//Noto Sans Kayah Li SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKharoshthi-Regular.ttf//Noto Sans Kharoshthi Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKhmer-Black.ttf//Noto Sans Khmer Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKhmer-Bold.ttf//Noto Sans Khmer Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansKhmer-Condensed.ttf//Noto Sans Khmer Condensed" checksum="(null)">
@@ -4744,15 +4153,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansKhmer-ExtraLight.ttf//Noto Sans Khmer ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKhmer-Light.ttf//Noto Sans Khmer Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKhmer-Medium.ttf//Noto Sans Khmer Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKhmer-Regular.ttf//Noto Sans Khmer Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansKhmer-SemiBold.ttf//Noto Sans Khmer SemiBold" checksum="(null)">
   </resource>
 
@@ -4781,21 +4181,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansKhmer-SemiCondensedThin.ttf//Noto Sans Khmer SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKhmer-Thin.ttf//Noto Sans Khmer Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKhojki-Regular.ttf//Noto Sans Khojki Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansKhudawadi-Regular.ttf//Noto Sans Khudawadi Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLao-Black.ttf//Noto Sans Lao Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLao-Bold.ttf//Noto Sans Lao Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansLao-CondensedBlack.ttf//Noto Sans Lao Condensed Black" checksum="(null)">
@@ -4858,15 +4243,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansLao-ExtraLight.ttf//Noto Sans Lao ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLao-Light.ttf//Noto Sans Lao Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLaoLooped-Black.ttf//Noto Sans Lao Looped Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLaoLooped-Bold.ttf//Noto Sans Lao Looped Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansLaoLooped-CondensedBlack.ttf//Noto Sans Lao Looped Condensed Black" checksum="(null)">
   </resource>
 
@@ -4927,15 +4303,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansLaoLooped-ExtraLight.ttf//Noto Sans Lao Looped ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLaoLooped-Light.ttf//Noto Sans Lao Looped Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLaoLooped-Medium.ttf//Noto Sans Lao Looped Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLaoLooped-Regular.ttf//Noto Sans Lao Looped Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansLaoLooped-SemiBold.ttf//Noto Sans Lao Looped SemiBold" checksum="(null)">
   </resource>
 
@@ -4964,15 +4331,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansLaoLooped-SemiCondensedThin.ttf//Noto Sans Lao Looped SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLaoLooped-Thin.ttf//Noto Sans Lao Looped Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLao-Medium.ttf//Noto Sans Lao Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLao-Regular.ttf//Noto Sans Lao Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansLao-SemiBold.ttf//Noto Sans Lao SemiBold" checksum="(null)">
@@ -5005,52 +4363,13 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansLao-SemiCondensedThin.ttf//Noto Sans Lao SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLao-Thin.ttf//Noto Sans Lao Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLepcha-Regular.ttf//Noto Sans Lepcha Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSans-Light.ttf//Noto Sans Light" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSans-LightItalic.ttf//Noto Sans Light Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLimbu-Regular.ttf//Noto Sans Limbu Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLinearA-Regular.ttf//Noto Sans Linear A Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLinearB-Regular.ttf//Noto Sans Linear B Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLisu-Bold.ttf//Noto Sans Lisu Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLisu-Medium.ttf//Noto Sans Lisu Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLisu-Regular.ttf//Noto Sans Lisu Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansLisu-SemiBold.ttf//Noto Sans Lisu SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLycian-Regular.ttf//Noto Sans Lycian Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansLydian-Regular.ttf//Noto Sans Lydian Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMahajani-Regular.ttf//Noto Sans Mahajani Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalam-Black.ttf//Noto Sans Malayalam Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalam-Bold.ttf//Noto Sans Malayalam Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalam-CondensedBlack.ttf//Noto Sans Malayalam Condensed Black" checksum="(null)">
@@ -5113,15 +4432,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalam-ExtraLight.ttf//Noto Sans Malayalam ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalam-Light.ttf//Noto Sans Malayalam Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalam-Medium.ttf//Noto Sans Malayalam Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalam-Regular.ttf//Noto Sans Malayalam Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalam-SemiBold.ttf//Noto Sans Malayalam SemiBold" checksum="(null)">
   </resource>
 
@@ -5150,15 +4460,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalam-SemiCondensedThin.ttf//Noto Sans Malayalam SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalam-Thin.ttf//Noto Sans Malayalam Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalamUI-Black.ttf//Noto Sans Malayalam UI Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalamUI-Bold.ttf//Noto Sans Malayalam UI Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalamUI-CondensedBlack.ttf//Noto Sans Malayalam UI Condensed Black" checksum="(null)">
@@ -5221,15 +4522,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalamUI-ExtraLight.ttf//Noto Sans Malayalam UI ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalamUI-Light.ttf//Noto Sans Malayalam UI Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalamUI-Medium.ttf//Noto Sans Malayalam UI Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalamUI-Regular.ttf//Noto Sans Malayalam UI Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalamUI-SemiBold.ttf//Noto Sans Malayalam UI SemiBold" checksum="(null)">
   </resource>
 
@@ -5260,36 +4552,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalamUI-SemiCondensedThin.ttf//Noto Sans Malayalam UI SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMalayalamUI-Thin.ttf//Noto Sans Malayalam UI Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMandaic-Regular.ttf//Noto Sans Mandaic Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansManichaean-Regular.ttf//Noto Sans Manichaean Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMarchen-Regular.ttf//Noto Sans Marchen Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMasaramGondi-Regular.ttf//Noto Sans Masaram Gondi Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMath-Regular.ttf//Noto Sans Math Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMayanNumerals-Regular.ttf//Noto Sans Mayan Numerals Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMedefaidrin-Bold.ttf//Noto Sans Medefaidrin Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMedefaidrin-Medium.ttf//Noto Sans Medefaidrin Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMedefaidrin-Regular.ttf//Noto Sans Medefaidrin Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMedefaidrin-SemiBold.ttf//Noto Sans Medefaidrin SemiBold" checksum="(null)">
   </resource>
 
@@ -5299,46 +4561,13 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSans-MediumItalic.ttf//Noto Sans Medium Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMeeteiMayek-Black.ttf//Noto Sans Meetei Mayek Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMeeteiMayek-Bold.ttf//Noto Sans Meetei Mayek Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMeeteiMayek-ExtraBold.ttf//Noto Sans Meetei Mayek ExtraBold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMeeteiMayek-ExtraLight.ttf//Noto Sans Meetei Mayek ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMeeteiMayek-Light.ttf//Noto Sans Meetei Mayek Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMeeteiMayek-Medium.ttf//Noto Sans Meetei Mayek Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMeeteiMayek-Regular.ttf//Noto Sans Meetei Mayek Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMeeteiMayek-SemiBold.ttf//Noto Sans Meetei Mayek SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMeeteiMayek-Thin.ttf//Noto Sans Meetei Mayek Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMendeKikakui-Regular.ttf//Noto Sans Mende Kikakui Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMeroitic-Regular.ttf//Noto Sans Meroitic Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMiao-Regular.ttf//Noto Sans Miao Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansModi-Regular.ttf//Noto Sans Modi Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMongolian-Regular.ttf//Noto Sans Mongolian Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMono-Black.ttf//Noto Sans Mono Black" checksum="(null)">
@@ -5494,18 +4723,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMono-Thin.ttf//Noto Sans Mono Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMro-Regular.ttf//Noto Sans Mro Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMultani-Regular.ttf//Noto Sans Multani Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMyanmar-Black.ttf//Noto Sans Myanmar Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMyanmar-Bold.ttf//Noto Sans Myanmar Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMyanmar-CondensedBlack.ttf//Noto Sans Myanmar Condensed Black" checksum="(null)">
   </resource>
 
@@ -5566,15 +4783,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMyanmar-ExtraLight.ttf//Noto Sans Myanmar ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMyanmar-Light.ttf//Noto Sans Myanmar Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMyanmar-Medium.ttf//Noto Sans Myanmar Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMyanmar-Regular.ttf//Noto Sans Myanmar Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMyanmar-SemiBold.ttf//Noto Sans Myanmar SemiBold" checksum="(null)">
   </resource>
 
@@ -5605,91 +4813,10 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansMyanmar-SemiCondensedThin.ttf//Noto Sans Myanmar SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansMyanmar-Thin.ttf//Noto Sans Myanmar Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansNabataean-Regular.ttf//Noto Sans Nabataean Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansNagMundari-Bold.ttf//Noto Sans Nag Mundari Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansNagMundari-Regular.ttf//Noto Sans Nag Mundari Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansNandinagari-Regular.ttf//Noto Sans Nandinagari Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansNewa-Regular.ttf//Noto Sans Newa Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansNewTaiLue-Bold.ttf//Noto Sans New Tai Lue Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansNewTaiLue-Medium.ttf//Noto Sans New Tai Lue Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansNewTaiLue-Regular.ttf//Noto Sans New Tai Lue Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansNewTaiLue-Semibold.ttf//Noto Sans New Tai Lue Semibold Regular" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansNKo-Regular.ttf//Noto Sans NKo Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansNKoUnjoined-Bold.ttf//Noto Sans NKo Unjoined Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansNKoUnjoined-Regular.ttf//Noto Sans NKo Unjoined Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansNushu-Regular.ttf//Noto Sans Nushu Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOgham-Regular.ttf//Noto Sans Ogham Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOlChiki-Bold.ttf//Noto Sans Ol Chiki Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOlChiki-Medium.ttf//Noto Sans Ol Chiki Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOlChiki-Regular.ttf//Noto Sans Ol Chiki Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansOlChiki-SemiBold.ttf//Noto Sans Ol Chiki SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOldHungarian-Regular.ttf//Noto Sans Old Hungarian Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOldItalic-Regular.ttf//Noto Sans Old Italic Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOldNorthArabian-Regular.ttf//Noto Sans Old North Arabian Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOldPermic-Regular.ttf//Noto Sans Old Permic Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOldPersian-Regular.ttf//Noto Sans Old Persian Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOldSogdian-Regular.ttf//Noto Sans Old Sogdian Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOldSouthArabian-Regular.ttf//Noto Sans Old South Arabian Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOldTurkic-Regular.ttf//Noto Sans Old Turkic Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOriya-Black.ttf//Noto Sans Oriya Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOriya-Bold.ttf//Noto Sans Oriya Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansOriya-Condensed.ttf//Noto Sans Oriya Condensed" checksum="(null)">
@@ -5716,49 +4843,7 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansOriya-ExtraCondensedThin.ttf//Noto Sans Oriya ExtraCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOriya-Regular.ttf//Noto Sans Oriya Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOriya-Thin.ttf//Noto Sans Oriya Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOsage-Regular.ttf//Noto Sans Osage Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansOsmanya-Regular.ttf//Noto Sans Osmanya Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansPahawhHmong-Regular.ttf//Noto Sans Pahawh Hmong Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansPalmyrene-Regular.ttf//Noto Sans Palmyrene Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansPauCinHau-Regular.ttf//Noto Sans Pau Cin Hau Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansPhagsPa-Regular.ttf//Noto Sans PhagsPa Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansPhoenician-Regular.ttf//Noto Sans Phoenician Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansPsalterPahlavi-Regular.ttf//Noto Sans Psalter Pahlavi Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSans-Regular.ttf//Noto Sans Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansRejang-Regular.ttf//Noto Sans Rejang Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansRunic-Regular.ttf//Noto Sans Runic Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSamaritan-Regular.ttf//Noto Sans Samaritan Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSaurashtra-Regular.ttf//Noto Sans Saurashtra Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSans-SemiBold.ttf//Noto Sans SemiBold" checksum="(null)">
@@ -5821,27 +4906,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSans-SemiCondensedThinItalic.ttf//Noto Sans SemiCondensed Thin Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSharada-Regular.ttf//Noto Sans Sharada Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansShavian-Regular.ttf//Noto Sans Shavian Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSiddham-Regular.ttf//Noto Sans Siddham Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSignWriting-Regular.ttf//Noto Sans SignWriting Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhala-Black.ttf//Noto Sans Sinhala Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhala-BlackCondensed.ttf//Noto Sans Sinhala Black Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhala-Bold.ttf//Noto Sans Sinhala Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhala-Condensed.ttf//Noto Sans Sinhala Condensed" checksum="(null)">
   </resource>
 
@@ -5902,15 +4966,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhala-ExtraLight.ttf//Noto Sans Sinhala ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhala-Light.ttf//Noto Sans Sinhala Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhala-Medium.ttf//Noto Sans Sinhala Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhala-Regular.ttf//Noto Sans Sinhala Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhala-SemiBold.ttf//Noto Sans Sinhala SemiBold" checksum="(null)">
   </resource>
 
@@ -5939,18 +4994,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhala-SemiCondensedThin.ttf//Noto Sans Sinhala SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhala-Thin.ttf//Noto Sans Sinhala Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhala-ThinCondensed.ttf//Noto Sans Sinhala Thin Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhalaUI-Black.ttf//Noto Sans Sinhala UI Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhalaUI-Bold.ttf//Noto Sans Sinhala UI Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhalaUI-CondensedBlack.ttf//Noto Sans Sinhala UI Condensed Black" checksum="(null)">
@@ -6013,15 +5056,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhalaUI-ExtraLight.ttf//Noto Sans Sinhala UI ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhalaUI-Light.ttf//Noto Sans Sinhala UI Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhalaUI-Medium.ttf//Noto Sans Sinhala UI Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhalaUI-Regular.ttf//Noto Sans Sinhala UI Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhalaUI-SemiBold.ttf//Noto Sans Sinhala UI SemiBold" checksum="(null)">
   </resource>
 
@@ -6052,52 +5086,10 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhalaUI-SemiCondensedThin.ttf//Noto Sans Sinhala UI SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSinhalaUI-Thin.ttf//Noto Sans Sinhala UI Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSogdian-Regular.ttf//Noto Sans Sogdian Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSoraSompeng-Bold.ttf//Noto Sans Sora Sompeng Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSoraSompeng-Medium.ttf//Noto Sans Sora Sompeng Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSoraSompeng-Regular.ttf//Noto Sans Sora Sompeng Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansSoraSompeng-SemiBold.ttf//Noto Sans Sora Sompeng Semi Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSoyombo-Regular.ttf//Noto Sans Soyombo Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSundanese-Bold.ttf//Noto Sans Sundanese Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSundanese-Medium.ttf//Noto Sans Sundanese Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSundanese-Regular.ttf//Noto Sans Sundanese Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansSundanese-SemiBold.ttf//Noto Sans Sundanese SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSunuwar-Regular.ttf//Noto Sans Sunuwar Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSylotiNagri-Regular.ttf//Noto Sans Syloti Nagri Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSymbols2-Regular.ttf//Noto Sans Symbols 2 Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSymbols-Black.ttf//Noto Sans Symbols Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSymbols-Bold.ttf//Noto Sans Symbols Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansSymbols-ExtraBold.ttf//Noto Sans Symbols ExtraBold" checksum="(null)">
@@ -6106,79 +5098,10 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansSymbols-ExtraLight.ttf//Noto Sans Symbols ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSymbols-Light.ttf//Noto Sans Symbols Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSymbols-Medium.ttf//Noto Sans Symbols Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSymbols-Regular.ttf//Noto Sans Symbols Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansSymbols-SemiBold.ttf//Noto Sans Symbols SemiBold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSymbols-Thin.ttf//Noto Sans Symbols Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSyriac-Black.ttf//Noto Sans Syriac Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSyriacEastern-Black.ttf//Noto Sans Syriac Eastern Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSyriacEastern-Regular.ttf//Noto Sans Syriac Eastern Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSyriacEastern-Thin.ttf//Noto Sans Syriac Eastern Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSyriac-Regular.ttf//Noto Sans Syriac Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSyriac-Thin.ttf//Noto Sans Syriac Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSyriacWestern-Black.ttf//Noto Sans Syriac Western Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSyriacWestern-Regular.ttf//Noto Sans Syriac Western Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansSyriacWestern-Thin.ttf//Noto Sans Syriac Western Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTagalog-Regular.ttf//Noto Sans Tagalog Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTagbanwa-Regular.ttf//Noto Sans Tagbanwa Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTaiLe-Regular.ttf//Noto Sans Tai Le Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTaiTham-Bold.ttf//Noto Sans Tai Tham Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTaiTham-Medium.ttf//Noto Sans Tai Tham Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTaiTham-Regular.ttf//Noto Sans Tai Tham Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTaiTham-SemiBold.ttf//Noto Sans Tai Tham SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTaiViet-Regular.ttf//Noto Sans Tai Viet Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTakri-Regular.ttf//Noto Sans Takri Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTamil-Black.ttf//Noto Sans Tamil Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTamil-Bold.ttf//Noto Sans Tamil Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTamil-CondensedBlack.ttf//Noto Sans Tamil Condensed Black" checksum="(null)">
@@ -6241,15 +5164,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTamil-ExtraLight.ttf//Noto Sans Tamil ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTamil-Light.ttf//Noto Sans Tamil Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTamil-Medium.ttf//Noto Sans Tamil Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTamil-Regular.ttf//Noto Sans Tamil Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTamil-SemiBold.ttf//Noto Sans Tamil SemiBold" checksum="(null)">
   </resource>
 
@@ -6278,18 +5192,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTamil-SemiCondensedThin.ttf//Noto Sans Tamil SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTamilSupplement-Regular.ttf//Noto Sans Tamil Supplement Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTamil-Thin.ttf//Noto Sans Tamil Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTamilUI-Black.ttf//Noto Sans Tamil UI Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTamilUI-Bold.ttf//Noto Sans Tamil UI Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTamilUI-CondensedBlack.ttf//Noto Sans Tamil UI Condensed Black" checksum="(null)">
@@ -6352,15 +5254,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTamilUI-ExtraLight.ttf//Noto Sans Tamil UI ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTamilUI-Light.ttf//Noto Sans Tamil UI Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTamilUI-Medium.ttf//Noto Sans Tamil UI Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTamilUI-Regular.ttf//Noto Sans Tamil UI Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTamilUI-SemiBold.ttf//Noto Sans Tamil UI SemiBold" checksum="(null)">
   </resource>
 
@@ -6391,25 +5284,7 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTamilUI-SemiCondensedThin.ttf//Noto Sans Tamil UI SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTamilUI-Thin.ttf//Noto Sans Tamil UI Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTangsa-Bold.ttf//Noto Sans Tangsa Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTangsa-Medium.ttf//Noto Sans Tangsa Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTangsa-Regular.ttf//Noto Sans Tangsa Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTangsa-SemiBold.ttf//Noto Sans Tangsa SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTelugu-Black.ttf//Noto Sans Telugu Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTelugu-Bold.ttf//Noto Sans Telugu Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTelugu-Condensed.ttf//Noto Sans Telugu Condensed" checksum="(null)">
@@ -6472,15 +5347,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTelugu-ExtraLight.ttf//Noto Sans Telugu ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTelugu-Light.ttf//Noto Sans Telugu Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTelugu-Medium.ttf//Noto Sans Telugu Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTelugu-Regular.ttf//Noto Sans Telugu Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTelugu-SemiBold.ttf//Noto Sans Telugu SemiBold" checksum="(null)">
   </resource>
 
@@ -6509,15 +5375,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTelugu-SemiCondensedThin.ttf//Noto Sans Telugu SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTelugu-Thin.ttf//Noto Sans Telugu Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTeluguUI-Black.ttf//Noto Sans Telugu UI Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTeluguUI-Bold.ttf//Noto Sans Telugu UI Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTeluguUI-Condensed.ttf//Noto Sans Telugu UI Condensed" checksum="(null)">
@@ -6580,15 +5437,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTeluguUI-ExtraLight.ttf//Noto Sans Telugu UI ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTeluguUI-Light.ttf//Noto Sans Telugu UI Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTeluguUI-Medium.ttf//Noto Sans Telugu UI Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTeluguUI-Regular.ttf//Noto Sans Telugu UI Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTeluguUI-SemiBold.ttf//Noto Sans Telugu UI SemiBold" checksum="(null)">
   </resource>
 
@@ -6619,43 +5467,13 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansTeluguUI-SemiCondensedThin.ttf//Noto Sans Telugu UI SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTeluguUI-Thin.ttf//Noto Sans Telugu UI Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTest-Regular.ttf//Noto Sans Test Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThaana-Black.ttf//Noto Sans Thaana Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThaana-Bold.ttf//Noto Sans Thaana Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansThaana-ExtraBold.ttf//Noto Sans Thaana ExtraBold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansThaana-ExtraLight.ttf//Noto Sans Thaana ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThaana-Light.ttf//Noto Sans Thaana Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThaana-Medium.ttf//Noto Sans Thaana Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThaana-Regular.ttf//Noto Sans Thaana Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansThaana-SemiBold.ttf//Noto Sans Thaana SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThaana-Thin.ttf//Noto Sans Thaana Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThai-Black.ttf//Noto Sans Thai Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThai-Bold.ttf//Noto Sans Thai Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansThai-Condensed.ttf//Noto Sans Thai Condensed" checksum="(null)">
@@ -6718,15 +5536,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansThai-ExtraLight.ttf//Noto Sans Thai ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThai-Light.ttf//Noto Sans Thai Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThaiLooped-Black.ttf//Noto Sans Thai Looped Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThaiLooped-Bold.ttf//Noto Sans Thai Looped Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansThaiLooped-CondensedBlack.ttf//Noto Sans Thai Looped Condensed Black" checksum="(null)">
   </resource>
 
@@ -6787,15 +5596,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansThaiLooped-ExtraLight.ttf//Noto Sans Thai Looped ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThaiLooped-Light.ttf//Noto Sans Thai Looped Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThaiLooped-Medium.ttf//Noto Sans Thai Looped Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThaiLooped-Regular.ttf//Noto Sans Thai Looped Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansThaiLooped-SemiBold.ttf//Noto Sans Thai Looped SemiBold" checksum="(null)">
   </resource>
 
@@ -6824,15 +5624,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansThaiLooped-SemiCondensedThin.ttf//Noto Sans Thai Looped SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThaiLooped-Thin.ttf//Noto Sans Thai Looped Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThai-Medium.ttf//Noto Sans Thai Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThai-Regular.ttf//Noto Sans Thai Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansThai-SemiBold.ttf//Noto Sans Thai SemiBold" checksum="(null)">
@@ -6865,91 +5656,13 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansThai-SemiCondensedThin.ttf//Noto Sans Thai SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansThai-Thin.ttf//Noto Sans Thai Thin" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSans-Thin.ttf//Noto Sans Thin" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSans-ThinItalic.ttf//Noto Sans Thin Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTifinaghAdrar-Regular.ttf//Noto Sans Tifinagh Adrar Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTifinaghAgrawImazighen-Regular.ttf//Noto Sans Tifinagh Agraw Imazighen Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTifinaghAhaggar-Regular.ttf//Noto Sans Tifinagh Ahaggar Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTifinaghAir-Regular.ttf//Noto Sans Tifinagh Air Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTifinaghAPT-Regular.ttf//Noto Sans Tifinagh APT Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTifinaghAzawagh-Regular.ttf//Noto Sans Tifinagh Azawagh Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTifinaghGhat-Regular.ttf//Noto Sans Tifinagh Ghat Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTifinaghHawad-Regular.ttf//Noto Sans Tifinagh Hawad Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTifinagh-Regular.ttf//Noto Sans Tifinagh Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTifinaghRhissaIxa-Regular.ttf//Noto Sans Tifinagh Rhissa Ixa Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTifinaghSIL-Regular.ttf//Noto Sans Tifinagh SIL Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTifinaghTawellemmet-Regular.ttf//Noto Sans Tifinagh Tawellemmet Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansTirhuta-Regular.ttf//Noto Sans Tirhuta Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansUgaritic-Regular.ttf//Noto Sans Ugaritic Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansVai-Regular.ttf//Noto Sans Vai Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansVithkuqi-Bold.ttf//Noto Sans Vithkuqi Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansVithkuqi-Medium.ttf//Noto Sans Vithkuqi Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansVithkuqi-Regular.ttf//Noto Sans Vithkuqi Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSansVithkuqi-SemiBold.ttf//Noto Sans Vithkuqi SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansWancho-Regular.ttf//Noto Sans Wancho Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansWarangCiti-Regular.ttf//Noto Sans Warang Citi Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansYi-Regular.ttf//Noto Sans Yi Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansZanabazarSquare-Regular.ttf//Noto Sans Zanabazar Square Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifAhom-Regular.ttf//Noto Serif Ahom Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifArmenian-Black.ttf//Noto Serif Armenian Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifArmenian-Bold.ttf//Noto Serif Armenian Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifArmenian-Condensed.ttf//Noto Serif Armenian Condensed" checksum="(null)">
@@ -7012,15 +5725,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifArmenian-ExtraLight.ttf//Noto Serif Armenian ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifArmenian-Light.ttf//Noto Serif Armenian Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifArmenian-Medium.ttf//Noto Serif Armenian Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifArmenian-Regular.ttf//Noto Serif Armenian Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifArmenian-SemiBold.ttf//Noto Serif Armenian SemiBold" checksum="(null)">
   </resource>
 
@@ -7049,18 +5753,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifArmenian-SemiCondensedThin.ttf//Noto Serif Armenian SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifArmenian-Thin.ttf//Noto Serif Armenian Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifBalinese-Regular.ttf//Noto Serif Balinese Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-Black.ttf//Noto Serif Bengali Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-Bold.ttf//Noto Serif Bengali Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-Condensed.ttf//Noto Serif Bengali Condensed" checksum="(null)">
@@ -7123,15 +5815,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-ExtraLight.ttf//Noto Serif Bengali ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-Light.ttf//Noto Serif Bengali Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-Medium.ttf//Noto Serif Bengali Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-Regular.ttf//Noto Serif Bengali Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-SemiBold.ttf//Noto Serif Bengali SemiBold" checksum="(null)">
   </resource>
 
@@ -7160,9 +5843,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-SemiCondensedThin.ttf//Noto Serif Bengali SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-Thin.ttf//Noto Serif Bengali Thin" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerif-Black.ttf//Noto Serif Black" checksum="(null)">
@@ -7336,12 +6016,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerif-CondensedThinItalic.ttf//Noto Serif Condensed Thin Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDevanagari-Black.ttf//Noto Serif Devanagari Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDevanagari-Bold.ttf//Noto Serif Devanagari Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifDevanagari-Condensed.ttf//Noto Serif Devanagari Condensed" checksum="(null)">
   </resource>
 
@@ -7402,15 +6076,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifDevanagari-ExtraLight.ttf//Noto Serif Devanagari ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDevanagari-Light.ttf//Noto Serif Devanagari Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDevanagari-Medium.ttf//Noto Serif Devanagari Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDevanagari-Regular.ttf//Noto Serif Devanagari Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifDevanagari-SemiBold.ttf//Noto Serif Devanagari SemiBold" checksum="(null)">
   </resource>
 
@@ -7439,21 +6104,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifDevanagari-SemiCondensedThin.ttf//Noto Serif Devanagari SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDevanagari-Thin.ttf//Noto Serif Devanagari Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-Black.ttf//Noto Serif Display Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-BlackItalic.ttf//Noto Serif Display Black Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-Bold.ttf//Noto Serif Display Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-BoldItalic.ttf//Noto Serif Display Bold Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-CondensedBlack.ttf//Noto Serif Display Condensed Black" checksum="(null)">
@@ -7576,24 +6226,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-ExtraLightItalic.ttf//Noto Serif Display ExtraLight Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-Italic.ttf//Noto Serif Display Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-Light.ttf//Noto Serif Display Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-LightItalic.ttf//Noto Serif Display Light Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-Medium.ttf//Noto Serif Display Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-MediumItalic.ttf//Noto Serif Display Medium Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-Regular.ttf//Noto Serif Display Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-SemiBold.ttf//Noto Serif Display SemiBold" checksum="(null)">
   </resource>
 
@@ -7652,24 +6284,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-SemiCondensedThinItalic.ttf//Noto Serif Display SemiCondensed Thin Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-Thin.ttf//Noto Serif Display Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDisplay-ThinItalic.ttf//Noto Serif Display Thin Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDivesAkuru-Regular.ttf//Noto Serif Dives Akuru Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifDogra-Regular.ttf//Noto Serif Dogra Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifEthiopic-Black.ttf//Noto Serif Ethiopic Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifEthiopic-Bold.ttf//Noto Serif Ethiopic Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifEthiopic-CondensedBlack.ttf//Noto Serif Ethiopic Condensed Black" checksum="(null)">
@@ -7732,15 +6346,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifEthiopic-ExtraLight.ttf//Noto Serif Ethiopic ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifEthiopic-Light.ttf//Noto Serif Ethiopic Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifEthiopic-Medium.ttf//Noto Serif Ethiopic Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifEthiopic-Regular.ttf//Noto Serif Ethiopic Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifEthiopic-SemiBold.ttf//Noto Serif Ethiopic SemiBold" checksum="(null)">
   </resource>
 
@@ -7769,9 +6374,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifEthiopic-SemiCondensedThin.ttf//Noto Serif Ethiopic SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifEthiopic-Thin.ttf//Noto Serif Ethiopic Thin" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerif-ExtraBold.ttf//Noto Serif ExtraBold" checksum="(null)">
@@ -7840,12 +6442,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerif-ExtraLightItalic.ttf//Noto Serif ExtraLight Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGeorgian-Black.ttf//Noto Serif Georgian Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGeorgian-Bold.ttf//Noto Serif Georgian Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifGeorgian-Condensed.ttf//Noto Serif Georgian Condensed" checksum="(null)">
   </resource>
 
@@ -7906,15 +6502,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifGeorgian-ExtraLight.ttf//Noto Serif Georgian ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGeorgian-Light.ttf//Noto Serif Georgian Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGeorgian-Medium.ttf//Noto Serif Georgian Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGeorgian-Regular.ttf//Noto Serif Georgian Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifGeorgian-SemiBold.ttf//Noto Serif Georgian SemiBold" checksum="(null)">
   </resource>
 
@@ -7945,43 +6532,13 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifGeorgian-SemiCondensedThin.ttf//Noto Serif Georgian SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGeorgian-Thin.ttf//Noto Serif Georgian Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGrantha-Regular.ttf//Noto Serif Grantha Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGujarati-Black.ttf//Noto Serif Gujarati Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGujarati-Bold.ttf//Noto Serif Gujarati Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifGujarati-ExtraBold.ttf//Noto Serif Gujarati ExtraBold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifGujarati-ExtraLight.ttf//Noto Serif Gujarati ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGujarati-Light.ttf//Noto Serif Gujarati Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGujarati-Medium.ttf//Noto Serif Gujarati Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGujarati-Regular.ttf//Noto Serif Gujarati Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifGujarati-SemiBold.ttf//Noto Serif Gujarati SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGujarati-Thin.ttf//Noto Serif Gujarati Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGurmukhi-Black.ttf//Noto Serif Gurmukhi Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGurmukhi-Bold.ttf//Noto Serif Gurmukhi Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifGurmukhi-ExtraBold.ttf//Noto Serif Gurmukhi ExtraBold" checksum="(null)">
@@ -7990,25 +6547,7 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifGurmukhi-ExtraLight.ttf//Noto Serif Gurmukhi ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGurmukhi-Light.ttf//Noto Serif Gurmukhi Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGurmukhi-Medium.ttf//Noto Serif Gurmukhi Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGurmukhi-Regular.ttf//Noto Serif Gurmukhi Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifGurmukhi-SemiBold.ttf//Noto Serif Gurmukhi SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifGurmukhi-Thin.ttf//Noto Serif Gurmukhi Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifHebrew-Black.ttf//Noto Serif Hebrew Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifHebrew-Bold.ttf//Noto Serif Hebrew Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifHebrew-Condensed.ttf//Noto Serif Hebrew Condensed" checksum="(null)">
@@ -8071,15 +6610,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifHebrew-ExtraLight.ttf//Noto Serif Hebrew ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifHebrew-Light.ttf//Noto Serif Hebrew Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifHebrew-Medium.ttf//Noto Serif Hebrew Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifHebrew-Regular.ttf//Noto Serif Hebrew Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifHebrew-SemiBold.ttf//Noto Serif Hebrew SemiBold" checksum="(null)">
   </resource>
 
@@ -8110,25 +6640,7 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifHebrew-SemiCondensedThin.ttf//Noto Serif Hebrew SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifHebrew-Thin.ttf//Noto Serif Hebrew Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifHentaigana-Black.ttf//Noto Serif Hentaigana Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifHentaigana-Bold.ttf//Noto Serif Hentaigana Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifHentaigana-ExtraLight.ttf//Noto Serif Hentaigana ExtraLight" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifHentaigana-Light.ttf//Noto Serif Hentaigana Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifHentaigana-Medium.ttf//Noto Serif Hentaigana Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifHentaigana-Regular.ttf//Noto Serif Hentaigana Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifHentaigana-SemiBold.ttf//Noto Serif Hentaigana SemiBold" checksum="(null)">
@@ -8137,40 +6649,13 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerif-Italic.ttf//Noto Serif Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifKannada-Black.ttf//Noto Serif Kannada Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifKannada-Bold.ttf//Noto Serif Kannada Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifKannada-ExtraBold.ttf//Noto Serif Kannada ExtraBold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifKannada-ExtraLight.ttf//Noto Serif Kannada ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifKannada-Light.ttf//Noto Serif Kannada Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifKannada-Medium.ttf//Noto Serif Kannada Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifKannada-Regular.ttf//Noto Serif Kannada Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifKannada-SemiBold.ttf//Noto Serif Kannada SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifKannada-Thin.ttf//Noto Serif Kannada Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifKhitanSmallScript-Regular.ttf//Noto Serif Khitan Small Script Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifKhmer-Black.ttf//Noto Serif Khmer Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifKhmer-Bold.ttf//Noto Serif Khmer Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifKhmer-Condensed.ttf//Noto Serif Khmer Condensed" checksum="(null)">
@@ -8233,15 +6718,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifKhmer-ExtraLight.ttf//Noto Serif Khmer ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifKhmer-Light.ttf//Noto Serif Khmer Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifKhmer-Medium.ttf//Noto Serif Khmer Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifKhmer-Regular.ttf//Noto Serif Khmer Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifKhmer-SemiBold.ttf//Noto Serif Khmer SemiBold" checksum="(null)">
   </resource>
 
@@ -8270,21 +6746,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifKhmer-SemiCondensedThin.ttf//Noto Serif Khmer SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifKhmer-Thin.ttf//Noto Serif Khmer Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifKhojki-Bold.ttf//Noto Serif Khojki Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifKhojki-Regular.ttf//Noto Serif Khojki Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifLao-Black.ttf//Noto Serif Lao Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifLao-Bold.ttf//Noto Serif Lao Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifLao-CondensedBlack.ttf//Noto Serif Lao Condensed Black" checksum="(null)">
@@ -8347,15 +6808,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifLao-ExtraLight.ttf//Noto Serif Lao ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifLao-Light.ttf//Noto Serif Lao Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifLao-Medium.ttf//Noto Serif Lao Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifLao-Regular.ttf//Noto Serif Lao Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifLao-SemiBold.ttf//Noto Serif Lao SemiBold" checksum="(null)">
   </resource>
 
@@ -8386,22 +6838,10 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifLao-SemiCondensedThin.ttf//Noto Serif Lao SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifLao-Thin.ttf//Noto Serif Lao Thin" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerif-Light.ttf//Noto Serif Light" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerif-LightItalic.ttf//Noto Serif Light Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifMakasar-Regular.ttf//Noto Serif Makasar Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifMalayalam-Black.ttf//Noto Serif Malayalam Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifMalayalam-Bold.ttf//Noto Serif Malayalam Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifMalayalam-ExtraBold.ttf//Noto Serif Malayalam ExtraBold" checksum="(null)">
@@ -8410,31 +6850,13 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifMalayalam-ExtraLight.ttf//Noto Serif Malayalam ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifMalayalam-Light.ttf//Noto Serif Malayalam Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifMalayalam-Medium.ttf//Noto Serif Malayalam Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifMalayalam-Regular.ttf//Noto Serif Malayalam Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifMalayalam-SemiBold.ttf//Noto Serif Malayalam SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifMalayalam-Thin.ttf//Noto Serif Malayalam Thin" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerif-Medium.ttf//Noto Serif Medium" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerif-MediumItalic.ttf//Noto Serif Medium Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifMyanmar-Black.ttf//Noto Serif Myanmar Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifMyanmar-Bold.ttf//Noto Serif Myanmar Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifMyanmar-CondensedBlack.ttf//Noto Serif Myanmar Condensed Black" checksum="(null)">
@@ -8497,15 +6919,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifMyanmar-ExtraLight.ttf//Noto Serif Myanmar ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifMyanmar-Light.ttf//Noto Serif Myanmar Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifMyanmar-Medium.ttf//Noto Serif Myanmar Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifMyanmar-Regular.ttf//Noto Serif Myanmar Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifMyanmar-SemiBold.ttf//Noto Serif Myanmar SemiBold" checksum="(null)">
   </resource>
 
@@ -8536,37 +6949,10 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifMyanmar-SemiCondensedThin.ttf//Noto Serif Myanmar SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifMyanmar-Thin.ttf//Noto Serif Myanmar Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifNPHmong-Bold.ttf//Noto Serif NP Hmong Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifNPHmong-Medium.ttf//Noto Serif NP Hmong Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifNPHmong-Regular.ttf//Noto Serif NP Hmong Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifNPHmong-SemiBold.ttf//Noto Serif NP Hmong SemiBold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifOldUyghur-Regular.ttf//Noto Serif Old Uyghur Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifOriya-Bold.ttf//Noto Serif Oriya Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifOriya-Medium.ttf//Noto Serif Oriya Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifOriya-Regular.ttf//Noto Serif Oriya Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifOriya-SemiBold.ttf//Noto Serif Oriya SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifOttomanSiyaq-Regular.ttf//Noto Serif Ottoman Siyaq Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerif-Regular.ttf//Noto Serif Regular" checksum="(null)">
@@ -8632,12 +7018,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerif-SemiCondensedThinItalic.ttf//Noto Serif SemiCondensed Thin Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifSinhala-Black.ttf//Noto Serif Sinhala Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifSinhala-Bold.ttf//Noto Serif Sinhala Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifSinhala-CondensedBlack.ttf//Noto Serif Sinhala Condensed Black" checksum="(null)">
   </resource>
 
@@ -8698,15 +7078,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifSinhala-ExtraLight.ttf//Noto Serif Sinhala ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifSinhala-Light.ttf//Noto Serif Sinhala Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifSinhala-Medium.ttf//Noto Serif Sinhala Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifSinhala-Regular.ttf//Noto Serif Sinhala Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifSinhala-SemiBold.ttf//Noto Serif Sinhala SemiBold" checksum="(null)">
   </resource>
 
@@ -8735,21 +7106,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifSinhala-SemiCondensedThin.ttf//Noto Serif Sinhala SemiCondensed Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifSinhala-Thin.ttf//Noto Serif Sinhala Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-Black.ttf//Noto Serif Tamil Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-BlackItalic.ttf//Noto Serif Tamil Black Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-Bold.ttf//Noto Serif Tamil Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-BoldItalic.ttf//Noto Serif Tamil Bold Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-CondensedBlack.ttf//Noto Serif Tamil Condensed Black" checksum="(null)">
@@ -8872,24 +7228,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-ExtraLightItalic.ttf//Noto Serif Tamil ExtraLight Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-Italic.ttf//Noto Serif Tamil Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-Light.ttf//Noto Serif Tamil Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-LightItalic.ttf//Noto Serif Tamil Light Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-Medium.ttf//Noto Serif Tamil Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-MediumItalic.ttf//Noto Serif Tamil Medium Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-Regular.ttf//Noto Serif Tamil Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-SemiBold.ttf//Noto Serif Tamil SemiBold" checksum="(null)">
   </resource>
 
@@ -8950,52 +7288,13 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-SemiCondensedThinItalic.ttf//Noto Serif Tamil SemiCondensed Thin Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-Thin.ttf//Noto Serif Tamil Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTamil-ThinItalic.ttf//Noto Serif Tamil Thin Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTangut-Regular.ttf//Noto Serif Tangut Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTelugu-Black.ttf//Noto Serif Telugu Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTelugu-Bold.ttf//Noto Serif Telugu Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifTelugu-ExtraBold.ttf//Noto Serif Telugu ExtraBold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifTelugu-ExtraLight.ttf//Noto Serif Telugu ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTelugu-Light.ttf//Noto Serif Telugu Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTelugu-Medium.ttf//Noto Serif Telugu Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTelugu-Regular.ttf//Noto Serif Telugu Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifTelugu-SemiBold.ttf//Noto Serif Telugu SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTelugu-Thin.ttf//Noto Serif Telugu Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTest-Bold.ttf//Noto Serif Test Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTest-Regular.ttf//Noto Serif Test Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifThai-Black.ttf//Noto Serif Thai Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifThai-Bold.ttf//Noto Serif Thai Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifThai-Condensed.ttf//Noto Serif Thai Condensed" checksum="(null)">
@@ -9058,15 +7357,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifThai-ExtraLight.ttf//Noto Serif Thai ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifThai-Light.ttf//Noto Serif Thai Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifThai-Medium.ttf//Noto Serif Thai Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifThai-Regular.ttf//Noto Serif Thai Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifThai-SemiBold.ttf//Noto Serif Thai SemiBold" checksum="(null)">
   </resource>
 
@@ -9097,19 +7387,10 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifThai-SemiCondensedThin.ttf//Noto Serif Thai SemiCondensed Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifThai-Thin.ttf//Noto Serif Thai Thin" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerif-Thin.ttf//Noto Serif Thin" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerif-ThinItalic.ttf//Noto Serif Thin Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTibetan-Black.ttf//Noto Serif Tibetan Black" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTibetan-Bold.ttf//Noto Serif Tibetan Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifTibetan-ExtraBold.ttf//Noto Serif Tibetan ExtraBold" checksum="(null)">
@@ -9118,70 +7399,16 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifTibetan-ExtraLight.ttf//Noto Serif Tibetan ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTibetan-Light.ttf//Noto Serif Tibetan Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTibetan-Medium.ttf//Noto Serif Tibetan Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTibetan-Regular.ttf//Noto Serif Tibetan Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifTibetan-SemiBold.ttf//Noto Serif Tibetan SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTibetan-Thin.ttf//Noto Serif Tibetan Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifTodhri-Regular.ttf//Noto Serif Todhri Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifToto-Bold.ttf//Noto Serif Toto Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifToto-Medium.ttf//Noto Serif Toto Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifToto-Regular.ttf//Noto Serif Toto Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifToto-SemiBold.ttf//Noto Serif Toto SemiBold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifVithkuqi-Bold.ttf//Noto Serif Vithkuqi Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifVithkuqi-Medium.ttf//Noto Serif Vithkuqi Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifVithkuqi-Regular.ttf//Noto Serif Vithkuqi Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifVithkuqi-SemiBold.ttf//Noto Serif Vithkuqi SemiBold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifYezidi-Bold.ttf//Noto Serif Yezidi Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifYezidi-Medium.ttf//Noto Serif Yezidi Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifYezidi-Regular.ttf//Noto Serif Yezidi Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifYezidi-SemiBold.ttf//Noto Serif Yezidi SemiBold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoTraditionalNushu-Bold.ttf//Noto Traditional Nushu Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoTraditionalNushu-Light.ttf//Noto Traditional Nushu Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoTraditionalNushu-Regular.ttf//Noto Traditional Nushu Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoZnamennyMusicalNotation-Regular.ttf//Noto Znamenny Musical Notation Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/gsfonts/P052-Bold.otf//P052 Bold" checksum="(null)">
@@ -9196,10 +7423,67 @@
   <resource identifier="external:/usr/share/fonts/gsfonts/P052-Roman.otf//P052 Roman" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/gsfonts/StandardSymbolsPS.otf//Standard Symbols PS Regular" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/Roboto-Black.ttf//Roboto Black" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/Symbola.ttf//Symbola Regular" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/Roboto-BlackItalic.ttf//Roboto Black Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/Roboto-Bold.ttf//Roboto Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/Roboto-BoldItalic.ttf//Roboto Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/RobotoCondensed-Bold.ttf//Roboto Condensed Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/RobotoCondensed-BoldItalic.ttf//Roboto Condensed Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/RobotoCondensed-Italic.ttf//Roboto Condensed Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/RobotoCondensed-Light.ttf//Roboto Condensed Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/RobotoCondensed-LightItalic.ttf//Roboto Condensed Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/RobotoCondensed-Medium.ttf//Roboto Condensed Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/RobotoCondensed-MediumItalic.ttf//Roboto Condensed Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/RobotoCondensed-Regular.ttf//Roboto Condensed Regular" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/Roboto-Italic.ttf//Roboto Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/Roboto-Light.ttf//Roboto Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/Roboto-LightItalic.ttf//Roboto Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/Roboto-Medium.ttf//Roboto Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/Roboto-MediumItalic.ttf//Roboto Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/Roboto-Regular.ttf//Roboto Regular" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/Roboto-Thin.ttf//Roboto Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/Roboto-ThinItalic.ttf//Roboto Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/gsfonts/StandardSymbolsPS.otf//Standard Symbols PS Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/TwitterColorEmoji-SVGinOT.ttf//Twitter Color Emoji Regular" checksum="(null)">

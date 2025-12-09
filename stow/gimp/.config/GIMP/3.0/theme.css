@@ -5,11 +5,11 @@
  * gimp.css file instead (/home/ensismoebius/.config/GIMP/3.0/gimp.css).
  */
 
-@import url("file:///home/ensismoebius/.config/GIMP/3.0/themes/Cyberpunk-Neon/gimp.css");
 @import url("file:///etc/gimp/3.0/gimp.css");
 
 * { -gtk-icon-style: symbolic; }
 
+/* prefer-dark-theme */
 
 
 /* end of theme.css */
