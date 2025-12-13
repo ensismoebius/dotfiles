@@ -13,7 +13,6 @@
 (monitor-yresolution 103)
 (toolbox-foo-area yes)
 (toolbox-groups no)
-(theme "Cyberpunk-Neon")
 (fill-options
     (style fg-color)
     (custom-style solid-color)

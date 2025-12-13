@@ -1,8 +1,11 @@
 # GIMP user context
 
-(tool "gimp-curves-tool")
+(tool "gimp-paintbrush-tool")
 (paint-info "gimp-paintbrush")
-(paint-mode lighten-only)
+(foreground
+    (color "R'G'B'A u8" 4 "\371\367\353\377" 0))
+(background
+    (color "HSVA float" 16 "\0\0\0\0\0\0\0\0\0\0\200\77\0\0\200\77" 0))
 (brush "2. Hardness 050")
 (dynamics "Pressure Size")
 (mybrush "100% Opaque")

@@ -1,4 +1,7 @@
 # GIMP gimp-scale-tool options
 
+(background
+    (color "HSVA float" 16 "\0\0\0\0\0\0\0\0\0\0\200\77\0\0\200\77" 0))
+(interpolation linear)
 
 # end of gimp-scale-tool options

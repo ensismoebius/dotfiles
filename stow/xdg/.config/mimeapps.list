@@ -1,6 +1,5 @@
 [Default Applications]
-inode/directory=nautilus.desktop
-x-scheme-handler/file=nautilus-folder-handler.desktop
+# Web Browser
 x-scheme-handler/http=firefox.desktop
 x-scheme-handler/https=firefox.desktop
 x-scheme-handler/chrome=firefox.desktop
@@ -11,16 +10,63 @@ application/x-extension-shtml=firefox.desktop
 application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
-application/pdf=org.gnome.Papers.desktop
-text/plain=vim.desktop
+
+# File Manager
+inode/directory=nautilus.desktop
+x-scheme-handler/file=nautilus-folder-handler.desktop
+
+# Text Editor
+text/plain=org.gnome.TextEditor.desktop
+text/markdown=org.gnome.TextEditor.desktop
+application/javascript=org.gnome.TextEditor.desktop
+application/json=org.gnome.TextEditor.desktop
+text/css=org.gnome.TextEditor.desktop
+text/x-shellscript=org.gnome.TextEditor.desktop
+text/x-csrc=org.gnome.TextEditor.desktop
+text/x-chdr=org.gnome.TextEditor.desktop
 text/x-c++src=org.gnome.TextEditor.desktop
+text/x-c++hdr=org.gnome.TextEditor.desktop
+application/x-zerosize=org.gnome.TextEditor.desktop
+
+# Image Viewer
+image/jpeg=org.gnome.eog.desktop
+image/jpg=org.gnome.eog.desktop
+image/png=org.gnome.eog.desktop
+image/gif=org.gnome.eog.desktop
+image/svg+xml=org.gnome.eog.desktop
+image/webp=org.gnome.eog.desktop
+image/bmp=org.gnome.eog.desktop
+
+# Video Player
+video/mp4=mpv.desktop
+video/webm=mpv.desktop
+video/x-matroska=mpv.desktop
+video/quicktime=mpv.desktop
+
+# Audio Player
+audio/mpeg=mpv.desktop
+audio/ogg=mpv.desktop
+audio/wav=mpv.desktop
+audio/flac=mpv.desktop
+
+# Document Viewer
+application/pdf=evince.desktop
 application/epub+zip=com.github.johnfactotum.Foliate.desktop
+
+# Archive Manager
+application/zip=file-roller.desktop
+application/x-rar-compressed=file-roller.desktop
+application/x-7z-compressed=file-roller.desktop
+application/x-tar=file-roller.desktop
+application/gzip=file-roller.desktop
+application/x-bzip2=file-roller.desktop
+
+# Other
 x-scheme-handler/gitkraken=GitKraken.desktop
 x-directory/normal=nautilus.desktop
 
 [Added Associations]
-inode/directory=nautilus-folder-handler.desktop;
-x-scheme-handler/file=nautilus-folder-handler.desktop;
+# Web Browser
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 x-scheme-handler/chrome=firefox.desktop;
@@ -31,7 +77,53 @@ application/x-extension-shtml=firefox.desktop;
 application/xhtml+xml=firefox.desktop;
 application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
-application/pdf=org.gnome.Papers.desktop;
-text/plain=org.gnome.TextEditor.desktop;
-text/x-c++src=org.gnome.TextEditor.desktop;
-application/epub+zip=sigil.desktop;com.github.johnfactotum.Foliate.desktop;
+
+# File Manager
+inode/directory=nautilus-folder-handler.desktop;
+x-scheme-handler/file=nautilus-folder-handler.desktop;
+
+# Text Editor
+text/plain=org.gnome.TextEditor.desktop;org.gnome.TextEditor.desktop;
+text/markdown=org.gnome.TextEditor.desktop;
+application/javascript=org.gnome.TextEditor.desktop;
+application/json=org.gnome.TextEditor.desktop;
+text/css=org.gnome.TextEditor.desktop;
+text/x-shellscript=org.gnome.TextEditor.desktop;
+text/x-csrc=org.gnome.TextEditor.desktop;org.gnome.TextEditor.desktop;
+text/x-chdr=org.gnome.TextEditor.desktop;org.gnome.TextEditor.desktop;
+text/x-c++src=org.gnome.TextEditor.desktop;org.gnome.TextEditor.desktop;
+text/x-c++hdr=org.gnome.TextEditor.desktop;org.gnome.TextEditor.desktop;
+application/x-zerosize=org.gnome.TextEditor.desktop;
+
+# Image Viewer
+image/jpeg=org.gnome.eog.desktop;
+image/jpg=org.gnome.eog.desktop;
+image/png=org.gnome.eog.desktop;
+image/gif=org.gnome.eog.desktop;
+image/svg+xml=org.gnome.eog.desktop;
+image/webp=org.gnome.eog.desktop;
+image/bmp=org.gnome.eog.desktop;
+
+# Video Player
+video/mp4=vlc.desktop;
+video/webm=vlc.desktop;
+video/x-matroska=vlc.desktop;
+video/quicktime=vlc.desktop;
+
+# Audio Player
+audio/mpeg=vlc.desktop;
+audio/ogg=vlc.desktop;
+audio/wav=vlc.desktop;
+audio/flac=vlc.desktop;
+
+# Document Viewer
+application/pdf=evince.desktop;org.gnome.Papers.desktop;
+application/epub+zip=com.github.johnfactotum.Foliate.desktop;sigil.desktop;
+
+# Archive Manager
+application/zip=file-roller.desktop;
+application/x-rar-compressed=file-roller.desktop;
+application/x-7z-compressed=file-roller.desktop;
+application/x-tar=file-roller.desktop;
+application/gzip=file-roller.desktop;
+application/x-bzip2=file-roller.desktop;
