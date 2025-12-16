@@ -1,0 +1,71 @@
+[General]
+name=Cyberpunk-NeonV2
+version=0.1
+author=Gemini CLI
+description=A Cyberpunk-NeonV2 theme for Kvantum, incorporating WhiteSur-gtk-theme dark base colors and Cyberpunk-Neon accents.
+
+; Inherit from a dark base for consistency if available
+; based_on=KvFlatDark
+
+; Enable translucency (Kvantum will handle this for the theme if enabled)
+translucent=true
+
+; --- Color Mapping (based on Cyberpunk-NeonV2 GTK theme and Cyberpunk-Neon accents) ---
+
+; General Background/Foreground
+Background=#282828
+Foreground=#dedede
+; Text
+Text=#dedede
+; Selection
+SelectionBackground=#00FF41
+SelectionForeground=#000000
+; Highlight
+Highlight=#00FF41
+HighlightedText=#dedede
+; Button
+ButtonBackground=#282828
+ButtonText=#dedede
+
+; Window Colors
+Window=#282828
+WindowText=#dedede
+
+; Accent Colors (using primary Cyberpunk-Neon green)
+Accent=#00FF41
+AccentText=#dedede
+
+; Border Colors
+Border=#00FF41
+UnfocusedBorder=rgba(0, 255, 65, 0.3)
+borders_color_active=#00FF41
+
+; Tooltip
+TooltipBackground=rgba(0, 0, 0, 0.9)
+TooltipForeground=#00FF41
+
+; --- Basic Opacity Settings ---
+alpha_val=220 ; General transparency for non-focused elements
+alpha_val_inactive=200 ; Slightly less opaque for inactive elements
+alpha_val_dialog=240
+
+; --- Blur (assuming compositor handles it) ---
+blur=false
+blur_strength=5
+
+; --- SVG Assets ---
+; This section is for referencing custom SVG assets for various widget elements.
+; These assets would typically be located in subdirectories within the theme's root.
+; Example entries (these are placeholders and would need actual SVG files):
+; button=svg/buttons.svg
+; checkbox=svg/checkboxes.svg
+; radiobutton=svg/radiobuttons.svg
+; scrollbar=svg/scrollbars.svg
+; slider=svg/sliders.svg
+; tab=svg/tabs.svg
+; progressbar=svg/progressbars.svg
+; combobox=svg/comboboxes.svg
+; spinbox=svg/spinboxes.svg
+; menu=svg/menus.svg
+; tooltip=svg/tooltips.svg
+; header=svg/headers.svg
