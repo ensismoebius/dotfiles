@@ -190,17 +190,13 @@ for pkg in $(ls "$STOW_DIR"); do
 done
 
 # Stow all packages.
-echo "Creating ~/Scripts and ~/Audio directories if they don't exist..."
+echo "Creating ~/Scripts directory if it doesn't exist..."
 mkdir -p "$HOME/Scripts"
-mkdir -p "$HOME/Audio"
 
 for pkg in $(ls "$STOW_DIR"); do
     if [ "$pkg" == "Scripts" ]; then
         echo "Stowing Scripts to ~/Scripts..."
         stow --restow -v -d "$STOW_DIR" -t "$HOME/Scripts" "$pkg"
-    elif [ "$pkg" == "Audios" ]; then
-        echo "Stowing Audios to ~/Audio..."
-        stow --restow -v -d "$STOW_DIR" -t "$HOME/Audio" "$pkg"
     elif [ "$pkg" == "firefox" ]; then
         echo "Skipping firefox package (handled separately)..."
         continue
@@ -212,32 +208,7 @@ done
 
 echo "Stowing complete."
 
-# Set proper permissions for config files and directories
-echo "Setting proper permissions for config files and directories..."
-# For .config
-if [ -d "$HOME/.config" ]; then
-    find "$HOME/.config" -type f -exec chmod 644 {} \; 2>/dev/null || true
-    find "$HOME/.config" -type d -exec chmod 755 {} \; 2>/dev/null || true
-fi
-# For .local
-if [ -d "$HOME/.local" ]; then
-    find "$HOME/.local" -type f -exec chmod 644 {} \; 2>/dev/null || true
-    find "$HOME/.local" -type d -exec chmod 755 {} \; 2>/dev/null || true
-fi
-# For other common dotfiles
-chmod 644 "$HOME/.bashrc" "$HOME/.zshrc" "$HOME/.vimrc" 2>/dev/null || true
-chmod 755 "$HOME/.vim" 2>/dev/null || true
-# For Scripts and Audio
-if [ -d "$HOME/Scripts" ]; then
-    find "$HOME/Scripts" -type f -exec chmod 755 {} \; 2>/dev/null || true
-    find "$HOME/Scripts" -type d -exec chmod 755 {} \; 2>/dev/null || true
-fi
-if [ -d "$HOME/Audio" ]; then
-    find "$HOME/Audio" -type f -exec chmod 644 {} \; 2>/dev/null || true
-    find "$HOME/Audio" -type d -exec chmod 755 {} \; 2>/dev/null || true
-fi
-
-echo "Permissions set."
+# Install Firefox userChrome
 echo "Installing Firefox userChrome..."
 if [ -f "$STOW_DIR/firefox/install_user_chrome.sh" ]; then
     bash "$STOW_DIR/firefox/install_user_chrome.sh"

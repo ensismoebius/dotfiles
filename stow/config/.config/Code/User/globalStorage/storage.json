@@ -1,0 +1,134 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "54381a098bf09d4a0f904d0424e3f2b0e5343b95f80b36cb3644f88ef2a3b2f9",
+    "telemetry.devDeviceId": "f0fcbdeb-ba61-4690-bd5e-8c2a538f695e",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/ensismoebius/Repos/WhiteSur-gtk-theme"
+            },
+            {
+                "folderUri": "file:///home/ensismoebius/dotfiles"
+            },
+            {
+                "folderUri": "file:///home/ensismoebius/Repos/doutorado"
+            },
+            {
+                "folderUri": "file:///home/ensismoebius/Repos/doutorado/software/nn"
+            }
+        ],
+        "emptyWindows": [
+            {
+                "backupFolder": "1766004376244"
+            },
+            {
+                "backupFolder": "1766005109748"
+            }
+        ]
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/ensismoebius/dotfiles": "__default__profile__",
+            "file:///home/ensismoebius/Repos/WhiteSur-gtk-theme": "__default__profile__",
+            "file:///home/ensismoebius/Repos/doutorado": "__default__profile__",
+            "file:///home/ensismoebius/Repos/doutorado/software/nn": "__default__profile__"
+        },
+        "emptyWindows": {
+            "1766004376244": "__default__profile__",
+            "1766005109748": "__default__profile__"
+        }
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1f1f1f",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1f1f1f",
+            "editorBackground": "#1f1f1f",
+            "titleBarBackground": "#181818",
+            "titleBarBorder": "#2b2b2b",
+            "activityBarBackground": "#181818",
+            "activityBarBorder": "#2b2b2b",
+            "sideBarBackground": "#181818",
+            "sideBarBorder": "#2b2b2b",
+            "statusBarBackground": "#181818",
+            "statusBarBorder": "#2b2b2b",
+            "statusBarNoFolderBackground": "#1f1f1f"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 300,
+            "auxiliaryBarWidth": 300,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/ensismoebius/dotfiles",
+            "backupPath": "/home/ensismoebius/.config/Code/Backups/721e9dcfc7a735b17ae9ee8213269508",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 0,
+                "width": 1366,
+                "height": 768
+            }
+        },
+        "openedWindows": [
+            {
+                "folder": "file:///home/ensismoebius/Repos/doutorado/software/nn",
+                "backupPath": "/home/ensismoebius/.config/Code/Backups/5649409265efdc48eba8bd59259db91d",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 1366,
+                    "height": 768
+                }
+            },
+            {
+                "folder": "file:///home/ensismoebius/dotfiles",
+                "backupPath": "/home/ensismoebius/.config/Code/Backups/721e9dcfc7a735b17ae9ee8213269508",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 1366,
+                    "height": 768
+                }
+            }
+        ]
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 300,
+            "auxiliaryBarWidth": 300,
+            "workspaces": {
+                "1cde53ec3e2af10eb126d0b533e1ca76": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "7feabc967bb5ea27a9773b6eac1771e3": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "bd1dfaa1b86288c6df2f11a19a6e10ad": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "651899a77ebabd2e2681244869f28a1c": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                }
+            }
+        }
+    }
+}
