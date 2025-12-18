@@ -64,8 +64,8 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
             "activityBarWidth": 48,
-            "sideBarWidth": 300,
-            "auxiliaryBarWidth": 300,
+            "sideBarWidth": 298,
+            "auxiliaryBarWidth": 170,
             "statusBarHeight": 22,
             "windowBorder": false
         }
@@ -109,13 +109,9 @@
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
-            "sideBarWidth": 300,
-            "auxiliaryBarWidth": 300,
+            "sideBarWidth": 298,
+            "auxiliaryBarWidth": 170,
             "workspaces": {
-                "1cde53ec3e2af10eb126d0b533e1ca76": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": true
-                },
                 "7feabc967bb5ea27a9773b6eac1771e3": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
@@ -127,6 +123,10 @@
                 "651899a77ebabd2e2681244869f28a1c": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
+                },
+                "1cde53ec3e2af10eb126d0b533e1ca76": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
                 }
             }
         }

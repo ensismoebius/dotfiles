@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/ensismoebius/.gtkrc-2.0.mine"
-gtk-theme-name="Cyberpunk-NeonV2-Dark"
-gtk-icon-theme-name="Adwaita"
+gtk-theme-name="WhiteSur-Cyberpunk-NeonV2-Dark"
+gtk-icon-theme-name="Cyberpunk-Neon"
 gtk-font-name="Adwaita Sans 11"
 gtk-cursor-theme-name="catppuccin-mocha-mauve"
 gtk-cursor-theme-size=24
