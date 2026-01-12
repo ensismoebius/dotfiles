@@ -22,6 +22,9 @@ import lldb
 from typing import List
 import bisect
 
+# Maximum number of children to expose to LLDB to avoid huge slow expansions
+MAX_DISPLAY_CHILDREN = 500
+
 def __lldb_init_module(debugger, internal_dict):
     debugger.HandleCommand(
         "type synthetic add -x ^Eigen::Matrix<.*> --python-class eigenlldb.EigenMatrixChildProvider")
@@ -91,26 +94,61 @@ class EigenMatrixProvider:
 
         self._fixed_storage: bool = (max_rows != -1 and max_cols != -1)
 
+        # Cache runtime storage and dimensions to avoid repeated SB API calls
+        self._storage = None
+        self._data = None
+        self._rows_runtime = None
+        self._cols_runtime = None
+        try:
+            if self._rows_compile_time == -1 or self._cols_compile_time == -1:
+                storage = self._valobj.GetChildMemberWithName("m_storage")
+                self._storage = storage
+                try:
+                    self._rows_runtime = storage.GetChildMemberWithName("m_rows").GetValueAsUnsigned()
+                except Exception:
+                    self._rows_runtime = None
+                try:
+                    self._cols_runtime = storage.GetChildMemberWithName("m_cols").GetValueAsUnsigned()
+                except Exception:
+                    self._cols_runtime = None
+                try:
+                    self._data = storage.GetChildMemberWithName("m_data")
+                except Exception:
+                    self._data = None
+        except Exception:
+            # best-effort caching; fall back to reading on demand
+            pass
+
     def _cols(self):
         if self._cols_compile_time == -1:
-            storage = self._valobj.GetChildMemberWithName("m_storage")
+            if self._cols_runtime is not None:
+                return self._cols_runtime
+            storage = self._storage if self._storage is not None else self._valobj.GetChildMemberWithName("m_storage")
             cols = storage.GetChildMemberWithName("m_cols").GetValueAsUnsigned()
+            self._cols_runtime = cols
             return cols
         else:
             return self._cols_compile_time
 
     def _rows(self):
         if self._rows_compile_time == -1:
-            storage = self._valobj.GetChildMemberWithName("m_storage")
+            if self._rows_runtime is not None:
+                return self._rows_runtime
+            storage = self._storage if self._storage is not None else self._valobj.GetChildMemberWithName("m_storage")
             rows = storage.GetChildMemberWithName("m_rows").GetValueAsUnsigned()
+            self._rows_runtime = rows
             return rows
         else:
             return self._rows_compile_time
     def get_summary(self):
-        if self._rows() == 0 or self._cols() == 0:
+        rows = self._rows()
+        cols = self._cols()
+        if rows == 0 or cols == 0:
             return f"size=[0x0, order={'row_major' if self._row_major else 'column_major'}]"
         else:
-            return f"size=[{self._rows()}x{self._cols()}, order={'row_major' if self._row_major else 'column_major'}] "
+            total = rows * cols
+            truncated = " (truncated)" if total > MAX_DISPLAY_CHILDREN else ""
+            return f"size=[{rows}x{cols}, order={'row_major' if self._row_major else 'column_major'}]{truncated} "
 
 
 def eigen_matrix_summary_provider(valobj, dict):
@@ -120,14 +158,20 @@ def eigen_matrix_summary_provider(valobj, dict):
 class EigenMatrixChildProvider(EigenMatrixProvider):
 
     def num_children(self):
-        return self._cols() * self._rows()
+        total = self._cols() * self._rows()
+        return total if total <= MAX_DISPLAY_CHILDREN else MAX_DISPLAY_CHILDREN
 
     def get_child_index(self, name):
         pass
 
     def get_child_at_index(self, index):
-        storage = self._valobj.GetChildMemberWithName("m_storage")
-        data = storage.GetChildMemberWithName("m_data")
+        total = self._cols() * self._rows()
+        if index < 0 or index >= total:
+            return None
+
+        # reuse cached storage/data when possible
+        storage = self._storage if self._storage is not None else self._valobj.GetChildMemberWithName("m_storage")
+        data = self._data if self._data is not None else storage.GetChildMemberWithName("m_data")
         offset = self._scalar_size * index
 
         if self._row_major:

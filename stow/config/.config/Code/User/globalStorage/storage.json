@@ -1,44 +1,32 @@
 {
     "telemetry.sqmId": "",
     "telemetry.machineId": "54381a098bf09d4a0f904d0424e3f2b0e5343b95f80b36cb3644f88ef2a3b2f9",
-    "telemetry.devDeviceId": "f0fcbdeb-ba61-4690-bd5e-8c2a538f695e",
+    "telemetry.devDeviceId": "5b0bc545-335d-4f96-98e1-20a25a11e1d9",
     "backupWorkspaces": {
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/ensismoebius/Repos/WhiteSur-gtk-theme"
+                "folderUri": "file:///home/ensismoebius/Repos/doutorado/software/nn"
             },
             {
                 "folderUri": "file:///home/ensismoebius/dotfiles"
-            },
-            {
-                "folderUri": "file:///home/ensismoebius/Repos/doutorado"
-            },
-            {
-                "folderUri": "file:///home/ensismoebius/Repos/doutorado/software/nn"
             }
         ],
-        "emptyWindows": [
-            {
-                "backupFolder": "1766004376244"
-            },
-            {
-                "backupFolder": "1766005109748"
-            }
-        ]
+        "emptyWindows": []
     },
-    "windowControlHeight": 35,
+    "windowControlHeight": 30,
     "profileAssociations": {
         "workspaces": {
             "file:///home/ensismoebius/dotfiles": "__default__profile__",
             "file:///home/ensismoebius/Repos/WhiteSur-gtk-theme": "__default__profile__",
             "file:///home/ensismoebius/Repos/doutorado": "__default__profile__",
-            "file:///home/ensismoebius/Repos/doutorado/software/nn": "__default__profile__"
+            "file:///home/ensismoebius/Repos/doutorado/software/nn": "__default__profile__",
+            "file:///home/ensismoebius/Workspaces/python-workspace": "__default__profile__",
+            "file:///home/ensismoebius/Workspaces/misc-workspace/materialDeEstudos": "__default__profile__",
+            "file:///home/ensismoebius/Documentos/fans": "__default__profile__",
+            "file:///home/ensismoebius/Workspaces/python-workspace/mortgage-simulator": "__default__profile__"
         },
-        "emptyWindows": {
-            "1766004376244": "__default__profile__",
-            "1766005109748": "__default__profile__"
-        }
+        "emptyWindows": {}
     },
     "theme": "vs-dark",
     "themeBackground": "#1f1f1f",
@@ -62,10 +50,10 @@
         "layoutInfo": {
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
-            "titleBarHeight": 35,
+            "titleBarHeight": 36,
             "activityBarWidth": 48,
-            "sideBarWidth": 298,
-            "auxiliaryBarWidth": 170,
+            "sideBarWidth": 428,
+            "auxiliaryBarWidth": 443,
             "statusBarHeight": 22,
             "windowBorder": false
         }
@@ -79,38 +67,16 @@
                 "x": 0,
                 "y": 0,
                 "width": 1366,
-                "height": 768
+                "height": 768,
+                "zoomLevel": -1
             }
         },
-        "openedWindows": [
-            {
-                "folder": "file:///home/ensismoebius/Repos/doutorado/software/nn",
-                "backupPath": "/home/ensismoebius/.config/Code/Backups/5649409265efdc48eba8bd59259db91d",
-                "uiState": {
-                    "mode": 0,
-                    "x": 0,
-                    "y": 0,
-                    "width": 1366,
-                    "height": 768
-                }
-            },
-            {
-                "folder": "file:///home/ensismoebius/dotfiles",
-                "backupPath": "/home/ensismoebius/.config/Code/Backups/721e9dcfc7a735b17ae9ee8213269508",
-                "uiState": {
-                    "mode": 0,
-                    "x": 0,
-                    "y": 0,
-                    "width": 1366,
-                    "height": 768
-                }
-            }
-        ]
+        "openedWindows": []
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
-            "sideBarWidth": 298,
-            "auxiliaryBarWidth": 170,
+            "sideBarWidth": 428,
+            "auxiliaryBarWidth": 443,
             "workspaces": {
                 "7feabc967bb5ea27a9773b6eac1771e3": {
                     "sideBarVisible": true,
@@ -122,11 +88,27 @@
                 },
                 "651899a77ebabd2e2681244869f28a1c": {
                     "sideBarVisible": true,
-                    "auxiliaryBarVisible": false
+                    "auxiliaryBarVisible": true
                 },
                 "1cde53ec3e2af10eb126d0b533e1ca76": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": true
+                },
+                "e809c40ba74ca5db156df33b9d4eac42": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "39a46313e773dc0b3aa3482f0111f3f7": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "ac6004d4255bee568caa2504c582ef1a": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "a6ba7343d58834800a178dbb0fb2e116": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
                 }
             }
         }

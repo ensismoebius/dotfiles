@@ -1,0 +1,10 @@
+[Unit]
+Description=Firefox com limite de memória
+
+[Service]
+ExecStart=/usr/bin/firefox
+MemoryMax=2G
+MemorySwapMax=0
+
+[Install]
+WantedBy=default.target

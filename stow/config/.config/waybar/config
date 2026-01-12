@@ -50,7 +50,7 @@
         "format": "{usage}% ",
         "tooltip": true,
         "tooltip-format": "Uso de CPU: {usage}% Núcleos: {cores}",
-        "interval": 1
+        "interval": 5
     },
     "memory": {
         "format": "{}% 󰍛",
@@ -97,7 +97,6 @@
             "icon-size": 14
         }
     },
-
     "hyprland/workspaces#taskbar": {
         "format": "",
         "show-special": false,
@@ -115,7 +114,8 @@
         "exec": "~/Scripts/ui/mpris_icon.sh",
         "on-click": "playerctl play-pause",
         "return-type": "json",
-        "tooltip": true
+        "tooltip": true,
+        "interval": 3
     },
     "custom/mpris-text": {
         "format": "{text}",
@@ -125,7 +125,7 @@
         "on-scroll-down": "playerctl previous",
         "return-type": "json",
         "tooltip": true,
-        "interval": 1
+        "interval": 3
     },
     "custom/notification": {
         "tooltip": true,
@@ -244,7 +244,7 @@
     "custom/usb": {
         "format": "{}",
         "return-type": "json",
-        "interval": 2,
+        "interval": 10,
         "exec": "~/Scripts/system/usb/check_usb.sh",
         "on-click": "~/Scripts/system/usb/open_usb_device.sh",
         "tooltip": true
@@ -277,7 +277,7 @@
     "custom/bluetooth": {
         "format": "{}",
         "return-type": "json",
-        "interval": 5,
+        "interval": 10,
         "exec": "~/Scripts/audio/bluetooth/bluetooth_status.sh",
         "on-click": "~/Scripts/audio/bluetooth/toggle_bluetooth.sh",
         "tooltip": true

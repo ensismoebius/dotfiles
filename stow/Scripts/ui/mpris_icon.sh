@@ -4,42 +4,34 @@
 # It is designed to be used with Waybar as a separate module.
 
 # --- Icon Configuration ---
-PLAYER_ICON_MPV="🎵 "
-STATUS_ICON_PLAYING="▶  "
-STATUS_ICON_PAUSED="⏸  "
+PLAYER_ICON_MPV="♬"
+STATUS_ICON_PLAYING="▶ "
+STATUS_ICON_PAUSED="❚❚ "
 
-update_icon() {
-    PLAYER_STATUS=$(playerctl status 2>/dev/null)
-    
-    ICON=""
-    TOOLTIP="Player stopped"
+PLAYER_STATUS=$(playerctl status 2>/dev/null)
 
-    if [ "$PLAYER_STATUS" = "Playing" ] || [ "$PLAYER_STATUS" = "Paused" ]; then
-        PLAYER_NAME=$(playerctl metadata --format '''{{playerName}}''' 2>/dev/null)
-        METADATA=$(playerctl metadata --format '''{{artist}} - {{title}}''' 2>/dev/null)
-        TOOLTIP="$METADATA"
+ICON=""
+TOOLTIP="Player stopped"
 
-        if [ "$PLAYER_STATUS" = "Playing" ]; then
-            ICON=$STATUS_ICON_PLAYING
-        elif [ "$PLAYER_STATUS" = "Paused" ]; then
-            ICON=$STATUS_ICON_PAUSED
-        fi
+if [ "$PLAYER_STATUS" = "Playing" ] || [ "$PLAYER_STATUS" = "Paused" ]; then
+    PLAYER_NAME=$(playerctl metadata --format '''{{playerName}}''' 2>/dev/null)
+    METADATA=$(playerctl metadata --format '''{{artist}} - {{title}}''' 2>/dev/null)
+    TOOLTIP="$METADATA"
 
-        # Override with player-specific icon if defined
-        case $PLAYER_NAME in
-            "mpv")
-                ICON=$PLAYER_ICON_MPV
-                ;; 
-        esac
+    if [ "$PLAYER_STATUS" = "Playing" ]; then
+        ICON=$STATUS_ICON_PLAYING
+    elif [ "$PLAYER_STATUS" = "Paused" ]; then
+        ICON=$STATUS_ICON_PAUSED
     fi
-    
-    # Escape tooltip for JSON and print
-    ESCAPED_TOOLTIP=$(echo "$TOOLTIP" | sed 's#\\#\\\\#g; s#"#\"#g' | tr -d '\n')
-    echo "{\"text\": \"$ICON\", \"tooltip\": \"$ESCAPED_TOOLTIP\"}"
-}
 
-# Main loop to update the icon every second
-while true; do
-    update_icon
-    sleep 1
-done
+    # Override with player-specific icon if defined
+    case $PLAYER_NAME in
+        "mpv")
+            ICON=$PLAYER_ICON_MPV
+            ;; 
+    esac
+fi
+
+# Escape tooltip for JSON and print
+ESCAPED_TOOLTIP=$(echo "$TOOLTIP" | sed 's#\\#\\\\#g; s#"#\"#g' | tr -d '\n')
+echo "{\"text\": \"$ICON\", \"tooltip\": \"$ESCAPED_TOOLTIP\"}"

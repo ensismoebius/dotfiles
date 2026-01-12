@@ -1168,127 +1168,127 @@
   <resource identifier="external:${gimp_data_dir}/gradients/Yellow_Orange.ggr//Yellow Orange" checksum="c7f332150f1c1d8cb8100add34b0ef55">
   </resource>
 
-  <resource identifier="internal:gimp-palette-color-history//Histórico de cores" checksum="9882654188c7ee687ba978c909c474a2">
+  <resource identifier="internal:gimp-palette-color-history//Histórico de cores" checksum="a261b434684ca218346d7d45794a3705">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Bears.gpl//Bears" checksum="f40e6c4287dd820e59113b554a3a2ca7">
+  <resource identifier="external:${gimp_data_dir}/palettes/Bears.gpl//Bears" checksum="1152be2c8e3a29124ef2a937b7d33b95">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Bgold.gpl//Bgold" checksum="8abf854256ee062de77fb3ed141c1a36">
+  <resource identifier="external:${gimp_data_dir}/palettes/Bgold.gpl//Bgold" checksum="1776f1c3980ec3fb7627645466718dff">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Blues.gpl//Blues" checksum="6fdbec3340f9c42d52435e13c5860a58">
+  <resource identifier="external:${gimp_data_dir}/palettes/Blues.gpl//Blues" checksum="29d74ceb4ce9f82ef4aefb26a166a032">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Borders.gpl//Borders" checksum="2e2afa61f88a9626d8a96c734215eb1b">
+  <resource identifier="external:${gimp_data_dir}/palettes/Borders.gpl//Borders" checksum="ade90a332cf5d43eec57d7c9f04b4e74">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Browns_And_Yellows.gpl//Browns And Yellows" checksum="0ba7382b5d0b4119aa7317345092ecba">
+  <resource identifier="external:${gimp_data_dir}/palettes/Browns_And_Yellows.gpl//Browns And Yellows" checksum="925a46d97455349289fb06adc0d2fd89">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Caramel.gpl//Caramel" checksum="8c9f44253220d973ec256a3a11bc5288">
+  <resource identifier="external:${gimp_data_dir}/palettes/Caramel.gpl//Caramel" checksum="47a569ceff1d9eb70091b4a746a8510e">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Cascade.gpl//Cascade" checksum="a90b96fbe1ec7bc377e3510297181927">
+  <resource identifier="external:${gimp_data_dir}/palettes/Cascade.gpl//Cascade" checksum="67d416a3c7267f7cba81350ccd2404a8">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/China.gpl//China" checksum="c179b663ead4bee680b1a911c3d09fc8">
+  <resource identifier="external:${gimp_data_dir}/palettes/China.gpl//China" checksum="e706068596d7951e4754bc70b2b84f4a">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Coldfire.gpl//Coldfire" checksum="50a75c5515d8a8eaf687ba5d585c369a">
+  <resource identifier="external:${gimp_data_dir}/palettes/Coldfire.gpl//Coldfire" checksum="1245257db1e5b4e5862a520085a78984">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Cool_Colors.gpl//Cool Colors" checksum="15e258a02891dc2db2c50250c6f98be4">
+  <resource identifier="external:${gimp_data_dir}/palettes/Cool_Colors.gpl//Cool Colors" checksum="45d1a04889440748313ca2189eff16c9">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Cranes.gpl//Cranes" checksum="c88e5aee709e0240df9bdf97aec05ff9">
+  <resource identifier="external:${gimp_data_dir}/palettes/Cranes.gpl//Cranes" checksum="14d291ec17273de5afdfa89d6e12a900">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Dark_pastels.gpl//Dark pastels" checksum="21572058ed50b5b0ab9cf8d902faabae">
+  <resource identifier="external:${gimp_data_dir}/palettes/Dark_pastels.gpl//Dark pastels" checksum="7b7c2fb9b481f0e8568cb1f2071fa75d">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Default.gpl//Default" checksum="a519dbfb1e17d0f6c8c8d57d35ed2305">
+  <resource identifier="external:${gimp_data_dir}/palettes/Default.gpl//Default" checksum="6abe9086651800f4a997b4ead995fb50">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Ega.gpl//Ega" checksum="42dbbd66806ce752eeca14a8019f56a2">
+  <resource identifier="external:${gimp_data_dir}/palettes/Ega.gpl//Ega" checksum="dc78ddc81a4976465e8f582809ad2449">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Firecode.gpl//Firecode" checksum="3b74f239a8ffdcc07d8ac896ba552114">
+  <resource identifier="external:${gimp_data_dir}/palettes/Firecode.gpl//Firecode" checksum="f3f2ce4eeb9078fdb53ef61aafc4c4e3">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Gold.gpl//Gold" checksum="935cbc83a70fa7b21deb616268b7d49e">
+  <resource identifier="external:${gimp_data_dir}/palettes/Gold.gpl//Gold" checksum="b24a518335b8d00e3a04fde40f30c11d">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Grayblue.gpl//Grayblue" checksum="bb65421cf4cca9ba52736cbfed55cd32">
+  <resource identifier="external:${gimp_data_dir}/palettes/Grayblue.gpl//Grayblue" checksum="e889bf309438b6aef6d71622c798f1ae">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Grays.gpl//Grays" checksum="c958b4ce8e05e5e155f349b661f580fa">
+  <resource identifier="external:${gimp_data_dir}/palettes/Grays.gpl//Grays" checksum="b3c74da6cadf395dca0e84510f4acea4">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/GrayViolet.gpl//GrayViolet" checksum="e278a5632d14efc925475c0d623d8618">
+  <resource identifier="external:${gimp_data_dir}/palettes/GrayViolet.gpl//GrayViolet" checksum="a3877fbca986a4fc536bb446ee60cfff">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Greens.gpl//Greens" checksum="e0d40d601c78768ca2c49859be47afe6">
+  <resource identifier="external:${gimp_data_dir}/palettes/Greens.gpl//Greens" checksum="d0db41d91f67712627c60a9bcec3e520">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Hilite.gpl//Hilite" checksum="db49ac02d6d7973059b1f140cc5cb654">
+  <resource identifier="external:${gimp_data_dir}/palettes/Hilite.gpl//Hilite" checksum="7caa516e4091a0bc742bf57bc4df232e">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Khaki.gpl//Khaki" checksum="2f136bcb56664352dcedce2241c2893f">
+  <resource identifier="external:${gimp_data_dir}/palettes/Khaki.gpl//Khaki" checksum="58510f4d6a5f38c50327bd2027f002b1">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Lights.gpl//Lights" checksum="5efe915b8f59c49aa0c38c02e16ce329">
+  <resource identifier="external:${gimp_data_dir}/palettes/Lights.gpl//Lights" checksum="33dfc737c182d6e2dced24fde05042f5">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Muted.gpl//Muted" checksum="c3864a10d9417a307822d2618cdbca2b">
+  <resource identifier="external:${gimp_data_dir}/palettes/Muted.gpl//Muted" checksum="4b75bd97999dc699361ca3c0f1426f76">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Named_Colors.gpl//Named Colors" checksum="e2480dc227fdf265a15526cc3adc627a">
+  <resource identifier="external:${gimp_data_dir}/palettes/Named_Colors.gpl//Named Colors" checksum="905111a24fef8a6ecfb902246edc2c7a">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/News3.gpl//News3" checksum="727517271de02f3cfbd0f3af52665a48">
+  <resource identifier="external:${gimp_data_dir}/palettes/News3.gpl//News3" checksum="c6518f323f796cd65dc2088c5c14e343">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Op2.gpl//Op2" checksum="ef4f6821552bb15d5ce8b0b4e7e46f73">
+  <resource identifier="external:${gimp_data_dir}/palettes/Op2.gpl//Op2" checksum="09d1615fc879c54e2308cd7fc79b0fc9">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Paintjet.gpl//Paintjet" checksum="938af5cbfa0eb0c6be1bd7be79a0125b">
+  <resource identifier="external:${gimp_data_dir}/palettes/Paintjet.gpl//Paintjet" checksum="75501314d29b817863ddbef645640218">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Pastels.gpl//Pastels" checksum="2776ace5f887c168de188c93e5316b25">
+  <resource identifier="external:${gimp_data_dir}/palettes/Pastels.gpl//Pastels" checksum="3336afd0a3086f2ead3c775370e289ed">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Plasma.gpl//Plasma" checksum="eefc917dfc4685a41b3dcba7567a00f6">
+  <resource identifier="external:${gimp_data_dir}/palettes/Plasma.gpl//Plasma" checksum="dfa0a8760f6d056e9df532392db1dabe">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Reds.gpl//Reds" checksum="8d8d8707130319341a479d3513a60d8b">
+  <resource identifier="external:${gimp_data_dir}/palettes/Reds.gpl//Reds" checksum="8a454cb2968888f4edc451a4805cdba5">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Reds_And_Purples.gpl//Reds And Purples" checksum="bd63a3e340763e360ba35f4f201a0001">
+  <resource identifier="external:${gimp_data_dir}/palettes/Reds_And_Purples.gpl//Reds And Purples" checksum="8855a07aaed92e25798d86b912191239">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Royal.gpl//Royal" checksum="ec674483169a6ed5d5ce29c5a0c49fdd">
+  <resource identifier="external:${gimp_data_dir}/palettes/Royal.gpl//Royal" checksum="f9a0279614e516a675fb96b363cd9a07">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Tango.gpl//Tango Icon Theme" checksum="7adf5d5365315e1f5227cc600aaabf2e">
+  <resource identifier="external:${gimp_data_dir}/palettes/Tango.gpl//Tango Icon Theme" checksum="3ff5d23da3b38a503145166cdb4d751c">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Topographic.gpl//Topographic" checksum="7110b391fc6094930de743c5a456f74f">
+  <resource identifier="external:${gimp_data_dir}/palettes/Topographic.gpl//Topographic" checksum="17df8f6f0fc9b6aee07f1b0f7ce5cd1d">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Visibone.gpl//Visibone" checksum="95aa013628288dca6f5a4b7199dd8540">
+  <resource identifier="external:${gimp_data_dir}/palettes/Visibone.gpl//Visibone" checksum="49932fe2f33caf08a70c4614518e7f10">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Visibone_2.gpl//Visibone 2" checksum="07e3e6ab48d896b9edad9e33006497a5">
+  <resource identifier="external:${gimp_data_dir}/palettes/Visibone_2.gpl//Visibone 2" checksum="77568f0e74a79920e4973b0b04984e5e">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Volcano.gpl//Volcano" checksum="de780fd8434295cf59bb927b56f97075">
+  <resource identifier="external:${gimp_data_dir}/palettes/Volcano.gpl//Volcano" checksum="5c3b730603168c91a4402d7fe5279094">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Warm_Colors.gpl//Warm Colors" checksum="4ef3e075b6c07b765ebbf1eb60a1cab7">
+  <resource identifier="external:${gimp_data_dir}/palettes/Warm_Colors.gpl//Warm Colors" checksum="a95d16069241906b5b0b4ec38cd9b7f3">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Web.gpl//Web" checksum="daa068e1968cf864d751fb53e510de20">
+  <resource identifier="external:${gimp_data_dir}/palettes/Web.gpl//Web" checksum="523c21046e29592114c646ee2110070c">
   </resource>
 
   <resource identifier="internal:gimp-font-standard-alias: Monospace//Monospace" checksum="(null)">

@@ -25,3 +25,5 @@ else
 fi
 unset __mamba_setup
 # <<< mamba initialize <<<
+export OLLAMA_NUM_THREADS=12
+export OLLAMA_CTX_SIZE=8192

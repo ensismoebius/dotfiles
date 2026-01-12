@@ -9901,7 +9901,7 @@
       },
       "contentReferences": [],
       "codeCitations": [],
-      "timeSpentWaiting": 16792332
+      "timeSpentWaiting": 16844770
     },
     {
       "requestId": "request_fc2df01f-6007-4e7b-8920-1f29984ba1fd",
@@ -10301,7 +10301,6 @@
           },
           "toolSpecificData": {
             "kind": "terminal",
-            "terminalToolSessionId": "ed190899-1416-45d7-815a-f1e5caab76a5",
             "terminalCommandId": "tool-b1a2fac0-bfa0-434a-bc04-1e0ce2c6a3ec",
             "commandLine": {
               "original": "cd /home/ensismoebius/dotfiles && mv stow/hypr/.config/hypr stow/config/.config/",
@@ -10311,12 +10310,6 @@
             "terminalCommandState": {
               "timestamp": 1766005357593,
               "duration": 0
-            },
-            "terminalCommandUri": {
-              "$mid": 1,
-              "path": "/1cde53ec3e2af10eb126d0b533e1ca76/2",
-              "scheme": "vscode-terminal",
-              "query": "command=tool-b1a2fac0-bfa0-434a-bc04-1e0ce2c6a3ec"
             },
             "terminalTheme": {
               "background": "#181818",
@@ -10386,7 +10379,6 @@
           },
           "toolSpecificData": {
             "kind": "terminal",
-            "terminalToolSessionId": "8ac92122-5d25-42dd-8836-453b75973076",
             "terminalCommandId": "tool-34995714-6e60-4166-bf4b-2fd36bcacd3a",
             "commandLine": {
               "original": "cd /home/ensismoebius/dotfiles && mv stow/gimp/.config/GIMP stow/config/.config/",
@@ -10407,12 +10399,6 @@
             "terminalCommandState": {
               "timestamp": 1766005365641,
               "duration": 0
-            },
-            "terminalCommandUri": {
-              "$mid": 1,
-              "path": "/1cde53ec3e2af10eb126d0b533e1ca76/2",
-              "scheme": "vscode-terminal",
-              "query": "command=tool-34995714-6e60-4166-bf4b-2fd36bcacd3a"
             },
             "terminalTheme": {
               "background": "#181818",
@@ -10439,7 +10425,6 @@
           },
           "toolSpecificData": {
             "kind": "terminal",
-            "terminalToolSessionId": "ece6d3dc-b34c-423e-9350-dee71df56877",
             "terminalCommandId": "tool-9dc9d96c-4481-433a-8352-ada1162ccdbf",
             "commandLine": {
               "original": "cd /home/ensismoebius/dotfiles && mv stow/Kvantum/.config/Kvantum stow/config/.config/",
@@ -10460,12 +10445,6 @@
             "terminalCommandState": {
               "timestamp": 1766005367286,
               "duration": 0
-            },
-            "terminalCommandUri": {
-              "$mid": 1,
-              "path": "/1cde53ec3e2af10eb126d0b533e1ca76/2",
-              "scheme": "vscode-terminal",
-              "query": "command=tool-9dc9d96c-4481-433a-8352-ada1162ccdbf"
             },
             "terminalTheme": {
               "background": "#181818",
@@ -10492,7 +10471,6 @@
           },
           "toolSpecificData": {
             "kind": "terminal",
-            "terminalToolSessionId": "764ecc7c-8ed5-405d-8ddf-91e049b155f1",
             "terminalCommandId": "tool-ecde55e9-60da-41c7-a1e8-12f9954b11c8",
             "commandLine": {
               "original": "cd /home/ensismoebius/dotfiles && mv stow/xdg/.config/mimeapps.list stow/config/.config/",
@@ -10513,12 +10491,6 @@
             "terminalCommandState": {
               "timestamp": 1766005369362,
               "duration": 0
-            },
-            "terminalCommandUri": {
-              "$mid": 1,
-              "path": "/1cde53ec3e2af10eb126d0b533e1ca76/2",
-              "scheme": "vscode-terminal",
-              "query": "command=tool-ecde55e9-60da-41c7-a1e8-12f9954b11c8"
             },
             "terminalTheme": {
               "background": "#181818",
@@ -10545,7 +10517,6 @@
           },
           "toolSpecificData": {
             "kind": "terminal",
-            "terminalToolSessionId": "c819e222-6c6b-4676-b46d-97c16184c028",
             "terminalCommandId": "tool-fac3b1b2-84cc-4fd7-9d7b-126bb4226a4a",
             "commandLine": {
               "original": "cd /home/ensismoebius/dotfiles && mkdir -p stow/local/.local/share",
@@ -10566,12 +10537,6 @@
             "terminalCommandState": {
               "timestamp": 1766005375039,
               "duration": 0
-            },
-            "terminalCommandUri": {
-              "$mid": 1,
-              "path": "/1cde53ec3e2af10eb126d0b533e1ca76/2",
-              "scheme": "vscode-terminal",
-              "query": "command=tool-fac3b1b2-84cc-4fd7-9d7b-126bb4226a4a"
             },
             "terminalTheme": {
               "background": "#181818",
@@ -10598,7 +10563,6 @@
           },
           "toolSpecificData": {
             "kind": "terminal",
-            "terminalToolSessionId": "0e754e94-961c-4296-9c5a-ad93be05d05e",
             "terminalCommandId": "tool-e371d278-df4a-45fd-b3e6-e09348258963",
             "commandLine": {
               "original": "cd /home/ensismoebius/dotfiles && mv stow/icons/.local/share/* stow/local/.local/share/",
@@ -10619,12 +10583,6 @@
             "terminalCommandState": {
               "timestamp": 1766005376797,
               "duration": 0
-            },
-            "terminalCommandUri": {
-              "$mid": 1,
-              "path": "/1cde53ec3e2af10eb126d0b533e1ca76/2",
-              "scheme": "vscode-terminal",
-              "query": "command=tool-e371d278-df4a-45fd-b3e6-e09348258963"
             },
             "terminalTheme": {
               "background": "#181818",
@@ -10651,7 +10609,6 @@
           },
           "toolSpecificData": {
             "kind": "terminal",
-            "terminalToolSessionId": "42d02c38-111e-4688-a709-517ecf485ca0",
             "terminalCommandId": "tool-171c2ad9-3a3c-449c-ae67-0dda2c52659d",
             "commandLine": {
               "original": "cd /home/ensismoebius/dotfiles && mv stow/Kvantum/Kvantum stow/local/.local/share/",
@@ -10672,12 +10629,6 @@
             "terminalCommandState": {
               "timestamp": 1766005378678,
               "duration": 0
-            },
-            "terminalCommandUri": {
-              "$mid": 1,
-              "path": "/1cde53ec3e2af10eb126d0b533e1ca76/2",
-              "scheme": "vscode-terminal",
-              "query": "command=tool-171c2ad9-3a3c-449c-ae67-0dda2c52659d"
             },
             "terminalTheme": {
               "background": "#181818",
@@ -10747,7 +10698,6 @@
           },
           "toolSpecificData": {
             "kind": "terminal",
-            "terminalToolSessionId": "a35cc88f-9492-4e7e-a308-63ce3b01f774",
             "terminalCommandId": "tool-e8b659f0-98fb-45c1-b25f-39ea786fb49b",
             "commandLine": {
               "original": "cd /home/ensismoebius/dotfiles && ls -la stow/hypr/.config/",
@@ -10768,12 +10718,6 @@
             "terminalCommandState": {
               "timestamp": 1766005382062,
               "duration": 0
-            },
-            "terminalCommandUri": {
-              "$mid": 1,
-              "path": "/1cde53ec3e2af10eb126d0b533e1ca76/2",
-              "scheme": "vscode-terminal",
-              "query": "command=tool-e8b659f0-98fb-45c1-b25f-39ea786fb49b"
             },
             "terminalTheme": {
               "background": "#181818",
@@ -10800,7 +10744,6 @@
           },
           "toolSpecificData": {
             "kind": "terminal",
-            "terminalToolSessionId": "ac0a85e9-a36f-4220-9730-0f4ff7351b3d",
             "terminalCommandId": "tool-adbe33f8-5498-4679-ae28-e75aa0ae2c50",
             "commandLine": {
               "original": "cd /home/ensismoebius/dotfiles && rmdir stow/hypr/.config",
@@ -10821,12 +10764,6 @@
             "terminalCommandState": {
               "timestamp": 1766005388982,
               "duration": 0
-            },
-            "terminalCommandUri": {
-              "$mid": 1,
-              "path": "/1cde53ec3e2af10eb126d0b533e1ca76/2",
-              "scheme": "vscode-terminal",
-              "query": "command=tool-adbe33f8-5498-4679-ae28-e75aa0ae2c50"
             },
             "terminalTheme": {
               "background": "#181818",
@@ -10896,7 +10833,6 @@
           },
           "toolSpecificData": {
             "kind": "terminal",
-            "terminalToolSessionId": "da98043a-6b94-4f83-a158-f19598ab41b8",
             "terminalCommandId": "tool-fcd412f3-d894-4305-8f70-688459c238ec",
             "commandLine": {
               "original": "cd /home/ensismoebius/dotfiles && rmdir stow/gimp/.config",
@@ -10917,12 +10853,6 @@
             "terminalCommandState": {
               "timestamp": 1766005392612,
               "duration": 0
-            },
-            "terminalCommandUri": {
-              "$mid": 1,
-              "path": "/1cde53ec3e2af10eb126d0b533e1ca76/2",
-              "scheme": "vscode-terminal",
-              "query": "command=tool-fcd412f3-d894-4305-8f70-688459c238ec"
             },
             "terminalTheme": {
               "background": "#181818",
@@ -10992,7 +10922,6 @@
           },
           "toolSpecificData": {
             "kind": "terminal",
-            "terminalToolSessionId": "a2b24af9-84c0-4c21-b39a-17b2dc221832",
             "terminalCommandId": "tool-c446bf28-55c2-4e50-9305-a79048e8eced",
             "commandLine": {
               "original": "cd /home/ensismoebius/dotfiles && rmdir stow/Kvantum/.config",
@@ -11013,12 +10942,6 @@
             "terminalCommandState": {
               "timestamp": 1766005395552,
               "duration": 1
-            },
-            "terminalCommandUri": {
-              "$mid": 1,
-              "path": "/1cde53ec3e2af10eb126d0b533e1ca76/2",
-              "scheme": "vscode-terminal",
-              "query": "command=tool-c446bf28-55c2-4e50-9305-a79048e8eced"
             },
             "terminalTheme": {
               "background": "#181818",
@@ -11088,7 +11011,6 @@
           },
           "toolSpecificData": {
             "kind": "terminal",
-            "terminalToolSessionId": "d5e86b6f-155e-489b-abf4-082cce41302c",
             "terminalCommandId": "tool-bef0e27f-606f-4824-bea8-1927bc19f3ec",
             "commandLine": {
               "original": "cd /home/ensismoebius/dotfiles && rmdir stow/xdg/.config",
@@ -11109,12 +11031,6 @@
             "terminalCommandState": {
               "timestamp": 1766005399179,
               "duration": 0
-            },
-            "terminalCommandUri": {
-              "$mid": 1,
-              "path": "/1cde53ec3e2af10eb126d0b533e1ca76/2",
-              "scheme": "vscode-terminal",
-              "query": "command=tool-bef0e27f-606f-4824-bea8-1927bc19f3ec"
             },
             "terminalTheme": {
               "background": "#181818",
@@ -11184,7 +11100,6 @@
           },
           "toolSpecificData": {
             "kind": "terminal",
-            "terminalToolSessionId": "25645b8f-1a35-4e17-b30d-69d411579e16",
             "terminalCommandId": "tool-0e00e8b8-ab2b-4174-a7d6-c8633cf024ca",
             "commandLine": {
               "original": "cd /home/ensismoebius/dotfiles && ls -la stow/icons/.local/",
@@ -11205,12 +11120,6 @@
             "terminalCommandState": {
               "timestamp": 1766005402010,
               "duration": 0
-            },
-            "terminalCommandUri": {
-              "$mid": 1,
-              "path": "/1cde53ec3e2af10eb126d0b533e1ca76/2",
-              "scheme": "vscode-terminal",
-              "query": "command=tool-0e00e8b8-ab2b-4174-a7d6-c8633cf024ca"
             },
             "terminalTheme": {
               "background": "#181818",
@@ -11237,7 +11146,6 @@
           },
           "toolSpecificData": {
             "kind": "terminal",
-            "terminalToolSessionId": "f880068d-c482-4b7d-afc9-ecf43838c460",
             "terminalCommandId": "tool-b7d54327-eb9f-4bd0-a7ea-b3c36a0612d8",
             "commandLine": {
               "original": "cd /home/ensismoebius/dotfiles && rmdir stow/icons/.local",
@@ -11258,12 +11166,6 @@
             "terminalCommandState": {
               "timestamp": 1766005403366,
               "duration": 0
-            },
-            "terminalCommandUri": {
-              "$mid": 1,
-              "path": "/1cde53ec3e2af10eb126d0b533e1ca76/2",
-              "scheme": "vscode-terminal",
-              "query": "command=tool-b7d54327-eb9f-4bd0-a7ea-b3c36a0612d8"
             },
             "terminalTheme": {
               "background": "#181818",
@@ -11290,7 +11192,6 @@
           },
           "toolSpecificData": {
             "kind": "terminal",
-            "terminalToolSessionId": "17ab0d7c-a1e2-4c74-9fe9-900fc9b1bab8",
             "terminalCommandId": "tool-594f8f54-0cb2-41ed-a621-ea795e599cd7",
             "commandLine": {
               "original": "cd /home/ensismoebius/dotfiles && rm -rf stow/hypr stow/gimp stow/Kvantum stow/xdg",
@@ -11311,12 +11212,6 @@
             "terminalCommandState": {
               "timestamp": 1766005406299,
               "duration": 0
-            },
-            "terminalCommandUri": {
-              "$mid": 1,
-              "path": "/1cde53ec3e2af10eb126d0b533e1ca76/2",
-              "scheme": "vscode-terminal",
-              "query": "command=tool-594f8f54-0cb2-41ed-a621-ea795e599cd7"
             },
             "terminalTheme": {
               "background": "#181818",

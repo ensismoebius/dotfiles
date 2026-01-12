@@ -1,9 +1,0 @@
-{
-    "git.autofetch": true,
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "editor.inlayHints.enabled": "offUnlessPressed",
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    }
-}
