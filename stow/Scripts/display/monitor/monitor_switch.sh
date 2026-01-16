@@ -158,11 +158,11 @@ switch_layout() {
 show_status() {
     CURRENT_STATE=$(cat "$STATE_FILE")
     case $CURRENT_STATE in
-        1) echo '''{"text": "=|=", "tooltip": "Layout: Mirrored"}''' ;;
-        2) echo '''{"text": "→ | →", "tooltip": "Layout: Extended (right)"}''' ;;
-        3) echo '''{"text": "  |0 ", "tooltip": "Layout: Main Monitor Only"}''' ;;
-        4) echo '''{"text": "0|  ", "tooltip": "Layout: Second Monitor Only"}''' ;;
-        5) echo '''{"text": "← | ←", "tooltip": "Layout: Extended (left)"}''' ;;
+        1) echo '''{"text": " =|= ", "tooltip": "Layout: Mirrored"}''' ;;
+        2) echo '''{"text": " → | → ", "tooltip": "Layout: Extended (right)"}''' ;;
+        3) echo '''{"text": "   |0 ", "tooltip": "Layout: Main Monitor Only"}''' ;;
+        4) echo '''{"text": " 0|   ", "tooltip": "Layout: Second Monitor Only"}''' ;;
+        5) echo '''{"text": " ← | ← ", "tooltip": "Layout: Extended (left)"}''' ;;
     esac
 }
 

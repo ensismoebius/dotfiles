@@ -19,20 +19,7 @@ def uptime():
     delta = datetime.now() - datetime.fromtimestamp(psutil.boot_time())
     return str(delta).split('.')[0]
 
-# --- Neon ASCII Art ---
-def neon_ascii():
-    ascii_art = """
- ███╗   ██╗ ███████╗  ██████╗  ███╗   ██╗
- ████╗  ██║ ██╔════╝ ██╔═══██╗ ████╗  ██║
- ██╔██╗ ██║ █████╗   ██║   ██║ ██╔██╗ ██║
- ██║╚██╗██║ ██╔══╝   ██║   ██║ ██║╚██╗██║
- ██║ ╚████║ ███████╗ ╚██████╔╝ ██║ ╚████║
- ╚═╝  ╚═══╝ ╚══════╝  ╚═════╝  ╚═╝  ╚═══╝
- **Cyberpunk**
-"""
-    neon_text = Text(ascii_art, style="bold green")
-    neon_text.stylize("bold cyan", 0, len(ascii_art.splitlines()[0]))
-    return neon_text
+
 
 # --- System Info Table ---
 def system_table():
@@ -51,26 +38,11 @@ def system_table():
     table.add_row("Uptime", uptime())
     return table
 
-# --- Progress Bars ---
-def neon_bars():
-    cpu_percent = psutil.cpu_percent(interval=0.5)
-    mem_percent = psutil.virtual_memory().percent
-    disk_percent = psutil.disk_usage('/').percent
 
-    with Progress(
-        TextColumn("[bold cyan]{task.description}"),
-        BarColumn(bar_width=None, complete_style="bold blue", finished_style="bold magenta"),
-        TextColumn("[bold magenta]{task.percentage:>3.0f}%"),
-        transient=True,
-    ) as progress:
-        progress.add_task("CPU  ", total=100, completed=cpu_percent)
-        progress.add_task("RAM  ", total=100, completed=mem_percent)
-        progress.add_task("DISK ", total=100, completed=disk_percent)
 
 # --- Main ---
 if __name__ == "__main__":
     console.clear()
-    console.print(Panel(neon_ascii(), border_style="bold cyan"))
+    console.print(Panel(Text("System Information", justify="center", style="bold underline")))
     console.print(system_table())
-    neon_bars()
 

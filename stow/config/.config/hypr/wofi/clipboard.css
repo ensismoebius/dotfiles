@@ -1,71 +1,34 @@
-@keyframes scanline {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 0 100%;
-    }
-}
-
-@keyframes glow {
-    0% {
-        box-shadow: 0 0 5px #00FF41, 0 0 10px #00FF41, 0 0 15px #008F11;
-    }
-    100% {
-        box-shadow: 0 0 10px #00FF41, 0 0 20px #00FF41, 0 0 30px #008F11;
-    }
-}
-
 window {
-    font-family: "JetBrainsMono Nerd Font";
+    font-family: "Roboto", "Noto Sans", "Inter", sans-serif;
     font-size: 13px;
     margin: 0px;
-    border: 2px solid #00FF41;
-    border-radius: 2px;
-    background-color: rgba(13, 2, 8, 0.95);
-    background-image: repeating-linear-gradient(
-        0deg,
-        rgba(0, 255, 65, 0.03) 0px,
-        rgba(0, 255, 65, 0.03) 1px,
-        transparent 1px,
-        transparent 2px
-    );
-    animation: scanline 10s linear infinite;
-    box-shadow: 0 0 15px #00FF41, 0 0 30px #008F11;
-    animation: glow 2s ease-in-out infinite alternate;
+    border: 2px solid #303030;
+    border-radius: 4px;
+    background-color: #232323;
+    box-shadow: none;
 }
 
 #input {
     margin: 5px;
-    border: 1px solid #00FF41;
-    border-radius: 2px;
-    color: #00FF41;
-    background-color: rgba(13, 2, 8, 0.95);
-    box-shadow: inset 0 0 5px #00FF41;
-    animation: glow 2s ease-in-out infinite alternate;
+    border: 1px solid #424242;
+    border-radius: 4px;
+    color: #e0e0e0;
+    background-color: #232323;
+    box-shadow: none;
 }
 
-#inner-box {
-    margin: 5px;
-    border: none;
-    background-color: transparent;
-}
-
-#outer-box {
-    margin: 5px;
-    border: none;
-    background-color: transparent;
-}
-
+#inner-box,
+#outer-box,
 #scroll {
-    margin: 0px;
+    margin: 5px;
     border: none;
+    background-color: transparent;
 }
 
 #text {
     margin: 5px;
-    color: #00FF41;
-    text-shadow: 0 0 5px #00FF41;
+    color: #e0e0e0;
+    text-shadow: none;
 }
 
 #entry {
@@ -75,14 +38,16 @@ window {
 }
 
 #entry:selected {
-    background-color: rgba(0, 143, 17, 0.5);
-    border-radius: 2px;
-    border-left: 2px solid #00FF41;
-    box-shadow: inset 0 0 10px #00FF41;
+    background-color: #353535;
+    border-radius: 4px;
+    border-left: 2px solid #1976d2;
+    box-shadow: none;
 }
 
 #entry:hover {
-    background-color: rgba(0, 255, 65, 0.1);
-    border-radius: 2px;
-    border-left: 2px solid #008F11;
+    background-color: #2c2c2c;
+    border-radius: 4px;
+    border-left: 2px solid #1976d2;
 }
+
+border: none;

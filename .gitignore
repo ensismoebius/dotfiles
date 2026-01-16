@@ -315,10 +315,12 @@ stow/config/.config/joplin-desktop
 stow/config/.config/valent
 stow/config/.config/winboat
 stow/config/.config/github-copilot
+stow/config/.config/Code
 stow/config/.config/Code/TransportSecurity
 stow/config/.config/Code/Cache/Cache_Data/9f50bddbd978eddd_0
 stow/config/.config/Code/Cache/Cache_Data/d121e2a6335b7510_0
 stow/config/.config/Code/Cache/Cache_Data/index-dir/the-real-index
+stow/config/.config/Code/CachedProfilesData/__default__profile__/extensions.builtin.cache
 stow/config/.config/Code/User/settings.json
 stow/config/.config/Code/User/History/-21dfceee/entries.json
 stow/config/.config/Code/User/History/-411658dd/entries.json

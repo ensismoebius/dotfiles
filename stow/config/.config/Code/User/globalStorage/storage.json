@@ -12,7 +12,11 @@
                 "folderUri": "file:///home/ensismoebius/dotfiles"
             }
         ],
-        "emptyWindows": []
+        "emptyWindows": [
+            {
+                "backupFolder": "1768531957889"
+            }
+        ]
     },
     "windowControlHeight": 30,
     "profileAssociations": {
@@ -24,9 +28,12 @@
             "file:///home/ensismoebius/Workspaces/python-workspace": "__default__profile__",
             "file:///home/ensismoebius/Workspaces/misc-workspace/materialDeEstudos": "__default__profile__",
             "file:///home/ensismoebius/Documentos/fans": "__default__profile__",
-            "file:///home/ensismoebius/Workspaces/python-workspace/mortgage-simulator": "__default__profile__"
+            "file:///home/ensismoebius/Workspaces/python-workspace/mortgage-simulator": "__default__profile__",
+            "file:///home/ensismoebius/Repos/doutorado/software/nn/src/demos/pydemos": "__default__profile__"
         },
-        "emptyWindows": {}
+        "emptyWindows": {
+            "1768531957889": "__default__profile__"
+        }
     },
     "theme": "vs-dark",
     "themeBackground": "#1f1f1f",
@@ -50,10 +57,10 @@
         "layoutInfo": {
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
-            "titleBarHeight": 36,
+            "titleBarHeight": 30,
             "activityBarWidth": 48,
-            "sideBarWidth": 428,
-            "auxiliaryBarWidth": 443,
+            "sideBarWidth": 300,
+            "auxiliaryBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
         }
@@ -67,16 +74,38 @@
                 "x": 0,
                 "y": 0,
                 "width": 1366,
-                "height": 768,
-                "zoomLevel": -1
+                "height": 768
             }
         },
-        "openedWindows": []
+        "openedWindows": [
+            {
+                "folder": "file:///home/ensismoebius/Repos/doutorado/software/nn",
+                "backupPath": "/home/ensismoebius/.config/Code/Backups/5649409265efdc48eba8bd59259db91d",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 1366,
+                    "height": 768
+                }
+            },
+            {
+                "folder": "file:///home/ensismoebius/dotfiles",
+                "backupPath": "/home/ensismoebius/.config/Code/Backups/721e9dcfc7a735b17ae9ee8213269508",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 1366,
+                    "height": 768
+                }
+            }
+        ]
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
-            "sideBarWidth": 428,
-            "auxiliaryBarWidth": 443,
+            "sideBarWidth": 300,
+            "auxiliaryBarWidth": 300,
             "workspaces": {
                 "7feabc967bb5ea27a9773b6eac1771e3": {
                     "sideBarVisible": true,
@@ -88,11 +117,7 @@
                 },
                 "651899a77ebabd2e2681244869f28a1c": {
                     "sideBarVisible": true,
-                    "auxiliaryBarVisible": true
-                },
-                "1cde53ec3e2af10eb126d0b533e1ca76": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": true
+                    "auxiliaryBarVisible": false
                 },
                 "e809c40ba74ca5db156df33b9d4eac42": {
                     "sideBarVisible": true,
@@ -107,6 +132,14 @@
                     "auxiliaryBarVisible": false
                 },
                 "a6ba7343d58834800a178dbb0fb2e116": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "a9d088a385685fe5632fcc7a1f5cdb67": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "1cde53ec3e2af10eb126d0b533e1ca76": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
                 }

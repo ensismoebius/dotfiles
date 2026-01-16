@@ -2,7 +2,7 @@
 
 ![Hyprland Logo](https://hyprland.org/img/logo.png)
 
-A modern, cyberpunk-themed Hyprland configuration, now managed with a clean, modular structure using GNU Stow. Features dynamic workspaces, intelligent app launching, and seamless integration with Waybar.
+A modern, Material Design-themed Hyprland configuration, managed with a clean, modular structure using GNU Stow. Features dynamic workspaces, intelligent app launching, and seamless integration with Waybar.
 
 [Features](#features) • [Installation](#installation) • [How It Works](#how-it-works) • [Directory Structure](#directory-structure) • [Keybindings](#keybindings) • [Customization](#customization) • [Scripts](#scripts)
 
@@ -11,7 +11,7 @@ A modern, cyberpunk-themed Hyprland configuration, now managed with a clean, mod
 ### Core Components
 
 - 🖥️ **Hyprland** - A dynamic tiling Wayland compositor
-- 🎨 **Custom Cyberpunk Theme** - Neon-inspired color scheme with custom icons
+
 - 🎯 **Smart App Launcher** - Wofi-based launcher
 - 📊 **Enhanced Waybar** - Custom modules for system monitoring
 - 🔔 **Modern Notifications** - Using SwayNC and Mako with a stylish appearance
@@ -114,10 +114,11 @@ All configurations are located within the `stow/` directory, organized by packag
 
 ## Customization
 
-The setup includes a cyberpunk-inspired theme with:
+The setup includes a Material Design dark theme with:
 
-- Custom Neon icon theme
-- Dynamic color schemes
+- Materia-dark GTK theme
+- Kvantum-materia Qt theme
+- Papirus-Dark icon theme
 - Customizable Waybar modules
 
 To customize a component, simply edit the corresponding files within the `stow/` directory. For example, to change your foot terminal settings, you would edit `stow/config/.config/foot/foot.ini`. After saving the change, the symlink in your home directory will automatically reflect the new configuration.

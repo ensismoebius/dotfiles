@@ -1,93 +1,11 @@
 {
-  "git.autofetch": true,
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "editor.inlayHints.enabled": "offUnlessPressed",
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
-  },
-  "security.workspace.trust.untrustedFiles": "open",
-  "workbench.iconTheme": "vscode-icons",
-  "chat.mcp.gallery.enabled": true,
-  "github.copilot.chat.githubMcpServer.enabled": true,
-  "diffEditor.codeLens": true,
-  "files.autoSave": "afterDelay",
-  "terminal.integrated.inheritEnv": false,
-  "claudeCode.preferredLocation": "panel",
-  "http.systemCertificatesNode": true,
-  "geminicodeassist.agentYoloMode": true,
-  "chat.tools.global.autoApprove": true,
-  "breadcrumbs.enabled": false,
-  "editor.stickyScroll.enabled": false,
-  "editor.mouseWheelZoom": true,
-  "terminal.integrated.mouseWheelZoom": true,
-  "terminal.integrated.shellIntegration.decorationsEnabled": "gutter",
-  "terminal.integrated.shellIntegration.environmentReporting": true,
-  "terminal.integrated.shellIntegration.history": 1000,
-  "cmake.showConfigureWithDebuggerNotification": false,
-  "editor.minimap.renderCharacters": false,
-  "editor.minimap.size": "fill",
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "task.allowAutomaticTasks": "on",
-  "c-cpp-flylint.clang.configFile": ".clangd",
-  "c-cpp-flylint.cppcheck.configFile": ".cppcheck",
-  "c-cpp-flylint.cppcheck.verbose": true,
-  "c-cpp-flylint.cppcheck.force": true,
-  "c-cpp-flylint.lizard.enable": false,
-  "c-cpp-flylint.ignoreParseErrors": true,
-  "clangd.checkUpdates": true,
-  "c-cpp-flylint.excludeFromWorkspacePaths": [
-    "/build/**",
-    "/third_party/**",
-    "/external/**",
-    "/.vscode/**",
-    "/.git/**",
-    "/node_modules/**",
-    "/out/**",
-    "/dist/**",
-    "/.gemini/**",
-    "/docs/**",
-    "/lib/**"
-  ],
-  "c-cpp-flylint.standard": [
-    "c11",
-    "c++20"
-  ],
-  "c-cpp-flylint.includePaths": [
-    "/src/**"
-  ],
-  "[markdown]": {
-    "editor.defaultFormatter": "prettier.prettier-vscode"
-  },
-  "c-cpp-flylint.flexelint.enable": false,
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "chat.agent.maxRequests": 1000,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": true,
-    "scminput": false
-  },
-  "chat.customAgentInSubagent.enabled": true,
-  "chat.editor.wordWrap": "on",
-  "chat.mcp.discovery.enabled": {
-    "claude-desktop": true,
-    "cursor-workspace": true,
-    "cursor-global": true,
-    "windsurf": true
-  },
-  "chat.tools.terminal.autoReplyToPrompts": true,
-  "chat.useNestedAgentsMdFiles": true,
-  "chat.viewSessions.orientation": "stacked",
-  "search.followSymlinks": false,
-  "editor.wordWrap": "wordWrapColumn",
-  "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
-  "chat.instructionsFilesLocations": {
-    ".github/copilot-instructions.md": true
-  },
-  "terminal.explorerKind": "both",
-  "chat.useAgentSkills": true
+    "vsicons.dontShowNewVersionMessage": true,
+    "terminal.integrated.inheritEnv": false,
+    "python.analysis.typeCheckingMode": "standard",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "explorer.confirmDelete": false,
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false
 }

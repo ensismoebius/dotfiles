@@ -1,14 +1,12 @@
-/* Force ::selection for web content (may override some sites) */
-/* Use bright neon background with black text for contrast on dark themes */
+/* Material Dark selection for web content */
 
 @-moz-document regexp('.*') {
   ::selection {
-    background: #00FF41 !important;
+    background: #BDBDBD !important; /* Medium Grey */
     color: #000000 !important;
   }
-  /* For older/other pseudo elements */
   ::-moz-selection {
-    background: #00FF41 !important;
+    background: #BDBDBD !important; /* Medium Grey */
     color: #000000 !important;
   }
 }

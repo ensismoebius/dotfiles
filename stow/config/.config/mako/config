@@ -1,31 +1,21 @@
 # Global configuration
-max-history=20
+max-history=5
 sort=-time
 
 # Appearance
-font=JetBrainsMono Nerd Font 11
-width=350
-height=100
-margin=10,50,0,0
-padding=15
-border-size=2
-border-radius=6
-progress-color=over #00FF41
-outer-margin=2
-markup=1
+font=Roboto 10
+width=300
+padding=10
+border-size=1
+border-radius=4
+progress-color=#616161
 layer=overlay
-border-color=#00FF41
-background-color=rgba(13, 2, 8, 0.7)
-box-shadow=0 0 10px rgba(0, 255, 65, 0.4)
-text-color=#00FF41
+border-color=#424242
+background-color=#212121
+text-color=#FFFFFF
 default-timeout=5000
-icon-path=/usr/share/icons/Papirus-Dark/32x32/apps/:/usr/share/icons/Papirus-Dark/32x32/devices/:/usr/share/icons/Papirus-Dark/32x32/status/
-format=<span foreground="#00FF41" weight="bold" allow-breaks="true" size="12000">%s</span>\n<span foreground="#00FF41" allow-breaks="true">%b</span>
-default-timeout=10000
-ignore-timeout=0
 
 # Icons
-icon-path=/usr/share/icons/Papirus/48x48/apps/:/usr/share/icons/Papirus/48x48/devices/:/usr/share/icons/Papirus/48x48/status/
 max-icon-size=48
 icon-location=left
 
@@ -36,35 +26,17 @@ on-button-right=invoke-default-action
 
 # Urgency-specific configurations
 [urgency=low]
-background-color=rgba(13, 2, 8, 0.86)
-text-color=#00FF41
-border-color=#008F11
-box-shadow=0 0 12px #008F11, inset 0 0 5px #008F11
-format=<span foreground='#00FF41' weight='bold' size='large' letter_spacing='100'>%s</span>\n<span foreground='#00FF41' weight='normal'>%b</span>
-default-timeout=5000
+background-color=#212121
+text-color=#BDBDBD
+border-color=#424242
 
 [urgency=normal]
-background-color=rgba(13, 2, 8, 0.86)
-text-color=#00FF41
-border-color=#00FF41
-box-shadow=0 0 15px #00FF41, inset 0 0 7px #00FF41
-format=<span foreground='#00FF41' weight='bold' size='large' letter_spacing='100'>%s</span>\n<span foreground='#00FF41' weight='normal'>%b</span>
-default-timeout=10000
+background-color=#212121
+text-color=#FFFFFF
+border-color=#616161
 
 [urgency=critical]
-background-color=rgba(13, 2, 8, 0.86)
-text-color=#FF0000
-border-color=#FF0000
-box-shadow=0 0 20px #FF0000, inset 0 0 10px #FF0000
-format=<span foreground='#FF0000' weight='bold' size='large' letter_spacing='100'>%s</span>\n<span foreground='#FF0000' weight='normal'>%b</span>
+background-color=#f44336
+text-color=#FFFFFF
+border-color=#d32f2f
 default-timeout=0
-
-# Application-specific rules
-[app-name=spotify]
-format=<b>%s</b>\n%b
-
-[app-name=spotify summary="*Paused*"]
-default-timeout=2000
-
-[app-name=mpris]
-format=<b>%s</b>\n%b

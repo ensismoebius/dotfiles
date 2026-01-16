@@ -167,7 +167,7 @@
         }
     },
     "custom/monitor-layout": {
-        "format": "{}",
+        "format": " {} ",
         "exec": "~/Scripts/display/monitor/monitor_switch.sh",
         "on-click": "~/Scripts/display/monitor/monitor_switch.sh --switch",
         "return-type": "json",

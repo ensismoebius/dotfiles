@@ -48,6 +48,7 @@ application/x-bzip2=file-roller.desktop
 x-scheme-handler/gitkraken=GitKraken.desktop
 x-directory/normal=nautilus.desktop
 application/x-shellscript=org.gnome.TextEditor.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
 
 [Added Associations]
 x-scheme-handler/http=firefox.desktop;
@@ -97,3 +98,4 @@ application/x-tar=file-roller.desktop;
 application/gzip=file-roller.desktop;
 application/x-bzip2=file-roller.desktop;
 application/x-shellscript=org.gnome.TextEditor.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;

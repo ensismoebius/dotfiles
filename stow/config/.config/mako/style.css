@@ -1,67 +1,68 @@
-@define-color neon-green #00FF41;
-@define-color neon-red #FF0000;
-@define-color dark-bg #0D0208;
+/* Material Dark theme for Mako notifications */
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+@define-color background-color #212121; /* Material Dark Grey 900 */
+@define-color text-color #E0E0E0;      /* Material Grey 200 */
+@define-color border-color #424242;      /* Material Grey 800 */
+@define-color accent-color #42A5F5;      /* Material Blue 400 */
+@define-color critical-color #EF5350;    /* Material Red 400 */
 
 .notification-row {
     outline: none;
 }
 
 .notification {
-    box-shadow: 0 0 8px @neon-green, 0 0 12px @neon-green;
+    background-color: @background-color;
+    border: 1px solid @border-color;
+    border-radius: 4px;
+    padding: 8px;
     margin: 6px;
+    color: @text-color;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .notification.critical {
-    box-shadow: 0 0 8px @neon-red, 0 0 12px @neon-red;
+    border-color: @critical-color;
 }
 
 .notification-content {
-    background: alpha(@dark-bg, 0.85);
-    padding: 10px;
-    border: 2px solid @neon-green;
-    border-radius: 0;
-}
-
-.critical .notification-content {
-    border: 2px solid @neon-red;
+    background-color: transparent;
+    padding: 0;
 }
 
 .notification-default-action:hover,
 .notification-action:hover {
-    background: alpha(@neon-green, 0.1);
+    background-color: rgba(255, 255, 255, 0.08); /* Subtle hover effect */
+    border-radius: 4px;
 }
 
 .critical .notification-default-action:hover,
 .critical .notification-action:hover {
-    background: alpha(@neon-red, 0.1);
-}
-
-.notification-default-action {
-    padding: 4px;
-    margin: 0;
-    box-shadow: none;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.08);
 }
 
 .close-button {
-    background: transparent;
-    color: @neon-green;
-    text-shadow: 0 0 3px @neon-green;
-}
-
-.critical .close-button {
-    color: @neon-red;
-    text-shadow: 0 0 3px @neon-red;
+    background-color: transparent;
+    color: @text-color;
+    text-shadow: none;
+    border-radius: 4px;
 }
 
 .close-button:hover {
-    background: alpha(@neon-green, 0.1);
-    color: @neon-green;
-    text-shadow: 0 0 5px @neon-green;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: @text-color;
+    text-shadow: none;
+}
+
+.critical .close-button {
+    color: @critical-color;
 }
 
 .critical .close-button:hover {
-    background: alpha(@neon-red, 0.1);
-    color: @neon-red;
-    text-shadow: 0 0 5px @neon-red;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: @critical-color;
 }
