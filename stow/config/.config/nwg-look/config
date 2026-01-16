@@ -1,12 +1,7 @@
 {
-    "export-settings-ini": true,
-    "export-gtkrc-20": true,
-    "export-index-theme": true,
-    "export-xsettingsd": true,
-    "export-gtk4-symlinks": true,
-    "export-qt5ct": true,
-    "export-qt6ct": true,
-    "export-kvantum": true,
-    "export-plasma": true,
-    "export-wallpapers": true
+ "export-settings-ini": true,
+ "export-gtkrc-20": true,
+ "export-index-theme": true,
+ "export-xsettingsd": true,
+ "export-gtk4-symlinks": true
 }
