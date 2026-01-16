@@ -1,8 +1,0 @@
-# GIMP gimp-fuzzy-select-tool options
-
-(operation add)
-(diagonal-neighbors yes)
-(threshold 14.699999999999999)
-(draw-mask yes)
-
-# end of gimp-fuzzy-select-tool options
