@@ -1,1 +1,16 @@
+/* Nautilus-specific tweaks to ensure full WhiteSur compatibility */
+/* These rules are intentionally conservative — they reinforce headerbar, list and sidebar visuals */
+window,
+headerbar,
+.header-bar,
+.nautilus-window {
+  background-color: transparent;
+}
+
+/* Ensure selection and accent colors use theme's accent */
+selection,
+treeview:selected {
+  background-color: @accent !important;
+}
+
 @import url("resource:///org/gnome/theme/gtk.css");

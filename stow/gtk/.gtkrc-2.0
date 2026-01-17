@@ -3,7 +3,7 @@
 
 include "/home/ensismoebius/.gtkrc-2.0.mine"
 gtk-theme-name="WhiteSur-Dark-pink-nord"
-gtk-icon-theme-name="Cyberpunk-Neon"
+gtk-icon-theme-name="WhiteSur-Dark-pink-nord"
 gtk-font-name="Adwaita Sans 11"
 gtk-cursor-theme-name="default"
 gtk-cursor-theme-size=24

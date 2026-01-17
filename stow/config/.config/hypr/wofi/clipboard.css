@@ -2,18 +2,19 @@ window {
     font-family: "Roboto", "Noto Sans", "Inter", sans-serif;
     font-size: 13px;
     margin: 0px;
-    border: 2px solid #303030;
-    border-radius: 4px;
-    background-color: #232323;
+    border: 2px solid rgba(0, 0, 0, 0.45);
+    border-radius: 6px;
+    background-color: rgba(30, 40, 60, 0.9);
+    /* bluish transparent gray (0.9 opacity) */
     box-shadow: none;
 }
 
 #input {
     margin: 5px;
-    border: 1px solid #424242;
-    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    border-radius: 6px;
     color: #e0e0e0;
-    background-color: #232323;
+    background-color: rgba(20, 30, 45, 0.9);
     box-shadow: none;
 }
 
@@ -38,15 +39,15 @@ window {
 }
 
 #entry:selected {
-    background-color: #353535;
-    border-radius: 4px;
+    background-color: rgba(25, 118, 210, 0.12);
+    border-radius: 6px;
     border-left: 2px solid #1976d2;
     box-shadow: none;
 }
 
 #entry:hover {
-    background-color: #2c2c2c;
-    border-radius: 4px;
+    background-color: rgba(25, 118, 210, 0.08);
+    border-radius: 6px;
     border-left: 2px solid #1976d2;
 }
 
