@@ -6,7 +6,7 @@ options="<span foreground='#33ff33'>󰤄 Suspend</span>\n<span foreground='#ff33
 # Show wofi menu with power options
 selected=$(echo -e "$options" | wofi --dmenu \
     --cache-file /dev/null \
-    --style ~/.config/wofi/power_menu_style.css \
+    --style ~/.config/wofi/style.css \
     --prompt "Power" \
     --width 600 \
     --height 150 \

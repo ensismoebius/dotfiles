@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-WOFI_CONFIG="$HOME/.config/hypr/wofi/clipboard.css"
+WOFI_CONFIG="$HOME/.config/wofi/style.css"
 
 # Create config directory if it doesn't exist
 mkdir -p "$(dirname "$WOFI_CONFIG")"
