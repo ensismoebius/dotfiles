@@ -88,8 +88,8 @@
         "persistent-workspaces": {
             "*": 1
         },
-        "disable-scroll": true,
-        "all-outputs": true,
+        "disable-scroll": false,
+        "all-outputs": false,
         "show-special": false,
         "workspace-taskbar": {
             "enable": true,
