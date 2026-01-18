@@ -7,14 +7,15 @@ echo "
 --- Core Components ---
 hyprland: The Wayland compositor
 waybar: Status bar
-wofi: Application launcher
-wofi: Used for emoji picker
+
+wofi: Application launcher and emoji picker
 foot: Terminal emulator
-nautilus: File manager
+nemo: File manager
 wlogout: Logout menu
 swaylock: Screen locker
 
 --- System & Theming ---
+
 swww: Wallpaper daemon
 waypaper: Wallpaper selector GUI
 polkit-kde-agent: PolicyKit authentication agent
@@ -23,8 +24,12 @@ papirus-icon-theme: Icon theme
 ttf-jetbrains-mono noto-fonts ttf-font-awesome: Fonts
 hyprcursor: For cursor theming
 bibata-cursor-theme: Cursor theme
+hyprpaper: Wallpaper daemon (optional, add if used)
+hyprlock: Lock screen (optional, add if used)
+hypridle: Idle management (optional, add if used)
 
 --- Utilities ---
+
 firefox: Web browser
 network-manager-applet: Network manager GUI
 bluez-utils: For Bluetooth
@@ -40,6 +45,7 @@ swaync (AUR): Notification center
 waypaper (AUR): Wallpaper selector GUI
 xdg-utils: For opening files and URLs
 git base-devel: For installing AUR packages
+neofetch: System info tool
 
 "
 # read -p "Do you want to proceed with the installation? (y/N) " choice
@@ -57,12 +63,18 @@ if ! command -v yay &> /dev/null; then
     rm -rf yay
 fi
 
-# Install all packages with yay
-yay -S --needed hyprland waybar wofi foot nautilus firefox swww polkit-kde-agent qt5ct qt6ct kvantum papirus-icon-theme ttf-jetbrains-mono noto-fonts ttf-font-awesome network-manager-applet bluez-utils udiskie pipewire-pulse pavucontrol grim slurp wl-clipboard jq zsh hyprcursor wlogout xdg-utils grimblast swaync waypaper bibata-cursor-theme vim ccls swaylock playerctl stow gimp mako zenity cliphist inxi flatpak nautilus-python nautilus-open-any-terminal
 
-# Configure nautilus-open-any-terminal
-echo "Configuring nautilus-open-any-terminal to use 'foot'..."
-gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal foot
+# Install all packages with yay
+yay -S --needed hyprland waybar wofi foot nemo firefox swww polkit-kde-agent qt5ct qt6ct kvantum papirus-icon-theme ttf-jetbrains-mono noto-fonts ttf-font-awesome network-manager-applet bluez-utils udiskie pipewire-pulse pavucontrol grim slurp wl-clipboard jq zsh hyprcursor wlogout xdg-utils grimblast swaync waypaper bibata-cursor-theme vim ccls swaylock playerctl stow gimp mako zenity cliphist inxi flatpak neofetch
+# Optional: add hyprpaper hyprlock hypridle if you use them
+# yay -S --needed hyprpaper hyprlock hypridle
+
+
+# Configure nemo-terminal if installed
+if command -v nemo >/dev/null 2>&1 && command -v nemo-terminal >/dev/null 2>&1; then
+    echo "Configuring nemo-terminal to use 'foot'..."
+    gsettings set org.cinnamon.desktop.default-applications.terminal foot || true
+fi
 
 # Function: ensure murrine engine is installed for GTK2 visual improvements
 install_murrine_if_missing() {
@@ -247,28 +259,42 @@ fi
 
 
 
-# Install vim-plug for plugin management
-echo "Installing vim-plug..."
+
+# Install vim-plug for Vim
+echo "Installing vim-plug for Vim..."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+# Install vim-plug for Neovim if nvim is present
+if command -v nvim >/dev/null 2>&1; then
+    echo "Installing vim-plug for Neovim..."
+    curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+
 echo "All dependencies installed successfully."
 
-# Update desktop database
-if [ -d "$HOME/.local/share/applications" ]; then
+
+# Update desktop database if command exists
+if command -v update-desktop-database >/dev/null 2>&1 && [ -d "$HOME/.local/share/applications" ]; then
     echo "Updating desktop database..."
     update-desktop-database "$HOME/.local/share/applications"
 fi
 
-# Setting up nautilus-open-any-terminal to use foot terminal
-echo "Configuring nautilus-open-any-terminal to use 'foot' terminal..."
-if ! gsettings list-schemas | grep -q com.github.stunkymonkey.nautilus-open-any-terminal; then
-    echo "Schema com.github.stunkymonkey.nautilus-open-any-terminal not found. Installing nautilus-open-any-terminal..."
-    sudo pacman -S --needed nautilus-open-any-terminal
-fi
 
-gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal foot
+# No nautilus-open-any-terminal, replaced by nemo-terminal config above
 
 
+
+# --- Summary Output ---
+echo "\n===== SETUP SUMMARY ====="
+echo "Installed core packages: hyprland, waybar, wofi, foot, nemo, wlogout, swaylock, swww, waypaper, polkit-kde-agent, qt5ct, qt6ct, kvantum, papirus-icon-theme, ttf-jetbrains-mono, noto-fonts, ttf-font-awesome, hyprcursor, bibata-cursor-theme, firefox, network-manager-applet, bluez-utils, udiskie, pipewire-pulse, pavucontrol, playerctl, grim, slurp, grimblast, wl-clipboard, jq, zsh, swaync, xdg-utils, git, base-devel, stow, gimp, mako, zenity, cliphist, inxi, flatpak, neofetch, vim, ccls, swaylock, powerlevel10k, oh-my-zsh, zsh-autosuggestions, zsh-syntax-highlighting."
+echo "Nemo is now your file manager."
+echo "Neofetch is installed for system info."
+echo "Vim-plug installed for Vim and Neovim (if present)."
+echo "Dotfiles stowed using GNU Stow."
+echo "Permissions set for config files and directories."
+echo "Firefox userChrome installed (if script present)."
+echo "Desktop database updated (if available)."
+echo "If you use hyprpaper, hyprlock, hypridle, install them as needed."
 echo "Setup complete."
-echo "Done."
