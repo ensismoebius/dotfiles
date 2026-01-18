@@ -121,14 +121,7 @@ else
     echo "Oh My Zsh is already installed."
 fi
 
-# --- Powerlevel10k Theme Installation ---
-P10K_DIR="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
-if [ ! -d "$P10K_DIR" ]; then
-    echo "Installing Powerlevel10k theme..."
-    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$P10K_DIR"
-else
-    echo "Powerlevel10k theme is already installed."
-fi
+
 
 # --- Zsh Plugins Installation ---
 # zsh-autosuggestions
@@ -167,7 +160,7 @@ backup_conflicting_files() {
         ".bash_profile"
         ".bashrc"
         ".gtkrc-2.0"
-        ".p10k.zsh"
+
         ".zshrc"
         ".vim"
         ".vimrc"
