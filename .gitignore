@@ -392,3 +392,9 @@ stow/config/.config/Google/AndroidStudio2025.2.3/options/window.layouts.xml
 stow/config/.config/Google/AndroidStudio2025.2.3/options/window.state.xml
 stow/config/.config/Google/AndroidStudio2025.2.3/tasks/Monstro.contexts.zip
 stow/config/.config/Google/AndroidStudio2025.2.3/tasks/Monstro.tasks.zip
+
+# Ignore user SSH keys
+.ssh/
+
+# Ignore user SSH keys
+.ssh/
