@@ -398,3 +398,7 @@ stow/config/.config/Google/AndroidStudio2025.2.3/tasks/Monstro.tasks.zip
 
 # Ignore user SSH keys
 .ssh/
+stow/config/.config/syncthingtray.ini
+stow/config/.config/LanguageTool/LibreOffice/cache/LtCacheMap
+stow/config/.config/LanguageTool/LibreOffice/cache/LtCacheMap
+stow/config/.config/LanguageTool/LibreOffice/cache/LtSpellCache.lcz
